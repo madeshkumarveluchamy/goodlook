@@ -1,0 +1,129 @@
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import './css/Testimonials.css';
+
+import reviewUserImg from '../../assets/quality1.png'; 
+
+const Testimonials = () => {
+  // Base array data set
+  const baseTestimonials = [
+    {
+      id: 1,
+      image: reviewUserImg,
+      text: "Stunning designs and impeccable attention to detail. Truly premium decor that turns any house into a beautiful home. I couldn’t be happier with how these pieces transformed my space.",
+      author: "Team Kriya - Coimbatore"
+    },
+    {
+      id: 2,
+      image: reviewUserImg,
+      text: "The uPVC windows have completely soundproofed our living room. The engineering quality is exceptional, and the minimalist borders look incredibly clean and luxury.",
+      author: "Dheena - Chennai"
+    },
+    {
+      id: 3,
+      image: reviewUserImg,
+      text: "Exceptional service from design mapping to final structural assembly. Their architectural focus ensures form perfectly aligns with long-term weather durability.",
+      author: "Anand - Bangalore"
+    }
+  ];
+
+  // CRITICAL CYCLIC FIX: Array elements-ai multiple times multiply panni dynamic stack update panrom
+  // Ithanaala Swiper internal buffer-la eppovumae extra tracking elements loop continuous-ah irukum.
+  const testimonialsData = [...baseTestimonials, ...baseTestimonials, ...baseTestimonials];
+
+  return (
+    <section className="testimonials-section" id="reviews">
+      <div className="container-fluid p-0">
+        
+        {/* ================= SECTION HEADER ================= */}
+        <div className="text-center testimonial-header mb-5">
+          <h2 className="testimonial-main-title font-serif m-0">What Our Clients Say</h2>
+        </div>
+
+        {/* ================= DYNAMIC INFINITE CAROUSEL FRAME ================= */}
+        <div className="slider-outer-carousel-container position-relative">
+          
+          {/* Custom Absolute Target Arrow Blocks */}
+          <button className="custom-swiper-arrow swiper-prev-node" aria-label="Previous slide">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+          </button>
+          
+          <button className="custom-swiper-arrow swiper-next-node" aria-label="Next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+
+          <Swiper
+            modules={[Navigation, Pagination]}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            
+            // ==========================================================================
+            // RE-ENGINEERED CYCLIC CONFIG MATRIX
+            // ==========================================================================
+            loop={true}
+            loopedSlides={3}
+            loopAdditionalSlides={3}
+            loopPreventsSliding={false}
+            observer={true}
+            observeParents={true}
+            slideToClickedSlides={true} // Side cards click panna automatic-ah center lock aahi cyclic smooth movement thandhum
+            // ==========================================================================
+
+            speed={600} 
+            navigation={{
+              prevEl: '.swiper-prev-node',
+              nextEl: '.swiper-next-node',
+            }}
+            pagination={{ 
+              el: '.custom-dots-wrapper',
+              clickable: true 
+            }}
+            className="testimonials-swiper-instance"
+          >
+            {testimonialsData.map((item, index) => (
+              <SwiperSlide key={`${item.id}-${index}`} className="testimonial-swiper-slide-node">
+                <div className="testimonial-core-card bg-white text-center d-flex flex-column align-items-center justify-content-center">
+                  
+                  <div className="client-avatar-circle-frame overflow-hidden mb-4">
+                    <img 
+                      src={item.image} 
+                      alt="Installation tracking snapshot" 
+                      className="w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+
+                  <p className="client-review-statement-text fw-light mb-4">
+                    {item.text}
+                  </p>
+
+                  <span className="client-author-signature fw-medium text-muted text-uppercase tracking-wider">
+                    {item.author}
+                  </span>
+
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Dedicated Bullet Pagination Strip Container */}
+          <div className="custom-dots-wrapper d-flex justify-content-center align-items-center gap-2 mt-5"></div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;

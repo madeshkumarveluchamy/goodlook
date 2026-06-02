@@ -1,0 +1,171 @@
+/* ==========================================================================
+   PARENT STORAGE WRAPPER
+   ========================================================================== */
+.quality-section {
+  padding: 6rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.quality-fluid-holder {
+  width: 100%;
+}
+
+.quality-mini-badge {
+  font-size: 11.5px;
+  color: #b59463; /* Accent gold title */
+  letter-spacing: 0.22em;
+  font-weight: 600;
+}
+
+.quality-main-title {
+  font-size: calc(2.2rem + 1.2vw) !important;
+  color: #111111;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* ==========================================================================
+   BENTO INNER FRAME CARDS
+   ========================================================================== */
+.bento-card {
+  border-radius: 4px; /* Crisp minimal panel edge matching your reference design */
+  transition: box-shadow 0.3s ease;
+}
+
+/* White Warranty Panel Box Configuration */
+.large-white-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+}
+
+.gold-icon-circle {
+  background-color: #f6efe5; /* Cream tint backdrop */
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.icon-svg {
+  width: 24px;
+  color: #b59463;
+}
+
+.bento-card-title {
+  font-size: 26px;
+  color: #111111;
+  letter-spacing: -0.02em;
+}
+
+.bento-card-desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.bento-text-link {
+  color: #b59463 !important;
+  font-size: 11.5px;
+}
+
+.link-arrow-svg {
+  width: 14px;
+  transition: transform 0.25s ease;
+}
+
+.bento-text-link:hover .link-arrow-svg {
+  transform: translateX(4px);
+}
+
+/* Dark Solid Bento Card Component */
+.dark-solid-card {
+  background-color: #181818; /* Rich minimalist off-black */
+}
+
+.dark-card-tag {
+  color: #b59463;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.dark-card-title {
+  font-size: 26px;
+  line-height: 1.25;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.dark-card-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #a0a0a0;
+}
+
+/* Gold Accent Line Progress Tracking Bar */
+.bento-progress-track {
+  width: 100%;
+  height: 2.5px;
+  background-color: #2b2b2b;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-progress-fill {
+  width: 33%; /* Match the loading offset in image_8eb6d8.png */
+  height: 100%;
+  background-color: #b59463;
+}
+
+/* ==========================================================================
+   LOWER UTILITY MINIMAL CARDS
+   ========================================================================== */
+.utility-minimal-card {
+  background-color: #faf9f6; /* Warm off-white card canvas tint */
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  min-height: 175px;
+}
+
+.util-svg {
+  width: 20px;
+  color: #b59463;
+}
+
+.util-card-heading {
+  font-size: 13.5px;
+  color: #111111;
+  letter-spacing: 0.05em;
+}
+
+.util-card-desc {
+  font-size: 12.5px;
+  max-width: 260px;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   EXACT COMPLIANT MEDIA RESPONSIVE CODES
+   ========================================================================== */
+
+/* --- 1. ULTRA-WIDE MONITOR RIGS (2560px and Larger) --- */
+@media (min-width: 2560px) {
+  .quality-fluid-holder { max-width: 2100px; margin: 0 auto; }
+  .quality-main-title { font-size: 3.8rem !important; }
+  .bento-card-title, .dark-card-title { font-size: 34px; }
+  .bento-card-desc, .dark-card-desc { font-size: 18px; max-width: 700px; }
+  .util-card-heading { font-size: 17px; }
+  .util-card-desc { font-size: 15px; max-width: 340px; }
+  .bento-text-link { font-size: 14px; }
+}
+
+/* --- 2. LARGE VIEWPORTS / 1080p WALLS (1440px to 2559px) --- */
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .quality-fluid-holder { max-width: 1320px; margin: 0 auto; }
+}
+
+/* --- 3. TABLETS & SMALL VIEWS (Lesser than 748px) --- */
+@media (max-width: 747.98px) {
+  .quality-section { padding: 4rem 0; }
+  .large-white-card, .dark-solid-card { padding: 2rem !important; }
+  .utility-minimal-card { min-height: auto; padding: 2.5rem 1.5rem !important; }
+}

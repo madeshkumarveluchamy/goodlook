@@ -1,0 +1,201 @@
+/* ==========================================================================
+   COLLECTIONS CONTAINER CONFIG
+   ========================================================================== */
+.collections-section {
+  padding: 6rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.collections-fluid {
+  width: 100%;
+}
+
+.collections-header {
+  max-width: 680px;
+}
+
+.collections-main-title {
+  font-size: calc(2.2rem + 1.5vw) !important;
+  color: #111111;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.collections-sub-desc {
+  font-size: 14.5px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   FILTER NAVIGATION TAB COMPONENTS
+   ========================================================================== */
+.filter-navigation-row {
+  gap: 2.5rem;
+  border-color: #eeeeee !important;
+}
+
+.filter-tab-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #777777;
+  padding: 8px 4px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: color 0.25s ease;
+}
+
+.filter-tab-btn:hover {
+  color: #111111;
+}
+
+/* Gold active highlight line design matching your template */
+.filter-tab-btn.active {
+  color: #b59463 !important; /* Premium muted gold tone */
+  font-weight: 600;
+}
+
+.filter-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px; /* Aligns line perfectly over container border-bottom */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b59463;
+}
+
+/* ==========================================================================
+   PRODUCT CARDS GRID MATRIX
+   ========================================================================== */
+.product-display-grid {
+  transition: all 0.4s ease;
+}
+
+.product-item-card-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.product-img-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Retains clean 1:1 square ratio exactly like your layout image */
+  background-color: #fafafa;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.product-img-frame img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-item-card-box:hover .product-img-frame img {
+  transform: scale(1.04); /* Smooth micro-zoom hover effect */
+}
+
+.product-card-tag {
+  color: #c0a27d; /* Soft architectural tan tag color */
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.product-card-title {
+  font-size: 16.5px;
+  color: #222222;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* ==========================================================================
+   LOWER SHOWCASE BANNER
+   ========================================================================== */
+.lower-banner-img-frame {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lower-banner-title {
+  font-size: calc(1.8rem + 1.5vw) !important;
+  line-height: 1.15;
+  color: #111111;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  font-weight: 500;
+}
+
+.lower-banner-desc {
+  font-size: 14.5px;
+  color: #555555;
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.explore-process-btn {
+  background-color: transparent !important;
+  color: #222222 !important;
+  border: 1px solid #222222 !important;
+  border-radius: 0px !important; /* Flat sharp edge layout shape */
+  font-size: 11.5px;
+  letter-spacing: 0.18em;
+  transition: all 0.3s ease;
+}
+
+.explore-process-btn:hover {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border-color: #111111 !important;
+}
+
+/* ==========================================================================
+   EXACT RESPONSIVE BREAKPOINTS (748px to 2560px+)
+   ========================================================================== */
+
+/* --- 1. ULTRA-WIDE RIGS & 4K PANELS (2560px and Larger) --- */
+@media (min-width: 2560px) {
+  .collections-fluid { max-width: 2100px; margin: 0 auto; }
+  .collections-main-title { font-size: 3.8rem !important; }
+  .collections-sub-desc { font-size: 19px; max-width: 850px; }
+  .filter-tab-btn { font-size: 15px; }
+  .product-card-tag { font-size: 13px; }
+  .product-card-title { font-size: 21px; }
+  .lower-banner-title { font-size: 3.8rem !important; }
+  .lower-banner-desc { font-size: 18px; }
+  .explore-process-btn { font-size: 13px; padding: 12px 36px !important; }
+}
+
+/* --- 2. LARGE 1080p DISPLAYS (1440px to 2559px) --- */
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .collections-fluid { max-width: 1320px; margin: 0 auto; }
+}
+
+/* --- 3. LAPTOPS & TABLETS SCREEN SPECS (748px to 1023px) --- */
+@media (min-width: 748px) and (max-width: 1023.98px) {
+  .filter-navigation-row { gap: 1.5rem; }
+  .product-card-title { font-size: 14.5px; }
+}
+
+/* --- 4. MOBILE / PHONES (Lesser than 748px) --- */
+@media (max-width: 747.98px) {
+  .collections-section { padding: 4rem 0; }
+  .filter-navigation-row { gap: 1rem; }
+  .filter-tab-btn { font-size: 11px; padding: 6px 4px; letter-spacing: 0.1em; }
+  .lower-banner-title { font-size: 2.2rem !important; }
+  .lower-banner-desc { text-align: left; }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}

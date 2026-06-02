@@ -1,0 +1,162 @@
+/* ==========================================================================
+   TESTIMONIAL SECTION CANVAS SPACING
+   ========================================================================== */
+.testimonials-section {
+  background-color: #f9f9f9 !important;
+  padding: 6rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.testimonial-main-title {
+  font-size: calc(2.2rem + 1.2vw) !important;
+  color: #111111;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.slider-outer-carousel-container {
+  width: 100%;
+  max-width: 100vw;
+  padding: 0;
+}
+
+/* ==========================================================================
+   THE SWIPER TRACK MATRIX & BLUR SLIDE CONSTRAINTS
+   ========================================================================== */
+.testimonials-swiper-instance {
+  width: 100% !important;
+  padding: 2rem 0 !important;
+  overflow: visible !important; /* Extremely crucial for side visibility bounds bleeding */
+}
+
+.testimonial-swiper-slide-node {
+  width: 720px !important;
+  max-width: 85% !important;
+  opacity: 0.25 !important;       /* Side layout translucent opacity value */
+  filter: blur(6px) !important;   /* Exact design template blur overlay matching */
+  transform: scale(0.9);
+  pointer-events: none;          /* Safe touch blocking for static hidden items */
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* ==========================================================================
+   THE ACTIVE CENTER CARD FOCUS (100% VISIBLE & SHARP)
+   ========================================================================== */
+.testimonials-swiper-instance .swiper-slide-active,
+.testimonials-swiper-instance .swiper-slide-duplicate-active {
+  opacity: 1 !important;
+  filter: blur(0px) !important;   /* Completely reveals focus card details */
+  transform: scale(1) !important;
+  pointer-events: auto !important; /* Enables pointer access cleanly */
+  z-index: 50;
+}
+
+/* Internal Card Box Canvas Shapes */
+.testimonial-core-card {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 3.5rem 3rem !important;
+  background-color: #ffffff;
+  min-height: 350px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.02);
+}
+
+.client-avatar-circle-frame {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+
+.client-review-statement-text {
+  font-size: 15px;
+  line-height: 1.68;
+  color: #2c2c2c;
+  max-width: 560px;
+}
+
+.client-author-signature {
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  color: #777777 !important;
+}
+
+/* ==========================================================================
+   ABSOLUTE ARROW POSITION CONTROLLERS
+   ========================================================================== */
+.custom-swiper-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #181818 !important;
+  color: #ffffff !important;
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.custom-swiper-arrow svg { width: 18px; height: 18px; }
+.custom-swiper-arrow:hover { background-color: #333333 !important; }
+
+/* Fixed pixel coordinates center balancing overlap prevention */
+.swiper-prev-node { left: calc(50% - 410px); } 
+.swiper-next-node { right: calc(50% - 410px); }
+
+/* ==========================================================================
+   PAGINATION BULLET DOT STRIP
+   ========================================================================== */
+.custom-dots-wrapper .swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #cccccc !important;
+  opacity: 1 !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-dots-wrapper .swiper-pagination-bullet-active {
+  background-color: #181818 !important;
+  transform: scale(1.2);
+}
+
+/* ==========================================================================
+   RESPONSIVE MATRIX BREAKPOINTS MAP
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .testimonial-main-title { font-size: 3.8rem !important; }
+  .testimonial-swiper-slide-node { width: 960px !important; }
+  .testimonial-core-card { min-height: 440px; padding: 5rem 4rem !important; }
+  .client-review-statement-text { font-size: 19px; max-width: 760px; }
+  .client-avatar-circle-frame { width: 135px; height: 135px; }
+  .custom-swiper-arrow { width: 56px; height: 56px; }
+  .swiper-prev-node { left: calc(50% - 530px); } 
+  .swiper-next-node { right: calc(50% - 530px); }
+}
+
+@media (max-width: 1023.98px) {
+  .testimonial-swiper-slide-node { width: 520px !important; }
+  .swiper-prev-node { left: 15px; } 
+  .swiper-next-node { right: 15px; }
+}
+
+@media (max-width: 747.98px) {
+  .testimonials-section { padding: 4rem 0; }
+  .testimonial-swiper-slide-node { width: 88% !important; max-width: 100% !important; }
+  .testimonial-core-card { padding: 2.5rem 1.25rem !important; min-height: auto; }
+  .client-review-statement-text { font-size: 13.5px; line-height: 1.55; }
+  .custom-swiper-arrow { display: none !important; } /* Hide layout control bars on small touch phones */
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}

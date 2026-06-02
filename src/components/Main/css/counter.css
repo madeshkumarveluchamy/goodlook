@@ -1,0 +1,156 @@
+/* ==========================================================================
+   GLOBAL SECTION BACKGROUND & CONTAINER SETTINGS
+   ========================================================================== */
+.about-counter-section {
+  background-color: #f4f4f4 !important; /* Exact light gray canvas from your goal design */
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+/* 2560px and high res screens-la items rumba vithiyasa vilahi pogaama centralize panrathuku */
+.counter-fluid-holder {
+  width: 100%;
+  max-width: 1320px; /* Snaps content to match your exact first image grid standard ratio */
+  margin: 0 auto;
+}
+
+.metric-card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 10px;
+}
+
+/* ==========================================================================
+   SLOT MACHINE MASKING & SIZE ADJUSTMENTS
+   ========================================================================== */
+.metric-display-number {
+  font-size: 4.2rem !important; /* Made prominent and bold exactly like image 1 */
+  font-weight: 500 !important;
+  color: #1c1c1c !important;
+  letter-spacing: -0.03em;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  line-height: 1 !important;
+}
+
+/* Clamps formatting window tightly so no dynamic numbers spill vertically */
+.slot-wrapper-inline {
+  display: inline-flex !important;
+  align-items: flex-end !important;
+  height: 1.05em !important;
+  line-height: 1.05em !important;
+  overflow: hidden !important; 
+  vertical-align: bottom !important;
+}
+
+.digit-column {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  height: 1.05em !important;
+  width: auto !important;
+  overflow: hidden !important;
+}
+
+.digit-strip {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.digit-strip span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 1.05em !important;
+  line-height: 1.05em !important;
+}
+
+.metric-suffix,
+.slot-static-char {
+  display: inline-block !important;
+  vertical-align: baseline !important;
+  line-height: 1 !important;
+  margin-left: 2px;
+}
+
+/* ==========================================================================
+   METRIC SUB-TEXT DETAILS (EXACTLY BELOW THE NUMBERS)
+   ========================================================================== */
+.metric-text-meta {
+  margin-top: 0.8rem !important; /* Controlled spacing layout */
+}
+
+.metric-label-title {
+  font-size: 15.5px !important;
+  font-weight: 700 !important;
+  color: #111111 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.3 !important;
+}
+
+.metric-label-desc {
+  font-size: 12.5px !important;
+  color: #7c7c7c !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  margin-top: 2px !important;
+}
+
+/* ==========================================================================
+   IMAGE FOOTER REDUCTION (CRITICAL FIX FOR IMAGE 2 OVERSCALE)
+   ========================================================================== */
+.metric-visual-footer {
+  margin-top: 1.2rem !important;
+}
+
+/* Element size-ai locked pixels-la vachirukom, so big screens-la thidirnu expand aagathu */
+.metric-custom-img {
+  width: 30px !important;     /* Shrinks image to match the minimal footer strip in image 1 */
+  height: auto !important;
+  display: block;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE HOOKS FOR MONITORS ABOVE 2560px
+   ========================================================================== */
+@media (min-width: 2000px) {
+  .counter-fluid-holder {
+    max-width: 1600px; /* Restricts the grid layout from blowing up too far wide */
+    margin: 0 auto;
+  }
+  .metric-display-number {
+    font-size: 5rem !important; /* Proportional elegant growth path */
+  }
+ 
+  .metric-custom-img {
+    width: 30px !important; /* Keeps image sizes strictly in line with typography borders */
+  }
+}
+@media (max-width: 1440px) {
+  .counter-fluid-holder {
+    max-width: 1600px; /* Restricts the grid layout from blowing up too far wide */
+    margin: 0 auto;
+  }
+  .metric-display-number {
+    font-size: 5rem !important; /* Proportional elegant growth path */
+  }
+ 
+  .metric-custom-img {
+    width: 30px !important; /* Keeps image sizes strictly in line with typography borders */
+  }
+}
+
+@media (max-width: 747.98px) {
+  .counter-metric-col {
+    padding-bottom: 2rem;
+  }
+}

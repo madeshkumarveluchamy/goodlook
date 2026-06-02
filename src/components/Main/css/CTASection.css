@@ -1,0 +1,130 @@
+/* ==========================================================================
+   MAIN CONTAINER BOUNDS & BACKGROUND IMAGE SETUP
+   ========================================================================== */
+.cta-split-section {
+  height: 520px; /* Locked premium height matching your reference image layout */
+  width: 100vw !important;
+  max-width: 100% !important;
+}
+
+.cta-single-bg-wrapper {
+  z-index: 1;
+}
+
+.cta-single-bg-wrapper img {
+  opacity: 0.9; /* Keeps crisp image values */
+}
+
+/* Smooth dark overlay grid matching ambient lighting text readability */
+.cta-dark-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55));
+  z-index: 2;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & CONTENT GRID
+   ========================================================================== */
+.cta-content-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.cta-inner-card {
+  max-width: 820px;
+  width: 100%;
+}
+
+.cta-main-title {
+  font-size: calc(2.4rem + 1.5vw) !important;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.cta-sub-description {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+/* ==========================================================================
+   THE INLINE INPUT BOX CONSTRAINTS
+   ========================================================================== */
+.cta-inline-form-box {
+  max-width: 580px;
+  width: 100%;
+  height: 50px; /* Precise uniform element block height grid */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cta-input-field {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  font-size: 13.5px;
+  font-weight: 400;
+  outline: none !important;
+  border-radius: 0px !important; /* Premium flat clean border shape */
+}
+
+.cta-input-field::placeholder {
+  color: #999999;
+}
+
+.cta-subscribe-submit-btn {
+  background-color: #1c1c1c !important; /* Premium charcoal accent block buttons */
+  color: #ffffff !important;
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  border-radius: 0px !important;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.cta-subscribe-submit-btn:hover {
+  background-color: #b59463 !important; /* Luxury signature gold hover transition state */
+}
+
+/* ==========================================================================
+   EXACT COMPLIANT SCREEN VIEWPORTS BREAKPOINTS MAP
+   ========================================================================== */
+
+/* --- 1. ULTRA-WIDE RIGS & 4K PANELS (2560px and Larger) --- */
+@media (min-width: 2560px) {
+  .cta-split-section { height: 680px; }
+  .cta-content-fluid { max-width: 2100px; }
+  .cta-main-title { font-size: 4.5rem !important; }
+  .cta-sub-description { font-size: 19px; max-width: 850px; }
+  .cta-inline-form-box { max-width: 720px; height: 60px; }
+  .cta-input-field { font-size: 16px; }
+  .cta-subscribe-submit-btn { font-size: 14px; padding: 0 36px !important; }
+}
+
+/* --- 2. MOBILE VIEWPORTS (Lesser than 748px) --- */
+@media (max-width: 747.98px) {
+  .cta-split-section {
+    height: auto;
+    padding: 6rem 0;
+  }
+  .cta-main-title { font-size: 2.2rem !important; line-height: 1.2 !important; }
+  .cta-sub-description { font-size: 13.5px; }
+  
+  /* Stacks input and action button layout vertically to avoid mobile border crashes */
+  .cta-inline-form-box {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+    box-shadow: none;
+  }
+  .cta-input-field {
+    height: 50px;
+    width: 100%;
+    border-radius: 2px !important;
+  }
+  .cta-subscribe-submit-btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 2px !important;
+    padding: 0 !important;
+  }
+}

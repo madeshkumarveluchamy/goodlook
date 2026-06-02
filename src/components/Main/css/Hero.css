@@ -1,0 +1,180 @@
+/* ==========================================================================
+   HERO PARENT AND GRADIENT SHADE OVERLAY
+   ========================================================================== */
+.hero-section {
+  min-height: 100vh !important; 
+  width: 100vw !important;        
+  max-width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-size: cover !important;        
+  background-position: center center !important; 
+  background-repeat: no-repeat !important;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.hero-overlay-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5rem; /* Leaves space at the bottom just like the image */
+}
+
+.hero-content-wrapper {
+  position: relative;
+  display: block;
+}
+
+/* ==========================================================================
+   MASSIVE TEXT SCALING (MATCHING IMAGE 2)
+   ========================================================================== */
+.hero-main-title {
+  font-size: calc(2.5rem + 7.5vw) !important; 
+  line-height: 0.85 !important;                
+  letter-spacing: -0.04em !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1; /* Sits cleanly behind the popup edge if they overlap */
+}
+
+.hero-italic-is {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+.hero-light-beige {
+  color: #ebdccb !important; /* Elegant warm beige cream */
+}
+
+/* ==========================================================================
+   THE FLOATING OVERLAY LOGIC (NEAR 1ST LINE, ABOVE 2ND LINE)
+   ========================================================================== */
+.hero-floating-popup-card {
+  position: absolute;
+  right: 5px;            /* Keeps it nicely aligned to the right side of the screen */
+  bottom: 45%;          /* Pushes it up exactly next to line 1 and above line 2 */
+  z-index: 10;          /* Floating on top layer */
+}
+
+.hero-3d-card {
+  max-width: 350px;
+  height:180px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.hero-3d-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 115px;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  opacity: 0.95;
+  object-fit: cover;
+}
+
+.card-heading {
+  font-size: 14px !important;
+  letter-spacing: 0.2px;
+}
+
+.card-description {
+  font-size: 11px !important;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT ADJUSTMENTS FOR SPECIFIC SCREEN SIZES
+   ========================================================================== */
+
+/* --- Ultra-wide Screens & 4K Panels (2560px and Larger) --- */
+@media (min-width: 2560px) {
+  .hero-main-title {
+    font-size: 8.8rem !important; 
+  }
+  .hero-floating-popup-card {
+    right: 5%;
+    bottom: 42%; /* Tuned coordinates for ultra-high res layout mapping */
+  }
+  .hero-3d-card {
+    max-width: 330px;
+  }
+}
+
+/* --- Large Desktop Screens (1440px to 2559px) --- */
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .hero-main-title {
+    font-size: 7.2rem !important;
+  }
+  .hero-floating-popup-card {
+    bottom: 45%;
+  }
+}
+
+/* --- Standard Laptops / Small Desktops (1024px to 1439px) --- */
+@media (min-width: 1024px) and (max-width: 1439.98px) {
+  .hero-main-title {
+    font-size: 5.6rem !important;
+  }
+  .hero-floating-popup-card {
+    bottom: 48%; /* Slightly raised to match the tighter line-height */
+    max-width: 250px;
+  }
+}
+
+/* --- Tablets & Mid-tier Screen Sizes (748px to 1023px) --- */
+@media (min-width: 748px) and (max-width: 1023.98px) {
+  .hero-main-title {
+    font-size: 4.5rem !important;
+  }
+  .hero-floating-popup-card {
+    bottom: 50%;
+    max-width: 240px;
+  }
+}
+
+/* --- Mobile / Small Viewports (Lesser than 748px) --- */
+@media (max-width: 747.98px) {
+  /* On mobile screens, absolute side-by-side positioning will break or crush the text. 
+     Instead, we safely drop it below the text block in a clean stack. */
+  .hero-floating-popup-card {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hero-main-title {
+    font-size: 2.8rem !important;
+    line-height: 0.9 !important;
+  }
+  .hero-3d-card {
+    max-width: 100%;
+  }
+  .hero-overlay-container {
+    padding-bottom: 2.5rem;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}

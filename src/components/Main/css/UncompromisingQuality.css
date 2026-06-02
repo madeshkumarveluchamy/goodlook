@@ -1,0 +1,140 @@
+/* ==========================================================================
+   MAIN SECTION STRUCTURE (PREMIUM DEEP DARK BACKGROUND ========================================================================== */
+.uncompromising-quality-section {
+  background-color: #1c1c1c !important; /* Perfect luxury charcoal off-black base tint */
+  padding: 6rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.quality-container-fluid {
+  width: 100%;
+}
+
+.quality-section-header {
+  max-width: 650px;
+}
+
+.quality-sub-badge {
+  font-size: 11px;
+  color: #c5a880; /* Elegant gold tag line token */
+  letter-spacing: 0.24em;
+  font-weight: 600;
+}
+
+.quality-header-title {
+  font-size: calc(2.2rem + 1.2vw) !important;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* ==========================================================================
+   ARTICLE INDIVIDUAL PANEL CARDS
+   ========================================================================== */
+.quality-article-card-box {
+  background: transparent;
+  transition: transform 0.4s ease;
+}
+
+/* Aspect-ratio landscape photo framing */
+.article-img-viewport {
+  width: 100%;
+  aspect-ratio: 1.45 / 1; /* Retains crisp landscape horizon dimensions identically */
+  background-color: #2a2a2a;
+}
+
+.object-fit-cover-fix {
+  object-fit: cover;
+  opacity: 0.92;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.quality-article-card-box:hover .object-fit-cover-fix {
+  transform: scale(1.03); /* Soft macro translation zoom on mouse over */
+}
+
+.article-headline-title {
+  font-size: 18.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.quality-article-card-box:hover .article-headline-title {
+  color: #c5a880 !important; /* Title shifts to gold accent on micro-hover states */
+}
+
+/* Metadata Text Channels */
+.article-meta-row {
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+}
+
+.meta-author {
+  color: #8c8c8c;
+}
+
+.meta-date {
+  color: #555555;
+}
+
+.article-excerpt-description {
+  color: #8c8c8c;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Gold Text CTA Links */
+.article-details-action-link {
+  font-size: 11px;
+  color: #c5a880 !important; /* High-end signature gold tracking anchor link */
+  letter-spacing: 0.16em;
+  position: relative;
+  display: inline-block;
+}
+
+.article-details-action-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(197, 168, 128, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.quality-article-card-box:hover .article-details-action-link::after {
+  background-color: rgba(197, 168, 128, 1);
+}
+
+/* ==========================================================================
+   COMPLIANT RESPONSIVE SCREEN ADJUSTMENTS
+   ========================================================================== */
+
+/* --- 1. ULTRA-WIDE RIGS & 4K PANELS (2560px and Larger) --- */
+@media (min-width: 2560px) {
+  .quality-container-fluid { max-width: 2100px; margin: 0 auto; }
+  .quality-header-title { font-size: 3.8rem !important; }
+  .article-headline-title { font-size: 24px; }
+  .article-excerpt-description { font-size: 16px; }
+  .article-meta-row { font-size: 15px; }
+  .article-details-action-link { font-size: 13.5px; }
+}
+
+/* --- 2. LARGE 1080p MONITOR SPECS (1440px to 2559px) --- */
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .quality-container-fluid { max-width: 1320px; margin: 0 auto; }
+}
+
+/* --- 3. MOBILE VIEWPORTS (Lesser than 748px) --- */
+@media (max-width: 747.98px) {
+  .uncompromising-quality-section { padding: 4rem 0; }
+  .article-column-node {
+    padding-bottom: 2rem; /* Adds padding gaps when elements cascade vertically on touch displays */
+  }
+}
