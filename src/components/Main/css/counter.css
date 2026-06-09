@@ -2,18 +2,24 @@
    GLOBAL SECTION BACKGROUND & CONTAINER SETTINGS
    ========================================================================== */
 .about-counter-section {
-  background-color: #f4f4f4 !important; /* Exact light gray canvas from your goal design */
+  background-color: #f4f4f4 !important; /* Soft premium gray layout base */
   width: 100vw !important;
   max-width: 100% !important;
   overflow: hidden;
-  padding: 5rem 0;
+
 }
 
-/* 2560px and high res screens-la items rumba vithiyasa vilahi pogaama centralize panrathuku */
 .counter-fluid-holder {
   width: 100%;
-  max-width: 1320px; /* Snaps content to match your exact first image grid standard ratio */
+  max-width: 1320px;
   margin: 0 auto;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .metric-card-box {
@@ -25,13 +31,23 @@
 }
 
 /* ==========================================================================
-   SLOT MACHINE MASKING & SIZE ADJUSTMENTS
+   CRITICAL ZIGZAG EFFECT (ASYNCHRONOUS STAGGERED LINEUPS)
+   ========================================================================== */
+@media (min-width: 996px) {
+  /* Selects Column 2 (Products) and Column 4 (Quality) to drop down smoothly exactly like image 2 */
+  .counter-metric-col:nth-child(even) {
+    margin-top: 4.5rem !important; /* Pushes the cards vertically downwards */
+  }
+}
+
+/* ==========================================================================
+   SLOT MACHINE MASKING & SIZE PARAMETERS
    ========================================================================== */
 .metric-display-number {
-  font-size: 4.2rem !important; /* Made prominent and bold exactly like image 1 */
+  font-size: 4rem !important; /* Premium prominent scale */
   font-weight: 500 !important;
-  color: #1c1c1c !important;
-  letter-spacing: -0.03em;
+  color: #1a1a1a !important;
+  letter-spacing: -0.02em;
   margin: 0 !important;
   padding: 0 !important;
   display: flex !important;
@@ -39,7 +55,6 @@
   line-height: 1 !important;
 }
 
-/* Clamps formatting window tightly so no dynamic numbers spill vertically */
 .slot-wrapper-inline {
   display: inline-flex !important;
   align-items: flex-end !important;
@@ -80,14 +95,14 @@
 }
 
 /* ==========================================================================
-   METRIC SUB-TEXT DETAILS (EXACTLY BELOW THE NUMBERS)
+   METRIC SUB-TEXT DETAILS (BELOW SPINNERS)
    ========================================================================== */
 .metric-text-meta {
-  margin-top: 0.8rem !important; /* Controlled spacing layout */
+  margin-top: 0.8rem !important;
 }
 
 .metric-label-title {
-  font-size: 15.5px !important;
+  font-size: 17.5px !important;
   font-weight: 700 !important;
   color: #111111 !important;
   letter-spacing: -0.01em;
@@ -95,62 +110,56 @@
 }
 
 .metric-label-desc {
-  font-size: 12.5px !important;
-  color: #7c7c7c !important;
+  font-size: 13px !important;
+  color: #727272 !important;
   font-weight: 400 !important;
   line-height: 1.4 !important;
-  margin-top: 2px !important;
+  margin-top: 3px !important;
 }
 
 /* ==========================================================================
-   IMAGE FOOTER REDUCTION (CRITICAL FIX FOR IMAGE 2 OVERSCALE)
+   IMAGE FOOTER SHAPING MATRIX
    ========================================================================== */
 .metric-visual-footer {
-  margin-top: 1.2rem !important;
+  margin-top: 1px !important;
 }
 
-/* Element size-ai locked pixels-la vachirukom, so big screens-la thidirnu expand aagathu */
 .metric-custom-img {
-  width: 30px !important;     /* Shrinks image to match the minimal footer strip in image 1 */
-  height: auto !important;
+  width: 90px !important; /* Perfect crisp scaling width matching layout design guidelines */
+  height: 90px !important;
   display: block;
   object-fit: contain;
   opacity: 0.95;
 }
 
-
 /* ==========================================================================
-   RESPONSIVE HOOKS FOR MONITORS ABOVE 2560px
+   RESPONSIVE SETTINGS FOR MONITORS ABOVE 2560px (4K SPECS)
    ========================================================================== */
-@media (min-width: 2000px) {
+/* @media (min-width: 2560px) {
   .counter-fluid-holder {
-    max-width: 1600px; /* Restricts the grid layout from blowing up too far wide */
+    max-width: 2000px;
     margin: 0 auto;
   }
   .metric-display-number {
-    font-size: 5rem !important; /* Proportional elegant growth path */
+    font-size: 6rem !important;
   }
- 
+  .metric-label-title { font-size: 20px !important; }
+  .metric-label-desc { font-size: 16px !important; }
+  .metric-custom-img { width: 125px !important; }
+} */
+/* @media (max-width: 1440px) {
   .metric-custom-img {
-    width: 30px !important; /* Keeps image sizes strictly in line with typography borders */
+    width: 80px !important;
+    height: 80px !important;
   }
-}
-@media (max-width: 1440px) {
-  .counter-fluid-holder {
-    max-width: 1600px; /* Restricts the grid layout from blowing up too far wide */
-    margin: 0 auto;
-  }
-  .metric-display-number {
-    font-size: 5rem !important; /* Proportional elegant growth path */
-  }
- 
-  .metric-custom-img {
-    width: 30px !important; /* Keeps image sizes strictly in line with typography borders */
-  }
-}
-
-@media (max-width: 747.98px) {
+} */
+/* Clear mobile fallback spacing */
+@media (max-width: 400px) {
   .counter-metric-col {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem; /* Separates the cards when stacked vertically on mobile views */
+  }
+  .metric-custom-img {
+    width: 80px !important;
+    height: 80px !important;
   }
 }

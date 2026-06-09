@@ -1,0 +1,156 @@
+/* ==========================================================================
+   FAQ SECTION CANVAS MATRIX
+   ========================================================================== */
+.faq-accordion-section {
+  padding: 6.5rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.faq-fluid-holder {
+  max-width: 1024px; /* Crisp column margins allocation matches image specs */
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   TOP LEVEL HEADING BLUEPRINT
+   ========================================================================== */
+.faq-main-headline {
+  font-size: calc(2rem + 1.5vw) !important;
+  color: #111111;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* ==========================================================================
+   ACCORDION ROW STRIP PIPELINE LAYOUTS
+   ========================================================================== */
+.faq-list-stack {
+  width: 100%;
+}
+
+.faq-list-item {
+  padding: 26px 30px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  /* Premium layout timing transition map avoids runtime stutter frames */
+  transition: background-color 0.2s cubic-bezier(0.25, 1, 0.5, 1), 
+              border-color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.faq-item-question {
+  font-size: 15.5px;
+  color: #222222;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  max-width: 88%; /* Ensures title texts don't run straight over circles marker buttons */
+}
+
+/* Gray circular icon parameters overlay from reference image */
+.faq-plus-minus-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #e8e8e8; 
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 0.2s ease, 
+              color 0.2s ease;
+}
+
+.faq-icon-symbol {
+  line-height: 1;
+  display: inline-block;
+  transform: translateY(-1px); /* Geometrically centers cross metrics icon fonts vertically */
+}
+
+/* ==========================================================================
+   ACTIVE INTERACTIVE HIGHLIGHT HOVER OVERRIDES 
+   ========================================================================== */
+.faq-list-item:hover {
+  border-color: #b59463; /* Highlights matching custom gold branding borders on hover */
+}
+
+/* Active Open Row Configurations link */
+.faq-list-item.faq-row-active {
+  background-color: #ffffff !important;
+  border-bottom-color: transparent !important; /* Blends parent seamlessly into child dropdown drawer */
+}
+
+.faq-row-active .faq-plus-minus-circle {
+  background-color: #111111; /* Switches background circular node straight into stark slate black */
+  color: #ffffff;
+  transform: rotate(180deg); /* Fluid circle rotate transformation axis on click toggle loops */
+}
+
+/* ==========================================================================
+   THE ZERO-LAG ACCELERATED FLUID SLIDE DROPDOWN DRAWER
+   ========================================================================== */
+.faq-fluid-collapsible-drawer {
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: -1px; /* Pulls drawer card up to close fine boundary edge gap marks */
+  /* Replaces sluggish dynamic height trackers with hardware ready max-height anchors */
+  transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.2s linear;
+  will-change: max-height, opacity;
+}
+
+.faq-drawer-collapsed {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none;
+  border: none !important; /* Hides row frames completely when collapsed */
+}
+
+.faq-drawer-expanded {
+  max-height: 220px !important; /* Bounding safe limit parameters block seamlessly tracks 3 to 4 text lines */
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+.faq-answer-desc-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #555555 !important;
+  max-width: 92%; /* Clean reading layout lines stretch margins limits constraints */
+}
+
+/* ==========================================================================
+   MOBILE & MOBILE RESPONSIVE TUNINGS SPECIFICATIONS (< 991px)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .faq-accordion-section {
+    padding: 4rem 0;
+  }
+  .faq-list-item {
+    padding: 20px 18px;
+  }
+  .faq-item-question {
+    font-size: 14px;
+    max-width: 82%;
+  }
+  .faq-answer-desc-text {
+    font-size: 13.5px;
+    max-width: 100%;
+    text-align: center; /* Centers block description texts safely inside mobile phone devices views */
+  }
+}
+
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+}
+.hanken-grotesk-font {
+  font-family: "Hanken Grotesk", sans-serif;
+}

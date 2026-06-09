@@ -35,7 +35,7 @@
 }
 
 .cta-main-title {
-  font-size: calc(2.4rem + 1.5vw) !important;
+  font-size: calc(2.4rem + 1vw) !important;
   font-weight: 500;
   letter-spacing: -0.01em;
   font-family: 'Playfair Display', 'Georgia', serif !important;
@@ -127,4 +127,17 @@
     border-radius: 2px !important;
     padding: 0 !important;
   }
+}
+
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.jost-font {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

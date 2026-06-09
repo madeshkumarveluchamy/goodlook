@@ -43,7 +43,7 @@ const Testimonials = () => {
         
         {/* ================= SECTION HEADER ================= */}
         <div className="text-center testimonial-header mb-5">
-          <h2 className="testimonial-main-title font-serif m-0">What Our Clients Say</h2>
+          <h2 className="testimonial-main-title font-serif m-0 stit">What Our Clients Say</h2>
         </div>
 
         {/* ================= DYNAMIC INFINITE CAROUSEL FRAME ================= */}
@@ -103,11 +103,11 @@ const Testimonials = () => {
                     />
                   </div>
 
-                  <p className="client-review-statement-text fw-light mb-4">
+                  <p className="client-review-statement-text fw-light mb-4 hanken-grotesk-font sdes">
                     {item.text}
                   </p>
 
-                  <span className="client-author-signature fw-medium text-muted text-uppercase tracking-wider">
+                  <span className="client-author-signature fw-medium text-muted text-uppercase tracking-wider jost-font ssub">
                     {item.author}
                   </span>
 

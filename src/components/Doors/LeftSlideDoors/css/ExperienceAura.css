@@ -1,0 +1,105 @@
+/* ==========================================================================
+   EXPERIENCE AURA CALL TO ACTION BLOCK
+   ========================================================================== */
+.experience-aura-section {
+  background-color: #ffffff !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Typography Specifications */
+.aura-main-heading {
+  font-family: 'Playfair Display', 'Georgia', serif !important; /* Premium serif aesthetic from screenshot */
+  color: #111111 !important;
+  font-size: clamp(2rem, 4.2vw, 3.8rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.5px !important;
+  line-height: 1.2 !important;
+}
+
+.aura-subtext {
+  color: #444444 !important;
+  font-size: clamp(14px, 1.4vw, 17px) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.2px !important;
+}
+
+/* --- PREMIUM CAPSULE CTA BUTTON LOGIC --- */
+.aura-cta-btn {
+  border: 1px solid #111111 !important;
+  border-radius: 50px !important; /* Exact capsule pill outline format */
+  padding: 8px 16px 8px 24px !important;
+  background-color: transparent !important;
+  color: #111111 !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  height: 48px !important;
+}
+
+.aura-cta-btn:hover {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+.aura-btn-text {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.aura-yellow-circle {
+  background-color: #dfa82d !important; /* Brand yellow highlight color mapping */
+  color: #ffffff !important;
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+
+.aura-yellow-circle svg {
+  width: 10px !important;
+  height: auto !important;
+}
+
+/* --- ULTRA-WIDE & HIGH RESOLUTION SCREEN MONITOR SCALING --- */
+@media (min-width: 2560px) {
+  .aura-main-heading {
+    font-size: 5.5rem !important;
+  }
+  .aura-subtext {
+    font-size: 26px !important;
+    margin-bottom: 2.5rem !important;
+  }
+  .aura-cta-btn {
+    height: 70px !important;
+    padding: 10px 24px 10px 36px !important;
+  }
+  .aura-btn-text {
+    font-size: 22px !important;
+  }
+  .aura-yellow-circle {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  .aura-yellow-circle svg {
+    width: 14px !important;
+  }
+}
+
+/* --- MOBILE COMPRESSION RESPONSIVE RULES --- */
+@media (max-width: 576px) {
+  .experience-aura-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .aura-cta-btn {
+    height: 44px !important;
+    padding: 6px 12px 6px 20px !important;
+  }
+  .aura-btn-text {
+    font-size: 13px !important;
+  }
+  .aura-yellow-circle {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}

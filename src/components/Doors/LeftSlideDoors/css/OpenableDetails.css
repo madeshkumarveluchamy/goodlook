@@ -1,0 +1,93 @@
+/* ==========================================================================
+   PRODUCT DETAILS BLOCK SECTION STYLES
+   ========================================================================== */
+.openable-details-section {
+  background-color: #ffffff !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Image Presentation Canvas Frame Box */
+.image-frame-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fdfdfd;
+}
+
+.details-display-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Typography Specifications */
+.brand-badge-title {
+  color: #dfa82d !important; /* Gold badge tint mapping */
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+}
+
+.main-display-heading {
+  font-family: 'Playfair Display', 'Georgia', serif !important; /* Elegant serif look matching the screenshot */
+  color: #111111 !important;
+  font-size: clamp(2.2rem, 4vw, 3.4rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.description-paragraph,
+.feature-paragraph {
+  color: #444444 !important;
+  font-size: 14.5px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+  text-align: justify;
+}
+
+.feature-paragraph strong {
+  color: #111111 !important;
+  font-weight: 600 !important;
+}
+
+/* --- RESPONSIVE MEDIA BREAKPOINTS CONTROL --- */
+@media (max-width: 767.98px) {
+  .openable-details-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .main-display-heading {
+    margin-bottom: 1.5rem !important;
+  }
+  .image-frame-wrapper {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .description-paragraph,
+  .feature-paragraph {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .image-frame-wrapper {
+    max-width: 750px !important;
+  }
+  .brand-badge-title {
+    font-size: 20px !important;
+    letter-spacing: 3px !important;
+  }
+  .main-display-heading {
+    font-size: 5rem !important;
+  }
+  .description-paragraph,
+  .feature-paragraph {
+    font-size: 24px !important;
+    line-height: 1.8 !important;
+  }
+}

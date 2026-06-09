@@ -9,6 +9,19 @@
   overflow: hidden;
 }
 
+.hanken-grotesk-font {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.jost-font {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .testimonial-main-title {
   font-size: calc(2.2rem + 1.2vw) !important;
   color: #111111;

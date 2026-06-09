@@ -1,0 +1,191 @@
+/* ==========================================================================
+   GLOBAL CANVAS DESIGN SYSTEM
+   ========================================================================== */
+.features-section {
+  background-color: #121212;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: calc(100vw / 6) 100%;
+  color: #ffffff;
+  padding: 6rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.hanken-grotesk-font {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.features-fluid-holder {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.features-main-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ==========================================================================
+   FLEX COMPONENT ROW ENGINES (DESKTOP SCALING 1024px+)
+   ========================================================================== */
+.features-layout-row {
+  display: flex;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .row-type-top .feature-main-header-block {
+    width: 66.66%;
+  }
+  .row-type-top .top-hero-card {
+    width: 33.33%;
+  }
+
+  .row-type-middle .middle-slim-card {
+    flex: 1;
+    width: 33.33%;
+  }
+
+  /* Pushes both cards to cluster perfectly centered on row 3 */
+  .row-type-bottom {
+    justify-content: center; 
+  }
+  
+  .row-type-bottom .bottom-centered-card {
+    width: 33.33%; 
+  }
+
+  /* ==========================================================================
+     UNIFORM SLIM NARROW VIEWPORTS FIX FOR ALL 6 IMAGES
+     ========================================================================== */
+  .horizontal-narrow-frame {
+    height: 75px !important; /* Forces 1, 5, 6 to look exactly like 2, 3, 4 */
+    border-radius: 10px !important;
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   TYPOGRAPHY AND DECORATIONS
+   ========================================================================== */
+.features-mini-badge {
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: -0.32px;
+}
+
+.features-sub-header-text {
+  font-size: 15px;
+  color: #828487;
+  line-height: 1.5;
+  letter-spacing:-0.48px;
+}
+
+.features-main-title {
+  font-size: calc(2rem + 2.2vw) !important;
+  font-weight: 600 !important;
+  line-height: 1.05;
+  letter-spacing: -3.6px;
+}
+
+.feature-item-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-serial-number {
+  font-size: 12px;
+  color: #555555;
+  margin-bottom: 0.5rem;
+  font-family: monospace;
+}
+
+.feature-card-img-wrapper {
+  width: 100%;
+  height: 145px; /* Mobile fallbacks default scale */
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.feature-card-img-wrapper img {
+  opacity: 0.85;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.feature-item-card:hover .feature-card-img-wrapper img {
+  transform: scale(1.04);
+}
+
+.feature-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f5f5f5;
+  letter-spacing: -0.72px;
+}
+
+.feature-card-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #868686;
+  letter-spacing:0.5px;
+}
+
+@media (min-width: 1024px) {
+  .feature-card-desc {
+    text-align: left !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS SYSTEM
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .features-fluid-holder { max-width: 2100px; }
+  .features-main-title { font-size: 4.5rem !important; }
+  .feature-card-title { font-size: 24px; }
+  .feature-card-desc { font-size: 15px; }
+  .features-sub-header-text { font-size: 18px; }
+  
+  @media (min-width: 1024px) {
+    .horizontal-narrow-frame { height: 110px !important; }
+  }
+}
+
+/* Mobile & Tablet configuration switches seamlessly to vertical flow stack arrays */
+@media (max-width: 1023.98px) {
+  .features-layout-row {
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-bottom: 3.5rem !important;
+  }
+  .feature-main-header-block, 
+  .top-hero-card, 
+  .middle-slim-card, 
+  .bottom-centered-card {
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+  .feature-card-img-wrapper {
+    max-width: 340px;
+  }
+  .features-main-title { font-size: 2.4rem !important; }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}

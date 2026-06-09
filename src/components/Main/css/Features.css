@@ -1,9 +1,8 @@
 /* ==========================================================================
-   GLOBAL BACKGROUND AND VERTICAL PATTERN STRIPES
+   GLOBAL CANVAS DESIGN SYSTEM
    ========================================================================== */
 .features-section {
-  background-color: #121212; /* Deep modern dark tone base */
-  /* This creates those premium subtle vertical background panels visible in your image */
+  background-color: #121212;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: calc(100vw / 6) 100%;
   color: #ffffff;
@@ -13,45 +12,79 @@
   overflow: hidden;
 }
 
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.hanken-grotesk-font {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .features-fluid-holder {
   width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
-/* ==========================================================================
-   STAGGERED GRID ENGINE FOR DESKTOP MONITORS (1024px to 2560px+)
-   ========================================================================== */
-@media (min-width: 1024px) {
-  .features-grid-layout {
-    display: grid;
-    /* Clean 3-Column blueprint matrix */
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3.5rem 2.5rem;
-    align-items: start;
-  }
-
-  /* Structural alignment shifts exactly matching your reference upload image layout spacing */
-  .feature-main-header-block {
-    grid-column: 1 / 3; /* Spans across columns 1 and 2 */
-    padding-bottom: 2rem;
-  }
-
-  .grid-area-01 { grid-column: 3; } /* Sits on row 1, far right */
-  .grid-area-02 { grid-column: 1; } /* Row 2, left */
-  .grid-area-03 { grid-column: 2; } /* Row 2, middle */
-  .grid-area-04 { grid-column: 3; } /* Row 2, right */
-  
-  /* Staggers row 3 columns out layout roomily */
-  .grid-area-06 { grid-column: 1 / 3; max-width: 85%; } 
-  .grid-area-07 { grid-column: 3; }
+.features-main-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* ==========================================================================
-   TYPOGRAPHY AND INNER CARD COMPONENT SHAPES
+   FLEX COMPONENT ROW ENGINES (DESKTOP SCALING 1024px+)
+   ========================================================================== */
+.features-layout-row {
+  display: flex;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .row-type-top .feature-main-header-block {
+    width: 66.66%;
+  }
+  .row-type-top .top-hero-card {
+    width: 33.33%;
+  }
+
+  .row-type-middle .middle-slim-card {
+    flex: 1;
+    width: 33.33%;
+  }
+
+  /* Pushes both cards to cluster perfectly centered on row 3 */
+  .row-type-bottom {
+    justify-content: center; 
+  }
+  
+  .row-type-bottom .bottom-centered-card {
+    width: 33.33%; 
+  }
+
+  /* ==========================================================================
+     UNIFORM SLIM NARROW VIEWPORTS FIX FOR ALL 6 IMAGES
+     ========================================================================== */
+  .horizontal-narrow-frame {
+    height: 75px !important; /* Forces 1, 5, 6 to look exactly like 2, 3, 4 */
+    border-radius: 10px !important;
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   TYPOGRAPHY AND DECORATIONS
    ========================================================================== */
 .features-mini-badge {
-  font-size: 11px;
-  color: #8e8e8e;
+  font-size: 14px;
+  color: #ffffff;
   letter-spacing: 0.25em;
 }
 
@@ -71,7 +104,6 @@
 .feature-item-card {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .card-serial-number {
@@ -81,10 +113,9 @@
   font-family: monospace;
 }
 
-/* Soft Pill Shape Frame Masking matching your image border specifications exactly */
 .feature-card-img-wrapper {
   width: 100%;
-  height: 145px;
+  height: 145px; /* Mobile fallbacks default scale */
   border-radius: 14px;
   overflow: hidden;
   background-color: #222222;
@@ -100,63 +131,57 @@
 }
 
 .feature-card-title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   color: #f5f5f5;
   letter-spacing: -0.01em;
 }
 
 .feature-card-desc {
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 1.6;
   color: #868686;
-  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .feature-card-desc {
+    text-align: left !important;
+  }
 }
 
 /* ==========================================================================
-   EXACT COMPLIANT SCREEN SIZE BREAKPOINTS
+   RESPONSIVE DESIGN BREAKPOINTS SYSTEM
    ========================================================================== */
-
-/* --- 1. ULTRA-WIDE MONITOR RIGS (2560px and Larger) --- */
 @media (min-width: 2560px) {
-  .features-fluid-holder {
-    max-width: 2100px;
-  }
+  .features-fluid-holder { max-width: 2100px; }
   .features-main-title { font-size: 4.5rem !important; }
-  .feature-card-img-wrapper { height: 210px; border-radius: 20px; }
   .feature-card-title { font-size: 24px; }
   .feature-card-desc { font-size: 15px; }
   .features-sub-header-text { font-size: 18px; }
-}
-
-/* --- 2. LARGE VIEWPORTS / 1080p WALLS (1440px to 2559px) --- */
-@media (min-width: 1440px) and (max-width: 2559.98px) {
-  .features-fluid-holder {
-    max-width: 1320px;
+  
+  @media (min-width: 1024px) {
+    .horizontal-narrow-frame { height: 110px !important; }
   }
-  .feature-card-img-wrapper { height: 160px; }
 }
 
-/* --- 3. STANDARD LAPTOPS AND TABLETS (748px to 1023px) --- */
-@media (min-width: 748px) and (max-width: 1023.98px) {
-  .features-grid-layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem 2rem;
-  }
-  .feature-main-header-block { grid-column: 1 / 3; }
-  .grid-area-06 { grid-column: auto; max-width: 100%; }
-}
-
-/* --- 4. MOBILE / PHONES (Lesser than 748px) --- */
-@media (max-width: 747.98px) {
-  .features-grid-layout {
-    display: flex;
+/* Mobile & Tablet configuration switches seamlessly to vertical flow stack arrays */
+@media (max-width: 1023.98px) {
+  .features-layout-row {
     flex-direction: column;
     gap: 3.5rem;
+    margin-bottom: 3.5rem !important;
+  }
+  .feature-main-header-block, 
+  .top-hero-card, 
+  .middle-slim-card, 
+  .bottom-centered-card {
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+  .feature-card-img-wrapper {
+    max-width: 340px;
   }
   .features-main-title { font-size: 2.4rem !important; }
-  .feature-card-img-wrapper { height: 160px; }
 }
 
 .object-fit-cover {

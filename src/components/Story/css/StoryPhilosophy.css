@@ -1,0 +1,140 @@
+/* ==========================================================================
+   PHILOSOPHY parent SECTION CANVASES
+   ========================================================================== */
+.story-philosophy-section {
+  padding: 7rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.philosophy-canvas-holder {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   LEFT COMPONENT STRUCTURES: TYPOGRAPHY & DATA BLOCKS
+   ========================================================================== */
+.philosophy-mini-tag {
+  font-size: 12px;
+  color: #b59463; /* Signature architectural muted gold accent */
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+.philosophy-main-title {
+  font-size: calc(1.8rem + 1.2vw) !important;
+  color: #111111;
+  line-height: 1.2 !important;
+  letter-spacing: -3.51px;
+  font-weight: 500;
+  max-width: 580px;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* Structured horizontal list metadata rows */
+.philosophy-block-segment {
+  width: 100%;
+}
+
+.segment-indicator-title {
+  font-size: 16px;
+  color: #2B2B2B;
+  font-weight: 700;
+  padding-top:5px !important;
+  letter-spacing: -0.32p;
+  min-width: 110px; /* Locks titles width lines evenly matching template screenshot layout */
+  text-align: left;
+}
+
+.segment-desc-para {
+  font-size: 18px;
+  color: #2B2B2B;
+  line-height: 1.65;
+  max-width: 480px;
+}
+
+/* ==========================================================================
+   RIGHT COMPONENT STRUCTURES: RENDERING PHOTO FRAME MATRIX
+   ========================================================================== */
+.philosophy-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3.4; /* Exact custom rectangular architectural photo layout look */
+  background-color: #fafafa;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.philosophy-img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.philosophy-img-wrapper:hover img {
+  transform: scale(1.015);
+}
+
+/* ==========================================================================
+   MONITOR SPECIFIC RESIZING MAP BREAKPOINTS SPECS (DESKTOP RIGS 1440px+)
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .philosophy-canvas-holder { max-width: 2100px; }
+  .philosophy-main-title { font-size: 3.5rem !important; max-width: 780px; }
+  .segment-indicator-title { font-size: 15px; min-width: 150px; }
+  .segment-desc-para { font-size: 17px; max-width: 650px; }
+}
+
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .philosophy-canvas-holder { max-width: 1320px; margin: 0 auto; }
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px / PHONE VIEWS)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .story-philosophy-section {
+    padding: 4.5rem 0;
+    padding-bottom:0rem !important;
+    padding-top:0rem !important;
+  }
+
+  /* CRITICAL CONDITION OVERRIDE: Content swaps directly to pure center alignment */
+  .philosophy-content-engine {
+    text-align: center !important;
+    margin-top: 2.5rem !important;
+  }
+
+  .philosophy-mini-tag,
+  .philosophy-main-title,
+  .segment-desc-para {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .philosophy-main-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .philosophy-block-segment {
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .philosophy-block-segment:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .segment-indicator-title {
+    text-align: center !important;
+    font-size: 14px;
+    margin-bottom: 0.2rem;
+  }
+
+  .philosophy-img-wrapper {
+    aspect-ratio: 4 / 3; /* Safe readable viewport photo bounding dimensions */
+  }
+}

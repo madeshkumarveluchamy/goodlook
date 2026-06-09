@@ -1,0 +1,129 @@
+/* ==========================================================================
+   INSECT PROTECTION SECTION PRESENTATION SYSTEM
+   ========================================================================== */
+.insect-protection-section {
+  background-color: #ffffff !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Typography Specifications */
+.brand-badge-gold {
+  color: #dfa82d !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+}
+
+.insect-main-heading {
+  font-family: 'Playfair Display', 'Georgia', serif !important; /* Premium classic serif look matching image_45be94.png */
+  color: #111111 !important;
+  font-size: clamp(2.2rem, 4.2vw, 3.8rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.5px !important;
+  line-height: 1.1 !important;
+}
+
+.insect-desc-text {
+  color: #444444 !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  font-weight: 400 !important;
+}
+
+/* --- PREMIUM PROJECT CTA CAPSULE PILL --- */
+.project-cta-capsule-btn {
+  border: 1px solid #111111 !important;
+  border-radius: 50px !important;
+  padding: 6px 14px 6px 20px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
+  background-color: #ffffff !important;
+  white-space: nowrap !important;
+  height: 44px !important;
+  transition: all 0.25s ease !important;
+}
+
+.project-cta-capsule-btn:hover {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+.yellow-arrow-circle {
+  background-color: #dfa82d;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.yellow-arrow-circle svg { width: 9px; }
+
+/* --- IMAGE CANVAS AND FLOATING BADGE ENGINE --- */
+.insect-image-relative-canvas {
+  position: relative !important;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.insect-display-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating White Badge positioned at the bottom right corner overlay layout */
+.floating-excellence-badge {
+  position: absolute !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  background-color: #fbf6f5 !important; /* Soft premium off-white tone from screenshot */
+  padding: 20px 24px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+  max-width: 260px;
+  z-index: 5 !important;
+}
+
+.badge-serif-text {
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  color: #111111 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+}
+
+/* ==========================================================================
+   PHONE AND MOBILE RESPONSIVE MEDIA BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .insect-main-heading {
+    margin-bottom: 1rem !important;
+  }
+  .insect-desc-text {
+    font-size: 14px !important;
+    text-align: center; /* Soft fallback for pure micro mobile layouts text rows */
+  }
+  
+  /* Adjusted floating badge for mobile grids to remain visible and balanced */
+  .floating-excellence-badge {
+    position: relative !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: -30px auto 0 auto !important; /* Overlaps nicely over bottom image border natively */
+    max-width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+@media (min-width: 2560px) {
+  .insect-image-relative-canvas { max-width: 780px !important; }
+  .brand-badge-gold { font-size: 20px !important; }
+  .insect-main-heading { font-size: 5rem !important; }
+  .insect-desc-text { font-size: 24px !important; line-height: 1.8 !important; }
+  .project-cta-capsule-btn { height: 64px !important; font-size: 20px !important; border-radius: 40px !important; }
+  .floating-excellence-badge { max-width: 420px; padding: 30px 40px !important; border-radius: 16px !important; }
+  .badge-serif-text { font-size: 28px !important; }
+}

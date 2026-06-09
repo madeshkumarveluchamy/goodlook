@@ -1,0 +1,118 @@
+/* ==========================================================================
+   uPVC HERO MAIN CONTAINER SPECS
+   ========================================================================== */
+.slide-upvc-hero-section {
+  height: calc(100vh); /* Seamlessly fits directly right beneath your header navbar block */
+  min-height: 500px;
+  max-height: 850px;
+}
+
+.slide-upvc-hero-fluid-holder {
+  margin: 0 auto;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-weight: 700; /* Standard high-weight profile matching image_0d0c24.png */
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+/* ==========================================================================
+   THE LUXURY WALLPAPER OVERLAY AND TRANSITIONS BACKDROP
+   ========================================================================== */
+.slide-upvc-hero-bg-layer img {
+  filter: brightness(0.92) contrast(1.01);
+  transform: scale(1);
+}
+
+.slide-upvc-hero-overlay {
+  background: rgba(0, 0, 0, 0.25); /* Light flat ambient wash matching screenshot look exactly */
+}
+
+/* ==========================================================================
+   MASSIVE ASYMMETRICAL TYPOGRAPHY BALANCING ENGINE (IMAGE_0D0C24 EXACT MATCH)
+   ========================================================================== */
+.slide-upvc-hero-text-engine {
+  padding-bottom: 3rem; /* Perfectly centers text rows within the visible landscape window */
+}
+
+.slide-upvc-hero-massive-title {
+  font-size: calc(3.02rem + 5.6vw) !important; /* Premium responsive viewport fluid scaling */
+  line-height: 1.05 !important; /* Elegant breathing space matches design layout text look */
+  letter-spacing: -6px !important;
+  text-transform: none !important; /* REMOVES FORCE UPPERCASE EXTENSION CRASHES LOCKS ORIGINAL CASING */
+
+}
+
+.slide-title-row-white {
+  color: #ffffff !important;
+}
+
+.slide-title-row-cream {
+  color: #dfcdb9 !important; /* Exact premium off-white/cream luxury brand beige tone matching design image */
+  margin-top: 0.2rem;
+  padding-left:14vw;
+}
+
+/* ==========================================================================
+   MONITOR SPECIFIC RESIZING MAP BREAKPOINTS SPECS (DESKTOP RIGS 1440px+)
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .slide-upvc-hero-fluid-holder { max-width: 2100px; }
+  /* .slide-upvc-hero-massive-title { font-size: 7.2rem !important; } */
+}
+
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px / PHONE VIEWS)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .slide-upvc-hero-section {
+    height: 60vh; 
+    min-height: 420px;
+  }
+  .slide-title-row-cream {
+  
+  padding-left:0vw;
+}
+
+  .slide-upvc-hero-text-engine {
+    text-align: center !important; /* FORCES ALL INNER CONTENT LABELS CENTER ALIGNED ON PHONES ACCORDINGLY */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .slide-upvc-hero-massive-title {
+    font-size: 8.8vw !important; /* Non-breaking fluid scale for small phone viewports boundary limits */
+    line-height: 1.1 !important;
+    text-align: center !important;
+    letter-spacing:.2px !important;
+  }
+}
+
+/* Compact tiny phone layers tuning maps structural safety boundaries link */
+@media (max-width: 480px) {
+  .slide-upvc-hero-section {
+    height: 55vh;
+  }
+  .slide-upvc-hero-massive-title {
+    font-size: 10.5vw !important;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+.select-none {
+  user-select: none;
+}

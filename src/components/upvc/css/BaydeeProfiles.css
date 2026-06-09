@@ -1,0 +1,214 @@
+/* ==========================================================================
+   BAYDEE BRAND DESIGN SPECS CONFIG ARCHITECTURE
+   ========================================================================== */
+.baydee-profiles-section {
+  padding: 6.5rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.baydee-canvas-holder {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.baydee-auth-badge{
+ color: #b59463;
+ letter-spacing:1.8px;
+}
+
+/* ==========================================================================
+   UPPER HEADER CONTROL SCHEMES: COMBINED LOGO IMAGE VS FEATURE SHOT
+   ========================================================================== */
+.baydee-logo-graphics-holder {
+  width: 100%;
+  max-width: 320px; 
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.baydee-brand-actual-logo {
+  width: 100%;
+  height: auto;
+}
+
+.baydee-branding-headline {
+  font-size: calc(1.6rem + 1vw) !important;
+  color: #111111;
+  line-height: 1.25 !important;
+  font-weight: 500;
+  max-width: 580px;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  letter-spacing:-2.8px;
+}
+
+/* THE EXACT SECOND IMAGE TYPOGRAPHY SPECIFICATIONS OVERRIDE EXCLUSIVE */
+.baydee-clean-top-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333 !important;
+  letter-spacing: -0.01em;
+}
+
+.baydee-image-container {
+  width: 95%;
+  height:95%;
+  aspect-ratio: 4  / 2.7; 
+  background-color: transparent;
+  padding-bottom:0px;
+}
+
+.baydee-main-feature-box {
+  width: 100%;
+  background-color:#F8F8F8;
+}
+
+/* ==========================================================================
+   MIDDLE SEGMENTATION LAYOUT CONTENT
+   ========================================================================== */
+.baydee-grid-header {
+  max-width: 780px;
+}
+
+.baydee-grid-headline {
+  font-size: calc(1.7rem + 1.1vw) !important;
+  color: #111111;
+  letter-spacing:-1.12px;
+  line-height: 1.25 !important;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.baydee-grid-subdesc {
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 740px;
+  letter-spacing:0px;
+  color:#454545;
+}
+
+/* ==========================================================================
+   BOTTOM GALLERY: 5-COLUMN ADVANCED FLEX RESPONSIVE SYSTEM
+   ========================================================================== */
+@media (min-width: 1200px) {
+  .dynamic-five-cards-pipeline .custom-five-col {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .dynamic-five-cards-pipeline .custom-five-col {
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+  }
+}
+
+.variant-image-holder-box {
+  width: 100%;
+  aspect-ratio: 4 / 3.4; 
+}
+
+.variant-zoom-interaction-img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.profile-variant-card:hover .variant-zoom-interaction-img {
+  transform: scale(1.025); 
+}
+
+.variant-mini-tag {
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+}
+
+.variant-card-title {
+  font-size: 14.5px;
+  color: #171818;
+  letter-spacing: 0.18px;
+}
+
+/* ==========================================================================
+   MONITOR SPECIFIC RESIZING MAP BREAKPOINTS SPECS (2560px+)
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .baydee-canvas-holder { max-width: 2100px; }
+  .baydee-branding-headline { font-size: 3.2rem !important; max-width: 780px; }
+  .baydee-grid-headline { font-size: 3.4rem !important; }
+  .baydee-grid-subdesc { font-size: 17px; max-width: 1000px; }
+  .variant-card-title { font-size: 18px; }
+  .variant-mini-tag { font-size: 12px; }
+  .baydee-logo-graphics-holder { max-width: 420px; }
+  .baydee-clean-top-label { font-size: 16px; }
+}
+
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .baydee-canvas-holder { max-width: 1320px; }
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px / PHONE VIEWS)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .baydee-profiles-section {
+    padding: 4.5rem 0;
+  }
+
+  .baydee-top-left, .baydee-grid-header, .variant-card-details {
+    text-align: center !important; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .baydee-branding-headline, .baydee-grid-subdesc, .baydee-grid-headline {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .baydee-logo-graphics-holder {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .baydee-branding-headline {
+    font-size: 1.7rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .baydee-clean-top-label {
+    text-align: center !important; /* Mobile layouts configurations text center override */
+    padding-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .baydee-image-container {
+    aspect-ratio: 4 / 3; 
+  }
+
+  .baydee-grid-header {
+    margin-top: 3.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .variant-image-holder-box {
+    aspect-ratio: 4 / 3.2;
+  }
+}
+
+/* Micro compact phone tuning maps */
+@media (max-width: 480px) {
+  .baydee-branding-headline { font-size: 1.45rem !important; }
+  .baydee-grid-headline { font-size: 1.6rem !important; }
+}
+
+.object-fit-cover { object-fit: cover; }
+.object-fit-contain { object-fit: contain; }
+.manrope-font { font-family: "Manrope", sans-serif; }
+.inter-font { font-family: "Inter", sans-serif; }
+.hanken-grotesk-font { font-family: "Hanken Grotesk", sans-serif; }

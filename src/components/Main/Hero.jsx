@@ -7,35 +7,34 @@ import heroback from "../../assets/herobackrectangle.png";
 const Hero = () => {
   return (
     <div 
-      className="hero-section d-flex flex-column justify-content-end" 
+      className="hero-section" 
       style={{ backgroundImage: `url(${background})` }}
     >
-      {/* Container with the elegant black shade gradient overlay */}
-      <div className="hero-overlay-container container-fluid px-3 px-sm-4 px-md-5" style={{ backgroundImage: `url(${heroback})` }}>
+      {/* Elegantly contains the bottom black shade gradient overlay wrapper */}
+      <div className="heroblack" style={{ backgroundImage: `url(${heroback})` }}>
         
-        {/* Relative positioning wrapper containing both elements */}
-        <div className="hero-content-wrapper w-100 position-relative" >
+        {/* Full width container serving as reference for perfect edge layout */}
+        <div className="hero-content-wrapper">
           
-          {/* Massive Full-Width Statement Typography */}
-          <h1 className="hero-main-title fw-bold m-0 text-white select-none inter-font">
-            Your House <span className="hero-italic-is fw-normal inter-font">is</span>
-            <br />
-            <span className="hero-light-beige inter-font ms-lg-5 ps-lg-5">the Place of Mood</span>
+          {/* Massive Full-Width Statement Typography (Edge-To-Edge Continuous Flow) */}
+          <h1 className="hero-main-title select-none inter-font">
+            Your House <span className="hero-italic-is inter-font">is </span><br />
+            <span className="hero-light-beige inter-font second-line">the Place of Mood</span>
           </h1>
-
-          {/* Floating 3D Card overlay: Positioned exactly near the first line */}
+          
+          {/* 3D Visualizer overlay: Floating clean overlay snap locked on right wall */}
           <div className="hero-floating-popup-card">
             <div className="hero-3d-card p-0">
               <div className="card-img-container">
                 <img 
                   src={heroframe}
                   alt="3D Interior design layout sample" 
-                  className="w-100 h-100 object-fit-cover"
+                  className="object-fit-cover"
                 />
               </div>
-              <div className="card-text-content px-3 pb-3 pt-2">
-                <h5 className="card-heading fw-semibold text-white mb-1">3D visualization</h5>
-                <p className="card-description m-0 fw-light">
+              <div className="card-text-content">
+                <h5 className="card-heading fw-semibold text-white mb-1 inter-font">3D visualization</h5>
+                <p className="card-description m-0 fw-light inter-font">
                   So that the client can see with his own eyes what he will ultimately receive.
                 </p>
               </div>

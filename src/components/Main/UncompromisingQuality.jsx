@@ -40,10 +40,10 @@ const UncompromisingQuality = () => {
         
         {/* ================= HEADER TIMELINE ROW ================= */}
         <div className="text-center quality-section-header mx-auto mb-5">
-          <span className="quality-sub-badge text-uppercase tracking-widest d-block mb-2">
+          <span className="quality-sub-badge text-uppercase tracking-widest d-block mb-2 manrope-font ssub">
             Built Better
           </span>
-          <h2 className="quality-header-title font-serif m-0 text-white">
+          <h2 className="quality-header-title font-serif m-0 text-white stit">
             Uncompromising Quality
           </h2>
         </div>
@@ -64,24 +64,24 @@ const UncompromisingQuality = () => {
                 </div>
 
                 {/* Editorial Title Header */}
-                <h3 className="article-headline-title text-white mb-2">
+                <h3 className="article-headline-title text-white mb-2 rubik-font text-center text-md-start sdes">
                   {article.title}
                 </h3>
 
                 {/* Author Metadata Trace */}
-                <div className="article-meta-row d-flex align-items-center gap-2 mb-2">
-                  <span className="meta-author fw-medium">{article.author}</span>
-                  <span className="meta-date">{article.date}</span>
+                <div className="article-meta-row d-flex align-items-center gap-2 mb-2 flex-column flex-md-row">
+                  <span className="meta-author fw-medium rubik-font ssub">{article.author}</span>
+                  <span className="meta-date rubik-font sdes">{article.date}</span>
                 </div>
 
                 {/* Article Snippet Core Body */}
-                <p className="article-excerpt-description fw-light mb-3">
+                <p className="article-excerpt-description fw-light mb-3 hanken-grotesk-font text-center text-md-start sdes">
                   {article.desc}
                 </p>
 
                 {/* Interactive Anchor Link Line */}
-                <div className="mt-auto pt-1">
-                  <a href="#details" className="article-details-action-link text-uppercase tracking-wider fw-medium text-decoration-none">
+                <div className="mt-auto pt-1 d-flex justify-content-center justify-content-md-start">
+                  <a href="#details" className="article-details-action-link text-uppercase tracking-wider fw-medium text-decoration-none hanken-grotesk-font">
                     View Details
                   </a>
                 </div>

@@ -1,0 +1,335 @@
+/* ==========================================================================
+   PRODUCT CATEGORIES CANVAS SPECIFICATIONS
+   ========================================================================== */
+.product-categories-section {
+  
+  background-color: #ffffff;
+}
+
+.categories-main-heading {
+  max-width: 780px;
+}
+
+.yellow-arrow-circle {
+  background-color: #dfa82d;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.yellow-arrow-circle svg { width: 9px; }
+
+.cat-section-headline {
+  font-size: calc(1.8rem + 1.2vw) !important;
+  color: #111111;
+  line-height: 1.25 !important;
+  letter-spacing: -1.12px;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.yellow-arrow-circle{
+  transform : rotate(0deg);
+  transition: transform 0.3s ease;
+  cursor:pointer;
+}
+
+.cat-list-row-item.active .yellow-arrow-circle{
+  transform : rotate(90deg) !important;
+}
+
+
+
+.cat-section-subdesc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  max-width: 640px;
+  color: #454545;
+}
+
+/* ==========================================================================
+   DESKTOP IMAGE ENGINE (992px+) - FIXED BLACK CONTAINER SCREEN CRASH
+   ========================================================================== */
+.cat-view-image-frame {
+  width: 100%;
+  height: 520px; 
+  background-color: #f7f7f7; /* Changed from #1a1a1a to clear/soft grey to prevent flash black box */
+}
+
+.preloaded-cat-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  will-change: opacity;
+}
+
+.gpu-hidden-layer {
+  opacity: 0 !important;
+  z-index: 1;
+}
+
+.gpu-visible-layer {
+  opacity: 1 !important;
+  z-index: 2; /* Forces the first image to display instantly on foreground stack */
+}
+
+/* ==========================================================================
+   INTERACTIVE LIST ROW LAYOUT LINES STYLES
+   ========================================================================== */
+.cat-list-row-item {
+  padding: 26px 24px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  user-select: none;
+}
+
+.cat-asymmetric-deco-cross {
+  font-size: 12px;
+  color: #888888;
+  transition: color 0.15s ease;
+}
+
+.cat-row-item-title {
+  font-size: 16px;
+  color: #222222;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   THE SIGNATURE CIRCLE BUTTON SPECS (ULTRA DARK PREMIUM BLACK)
+   ========================================================================== */
+/* ==========================================================================
+   THE SIGNATURE CIRCLE BUTTON SPECS (ULTRA DARK PREMIUM BLACK)
+   ========================================================================== */
+.cat-action-circle-arrow-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #050505 !important; 
+  color: #ffffff !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  position: relative;
+}
+
+/* Added transition to the chevron symbol directly for smooth 90deg flipping */
+.cat-chevron-symbol {
+  font-size: 15px;
+  font-weight: 400; 
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  color: #ffffff !important;
+  transform: scaleY(0.9) translateX(0.5px);
+  /* target dynamic rotation transition engine */
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important; 
+  will-change: transform;
+}
+
+/* ==========================================================================
+   THE PREMIUM SOLID ACTIVE MATRIX INVERSIONS (DESKTOP MODE)
+   ========================================================================== */
+.cat-list-row-item.cat-row-active {
+  background-color: #1a1a1a !important; 
+  border-color: #1a1a1a !important;
+}
+
+.cat-row-active .cat-row-item-title {
+  color: #ffffff !important;
+}
+
+.cat-row-active .cat-asymmetric-deco-cross {
+  color: #b59463 !important; 
+}
+
+/* Outer circle background swaps on active click but remains strictly steady */
+.cat-row-active .cat-action-circle-arrow-icon {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  transform: none !important; /* Forces circle box NOT to spin */
+}
+
+/* TARGET EFFECT: Only the inner chevron symbol rotates 90 degrees downward on click */
+.cat-row-active .cat-chevron-symbol {
+  color: #111111 !important;
+  transform: scaleY(0.9) rotate(90deg) !important; /* Flips the > down cleanly */
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .product-categories-section {
+    padding: 4.5rem 0;
+  }
+  
+  .categories-main-heading, .cat-section-headline, .cat-section-subdesc {
+    text-align: center !important;
+  }
+
+  .cat-list-row-item {
+    padding: 18px 16px !important;
+  }
+
+  .cat-list-row-item.cat-row-active {
+    background-color: #1a1a1a !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; 
+    border-color: #1a1a1a !important;
+  }
+
+  /* REMOVED OLD MOBILE CIRCLE ROTATION TO MATCH UNIFIED DESIGN */
+  .cat-row-active .cat-action-circle-arrow-icon {
+    transform: none !important; /* Circle stays still on mobile too */
+    background-color: #ffffff !important;
+  }
+}
+
+/* ==========================================================================
+   THE PREMIUM SOLID ACTIVE MATRIX INVERSIONS (DESKTOP MODE)
+   ========================================================================== */
+.cat-list-row-item.cat-row-active {
+  background-color: #1a1a1a !important; 
+  border-color: #1a1a1a !important;
+}
+
+.cat-row-active .cat-row-item-title {
+  color: #ffffff !important;
+}
+
+.cat-row-active .cat-asymmetric-deco-cross {
+  color: #b59463 !important; 
+}
+
+.cat-row-active .cat-action-circle-arrow-icon {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  transform: none !important; 
+}
+
+.cat-row-active .cat-chevron-symbol {
+  color: #111111 !important;
+}
+
+/* ==========================================================================
+   UNIVERSAL ADAPTIVE ACCORDION SYSTEM FOR ALL SCREENS
+   ========================================================================== */
+.cat-adaptive-fluid-drawer {
+  overflow: hidden;
+  width: 100%;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s linear;
+  will-change: max-height, opacity;
+}
+
+.cat-drawer-closed {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none;
+  margin-top: 0;
+}
+
+.cat-drawer-open {
+  max-height: 500px !important; 
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+@media (min-width: 992px) {
+  .cat-drawer-open {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .cat-drawer-interior-padding {
+    padding: 12px 24px;
+  }
+  .cat-drawer-desc-text {
+    text-align: left !important;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #555555 !important;
+    max-width: 620px;
+  }
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .product-categories-section {
+    padding: 4.5rem 0;
+  }
+  
+  .categories-main-heading, .cat-section-headline, .cat-section-subdesc {
+    text-align: center !important;
+  }
+
+  .cat-list-row-item {
+    padding: 18px 16px !important;
+  }
+
+  .cat-list-row-item.cat-row-active {
+    background-color: #1a1a1a !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; 
+    border-color: #1a1a1a !important;
+  }
+
+  .cat-row-active .cat-action-circle-arrow-icon {
+    transform: rotate(90deg) !important;
+    background-color: #ffffff !important;
+  }
+
+  .cat-adaptive-fluid-drawer {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: -4px; 
+  }
+
+  .cat-drawer-interior-padding {
+    padding: 20px 16px;
+  }
+
+  .cat-drawer-desc-text {
+    text-align: center !important; 
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #666666 !important;
+  }
+
+  .mobile-category-render-img {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+.object-fit-cover { object-fit: cover; }
+
+.cat-view-image-frame {
+  width: 100%;
+  height: 520px; 
+  background-color: #f7f7f7; /* பியூர் ஒயிட் பேஜோட ஸ்மூத்தா பிளெண்ட் ஆகிடும் */
+}
+
+.preloaded-cat-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  will-change: opacity;
+}

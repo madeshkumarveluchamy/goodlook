@@ -23,7 +23,7 @@ import insect2 from '../../assets/collection1.png';
 import insect3 from '../../assets/collection1.png';
 import insect4 from '../../assets/collection1.png';
 
-// --- Aluminium Profiles Category Products (Additional Set if needed) ---
+// --- Aluminium Profiles Category Products ---
 import prof1 from '../../assets/collection1.png';
 import prof2 from '../../assets/collection1.png';
 import prof3 from '../../assets/collection1.png';
@@ -32,6 +32,11 @@ import prof4 from '../../assets/collection1.png';
 const Collection = () => {
   // Active tab state engine (ALL, UPVC, INSECT, ALUMINIUM, PROFILES)
   const [activeTab, setActiveTab] = useState('ALL');
+  
+  // ==========================================================================
+  // CRITICAL FIX: STATE STEP LIMIT FOR DYNAMIC ROW REVEALING
+  // ==========================================================================
+  const [visibleCount, setVisibleCount] = useState(8);
 
   // ==========================================================================
   // 2. THE COMPLETE 16 PRODUCT DATASET ARRAY
@@ -62,10 +67,48 @@ const Collection = () => {
     { id: 16, category: 'PROFILES', tag: 'Premium Trim', title: 'Anodized Sub-Frame Ext', img: prof4 }
   ];
 
-  // Logic to dynamically filter products based on active state criteria
+  // ==========================================================================
+  // 3. DYNAMIC CONTENT DICTIONARY FOR THE LOWER BANNER SECTION
+  // ==========================================================================
+  const bannerContent = {
+    ALL: {
+      title: <>Architectural <br /> Integrity</>,
+      image: upvc1,
+      desc: "At Good Look Home, we believe your sanctuary is defined by the quality of light and the clarity of your view. Our uPVC and Aluminium solutions are engineered for more than just durability—they are designed to disappear, allowing the beauty of the outdoors to become your home's living art."
+    },
+    UPVC: {
+      title: <>Unmatched <br /> uPVC Insulation</>,
+      image: upvc2,
+      desc: "Our premium uPVC Profiles deliver exceptional thermal efficiency and complete acoustic dampening. Engineered expertly to withstand weather extremes, these frames offer twenty-one-plus years of structural stability with absolute zero maintenance requirement."
+    },
+    INSECT: {
+      title: <>Flawless <br /> Insect Protection</>,
+      image: insect1,
+      desc: "Experience refreshing airflow with zero entry constraints for pests. Our integrated Plisse and Roller Insect Screens combine ultra-fine mesh resilience with precision architectural tracks, fitting seamlessly into your current luxury window profiles."
+    },
+    ALUMINIUM: {
+      title: <>Sleek <br /> Aluminium Precision</>,
+      image: alum1,
+      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
+    }
+  };
+
+  // Logic to dynamically filter products grid array based on active criteria
   const filteredProducts = activeTab === 'ALL' 
     ? productsData 
     : productsData.filter(item => item.category === activeTab);
+
+  // CLAMPS DISPLAY GRID EXPLICITLY ACCORDING TO RUNTIME VISIBLE STEPS VALUE
+  const displayedProducts = filteredProducts.slice(0, visibleCount);
+
+  // Fallback engine if activeTab state handles subcategories smoothly
+  const activeBanner = bannerContent[activeTab] || bannerContent['ALL'];
+
+  // Resets visible counts baseline layout instantly on every tab switches toggle
+  const handleTabChange = (tabName) => {
+    setActiveTab(tabName);
+    setVisibleCount(8); // Snaps back limit to 8 rows safety parameters
+  };
 
   return (
     <section className="collections-section bg-white" id="collections">
@@ -73,8 +116,8 @@ const Collection = () => {
         
         {/* ================= HEADER TITLE BLOCK ================= */}
         <div className="text-center collections-header mx-auto">
-          <h2 className="collections-main-title font-serif">Our Collections</h2>
-          <p className="collections-sub-desc fw-light mt-3">
+          <h2 className="collections-main-title font-serif stit">Our Collections</h2>
+          <p className="collections-sub-desc fw-light mt-3 hanken-grotesk-font sdes">
             Experience the harmony of structural integrity and aesthetic grace. Our curated architectural solutions define the modern living space.
           </p>
         </div>
@@ -82,66 +125,93 @@ const Collection = () => {
         {/* ================= DYNAMIC NAVIGATION CATEGORY BAR ================= */}
         <div className="filter-navigation-row d-flex flex-wrap justify-content-center border-bottom pb-2 mb-5">
           <button 
-            className={`filter-tab-btn tracking-widest text-uppercase ${activeTab === 'ALL' ? 'active' : ''}`}
-            onClick={() => setActiveTab('ALL')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'ALL' ? 'active' : ''}`}
+            onClick={() => handleTabChange('ALL')}
           >
             All Products
           </button>
           <button 
-            className={`filter-tab-btn tracking-widest text-uppercase ${activeTab === 'UPVC' ? 'active' : ''}`}
-            onClick={() => setActiveTab('UPVC')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'UPVC' ? 'active' : ''}`}
+            onClick={() => handleTabChange('UPVC')}
           >
             uPVC Products
           </button>
           <button 
-            className={`filter-tab-btn tracking-widest text-uppercase ${activeTab === 'INSECT' ? 'active' : ''}`}
-            onClick={() => setActiveTab('INSECT')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'INSECT' ? 'active' : ''}`}
+            onClick={() => handleTabChange('INSECT')}
           >
             Insect Screens
           </button>
           <button 
-            className={`filter-tab-btn tracking-widest text-uppercase ${activeTab === 'ALUMINIUM' ? 'active' : ''}`}
-            onClick={() => setActiveTab('ALUMINIUM')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'ALUMINIUM' ? 'active' : ''}`}
+            onClick={() => handleTabChange('ALUMINIUM')}
           >
             Aluminium Profiles
           </button>
         </div>
 
-        {/* ================= PRODUCTS CARD RESPONSIVE GRID ================= */}
-        <div className="row g-4 product-display-grid mb-5">
-          {filteredProducts.map((product) => (
+        {/* ================= PRODUCTS CARD RESPONSIVE GRID (SLICED ARRAY) ================= */}
+        <div className="row g-4 product-display-grid mb-4">
+          {displayedProducts.map((product) => (
             <div key={product.id} className="col-6 col-md-3 product-card-col">
               <div className="product-item-card-box">
                 <div className="product-img-frame rounded-1 overflow-hidden">
                   <img src={product.img} alt={product.title} className="w-100 h-100 object-fit-cover" />
                 </div>
-                <span className="product-card-tag text-uppercase tracking-wider d-block mt-3 mb-1">
+                <span className="product-card-tag text-uppercase tracking-wider d-block mt-3 mb-1 manrope-font text-center text-md-start ssub">
                   {product.tag}
                 </span>
-                <h4 className="product-card-title font-serif m-0">{product.title}</h4>
+                <h4 className="product-card-title font-serif m-0 text-center text-md-start sdes">{product.title}</h4>
               </div>
             </div>
           ))}
         </div>
 
-        {/* ================= LOWER BANNER SECTION ================= */}
+        {/* ================= INTERACTIVE REVEAL ACTION BLOCK BUTTON ================= */}
+        {filteredProducts.length > 8 && (
+          <div className="text-center show-more-action-strip mb-5">
+            {visibleCount < filteredProducts.length ? (
+              <button 
+                className="btn load-toggle-action-btn text-uppercase tracking-wider px-4 py-2.5 fw-medium manrope-font"
+                onClick={() => setVisibleCount(filteredProducts.length)}
+              >
+                Show More Products
+              </button>
+            ) : (
+              <button 
+                className="btn load-toggle-action-btn text-uppercase tracking-wider px-4 py-2.5 fw-medium manrope-font"
+                onClick={() => setVisibleCount(8)}
+              >
+                Show Less
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* ================= LOWER DYNAMIC SHOWCASE BANNER SECTION ================= */}
         <div className="row align-items-center mt-5 pt-4 g-4 layout-row-reverse">
           <div className="col-12 col-md-7 p-0">
             <div className="lower-banner-img-frame pe-md-4">
-              <img src={upvc1} alt="Architectural Integrity detail showcase" className="w-100 h-100 object-fit-cover" />
+              <img 
+                src={activeBanner.image} 
+                alt={`${activeTab} detail showcase`} 
+                className="w-100 h-100 object-fit-cover transition-fade-effect" 
+              />
             </div>
           </div>
           <div className="col-12 col-md-5 p-0 ps-md-4">
-            <div className="lower-banner-content text-left">
-              <h3 className="lower-banner-title font-serif mb-4">
-                Architectural <br /> Integrity
+            <div className="lower-banner-content text-left d-flex flex-column justify-content-center">
+              <h3 className="lower-banner-title font-serif mb-4 text-center text-md-start stit">
+                {activeBanner.title}
               </h3>
-              <p className="lower-banner-desc fw-light mb-4">
-                At Good Look Home, we believe your sanctuary is defined by the quality of light and the clarity of your view. Our uPVC and Aluminium solutions are engineered for more than just durability—they are designed to disappear, allowing the beauty of the outdoors to become your home's living art.
+              <p className="lower-banner-desc fw-light mb-4 hanken-grotesk-font text-center text-md-start sdes">
+                {activeBanner.desc}
               </p>
-              <button className="btn explore-process-btn text-uppercase tracking-wider px-4 py-2.5 fw-medium">
-                Explore Our Process
-              </button>
+              <div className="text-center text-md-start">
+                <button className="btn explore-process-btn text-uppercase tracking-wider px-4 py-2.5 fw-medium manrope-font">
+                  Explore Our Process
+                </button>
+              </div>
             </div>
           </div>
         </div>

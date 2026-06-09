@@ -35,7 +35,7 @@ const SlotCounter = ({ value, baseDirection = "up" }) => {
               {finalDirection === "up" ? (
                 <>
                   {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => <span key={num}>{num}</span>)}
-                  <span>{digit}</span>
+                  <span> {digit}</span>
                 </>  
               ) : (
                 <>
@@ -54,72 +54,72 @@ const SlotCounter = ({ value, baseDirection = "up" }) => {
 const AboutCounter = () => {
   return (
     <section className="about-counter-section">
-      <div className="container-fluid counter-fluid-holder px-3 px-sm-4 px-md-5">
+      <div className="container-fluid px-3 px-sm-4 px-md-5">
         <div className="row justify-content-between align-items-start m-0 w-100 g-4">
           
           {/* METRIC BLOCK 1 */}
-          <div className="col-6 col-md-3 counter-metric-col">
-            <div className="metric-card-box">
-              <h2 className="metric-display-number">
+          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
+            <div className="metric-card-box d-flex">
+              <h2 className="metric-display-number ">
                 <SlotCounter value={2006} baseDirection="up" />
               </h2>
               <div className="metric-text-meta">
-                <h5 className="metric-label-title m-0">Year of establishment</h5>
-                <p className="metric-label-desc m-0 mt-1">More than 21 years in the field</p>
+                <h5 className="metric-label-title m-0 inter-font text-center text-md-start ">Year of establishment</h5>
+                <p className="metric-label-desc m-0 mt-1 inter-font text-center text-md-start">More than 21 years in the field</p>
               </div>
-              <div className="metric-visual-footer">
-                <img src={counterImg1} alt="Establishment Group" className="metric-custom-img w-25 h-25" />
+              <div className="metric-visual-footer d-flex justify-content-center justify-content-md-start ">
+                <img src={counterImg1} alt="Establishment Group" className="metric-custom-img" />
               </div>
             </div>
           </div>
 
-          {/* METRIC BLOCK 2 */}
-          <div className="col-6 col-md-3 counter-metric-col">
+          {/* METRIC BLOCK 2 (ZIGZAG DROP APPLIED IN CSS VIA EVEN SELECTOR) */}
+          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
                 <SlotCounter value={154} baseDirection="up" />
-                <span className="metric-suffix">+</span>
+                <span className="metric-suffix ">+</span>
               </h2>
               <div className="metric-text-meta">
-                <h5 className="metric-label-title m-0">Products are launched</h5>
-                <p className="metric-label-desc m-0 mt-1">A lot of projects are done</p>
+                <h5 className="metric-label-title m-0 inter-font text-center text-md-start">Products are launched</h5>
+                <p className="metric-label-desc m-0 mt-1 inter-font text-center text-md-start">A lot of projects are done</p>
               </div>
-              <div className="metric-visual-footer">
-                <img src={counterImg2} alt="Products Strip" className="metric-custom-img w-25 h-25" />
+              <div className="metric-visual-footer d-flex justify-content-center justify-content-md-start ">
+                <img src={counterImg2} alt="Products Strip" className="metric-custom-img" />
               </div>
             </div>
           </div>
 
           {/* METRIC BLOCK 3 */}
-          <div className="col-6 col-md-3 counter-metric-col">
+          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
                 <SlotCounter value={1.5} baseDirection="up" />
-                <span className="metric-suffix"> K</span>
+                <span className="metric-suffix "> K</span>
               </h2>
               <div className="metric-text-meta">
-                <h5 className="metric-label-title m-0">Clients are satisfied</h5>
-                <p className="metric-label-desc m-0 mt-1">These people love us</p>
+                <h5 className="metric-label-title m-0 inter-font text-center text-md-start">Clients are satisfied</h5>
+                <p className="metric-label-desc m-0 mt-1 inter-font text-center text-md-start">These people love us</p>
               </div>
-              <div className="metric-visual-footer">
-                <img src={counterImg3} alt="Clients Set" className="metric-custom-img w-25 h-25" />
+              <div className="metric-visual-footer d-flex justify-content-center justify-content-md-start text-center text-md-start">
+                <img src={counterImg3} alt="Clients Set" className="metric-custom-img" />
               </div>
             </div>
           </div>
 
-          {/* METRIC BLOCK 4 */}
-          <div className="col-6 col-md-3 counter-metric-col">
+          {/* METRIC BLOCK 4 (ZIGZAG DROP APPLIED IN CSS VIA EVEN SELECTOR) */}
+          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
                 <SlotCounter value={100} baseDirection="up" />
-                <span className="metric-suffix">%</span>
+                <span className="metric-suffix ">%</span>
               </h2>
               <div className="metric-text-meta">
-                <h5 className="metric-label-title m-0">Quality Of UPVC</h5>
-                <p className="metric-label-desc m-0 mt-1">What we do right now</p>
+                <h5 className="metric-label-title m-0 inter-font text-center text-md-start">Quality Of UPVC</h5>
+                <p className="metric-label-desc m-0 mt-1 inter-font text-center text-md-start">What we do right now</p>
               </div>
-              <div className="metric-visual-footer">
-                <img src={counterImg4} alt="Quality Proof" className="metric-custom-img w-25 h-25 " />
+              <div className="metric-visual-footer d-flex justify-content-center justify-content-md-start  text-center text-md-start">
+                <img src={counterImg4} alt="Quality Proof" className="metric-custom-img" />
               </div>
             </div>
           </div>

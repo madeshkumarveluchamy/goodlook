@@ -1,0 +1,131 @@
+/* ==========================================================================
+   UPVC DOORS CONFIG MATRIX parent CANVASES
+   ========================================================================== */
+.upvc-doors-gallery-section {
+  padding: 6rem 0;
+  padding-top:1rem !important;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.doors-gallery-holder {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   TOP LEVEL CORE TYPOGRAPHY TITLES SPACING
+   ========================================================================== */
+.doors-gallery-header {
+  max-width: 780px;
+}
+
+.doors-main-headline {
+  font-size: calc(1.8rem + 1.2vw) !important;
+  color: #111111;
+  line-height: 1.25 !important;
+  font-weight: 500;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  letter-spacing:-1.12px;
+}
+
+.doors-subdesc {
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 740px;
+  color:#454545;
+}
+
+/* ==========================================================================
+   THE 4-COLUMN DISPLAY GRID CARD ASSEMBLIES GRAPHICS ENGINE
+   ========================================================================== */
+.door-image-viewport {
+  width: 100%;
+  aspect-ratio: 4 / 3.4; /* Symmetrical profile ratio matches exact target layout snapshot blueprints */
+  background-color: #f9f9f9;
+}
+
+.door-zoom-interaction-img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* High-speed hardware zoom scale reaction maps on card hover mouse interactions */
+.door-variant-profile-card:hover .door-zoom-interaction-img {
+  transform: scale(1.025);
+}
+
+.door-mini-brand-tag {
+  font-size: 9.5px;
+  color: #C5A028; /* Muted corporate design gold signature brand identity tone */
+  letter-spacing: 0.12em;
+}
+
+.door-card-headline {
+  font-size: 15px !important;
+  color: #2c2c2c;
+  line-height: 1.4 !important;
+  letter-spacing: 0.18px;
+  font-weight: 400;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* ==========================================================================
+   MONITOR SPECIFIC RESIZING MAP BREAKPOINTS SPECS (DESKTOP RIGS 1440px+)
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .doors-gallery-holder { max-width: 2100px; }
+  .doors-main-headline { font-size: 3.5rem !important; }
+  .doors-subdesc { font-size: 17px; max-width: 1000px; }
+  .door-card-headline { font-size: 19px !important; }
+  .door-mini-brand-tag { font-size: 12px; }
+}
+
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .doors-gallery-holder { max-width: 1320px; }
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px / PHONE VIEWS)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .upvc-doors-gallery-section {
+    padding: 4.5rem 0;
+  }
+
+  /* CRITICAL INSTRUCTION MATCH: Pushes all lower layout tags text-center inside mobile viewports layout */
+  .doors-gallery-header, .door-card-metadata {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doors-main-headline, .doors-subdesc, .door-card-headline {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .doors-gallery-header {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .door-image-viewport {
+    aspect-ratio: 4 / 3.2; /* Robust non-distorting scaling profile limits prevent layout line break gaps */
+  }
+
+  .door-card-headline {
+    font-size: 14.5px !important;
+    max-width: 90%;
+  }
+
+  .door-variant-card-col {
+    padding-bottom: 1rem;
+  }
+}
+
+.object-fit-cover { object-fit: cover; }
+.manrope-font { font-family: "Manrope", sans-serif; }
+.hanken-grotesk-font { font-family: "Hanken Grotesk", sans-serif; }

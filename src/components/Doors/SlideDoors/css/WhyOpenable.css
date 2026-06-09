@@ -1,0 +1,118 @@
+/* ==========================================================================
+   WHY OPENABLE STACKING OVERLAP GRID LAYOUT (EXACT REPLICA ENGINE)
+   ========================================================================== */
+.why-openable-section {
+  background-size: repeat !important; /* Perfect loop repetition for your dark stripes pattern */
+  width: 100%;
+  position: relative;
+  padding-bottom: 120px !important;
+}
+
+/* Header Text Styles */
+.sub-title {
+  color: #dfa82d !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px;
+}
+.small-desc {
+  font-size: 13px !important;
+  color: #888888 !important;
+  line-height: 1.4;
+}
+.why-main-title {
+  font-family: 'Playfair Display', serif !important;
+  color: #ffffff !important;
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
+}
+
+/* --- THE STACKING MATRIX ENGINE --- */
+.why-stacking-container {
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.stacking-card-item {
+  position: sticky !important;
+  top: calc(180px + (var(--card-index) * 20px)) !important; 
+  width: 100% !important;
+  background-size: repeat !important; /* FIXED: Overrides background color to repeat stripes instead of plain dark blocks */
+}
+
+/* FIXED: Replaced card background box with a clean horizontal bottom divider line */
+.card-row-divider {
+  
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  margin: 0 !important;
+  background-size: repeat !important; /* Forces row background texture tracking */
+}
+
+/* Removes the divider line from the last section to maintain pixel clean alignment */
+.why-stacking-container .stacking-card-item:last-child .card-row-divider {
+  border-bottom: none !important;
+}
+
+.card-image-box {
+  width: 100%;
+  border-radius: 16px !important; 
+  overflow: hidden !important;
+}
+
+.why-card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Stacking Internal Typography Mapping */
+.card-number-index {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 18px !important;
+  color: #ffffff !important;
+  font-weight: 400;
+}
+
+.card-title-text {
+  font-family: 'Inter', sans-serif !important; 
+  color: #ffffff !important;
+  font-size: 24px !important;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+.card-desc-text {
+  color: #999999 !important; 
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+  text-align: left;
+}
+
+/* ==========================================================================
+   PHONE AND MOBILE RESPONSIVE OVERRIDES
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .why-header-block {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px;
+  }
+  .stacking-card-item {
+    top: calc(110px + (var(--card-index) * 15px)) !important;
+  }
+  .card-row-divider {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .card-title-text {
+    font-size: 20px !important;
+  }
+  .card-desc-text {
+    font-size: 13.5px !important;
+  }
+}

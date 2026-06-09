@@ -1,0 +1,206 @@
+/* ==========================================================================
+   STORY DETAILS parent CONTAINER SPECS
+   ========================================================================== */
+
+@media(min-width:2560px){
+  .yellow-arrow-circle {
+  background-color: #dfa82d;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.yellow-arrow-circle svg { width: 9px; }
+
+}   
+.story-details-section {
+  padding: 7rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.yellow-arrow-circle {
+  background-color: #dfa82d;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.yellow-arrow-circle svg { width: 9px; }
+
+.story-details-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   LEFT COMPONENT: METRIC RETAINING IMAGE FRAME
+   ========================================================================== */
+.story-large-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 4.6; /* Exact premium tall aspect box blueprint matching reference */
+  background-color: #fafafa;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* ==========================================================================
+   RIGHT COMPONENT: CONTENT PIPELINE & TYPOGRAPHY
+   ========================================================================== */
+.story-content-engine-col {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.story-mini-badge {
+  font-size: 12px;
+  color: #b59463; /* Signature gold token heading */
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+.story-title-header {
+  font-size: calc(1.8rem + 1vw) !important;
+  color: #000000;
+  line-height: 1.15 !important;
+  letter-spacing: -1.92px;
+  font-weight: 500;
+  max-width: 520px;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+/* Center unique vertical image frame matrix setup */
+.story-thumbnail-frame {
+  width: 220px;
+  height: 250px; /* Locked precise asset dimension */
+  background-color: #f7f7f7;
+}
+
+.story-description-text {
+  font-size: 15.5px;
+  color: #555555;
+  line-height: 1.65;
+  max-width: 440px; /* Clamps sentence lengths elegantly */
+}
+
+/* ==========================================================================
+   THE SIGNATURE ROUNDED CTA ARROW BUTTON
+   ========================================================================== */
+.story-get-in-touch-btn {
+  background-color: transparent !important;
+  color: #111111 !important;
+  border: 1px solid #c8c8c8 !important;
+  border-radius: 30px !important; /* Perfect sleek capsule boundary */
+  padding: 6px 6px 6px 24px !important; /* Spacious text breathing room with short icon cushion */
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.story-arrow-circle-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #b59463; /* Signature gold block filling inner sphere */
+  border-radius: 50%;
+  font-size: 11px;
+  transition: all 0.3s ease;
+}
+
+/* Premium hover state transforms matching luxury UI patterns */
+.story-get-in-touch-btn:hover {
+  border-color: #111111 !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+.story-get-in-touch-btn:hover .story-arrow-circle-icon {
+  background-color: #ffffff;
+  transform: translateX(2px);
+}
+
+/* ==========================================================================
+   EXACT RESPONSIVE VIEWPORTS MAP CONFIGURATIONS
+   ========================================================================== */
+
+/* --- Ultra-wide Screen & 4K Panels (2560px and Larger) --- */
+@media (min-width: 2560px) {
+  .story-details-fluid { max-width: 2100px; }
+  .story-title-header { font-size: 3.2rem !important; max-width: 720px; }
+  .story-thumbnail-frame { width: 300px; height: 340px; }
+  .story-description-text { font-size: 18px; max-width: 600px; }
+  .story-get-in-touch-btn { font-size: 14px; padding: 10px 10px 10px 32px !important; }
+  .story-arrow-circle-icon { width: 40px; height: 40px; font-size: 14px; }
+}
+
+/* --- Large Desktop Monitors (1440px to 2559px) --- */
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .story-details-fluid { max-width: 1320px; margin: 0 auto; }
+}
+
+/* --- Mobile / Small Screens Viewports (Lesser than 748px) --- */
+@media (max-width: 747.98px) {
+  .story-details-section { padding: 4rem 0; }
+  .story-content-engine-col { padding-top: 2rem !important; }
+  .story-large-img-wrapper { aspect-ratio: 4 / 3; }
+  .story-title-header { font-size: 2rem !important; }
+  .story-thumbnail-frame { width: 180px; height: 210px; }
+  .story-description-text { font-size: 16px; }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+.hanken-grotesk-font {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+}
+.story-get-in-touch-btn {
+  background-color: transparent !important;
+  color: #555555 !important; /* Elegant text matching reference shade */
+  border: 1.8px solid #666666 !important; /* Thicker, defined outer boundary capsule line */
+  border-radius: 30px !important; 
+  padding: 5px 6px 5px 26px !important; /* Perfect asymmetrical symmetry allocation */
+  font-size: 13.5px;
+  letter-spacing: -0.01em;
+  font-weight: 600 !important;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.story-arrow-circle-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ffd100 !important; /* Exact vibrant gold-yellow color tone from image 1 */
+  border: 1px solid #7c6200 !important; /* Fine matching outline border surrounding the inner sphere */
+  border-radius: 50%;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.story-chevron-symbol {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  transform: scaleY(0.85) translateX(0.5px); /* Perfectly balances chevron weights proportions */
+}
+
+/* Premium micro-interactions matching luxury UI patterns */
+/* Premium micro-interactions matching luxury UI patterns - WITHOUT SPINNING ANIMATION */
+.story-get-in-touch-btn:hover {
+  border-color: #111111 !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+.story-get-in-touch-btn:hover .story-arrow-circle-icon {
+  background-color: #ffd100 !important; /* Retains the signature luxury yellow fill */
+  border-color: #ffffff !important;
+  transform: translateX(3px); /* Button hover பண்ணும்போது வட்டம் மட்டும் லைட்டா 3px வலதுபக்கம் நகரும், சுத்தாது! */
+}
+
+.story-get-in-touch-btn:hover .story-chevron-symbol {
+  color: #222222 !important;
+}

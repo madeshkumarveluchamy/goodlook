@@ -1,9 +1,6 @@
-/* ==========================================================================
-   GLOBAL NAVBAR WRAPPER & BASE SHAPE
-   ========================================================================== */
 .navbar-wrapper {
   width: 100%;
-  padding: 16px 24px;
+  padding-top: 10px;
   z-index: 1050;
 }
 .manrope-font {
@@ -14,18 +11,18 @@
 }
 
 .custom-capsule-navbar {
-  background: rgba(0, 0, 0, 0.22) !important;
+  background: rgba(0, 0, 0, 0.32) !important;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: none;
   border-radius: 14px; 
   padding: 12px 24px !important;
   width: 100%;
+  max-width: 95%;
   margin: 0 auto;
   transition: max-width 0.2s ease;
 }
 
-/* Logo & Text Structure */
 .logo-box {
   background-color: #ba1818;
   font-size: 11px;
@@ -36,19 +33,22 @@
 .brand-main-title { font-size: 14px; letter-spacing: 0.5px; }
 .brand-sub-title { font-size: 8.5px; color: rgba(255, 255, 255, 0.55); }
 
-/* Links base styling */
 .capsule-link {
   color: rgba(255, 255, 255, 0.8) !important;
   font-size: 13.5px;
   font-weight: 400;
   transition: color 0.25s ease;
-  white-space: nowrap; /* Prevents text links from breaking into 2 rows */
+  white-space: nowrap; 
 }
 .capsule-link:hover, .capsule-link.active {
   color: #ffffff !important;
 }
 
-/* White CTA Button */
+.btn-text {
+  letter-spacing: 1.2px;
+  font-weight: 500 !important;
+}
+
 .project-cta-btn {
   border-radius: 50px !important;
   padding: 6px 14px 6px 20px !important;
@@ -68,108 +68,97 @@
 }
 .yellow-arrow-circle svg { width: 9px; }
 
-
-/* ==========================================================================
-   EXACT SCREEN SIZE MEDIA QUERIES (768px to 2560px+)
-   ========================================================================== */
-
-/* --- 1. MID TABLETS TO SMALL LAPTOPS (768px to 1023px) --- */
-@media (min-width: 768px) and (max-width: 1023.98px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .custom-capsule-navbar {
-    max-width: 100%; /* Spans to container boundaries */
-    padding: 8px 16px !important;
+    max-width: 96%;
+    padding: 6px 16px !important;
   }
   .nav-links-group {
-    gap: 0.5rem; /* Margins get narrower to keep layout inline */
+    gap: 0.8rem !important; 
   }
   .capsule-link {
-    font-size: 8.5px;
+    font-size: 11px !important;
+  }
+  .project-cta-btn {
+    font-size: 11px !important;
+    padding: 5px 10px 5px 14px !important;
   }
 }
 
-/* --- 2. REGULAR LAPTOPS & DESKTOPS (1024px to 1439px) --- */
-@media (min-width: 1024px) and (max-width: 1439.98px) {
+@media (min-width: 1201px) and (max-width: 1439.98px) {
   .custom-capsule-navbar {
-    max-width: 90%; /* Snaps inward neatly like a floating capsule pill */
+    max-width: 95%; 
   }
   .nav-links-group {
-    gap: 1.8rem;
+    gap: 1.6rem !important;
+  }
+  .capsule-link {
+    font-size: 12.5px !important;
   }
 }
 
-/* --- 3. LARGE 1080p SCREEN DISPLAYS (1440px to 2559px) --- */
 @media (min-width: 1440px) and (max-width: 2559.98px) {
   .custom-capsule-navbar {
-    max-width: 90%; 
+    max-width: 95%; 
   }
   .nav-links-group {
-    gap: 3rem; /* Links push outward roomily to fill the luxury screen span */
+    gap: 2.5rem !important; 
   }
 }
 
-/* --- 4. ULTRA-WIDE & 2K/4K MONITORS (2560px and Larger) --- */
 @media (min-width: 2560px) {
   .navbar-wrapper {
-    padding: 24px 40px; /* Extends structural border space dynamically */
+    padding: 24px 40px; 
   }
   .custom-capsule-navbar {
-    max-width: 2400px; /* Caps the navbar width perfectly so it stays a premium balanced row */
+    max-width: 2400px; 
     padding: 16px 36px !important;
   }
   .nav-links-group {
-    gap: 4.5rem;
+    gap: 4rem !important;
   }
   .capsule-link {
-    font-size: 24px !important; /* Upscaled slightly for high pixel density panels */
-  }
-  
-  .project-cta-btn {
-  border-radius: 50px !important;
-  padding: 6px 14px 6px 20px !important;
-  font-size: 24px !important;
-  font-weight: 500 !important;
-  border: none !important;
-  color: #111111 !important;
-  background-color: #ffffff !important;
-  white-space: nowrap;
-  width: 270px; /* Fixed width for ultra-wide screens to maintain button shape */
-}
-.yellow-arrow-circle {
-  background-color: #dfa82d;
-  color: #ffffff;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-.yellow-arrow-circle svg { width: 9px; }
-}
-
-@media(max-width:1240px){
-  .capsule-link {
-    font-size: 13px !important; /* Upscaled slightly for high pixel density panels */
+    font-size: 22px !important; 
   }
   .project-cta-btn {
-    font-size: 10px !important;
+    border-radius: 50px !important;
+    padding: 8px 20px 8px 28px !important;
+    font-size: 22px !important;
+    width: auto; 
+  }
+  .yellow-arrow-circle {
+    width: 32px !important;
+    height: 32px !important;
   }
 }
 
-
-/* ==========================================================================
-   MOBILE FALLBACKS (Lesser than 768px)
-   ========================================================================= */
-@media (max-width: 890px) {
+@media (max-width: 991.98px) {
   .navbar-wrapper { padding: 12px 16px; }
   .mobile-expanded {
     background: rgba(18, 16, 15, 0.96);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 12px;
     margin-top: 12px;
     padding: 20px 10px;
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
+  .nav-links-group {
+    gap: 1rem !important;
+    padding-bottom: 15px;
+  }
+  .project-cta-btn {
+    border-radius: 50px !important;
+    padding: 4px 12px 4px 16px !important;
+    font-size: 11px !important;
+    width: 160px; 
+  }
+  .yellow-arrow-circle {
+    width: 22px !important;
+    height: 22px !important;
+  }
 }
 
-/* Hamburger animation classes */
 .hamburger-lines { width: 22px; height: 16px; position: relative; display: inline-block; }
 .hamburger-lines span { display: block; position: absolute; height: 2px; width: 100%; background: #ffffff; border-radius: 2px; left: 0; transition: .25s ease-in-out; }
 .hamburger-lines span:nth-child(1) { top: 0px; }
@@ -179,7 +168,6 @@
 .hamburger-lines.active span:nth-child(2) { opacity: 0; left: -40px; }
 .hamburger-lines.active span:nth-child(3) { top: 7px; transform: rotate(-135deg); }
 
-/* Base size for standard desktops (1024px to 1440px) */
 .logo-img {
   height: 42px;         
   width: auto;          
@@ -188,31 +176,137 @@
   transition: height 0.2s ease;
 }
 
-/* --- Tablet / Small Screens Breakpoint (748px to 1023px) --- */
 @media (min-width: 748px) and (max-width: 1024px) {
   .logo-img {
-    height: 38px;
-    width: 150px;       
+    height: 36px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .logo-img {
     height: 38px;
-    width :180px;
   }
 }
-
-/* --- Ultra-wide Screen Breakpoint (2560px and Larger) --- */
 @media (min-width: 2560px) {
   .logo-img {
-    height: 48px;
-    width: 290px;       
+    height: 54px;
   }
 }
-
-/* --- Mobile Viewport (Lesser than 748px) --- */
 @media (max-width: 747.98px) {
   .logo-img {
     height: 35px;       
+  }
+}
+
+.nav-item {
+  letter-spacing: 0.1125em;
+}
+
+.collection-toggle-trigger {
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+}
+
+.dropdown-arrow-icon {
+  font-size: 9px !important;
+  display: inline-block !important;
+  transition: transform 0.2s ease !important;
+}
+
+.active-dropdown .dropdown-arrow-icon {
+  transform: rotate(180deg) !important;
+  color: #dfa82d !important;
+}
+
+.sub-navbar-capsule-container {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: 15px !important;
+  animation: slideDownFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+.sub-navbar-pill-box {
+  background: #ffffff !important;
+  border-radius: 14px !important;
+  padding: 14px 40px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 4rem !important;
+  max-width: 95%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.sub-nav-link {
+  color: #111111 !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: color 0.2s ease !important;
+}
+
+.sub-nav-link:hover {
+  color: #dfa82d !important;
+}
+
+@keyframes slideDownFade {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-dropdown-wrapper {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.mobile-nested-sub-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  padding: 12px 0 6px 0 !important;
+  width: 100% !important;
+  animation: slideDownFade 0.2s ease-out !important;
+}
+
+.mobile-sub-link {
+  color: rgba(255, 255, 255, 0.6) !important; 
+  font-size: 11.5px !important; 
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  text-transform: none !important;
+}
+
+.mobile-sub-link:hover {
+  color: #dfa82d !important;
+}
+
+@media (min-width: 992px) {
+  .mobile-nested-sub-nav {
+    display: none !important; 
+  }
+}
+
+@media (max-width: 991.98px) {
+  .desktop-only-sub-nav {
+    display: none !important; 
+  }
+}
+
+@media (min-width: 2560px) {
+  .sub-navbar-pill-box {
+    padding: 20px 60px !important;
+    gap: 6rem !important;
+    border-radius: 20px !important;
+  }
+  .sub-nav-link {
+    font-size: 22px !important;
   }
 }

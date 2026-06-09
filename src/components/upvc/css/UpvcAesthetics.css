@@ -1,0 +1,116 @@
+/* ==========================================================================
+   AESTHETICS BASE CANVAS MODULE
+   ========================================================================== */
+.upvc-aesthetics-section {
+  padding: 7rem 0;
+  width: 100vw !important;
+  max-width: 100% !important;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.aesthetics-canvas-holder {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   LEFT PANEL DETAILED CONTENT TYPOGRAPHY
+   ========================================================================== */
+.aesthetics-mini-tag {
+  font-size: 12px;
+  color: #BD9000; /* Signature interior design gold accent variable */
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.aesthetics-main-title {
+  font-size: calc(1.8rem + 1.2vw) !important;
+  color: #0A0B12;
+  line-height: 1.2 !important;
+  letter-spacing: -3.51px;
+  font-weight: 500;
+  max-width: 600px;
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+}
+
+.aesthetics-body-text {
+  font-size: 14.5px;
+  line-height: 1.65;
+  letter-spacing:0.5px;
+  color: #2B2B2B;
+  max-width: 540px; /* Clamps article boundary lines beautifully matches snapshot */
+}
+
+/* ==========================================================================
+   RIGHT PANEL IMAGE SCALE MATRIX ENGINE
+   ========================================================================== */
+.aesthetics-img-wrapper {
+  width: 100%;
+  aspect-ratio: 3.6 / 4; /* Exact rectangular aspect mapping structure ratio */
+  background-color: #fafafa;
+}
+
+.aesthetics-img-wrapper img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.aesthetics-img-wrapper:hover img {
+  transform: scale(1.02); /* High performance fluid zooming step interaction on desktop hovers */
+}
+
+/* ==========================================================================
+   ULTRA-WIDE SCREEN RIGS CALIBRATION SPECS (2560px+)
+   ========================================================================== */
+@media (min-width: 2560px) {
+  .aesthetics-canvas-holder { max-width: 2100px; }
+  .aesthetics-main-title { font-size: 3.5rem !important; max-width: 820px; }
+  .aesthetics-body-text { font-size: 18px; max-width: 720px; }
+}
+
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .aesthetics-canvas-holder { max-width: 1320px; }
+}
+
+/* ==========================================================================
+   STRICT MOBILE CONFIGURATION OVERRIDES ENGINES (< 991.98px / PHONE VIEWS)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .upvc-aesthetics-section {
+    padding: 4.5rem 0;
+  }
+
+  /* FORCES ALL INNER PARAGRAPHS TYPOGRAPHY ELEMENTS CENTER ALIGNED ON PHONES ACCORDINGLY */
+  .aesthetics-content-engine {
+    text-align: center !important;
+    margin-top: 2.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .aesthetics-mini-tag,
+  .aesthetics-main-title,
+  .aesthetics-body-text {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .aesthetics-main-title {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .aesthetics-paragraphs-stack {
+    gap: 1.2rem !important;
+  }
+
+  .aesthetics-body-text {
+    font-size: 13.5px;
+    max-width: 100% !important;
+  }
+
+  .aesthetics-img-wrapper {
+    aspect-ratio: 4 / 3.2; /* Safe responsive bounding viewport size constraints prevent scroll breaking layers */
+  }
+}
