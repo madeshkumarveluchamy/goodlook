@@ -55,9 +55,9 @@ const InsectFeatures = () => {
           {featuresData.map((item) => (
             <div key={item.id} className={`feature-grid-card ${item.gridClass}`} style={{ backgroundImage: `url(${item.image})` }}>
               <div className="card-glass-dark-overlay">
-                <span className="feature-card-number inter-font">{item.id}</span>
-                <h3 className="feature-card-title mb-3 inter-font">{item.title}</h3>
-                <p className="feature-card-desc hanken-grotesk-font mb-0 ">{item.description}</p>
+                <span className="feature-card-number inter-font stit">{item.id}</span>
+                <h3 className="feature-card-title mb-3 inter-font sdes">{item.title}</h3>
+                <p className="feature-card-desc hanken-grotesk-font mb-0 smin">{item.description}</p>
               </div>
             </div>
           ))}

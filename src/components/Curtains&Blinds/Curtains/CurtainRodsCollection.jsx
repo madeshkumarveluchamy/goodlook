@@ -7,15 +7,15 @@ const CurtainrodCollection = () => {
     <section className="rod-collection-section ">
       <div className="container py-4 text-center">
         
-        <h2 className="rod-main-title mb-2">Curtain rod</h2>
-        <h2 className="rod-main-title mb-4">Collections</h2>
+        <h2 className="rod-main-title mb-2 stit">Curtain rod</h2>
+        <h2 className="rod-main-title mb-4 stit">Collections</h2>
         
-        <p className="rod-sub-desc manrope-font mx-auto mb-5">
+        <p className="rod-sub-desc manrope-font mx-auto mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
           to provide the perfect fit and lasting protection for every room
         </p>
 
-        <div className="current-rod-heading text-center text-md-start mb-4">
+        <div className="current-rod-heading text-center text-md-start mb-4 stit">
           <span className="bullet-diamond">❖</span> Curtain rod Designs
         </div>
 
@@ -30,10 +30,10 @@ const CurtainrodCollection = () => {
             <div className="rod-glass-card-overlay">
               <div className="row align-items-center  text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
-                  <h4 className="overlay-rod-title mb-2 text-center text-md-start">
+                  <h4 className="overlay-rod-title mb-2 text-center text-md-start smin">
                     <span className="bullet-diamond-small ">❖</span> Curtain rod Designs
                   </h4>
-                  <p className="overlay-rod-desc d-flex justify-content-even manrope-font mb-0">
+                  <p className="overlay-rod-desc d-flex justify-content-even manrope-font mb-0 ssub">
                     Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
                   </p>
                 </div>

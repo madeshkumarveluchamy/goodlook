@@ -65,10 +65,10 @@ const InsectCollections = () => {
     <section className="insect-collections-section pt-5 pb-2 pb-md-5">
       <div className="container py-5 text-center">
         
-        <h2 className="collections-main-title mb-2">All Insect Screen</h2>
-        <h2 className="collections-main-title mb-4">Collections</h2>
+        <h2 className="collections-main-title mb-2 stit">All Insect Screen</h2>
+        <h2 className="collections-main-title mb-4 stit">Collections</h2>
         
-        <p className="collections-sub-desc hanken-grotesk-font mx-auto mb-5">
+        <p className="collections-sub-desc hanken-grotesk-font mx-auto mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
           to provide the perfect fit and lasting protection for every room
         </p>
@@ -88,7 +88,7 @@ const InsectCollections = () => {
         </div>
 
         <div className="current-selection-heading text-start mb-1 mb-md-4">
-          <span className="bullet-diamond">❖</span> {collectionsData[activeTab].title}
+          <span className="bullet-diamond stit">❖</span> {collectionsData[activeTab].title}
         </div>
 
         <div className="collection-display-window">
@@ -111,9 +111,9 @@ const InsectCollections = () => {
                 <div className="row align-items-center g-1  m-0">
                   <div className="col-12 col-md-8 text-start p-0">
                     <h4 className="overlay-card-title text-center text-md-start">
-                      <span className="bullet-diamond-small">❖</span> {collectionsData[activeTab].title}
+                      <span className="bullet-diamond-small smin">❖</span> {collectionsData[activeTab].title}
                     </h4>
-                    <div className='d-flex justify-content-center justify-content-md-start'><p className="overlay-card-desc hanken-grotesk-font mb-0 text-center text-md-start">
+                    <div className='d-flex justify-content-center justify-content-md-start'><p className="overlay-card-desc hanken-grotesk-font mb-0 text-center text-md-start ssub">
                       {collectionsData[activeTab].description}
                     </p></div>
                   </div>

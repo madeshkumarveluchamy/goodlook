@@ -14,21 +14,21 @@ const InsectProtection = () => {
           <div className="col-12 col-md-6 text-center text-md-start ">
             <div className="insect-content-block pe-lg-4">
               
-              <h6 className="brand-badge-gold text-uppercase mb-2">
+              <h6 className="brand-badge-gold text-uppercase mb-2 ssub">
                 Good Look Home Decors
               </h6>
               
-              <h2 className="insect-main-heading mb-4">
+              <h2 className="insect-main-heading mb-4 stit">
                 INSECT PROTECTION
               </h2>
               
-              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-4 justify-content-evenly">
+              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-4 justify-content-evenly sdes">
                 GHD, with its buttery symbol, has been manufacturing high-quality, eco-friendly 
                 insect screens for over 21 years. The GHD system is recognised as the leading 
                 name in made-to-measure insect protection in Germany.
               </p>
               
-              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-5 justify-content-evenly">
+              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-5 justify-content-evenly sdes">
                 As a GHD partner, we supply precision, made-to-measure frames for your doors and 
                 windows to keep out unwelcome visitors. We specialize in providing reliable and 
                 effective solutions to keep insects out while allowing fresh air and natural light 

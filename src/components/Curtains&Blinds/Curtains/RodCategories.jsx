@@ -45,8 +45,8 @@ const RodCategories = () => {
                 </div>
 
                 <div className="rod-info-box-overlay">
-                  <span className="rod-brand-badge manrope-font">{item.badge}</span>
-                  <p className="rod-product-title m-0 font-serief">{item.title}</p>
+                  <span className="rod-brand-badge manrope-font ssub">{item.badge}</span>
+                  <p className="rod-product-title m-0 font-serief sdes">{item.title}</p>
                 </div>
 
               </div>

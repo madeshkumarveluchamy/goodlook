@@ -22,8 +22,8 @@ const ContactConnect = () => {
       <div className="container py-4">
         
         <div className="text-center mb-5">
-          <h2 className="connect-main-title mb-3">Let's Connect</h2>
-          <p className="connect-top-desc hanken-grotesk-font mx-auto">
+          <h2 className="connect-main-title mb-3 stit">Let's Connect</h2>
+          <p className="connect-top-desc hanken-grotesk-font mx-auto sdes">
             We'd love to hear from you. Reach out to our team for professional
             inquiries regarding our durable and energy-efficient UPVC
             installations for your home or business.
@@ -34,7 +34,7 @@ const ContactConnect = () => {
         <div className="connect-master-flex-wrapper d-flex flex-column-reverse flex-md-row mt-2">
           
           <div className="contact-info-sidebar">
-            <p className="sidebar-intro-text hanken-grotesk-font">
+            <p className="sidebar-intro-text hanken-grotesk-font sdes">
               Have a project in mind? Get in touch with us to start a
               conversation and turn your ideas into reality.
             </p>
@@ -62,8 +62,8 @@ const ContactConnect = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="info-block-label mb-2 inter-font">Main office</h5>
-                <p className="info-block-value hanken-grotesk-font mb-3 ">
+                <h5 className="info-block-label mb-2 inter-font smin">Main office</h5>
+                <p className="info-block-value hanken-grotesk-font mb-3 sdes">
                   13A Poombuhar nagar, Civil aerodrome post
                   <br />
                   Coimbatore - 641014.
@@ -102,8 +102,8 @@ const ContactConnect = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="info-block-label mb-2 inter-font">Phone no.</h5>
-                <p className="info-block-value hanken-grotesk-font mb-0">
+                <h5 className="info-block-label mb-2 inter-font smin">Phone no.</h5>
+                <p className="info-block-value hanken-grotesk-font mb-0 sdes">
                   91+ 975 143 70 20
                 </p>
               </div>
@@ -127,8 +127,8 @@ const ContactConnect = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="info-block-label mb-2 inter-font">Email id</h5>
-                <p className="info-block-value hanken-grotesk-font mb-0">
+                <h5 className="info-block-label mb-2 inter-font smin">Email id</h5>
+                <p className="info-block-value hanken-grotesk-font mb-0 sdes">
                   Unimaxxarchitects@gmail.com
                 </p>
               </div>
@@ -138,8 +138,8 @@ const ContactConnect = () => {
           <div className="connect-form-card-box">
             <form onSubmit={handleSubmit} className="d-flex flex-column gap-4">
               <div className="text-center mb-2">
-                <h3 className="form-card-inner-title mb-3 font-serief">SEND A MESSAGE</h3>
-                <p className="form-card-inner-desc manrope-font mx-auto">
+                <h3 className="form-card-inner-title mb-3 font-serief stit">SEND A MESSAGE</h3>
+                <p className="form-card-inner-desc manrope-font mx-auto sdes">
                   We design timeless spaces blending function, beauty, and
                   thoughtful architectural innovation.
                 </p>

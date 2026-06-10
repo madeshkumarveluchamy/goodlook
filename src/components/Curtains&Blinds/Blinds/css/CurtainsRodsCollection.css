@@ -132,6 +132,7 @@
     left: 12px !important;
     right: 12px !important;
     padding: 8px !important;
+    width:90% !important;
   }
   .overlay-rods-desc{
     max-width: 100%;

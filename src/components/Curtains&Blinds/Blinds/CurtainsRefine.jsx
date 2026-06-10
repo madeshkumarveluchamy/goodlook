@@ -11,19 +11,19 @@ const CurtainsRefine = () => {
           <div className="col-12 col-md-6 text-center text-md-start">
             <div className="curtains-content-block pe-lg-3">
               
-              <h6 className="curtains-brand-badge mb-2 text-uppercase manrope-font">
+              <h6 className="curtains-brand-badge mb-2 text-uppercase manrope-font ssub">
                 Good Look Home Decors
               </h6>
               
-              <h2 className="curtains-main-title mb-4 font-serief">
+              <h2 className="curtains-main-title mb-4 font-serief stit">
                 Elevate Your Home <br /> with Window Blinds
               </h2>
               
-              <p className="curtains-desc-paragraph hanken-grotesk-font mb-4">
+              <p className="curtains-desc-paragraph hanken-grotesk-font mb-4 sdes">
                 Revitalize your home or office with the exquisite charm of window blinds. These versatile window treatments not only enhance the aesthetic appeal of any room but also provide practical benefits to suit your needs.
               </p>
               
-              <p className="curtains-desc-paragraph hanken-grotesk-font mb-5">
+              <p className="curtains-desc-paragraph hanken-grotesk-font mb-5 sdes">
                 Discover a wide range of window blinds designed to complement any interior decor style. From sleek and contemporary to timeless and traditional, there's a perfect blind for every taste. Whether you prefer the elegance of wooden blinds, the simplicity of roller blinds, or the sophistication of Venetian blinds, you'll find the ideal option to elevate your windows.
               </p>
               

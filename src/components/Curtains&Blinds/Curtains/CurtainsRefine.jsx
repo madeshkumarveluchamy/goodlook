@@ -11,19 +11,19 @@ const curtainsRefine = () => {
           <div className="col-12 col-md-6 text-center text-md-start">
             <div className="curtainss-content-block pe-lg-3 d-flex flex-column">
               
-              <h6 className="curtainss-brand-badge mb-2 text-uppercase manrope-font">
+              <h6 className="curtainss-brand-badge mb-2 text-uppercase manrope-font ssub">
                 Good Look Home Decors
               </h6>
               
-              <h2 className="curtainss-main-title mb-4 font-serief">
+              <h2 className="curtainss-main-title mb-4 font-serief stit">
                 Refine Interiors With <br /> Custom curtainss
               </h2>
               
-              <p className="curtainss-desc-paragraph manrope-font mb-4 d-flex justify-content-evenly hanken-grotesk-font">
+              <p className="curtainss-desc-paragraph manrope-font mb-4 d-flex justify-content-evenly hanken-grotesk-font sdes">
                 Complete the look of your curtains and enhance the overall appeal of your space with a stylish and functional curtains rod. These essential window accessories not only provide structural support but also add a touch of elegance to any room.
               </p>
               
-              <p className="curtainss-desc-paragraph manrope-font mb-5 d-flex justify-content-evenly hanken-grotesk-font">
+              <p className="curtainss-desc-paragraph manrope-font mb-5 d-flex justify-content-evenly hanken-grotesk-font sdes">
                 Discover a wide selection of curtains rods crafted from premium materials and available in various finishes to match your decor. Whether you prefer the classic charm of metal, the warmth of wood, or the sleekness of acrylic, there's a curtains rod to suit your style and preferences.
               </p>
               
