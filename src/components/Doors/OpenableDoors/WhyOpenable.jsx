@@ -1,6 +1,8 @@
 import React from 'react';
 import './css/WhyOpenable.css';
-import interiorImg from '../../../assets/overlay.png'; 
+import interiorImg1 from '../../../assets/openable1.png'; 
+import interiorImg2 from '../../../assets/openable2.png';
+import interiorImg3 from '../../../assets/openable3.png';
 import bgImg from '../../../assets/backgroundpicture.png'; // Ungaloda premium dark stripes texture image
 
 const WhyOpenable = () => {
@@ -9,21 +11,21 @@ const WhyOpenable = () => {
       id: "01",
       title: "Design and Versatility",
       description: "UPVC openable windows and doors are available in a variety of designs and styles to suit different architectural preferences. Whether you prefer casement windows, tilt-and-turn windows, or hinged doors, UPVC can be customized to meet your specific requirements. This versatility allows you to achieve the desired look and feel for your property.",
-      image: interiorImg,
+      image: interiorImg1,
       layoutReverse: false
     },
     {
       id: "02",
       title: "Enhanced Ventilation",
       description: "Openable windows and doors provide excellent ventilation options, allowing fresh air to flow into your space. You can control the amount of airflow by adjusting the opening angle or using different opening options available with UPVC systems. This feature is particularly beneficial in maintaining a comfortable indoor environment and reducing reliance on mechanical ventilation.",
-      image: interiorImg,
+      image: interiorImg2,
       layoutReverse: true
     },
     {
       id: "03",
       title: "Low Maintenance",
       description: "UPVC is a low-maintenance material that is resistant to rot, corrosion, and fading. Unlike traditional wooden frames, UPVC does not require regular painting or sealing. Cleaning UPVC windows and doors is easy and can be done with mild soapy water, making them a hassle-free option.",
-      image: interiorImg,
+      image: interiorImg3,
       layoutReverse: false
     }
   ];
@@ -33,13 +35,13 @@ const WhyOpenable = () => {
       <div className=" container-xxl">
         
         {/* --- TOP FIXED HEADER BLOCK --- */}
-        <div className="why-header-block d-flex justify-content-between align-items-end mb-5">
+        <div className="why-header-block d-flex justify-content-between align-items-center  align-items-md-end  mb-5">
           <div className="header-left">
-            <h6 className="sub-title text-uppercase mb-2">How We Do It</h6>
-            <p className="text-muted small-desc mb-2">Our work involves many intricate<br />steps and stages.</p>
-            <h2 className="why-main-title">Why Openable Windows <br />& Doors?</h2>
+            <h6 className="sub-title text-uppercase mb-2 text-center text-md-start">How We Do It</h6>
+            <p className="text-muted small-desc mb-2 text-center text-md-start">Our work involves many intricate<br />steps and stages.</p>
+            <h2 className="why-main-title text-center text-md-start">Why Openable Windows <br />& Doors?</h2>
           </div>
-          <div className="header-right mb-3">
+          <div className="header-right mb-3 ">
             <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
               <span className="manrope-font btn-text">Start Your Project</span>
               <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
@@ -75,9 +77,9 @@ const WhyOpenable = () => {
                 {/* Text Area */}
                 <div className="col-12 col-md-6">
                   <div className="card-text-box ps-md-4 pe-md-4">
-                    <span className="card-number-index d-block mb-2">{card.id}</span>
-                    <h3 className="card-title-text mb-3">{card.title}</h3>
-                    <p className="card-desc-text manrope-font">{card.description}</p>
+                    <span className="card-number-index d-block mb-2 text-center text-md-start">{card.id}</span>
+                    <h3 className="card-title-text mb-3 text-center text-md-start">{card.title}</h3>
+                    <p className="card-desc-text manrope-font text-center text-md-start">{card.description}</p>
                   </div>
                 </div>
 

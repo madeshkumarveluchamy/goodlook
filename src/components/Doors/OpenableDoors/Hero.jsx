@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Main Title Content Wrapper Block matching image_0d0c24.png perfectly */}
           <div className="col-12 openable-upvc-hero-text-engine text-center text-lg-start">
             <h1 className="openable-upvc-hero-massive-title m-0 inter-font fw-semibold select-none">
-              <span className="openable-title-row-white text-white d-block">Explore Our Premium</span>
+              <span className="openable-title-row-white text-white d-block">Elevate Your Space</span>
               <span className="openable-title-row-cream d-block">uPVC Openable Doors</span>
             </h1>
           </div>

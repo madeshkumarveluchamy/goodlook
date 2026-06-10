@@ -1,6 +1,8 @@
 import React from "react";
 import "./css/WhyOpenable.css";
-import interiorImg from "../../../assets/overlay.png";
+import interiorImg1 from "../../../assets/liftcollection1.png";
+import interiorImg2 from "../../../assets/liftcollection2.png";
+import interiorImg3 from "../../../assets/liftcollection3.png"
 import bgImg from "../../../assets/backgroundpicture.png"; // Ungaloda premium dark stripes texture image
 
 const WhyOpenable = () => {
@@ -10,7 +12,7 @@ const WhyOpenable = () => {
       title: "Smooth Vertical Operation",
       description:
         "These windows and doors operate by sliding the sashes vertically within the frame. The counterbalanced mechanism ensures smooth and effortless movement, allowing you to easily open and close them to control ventilation and access.",
-      image: interiorImg,
+      image: interiorImg1,
       layoutReverse: false,
     },
     {
@@ -18,15 +20,15 @@ const WhyOpenable = () => {
       title: "Durability and Longevity",
       description:
         "UPVC is a durable material that can withstand various weather conditions without warping, rotting, or corroding. Lift UPVC windows and doors are built to last, ensuring long-term functionality and aesthetic appeal.",
-      image: interiorImg,
+      image: interiorImg2,
       layoutReverse: true,
     },
     {
       id: "03",
-      title: "Low Maintenance",
+      title: "Noise Reduction",
       description:
         "The design and insulation properties of lift UPVC windows and doors contribute to sound reduction. They can help to minimize external noise, creating a quieter and more peaceful indoor environment. This is particularly beneficial if you live in busy or noisy areas.",
-      image: interiorImg,
+      image: interiorImg3,
       layoutReverse: false,
     },
   ];
@@ -38,16 +40,16 @@ const WhyOpenable = () => {
     >
       <div className=" container-xxl">
         {/* --- TOP FIXED HEADER BLOCK --- */}
-        <div className="why-header-block d-flex justify-content-between align-items-end mb-5">
+        <div className="why-header-block d-flex justify-content-between align-items-center align-items-md-end mb-5">
           <div className="header-left">
-            <h6 className="sub-title text-uppercase mb-2">How We Do It</h6>
-            <p className="text-muted small-desc mb-2">
+            <h6 className="sub-title text-uppercase mb-2 text-center text-md-start">How We Do It</h6>
+            <p className="text-muted small-desc mb-2 text-center text-md-start">
               Our work involves many intricate
               <br />
               steps and stages.
             </p>
-            <h2 className="why-main-title">
-              Why Lift or Sliding Windows <br /> & Doors?
+            <h2 className="why-main-title text-center text-md-start">
+             Why uPVC Lift or Sliding <br /> Windows & Doors?
             </h2>
           </div>
           <div className="header-right mb-3">
@@ -103,11 +105,11 @@ const WhyOpenable = () => {
                 {/* Text Area */}
                 <div className="col-12 col-md-6">
                   <div className="card-text-box ps-md-4 pe-md-4">
-                    <span className="card-number-index d-block mb-2">
+                    <span className="card-number-index d-block mb-2 text-center text-md-start">
                       {card.id}
                     </span>
-                    <h3 className="card-title-text mb-3">{card.title}</h3>
-                    <p className="card-desc-text manrope-font">
+                    <h3 className="card-title-text mb-3 text-center text-md-start">{card.title}</h3>
+                    <p className="card-desc-text manrope-font text-center text-md-start">
                       {card.description}
                     </p>
                   </div>

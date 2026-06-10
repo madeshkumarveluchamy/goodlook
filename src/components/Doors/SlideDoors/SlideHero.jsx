@@ -2,7 +2,7 @@
 import './css/SlideHero.css';
 
 // --- IMPORT YOUR DESIGN HIGH-RES BANNER IMAGE ---
-import upvcHeroBg from '../../../assets/upvcframe1.png';
+import upvcHeroBg from '../../../assets/slidingbackground.png';
 
 const SlideHero = () => {
   return (

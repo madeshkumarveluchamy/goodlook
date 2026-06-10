@@ -32,7 +32,7 @@
 }
 
 /* --- PREMIUM PROJECT CTA CAPSULE PILL --- */
-.project-cta-capsule-btn {
+.projects-cta-capsule-btn {
   border: 1px solid #111111 !important;
   border-radius: 50px !important;
   padding: 6px 14px 6px 20px !important;
@@ -45,7 +45,7 @@
   transition: all 0.25s ease !important;
 }
 
-.project-cta-capsule-btn:hover {
+.projects-cta-capsule-btn:hover {
   background-color: #111111 !important;
   color: #ffffff !important;
 }
@@ -78,7 +78,7 @@
 .floating-excellence-badge {
   position: absolute !important;
   bottom: 25px !important;
-  right: 25px !important;
+  left: 10px !important;
   background-color: #fbf6f5 !important; /* Soft premium off-white tone from screenshot */
   padding: 20px 24px !important;
   border-radius: 10px !important;
@@ -94,7 +94,10 @@
   font-weight: 500 !important;
   line-height: 1.3 !important;
 }
-
+.projects-cta-capsule-btn:hover {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+}
 /* ==========================================================================
    PHONE AND MOBILE RESPONSIVE MEDIA BREAKPOINTS
    ========================================================================== */
@@ -104,14 +107,14 @@
   }
   .insect-desc-text {
     font-size: 14px !important;
-    text-align: center; /* Soft fallback for pure micro mobile layouts text rows */
+    /* Soft fallback for pure micro mobile layouts text rows */
   }
   
   /* Adjusted floating badge for mobile grids to remain visible and balanced */
   .floating-excellence-badge {
     position: relative !important;
-    bottom: 0 !important;
-    right: 0 !important;
+    bottom: 60px !important;
+    left: 2px !important;
     margin: -30px auto 0 auto !important; /* Overlaps nicely over bottom image border natively */
     max-width: 90%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
@@ -123,7 +126,7 @@
   .brand-badge-gold { font-size: 20px !important; }
   .insect-main-heading { font-size: 5rem !important; }
   .insect-desc-text { font-size: 24px !important; line-height: 1.8 !important; }
-  .project-cta-capsule-btn { height: 64px !important; font-size: 20px !important; border-radius: 40px !important; }
+  .projects-cta-capsule-btn { height: 64px !important; font-size: 20px !important; border-radius: 40px !important; }
   .floating-excellence-badge { max-width: 420px; padding: 30px 40px !important; border-radius: 16px !important; }
   .badge-serif-text { font-size: 28px !important; }
 }

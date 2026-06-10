@@ -4,14 +4,14 @@ import insectImg from '../../assets/frameeee.png'; // Ungaloda same interior ima
 
 const InsectProtection = () => {
   return (
-    <section className="insect-protection-section py-5">
-      <div className="container py-md-5">
+    <section className="insect-protection-section py-1">
+      <div className="container">
         {/* Swapped rows cleanly so image scales beautifully on stack arrays */}
-        <div className="row align-items-center g-5 flex-column-reverse flex-md-row">
+        <div className="row align-items-center g-5  ">
           
           {/* --- LEFT COLUMN: TEXT CONTENT & CTA --- */}
           {/* FIXED: text-center for mobile layout, switches to text-md-start on larger screens */}
-          <div className="col-12 col-md-6 text-center text-md-start">
+          <div className="col-12 col-md-6 text-center text-md-start ">
             <div className="insect-content-block pe-lg-4">
               
               <h6 className="brand-badge-gold text-uppercase mb-2">
@@ -22,13 +22,13 @@ const InsectProtection = () => {
                 INSECT PROTECTION
               </h2>
               
-              <p className="insect-desc-text manrope-font mb-4">
+              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-4 justify-content-evenly">
                 GHD, with its buttery symbol, has been manufacturing high-quality, eco-friendly 
                 insect screens for over 21 years. The GHD system is recognised as the leading 
                 name in made-to-measure insect protection in Germany.
               </p>
               
-              <p className="insect-desc-text manrope-font mb-5">
+              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-5 justify-content-evenly">
                 As a GHD partner, we supply precision, made-to-measure frames for your doors and 
                 windows to keep out unwelcome visitors. We specialize in providing reliable and 
                 effective solutions to keep insects out while allowing fresh air and natural light 
@@ -37,7 +37,7 @@ const InsectProtection = () => {
               
               {/* Pushes button layout wrapper grid to match alignments natively */}
               <div className="d-flex justify-content-center justify-content-md-start">
-                <button className="btn btn-light project-cta-capsule-btn d-flex align-items-center gap-2">
+                <button className="btn btn-light projects-cta-capsule-btn d-flex align-items-center gap-2">
                   <span className="manrope-font btn-text">Start Your Project</span>
                   <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">

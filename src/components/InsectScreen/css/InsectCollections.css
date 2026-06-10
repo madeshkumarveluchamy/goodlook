@@ -31,18 +31,9 @@
   flex-direction: row !important;
   justify-content: space-between !important; 
   align-items: center !important;
-  overflow-x: auto !important; 
   scroll-behavior: smooth !important;
   gap: 1.5rem !important;
   padding-bottom: 8px !important;
-}
-
-.tabs-scroller-track::-webkit-scrollbar {
-  display: none;
-}
-.tabs-scroller-track {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .tab-trigger-btn {
@@ -105,10 +96,11 @@
 
 .showcase-glass-card-overlay {
   position: absolute !important;
+  width:81%;
   bottom: 20px !important;
   left: 20px !important;
   right: 20px !important;
-  background: rgba(0, 0, 0, 0.45) !important; 
+  background: #000000 !important; 
   backdrop-filter: blur(15px) !important;
   -webkit-backdrop-filter: blur(15px) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -116,6 +108,7 @@
   padding: 24px 35px !important;
   display: flex !important;
   align-items: center !important;
+  opacity:0.5 !important;
   z-index: 5 !important;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
 }
@@ -136,10 +129,12 @@
 
 .overlay-card-desc {
   color: rgba(255, 255, 255, 0.75) !important;
-  font-size: clamp(13px, 1.2vw, 14.5px) !important;
+  font-size: clamp(13px, 1.2vw, 18px) !important;
   line-height: 1.5 !important;
   font-weight: 400 !important;
   max-width: 90%;
+  letter-spacing:0.5px;
+    z-index: 7 !important;
 }
 
 .project-cta-capsule-btn {
@@ -162,23 +157,50 @@
   border-radius: 50%;
 }
 
-@media (max-width: 890px) {
-  .tabs-scroller-track {
-    justify-content: flex-start !important; 
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+/* ==========================================================================
+   🎯 FIXED: BREAK TABS INTO MULTIPLE LINES FROM TABLET DOWN (< 768px)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .tabs-navigation-wrapper {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
   }
-  
+
+  .tabs-scroller-track {
+    flex-wrap: wrap !important; 
+    justify-content: center !important; 
+    gap: 12px 18px !important; 
+    padding-bottom: 0 !important;
+  }
+
+  .tab-trigger-btn {
+    font-size: 11px !important;
+    padding: 6px 12px !important;
+    background: #f5f4f0 !important; 
+    border-radius: 30px !important; 
+    border: 1px solid #e0dfda !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .tab-trigger-btn.tab-active {
+    background: #dfa82d !important;
+    color: #ffffff !important;
+    border-color: #dfa82d !important;
+  }
+}
+
+@media (max-width: 890px) {
   .dynamic-showcase-card {
-    aspect-ratio: 16 / 10 !important;
+    aspect-ratio: 10 / 12 !important;
     max-height: none !important;
   }
   
   .showcase-glass-card-overlay {
+    width:90%;
     position: absolute !important;
     bottom: 12px !important;
     left: 12px !important;
     right: 12px !important;
-    padding: 16px !important;
+    padding: 10px !important;
   }
 }

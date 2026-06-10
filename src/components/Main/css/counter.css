@@ -162,4 +162,8 @@
     width: 80px !important;
     height: 80px !important;
   }
+
+  .metric-display-number {
+  font-size: 3rem !important; /* Premium prominent scale */
+  }
 }

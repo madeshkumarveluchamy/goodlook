@@ -117,6 +117,7 @@ const Navbar = () => {
             </ul>
             
             <div className="d-flex justify-content-center pt-3 pt-lg-0">
+              <Link to="/cta" className='text-decoration-none'>
               <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
                 <span className="manrope-font btn-text">Start Your Project</span>
                 <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
@@ -125,6 +126,7 @@ const Navbar = () => {
                   </svg>
                 </span>
               </button>
+              </Link>
             </div>
           </div>
 

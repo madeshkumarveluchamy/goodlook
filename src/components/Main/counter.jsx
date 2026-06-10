@@ -58,7 +58,7 @@ const AboutCounter = () => {
         <div className="row justify-content-between align-items-start m-0 w-100 g-4">
           
           {/* METRIC BLOCK 1 */}
-          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
+          <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box d-flex">
               <h2 className="metric-display-number ">
                 <SlotCounter value={2006} baseDirection="up" />
@@ -74,7 +74,7 @@ const AboutCounter = () => {
           </div>
 
           {/* METRIC BLOCK 2 (ZIGZAG DROP APPLIED IN CSS VIA EVEN SELECTOR) */}
-          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
+          <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
                 <SlotCounter value={154} baseDirection="up" />
@@ -91,7 +91,7 @@ const AboutCounter = () => {
           </div>
 
           {/* METRIC BLOCK 3 */}
-          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
+          <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
                 <SlotCounter value={1.5} baseDirection="up" />
@@ -108,7 +108,7 @@ const AboutCounter = () => {
           </div>
 
           {/* METRIC BLOCK 4 (ZIGZAG DROP APPLIED IN CSS VIA EVEN SELECTOR) */}
-          <div className="col-12 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
+          <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
                 <SlotCounter value={100} baseDirection="up" />

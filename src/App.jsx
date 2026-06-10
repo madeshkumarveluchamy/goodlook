@@ -10,6 +10,9 @@ import OpenableHome from './components/Doors/OpenableDoors/OpenableHome';
 import SlideHome from './components/Doors/SlideDoors/SlideHome';
 import LeftSlideHome from './components/Doors/LeftSlideDoors/LeftSlideHome';
 import InsectHome from './components/InsectScreen/InsectHome';
+import CurtainHome from './components/Curtains&Blinds/Curtains/CurtainHome';
+import BlindHome from './components/Curtains&Blinds/Blinds/BlindHome';
+import CTAHome from './components/CtaSection/CTAHome';
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
       <Route path = "/insect" element={<InsectHome />} />
       <Route path="/story" element={<StoryHome/>} />
       <Route path="/upvc" element={<UpvcHome />} />
+      <Route path ="/curtains" element = {<CurtainHome />} />
+      <Route path ="/Blinds" element = {<BlindHome />} />
+      <Route path ="/cta" element = {<CTAHome />} />
       </Routes>
       <Footer />
     </div>

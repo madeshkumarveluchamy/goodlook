@@ -8,10 +8,9 @@ import PreferredChoiceHeader from './PreferredChoiceHeader'
 const InsectHome = () => {
   return (
     <div>
-      <Hero />
-      <InsectProtection />
       <InsectCollections />
-       <PreferredChoiceHeader />
+      <InsectProtection />
+      <PreferredChoiceHeader />
       <InsectFeatures />
    
     </div>

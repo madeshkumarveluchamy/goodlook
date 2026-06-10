@@ -1,0 +1,97 @@
+.rod-categories-section {
+  background-color: #ffffff !important;
+  width: 100%;
+  padding: 60px 0 !important;
+}
+
+.rod-product-card {
+  position: relative !important;
+  width: 100% !important;
+  border-radius: 0px !important; 
+  overflow: visible !important;
+  aspect-ratio: 4 / 5 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.rod-image-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.rod-product-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+}
+
+.rod-product-card:hover .rod-product-img {
+  transform: scale(1.04) !important;
+}
+
+.rod-info-box-overlay {
+  position: absolute !important;
+  bottom: 25px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: #ffffff !important;
+  width: 60% !important;
+  padding: 14px 10px !important;
+  text-align: center !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
+  z-index: 5 !important;
+  border-radius: 4px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.rod-product-card:hover .rod-info-box-overlay {
+  transform: translateX(-50%) translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14) !important;
+}
+
+.rod-brand-badge {
+  display: block !important;
+  color: #dfa82d !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.8px !important;
+  margin-bottom: 4px !important;
+  text-transform: uppercase !important;
+}
+
+.rod-product-title {
+  font-family: 'Playfair Display', serif !important;
+  color: #111111 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 991.98px) {
+  .rod-info-box-overlay {
+    width: 88% !important;
+    padding: 12px 8px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .rod-categories-section {
+    padding: 40px 20px !important;
+  }
+  
+  .rod-product-card {
+    max-width: 400px !important;
+    margin: 0 auto 15px auto !important;
+    aspect-ratio: 4 / 5 !important; 
+  }
+
+  .rod-info-box-overlay {
+    bottom: 20px !important;
+    width: 65% !important;
+  }
+}

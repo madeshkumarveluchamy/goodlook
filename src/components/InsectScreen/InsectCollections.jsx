@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './css/InsectCollections.css';
 
-import stenteringImg from '../../assets/insectcollections.png'; 
-import swingImg from '../../assets/insectcollections.png';
-import hingedImg from '../../assets/insectcollections.png';
-import rollerImg from '../../assets/insectcollections.png';
-import pleatedImg from '../../assets/insectcollections.png';
-import slidingImg from '../../assets/insectcollections.png';
-import lightwellImg from '../../assets/insectcollections.png';
+import stenteringImg from '../../assets/curtainrod.png'; 
+import swingImg from '../../assets/curtainrod.png';
+import hingedImg from '../../assets/curtainrod.png';
+import rollerImg from '../../assets/curtainrod.png';
+import pleatedImg from '../../assets/curtainrod.png';
+import slidingImg from '../../assets/curtainrod.png';
+import lightwellImg from '../../assets/curtainrod.png';
 
 const InsectCollections = () => {
   const [activeTab, setActiveTab] = useState('stentering');
@@ -62,18 +62,18 @@ const InsectCollections = () => {
   ];
 
   return (
-    <section className="insect-collections-section py-5">
-      <div className="container py-4 text-center">
+    <section className="insect-collections-section pt-5 pb-2 pb-md-5">
+      <div className="container py-5 text-center">
         
         <h2 className="collections-main-title mb-2">All Insect Screen</h2>
         <h2 className="collections-main-title mb-4">Collections</h2>
         
-        <p className="collections-sub-desc manrope-font mx-auto mb-5">
+        <p className="collections-sub-desc hanken-grotesk-font mx-auto mb-5">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
           to provide the perfect fit and lasting protection for every room
         </p>
 
-        <div className="tabs-navigation-wrapper mb-5">
+        <div className="tabs-navigation-wrapper mb-1 mb-md-3">
           <div className="tabs-scroller-track">
             {tabsList.map((tab) => (
               <button
@@ -87,7 +87,7 @@ const InsectCollections = () => {
           </div>
         </div>
 
-        <div className="current-selection-heading text-start mb-4">
+        <div className="current-selection-heading text-start mb-1 mb-md-4">
           <span className="bullet-diamond">❖</span> {collectionsData[activeTab].title}
         </div>
 
@@ -108,16 +108,16 @@ const InsectCollections = () => {
               />
 
               <div className="showcase-glass-card-overlay">
-                <div className="row align-items-center g-4 w-100 m-0">
+                <div className="row align-items-center g-1  m-0">
                   <div className="col-12 col-md-8 text-start p-0">
-                    <h4 className="overlay-card-title mb-2">
+                    <h4 className="overlay-card-title text-center text-md-start">
                       <span className="bullet-diamond-small">❖</span> {collectionsData[activeTab].title}
                     </h4>
-                    <p className="overlay-card-desc manrope-font mb-0">
+                    <div className='d-flex justify-content-center justify-content-md-start'><p className="overlay-card-desc hanken-grotesk-font mb-0 text-center text-md-start">
                       {collectionsData[activeTab].description}
-                    </p>
+                    </p></div>
                   </div>
-                  <div className="col-12 col-md-4 text-md-end p-0 pt-2 pt-md-0">
+                  <div className="col-12 col-md-4 text-md-end">
                     <button className="btn btn-light project-cta-capsule-btn d-inline-flex align-items-center gap-2">
                       <span className="manrope-font btn-text">Start Your Project</span>
                       <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">

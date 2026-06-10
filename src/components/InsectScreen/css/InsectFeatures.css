@@ -110,7 +110,7 @@
 
   .feature-grid-card {
     width: 100% !important;
-    max-width: 240px !important;
+    max-width: 400px !important;
     height: 340px !important;
   }
 }
@@ -118,7 +118,7 @@
 @media (max-width: 575.98px) {
   .features-unified-grid {
     grid-template-columns: 1fr !important;
-    max-width: 280px !important;
+    max-width: 400px !important;
     gap: 20px !important;
   }
 
