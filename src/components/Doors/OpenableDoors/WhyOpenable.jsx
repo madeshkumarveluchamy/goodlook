@@ -1,9 +1,10 @@
 import React from 'react';
 import './css/WhyOpenable.css';
-import interiorImg1 from '../../../assets/openable1.png'; 
-import interiorImg2 from '../../../assets/openable2.png';
-import interiorImg3 from '../../../assets/openable3.png';
-import bgImg from '../../../assets/backgroundpicture.png'; // Ungaloda premium dark stripes texture image
+import interiorImg1 from '../../../assets/openable1.webp'; 
+import interiorImg2 from '../../../assets/openable2.webp';
+import interiorImg3 from '../../../assets/openable3.webp';
+import bgImg from '../../../assets/backgroundpicture.webp'; // Ungaloda premium dark stripes texture image
+import {Link} from "react-router-dom"
 
 const WhyOpenable = () => {
   const cardsData = [
@@ -38,9 +39,10 @@ const WhyOpenable = () => {
         <div className="why-header-block d-flex justify-content-between align-items-center  align-items-md-end  mb-5">
           <div className="header-left">
             <h6 className="sub-title text-uppercase mb-2 text-center text-md-start">How We Do It</h6>
-            <p className="text-muted small-desc mb-2 text-center text-md-start">Our work involves many intricate<br />steps and stages.</p>
+            <p className=" smalls-desc mb-2 text-center text-md-start">Our work involves many intricate<br />steps and stages.</p>
             <h2 className="why-main-title text-center text-md-start">Why Openable Windows <br />& Doors?</h2>
           </div>
+          <Link to="/cta" className="text-decoration-none">
           <div className="header-right mb-3 ">
             <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
               <span className="manrope-font btn-text">Start Your Project</span>
@@ -51,13 +53,14 @@ const WhyOpenable = () => {
               </span>
             </button>
           </div>
+          </Link>
         </div>
 
         {/* --- STACKING OVERLAP CONTAINER --- */}
-        <div className="why-stacking-container">
+        <div className="whys-stacking-container ">
           {cardsData.map((card, index) => (
             <div 
-              className="stacking-card-item" 
+              className="stacking-card-item " 
               key={card.id}
               style={{ 
                 '--card-index': index,
@@ -65,7 +68,7 @@ const WhyOpenable = () => {
               }}
             >
               {/* FIXED: Open Row Layout with Divider Line instead of closed boxes */}
-              <div className={`row align-items-center g-5 card-row-divider ${card.layoutReverse ? 'flex-row-reverse' : ''}`} style={{ backgroundImage: `url(${bgImg})` }}>
+              <div className={`row align-items-center  g-5 card-row-divider ${card.layoutReverse ? 'flex-row-reverse' : ''}`} style={{ backgroundImage: `url(${bgImg})` }}>
                 
                 {/* Image Area */}
                 <div className="col-12 col-md-6">

@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Hero.css';
 
-import blindsHeroBg from '../../../assets/Blindbackground.png';
+import blindsHeroBg from '../../../assets/Blindbackground.webp';
 
 const BlindsHero = () => {
   return (
@@ -22,7 +22,7 @@ const BlindsHero = () => {
           <div className="col-12 blinds-hero-text-engine text-center text-lg-start">
             <h1 className="blinds-hero-massive-title m-0 inter-font fw-semibold select-none">
               <span className="blinds-title-row-white text-white d-block">Upgrade Your Space</span>
-              <span className="blinds-title-row-cream d-block">with Blinds</span>
+              <span className="blinds-title-row-cream d-block">with our Blinds</span>
             </h1>
           </div>
 

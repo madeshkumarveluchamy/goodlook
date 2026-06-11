@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 import './css/Testimonials.css';
 
-import reviewUserImg from '../../assets/quality1.png'; 
+import reviewUserImg from '../../assets/quality1.webp'; 
 
 const Testimonials = () => {
   // Base array data set

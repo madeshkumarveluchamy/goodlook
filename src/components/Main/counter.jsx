@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./css/Counter.css";
 
-import counterImg1 from "../../assets/counter1.png"; 
-import counterImg2 from "../../assets/counter2.png"; 
-import counterImg3 from "../../assets/counter3.png"; 
-import counterImg4 from "../../assets/counter4.png"; 
+import counterImg1 from "../../assets/counter1.webp"; 
+import counterImg2 from "../../assets/counter2.webp"; 
+import counterImg3 from "../../assets/counter3.webp"; 
+import counterImg4 from "../../assets/counter4.webp"; 
 
 // --- Slot Rolling Logic Block ---
 const SlotCounter = ({ value, baseDirection = "up" }) => {

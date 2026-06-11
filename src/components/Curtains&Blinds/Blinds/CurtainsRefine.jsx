@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/CurtainsRefine.css';
-import refineImg from '../../../assets/curtainstory.png';
+import refineImg from '../../../assets/curtainstory.webp';
 
 const CurtainsRefine = () => {
   return (

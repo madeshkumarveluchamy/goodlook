@@ -6,7 +6,7 @@
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: calc(100vw / 6) 100%;
   color: #ffffff;
-  padding: 6rem 0;
+  padding: 4rem 0;
   width: 100vw !important;
   max-width: 100% !important;
   overflow: hidden;

@@ -165,7 +165,7 @@
 
 /* --- 3. TABLETS & SMALL VIEWS (Lesser than 748px) --- */
 @media (max-width: 747.98px) {
-  .quality-section { padding: 4rem 0; }
+  .quality-section { padding: 2rem 0; }
   .large-white-card, .dark-solid-card { padding: 2rem !important; }
   .utility-minimal-card { min-height: auto; padding: 2.5rem 1.5rem !important; }
 }

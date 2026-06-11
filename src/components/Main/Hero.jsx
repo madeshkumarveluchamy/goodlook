@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './css/Hero.css';
 
-import bg1 from "../../assets/herobackgroundshade2.png";
-import frame1 from "../../assets/CurtainBackground.png";
-import heroback from "../../assets/herobackrectangle.png";
+import bg1 from "../../assets/herobackgroundshade2.webp";
+import frame1 from "../../assets/CurtainBackground.webp";
+import heroback from "../../assets/herobackrectangle.webp";
 
-import bg2 from "../../assets/insectcollectionbackground.png";
-import frame2 from "../../assets/insectcollectionbackground.png";
+import bg2 from "../../assets/insectcollectionbackground.webp";
+import frame2 from "../../assets/insectcollectionbackground.webp";
 
-import bg3 from "../../assets/leftbackground.png";
-import frame3 from "../../assets/leftbackground.png";
+import bg3 from "../../assets/leftbackground.webp";
+import frame3 from "../../assets/leftbackground.webp";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

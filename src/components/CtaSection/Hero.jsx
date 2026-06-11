@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Hero.css';
 
-import curtainsHeroBg from '../../assets/ctahero.png';
+import curtainsHeroBg from '../../assets/ctahero.webp';
 
 const CurtainsHero = () => {
   return (

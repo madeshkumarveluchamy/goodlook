@@ -3,7 +3,7 @@ import './css/LeftHero.css';
 
 
 // --- IMPORT YOUR DESIGN HIGH-RES BANNER IMAGE ---
-import upvcHeroBg from '../../../assets/leftbackground.png';
+import upvcHeroBg from '../../../assets/leftbackground.webp';
 
 const Hero = () => {
   return (
@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="container-fluid left-upvc-hero-fluid-holder h-100 position-relative z-index-3 ">
         <div className="row h-100 align-items-center">
           
-          {/* Main Title Content Wrapper Block matching image_0d0c24.png perfectly */}
+          {/* Main Title Content Wrapper Block matching image_0d0c24.webp perfectly */}
           <div className="col-12 left-upvc-hero-text-engine text-center">
             <h1 className="left-upvc-hero-massive-title m-0 inter-font fw-semibold select-none">
               <span className="left-title-row-white text-white d-block">Elevate Design & Flow</span>

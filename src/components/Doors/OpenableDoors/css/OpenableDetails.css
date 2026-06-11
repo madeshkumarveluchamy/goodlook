@@ -6,7 +6,16 @@
   width: 100%;
   overflow: hidden;
 }
+.stacking-card-item{
+  border-radius:50px !important
+}
 
+.card-row-divider{
+border-radius:50px !important;
+}
+.whys-stacking-container{
+  border-radius:50px !important
+}
 /* Image Presentation Canvas Frame Box */
 .image-frame-wrapper {
   width: 100%;

@@ -49,6 +49,7 @@
 }
 
 .segment-desc-para {
+  text-align:justify;
   font-size: 18px;
   color: #2B2B2B;
   line-height: 1.65;
@@ -106,7 +107,6 @@
   .philosophy-mini-tag,
   .philosophy-main-title,
   .segment-desc-para {
-    text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }

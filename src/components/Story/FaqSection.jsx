@@ -63,7 +63,7 @@ const FaqSection = () => {
                     }`}
                     onClick={() => handleFaqToggle(index)}
                   >
-                    <h4 className="faq-item-question m-0 fw-medium text-start">
+                    <h4 className="faq-items-question m-0 fw-medium text-start">
                       {item.question}
                     </h4>
                     
@@ -78,7 +78,7 @@ const FaqSection = () => {
                     activeFaq === index ? 'faq-drawer-expanded' : 'faq-drawer-collapsed'
                   }`}>
                     <div className="faq-drawer-interior-padding px-4 pb-4 pt-1">
-                      <p className="faq-answer-desc-text m-0 hanken-grotesk-font text-muted">
+                      <p className="faq-answers-desc-text m-0 hanken-grotesk-font text-muted">
                         {item.answer}
                       </p>
                     </div>

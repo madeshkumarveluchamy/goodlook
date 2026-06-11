@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/CurtainsrodsCollection.css';
-import rodImg from '../../../assets/curtainrod.png';
-
+import rodImg from '../../../assets/curtainrod.webp';
+import {Link} from "react-router-dom";
 const CurtainrodCollection = () => {
   return (
     <section className="rod-collection-section ">
@@ -30,14 +30,15 @@ const CurtainrodCollection = () => {
             <div className="rod-glass-card-overlay">
               <div className="row align-items-center  text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
-                  <h4 className="overlay-rod-title mb-2 text-center text-md-start smin">
+                  <h4 className="overlay-rod-title mb-2 text-center text-md-start sdes">
                     <span className="bullet-diamond-small ">❖</span> Curtain rod Designs
                   </h4>
-                  <p className="overlay-rod-desc d-flex justify-content-even manrope-font mb-0 ssub">
+                  <p className="overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
                     Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
                   </p>
                 </div>
-                <div className="col-12 col-md-4 text-md-end p-0 pt-2 pt-md-0">
+                <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
+                  <Link to="/cta" className="text-decoration-none">
                   <button className="btn btn-light project-cta-capsule-btn d-inline-flex align-items-center gap-2">
                     <span className="manrope-font btn-text">Start Your Project</span>
                     <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
@@ -46,6 +47,7 @@ const CurtainrodCollection = () => {
                       </svg>
                     </span>
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

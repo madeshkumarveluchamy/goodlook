@@ -1,9 +1,10 @@
 import React from "react";
 import "./css/WhyOpenable.css";
-import interiorImg1 from "../../../assets/liftcollection1.png";
-import interiorImg2 from "../../../assets/liftcollection2.png";
-import interiorImg3 from "../../../assets/liftcollection3.png"
-import bgImg from "../../../assets/backgroundpicture.png"; // Ungaloda premium dark stripes texture image
+import interiorImg1 from "../../../assets/liftcollection1.webp";
+import interiorImg2 from "../../../assets/liftcollection2.webp";
+import interiorImg3 from "../../../assets/liftcollection3.webp"
+import bgImg from "../../../assets/backgroundpicture.webp"; // Ungaloda premium dark stripes texture image
+import {Link} from "react-router-dom"
 
 const WhyOpenable = () => {
   const cardsData = [
@@ -43,7 +44,7 @@ const WhyOpenable = () => {
         <div className="why-header-block d-flex justify-content-between align-items-center align-items-md-end mb-5">
           <div className="header-left">
             <h6 className="sub-title text-uppercase mb-2 text-center text-md-start">How We Do It</h6>
-            <p className="text-muted small-desc mb-2 text-center text-md-start">
+            <p className=" small-desc mb-2 text-center text-md-start">
               Our work involves many intricate
               <br />
               steps and stages.
@@ -52,6 +53,7 @@ const WhyOpenable = () => {
              Why uPVC Lift or Sliding <br /> Windows & Doors?
             </h2>
           </div>
+          <Link to="/cta" className="text-decoration-none" >
           <div className="header-right mb-3">
             <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
               <span className="manrope-font btn-text">Start Your Project</span>
@@ -73,6 +75,7 @@ const WhyOpenable = () => {
               </span>
             </button>
           </div>
+          </Link>
         </div>
 
         {/* --- STACKING OVERLAP CONTAINER --- */}

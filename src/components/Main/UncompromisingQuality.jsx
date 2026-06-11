@@ -2,9 +2,9 @@ import React from 'react';
 import './css/UncompromisingQuality.css';
 
 // --- IMPORT YOUR 3 IMAGE ASSETS DIRECTLY ---
-import quality1 from '../../assets/quality1.png';
-import quality2 from '../../assets/quality2.png';
-import quality3 from '../../assets/quality3.png';
+import quality1 from '../../assets/quality1.webp';
+import quality2 from '../../assets/quality2.webp';
+import quality3 from '../../assets/quality3.webp';
 
 const UncompromisingQuality = () => {
   const articlesData = [

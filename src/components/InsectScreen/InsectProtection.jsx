@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/InsectProtection.css';
-import insectImg from '../../assets/frameeee.png'; // Ungaloda same interior image asset path
+import insectImg from '../../assets/frameeee.webp'; // Ungaloda same interior image asset path
 
 const InsectProtection = () => {
   return (
@@ -22,13 +22,13 @@ const InsectProtection = () => {
                 INSECT PROTECTION
               </h2>
               
-              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-4 justify-content-evenly sdes">
+              <p className="insect-desc-text fw-normal d-flex hanken-grotesk-font mb-4 justify-content-evenly sdes">
                 GHD, with its buttery symbol, has been manufacturing high-quality, eco-friendly 
                 insect screens for over 21 years. The GHD system is recognised as the leading 
                 name in made-to-measure insect protection in Germany.
               </p>
               
-              <p className="insect-desc-text fw-semibold d-flex manrope-font mb-5 justify-content-evenly sdes">
+              <p className="insect-desc-text fw-normal d-flex hanken-grotesk-font mb-5 justify-content-evenly sdes">
                 As a GHD partner, we supply precision, made-to-measure frames for your doors and 
                 windows to keep out unwelcome visitors. We specialize in providing reliable and 
                 effective solutions to keep insects out while allowing fresh air and natural light 
@@ -59,7 +59,7 @@ const InsectProtection = () => {
                 className="img-fluid insect-display-img" 
               />
               
-              {/* Floating Badge Box component overlayed onto bottom border edge as per image_45be94.png */}
+              {/* Floating Badge Box component overlayed onto bottom border edge as per image_45be94.webp */}
               <div className="floating-excellence-badge text-center">
                 <h4 className="badge-serif-text mb-0">
                   21 Years of <br /> Engineering Excellence

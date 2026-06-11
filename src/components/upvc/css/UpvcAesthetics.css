@@ -35,6 +35,7 @@
 }
 
 .aesthetics-body-text {
+  text-align:justify !important;
   font-size: 14.5px;
   line-height: 1.65;
   letter-spacing:0.5px;
@@ -91,7 +92,7 @@
   .aesthetics-mini-tag,
   .aesthetics-main-title,
   .aesthetics-body-text {
-    text-align: center !important;
+   
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -111,6 +112,6 @@
   }
 
   .aesthetics-img-wrapper {
-    aspect-ratio: 4 / 3.2; /* Safe responsive bounding viewport size constraints prevent scroll breaking layers */
+    aspect-ratio: 4 / 6; /* Safe responsive bounding viewport size constraints prevent scroll breaking layers */
   }
 }

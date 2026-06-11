@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './css/StoryCategories.css';
 
 // --- IMPORT YOUR MAIN INTERIOR IMAGE SETS ---
-import defaultImg from '../../assets/storyframe4.png';
+import defaultImg from '../../assets/storyframe4.webp';
 
 const StoryCategories = () => {
   // START STATE: -1 கொடுத்தா ஆரம்பத்துல எல்லா கன்டென்ட் டிராயரும் மூடியே இருக்கும்
@@ -59,13 +59,12 @@ const StoryCategories = () => {
         </div>
 
         {/* ================= INTEGRATED INTERACTIVE ROW CANVASES ================= */}
-        <div className="row mt-5 align-items-start position-relative unified-categories-layout-grid">
+        <div className="row mt-5 align-items-start position-relative unified-categories-layout-grid ">
           
           {/* LEFT COLUMN: DYNAMIC DESKTOP MEDIA ENGINE */}
           <div className="col-lg-5 d-none d-lg-block desktop-media-container-column">
             <div className="cat-view-image-frame rounded-3 overflow-hidden shadow-sm position-relative">
               {categoriesData.map((item, index) => {
-                // RULE CONDITION: ஆரம்பத்துல (-1ஆ இருக்கும்போது) 0-வது இமேஜை மட்டும் காட்டு, மத்தபடி ஆக்டிவ் இமேஜை காட்டு!
                 const isImageVisible = activeCategory === index || (activeCategory === -1 && index === 0);
                 
                 return (
@@ -118,13 +117,13 @@ const StoryCategories = () => {
                   <div className={`cat-adaptive-fluid-drawer ${
                     activeCategory === idx ? 'cat-drawer-open' : 'cat-drawer-closed'
                   }`}>
-                    <div className="cat-drawer-interior-padding">
+                    <div className="cat-drawer-interior-padding d-flex flex-column-reverse">
                       <p className="cat-drawer-desc-text hanken-grotesk-font">
                         {category.desc}
                       </p>
                       
                       {/* Mobile View Image Block */}
-                      <div className="cat-drawer-media-box px-2 d-lg-none mt-3">
+                      <div className="cat-drawer-media-box px-2 d-lg-none mt-3 mb-2">
                         <img 
                           src={category.image} 
                           alt={category.title} 

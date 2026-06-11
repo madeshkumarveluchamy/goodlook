@@ -2,7 +2,7 @@
 import './css/SlideHero.css';
 
 // --- IMPORT YOUR DESIGN HIGH-RES BANNER IMAGE ---
-import upvcHeroBg from '../../../assets/slidingbackground.png';
+import upvcHeroBg from '../../../assets/slidingbackground.webp';
 
 const SlideHero = () => {
   return (
@@ -23,7 +23,7 @@ const SlideHero = () => {
       <div className="container-fluid slide-upvc-hero-fluid-holder h-100 position-relative z-index-3 d-flex justify-content-center">
         <div className="row h-100 align-items-center">
           
-          {/* Main Title Content Wrapper Block matching image_0d0c24.png perfectly */}
+          {/* Main Title Content Wrapper Block matching image_0d0c24.webp perfectly */}
           <div className="col-12 slide-upvc-hero-text-engine text-center text-lg-start">
             <h1 className="slide-upvc-hero-massive-title m-0 inter-font fw-semibold select-none">
               <span className="slide-title-row-white text-white d-block">Brighten Every Room</span>

@@ -2,10 +2,10 @@ import React from 'react';
 import './css/UpvcDoorGallery.css';
 
 // --- IMPORT YOUR SPECIFIC DOOR PROFILE RENDER ASSETS ---
-import upvcDoor1 from '../../assets/upvcdoor1.png';
-import upvcDoor2 from '../../assets/upvcdoor2.png';
-import upvcDoor3 from '../../assets/upvcdoor3.png';
-import upvcDoor4 from '../../assets/upvcdoor4.png';
+import upvcDoor1 from '../../assets/upvcdoor1.webp';
+import upvcDoor2 from '../../assets/upvcdoor2.webp';
+import upvcDoor3 from '../../assets/upvcdoor3.webp';
+import upvcDoor4 from '../../assets/upvcdoor4.webp';
 
 const UpvcDoorsGallery = () => {
   const doorsData = [

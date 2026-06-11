@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/RodCategories.css';
 
-import rodGolden from '../../../assets/curtainrodcollection1.png';
-import rodBlack from '../../../assets/curtainrodcollection2.png';
-import rodDesign from '../../../assets/curtainrodcollection3.png';
+import rodGolden from '../../../assets/curtainrodcollection1.webp';
+import rodBlack from '../../../assets/curtainrodcollection2.webp';
+import rodDesign from '../../../assets/curtainrodcollection3.webp';
 
 const RodCategories = () => {
   const rodData = [

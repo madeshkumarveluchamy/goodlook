@@ -13,8 +13,36 @@ const ContactConnect = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // 🎯 REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+    const googleSheetScriptUrl = "https://script.google.com/macros/s/AKfycbyq3HiBJf03Rdn4PgIXaDMC3MoRF0weAfJyuLGY7nPbPUtfh7mLFqtdVoP_Un9ZHw/exec";
+
+    try {
+      const response = await fetch(googleSheetScriptUrl, {
+        method: "POST",
+        mode: "no-cors", // Crucial block to bypass browser CORS restrictions
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Show toast or alert notification
+      alert("Message sent successfully directly to Google Sheets!");
+      
+      // Clear form inputs after success
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error sending data to sheet:", error);
+      alert("Something went wrong, please try again.");
+    }
   };
 
   return (
@@ -62,8 +90,8 @@ const ContactConnect = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="info-block-label mb-2 inter-font smin">Main office</h5>
-                <p className="info-block-value hanken-grotesk-font mb-3 sdes">
+                <h5 className="info-block-label mb-2 inter-font sdes">Main office</h5>
+                <p className="info-block-value hanken-grotesk-font mb-3 smin">
                   13A Poombuhar nagar, Civil aerodrome post
                   <br />
                   Coimbatore - 641014.
@@ -102,8 +130,8 @@ const ContactConnect = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="info-block-label mb-2 inter-font smin">Phone no.</h5>
-                <p className="info-block-value hanken-grotesk-font mb-0 sdes">
+                <h5 className="info-block-label mb-2 inter-font sdes">Phone no.</h5>
+                <p className="info-block-value hanken-grotesk-font mb-0 smin">
                   91+ 975 143 70 20
                 </p>
               </div>
@@ -127,8 +155,8 @@ const ContactConnect = () => {
                 </svg>
               </div>
               <div>
-                <h5 className="info-block-label mb-2 inter-font smin">Email id</h5>
-                <p className="info-block-value hanken-grotesk-font mb-0 sdes">
+                <h5 className="info-block-label mb-2 inter-font sdes">Email id</h5>
+                <p className="info-block-value hanken-grotesk-font mb-0 smin">
                   Unimaxxarchitects@gmail.com
                 </p>
               </div>
@@ -139,7 +167,7 @@ const ContactConnect = () => {
             <form onSubmit={handleSubmit} className="d-flex flex-column gap-4">
               <div className="text-center mb-2">
                 <h3 className="form-card-inner-title mb-3 font-serief stit">SEND A MESSAGE</h3>
-                <p className="form-card-inner-desc manrope-font mx-auto sdes">
+                <p className="form-card-inner-desc hanken-grotesk-font mx-auto sdes">
                   We design timeless spaces blending function, beauty, and
                   thoughtful architectural innovation.
                 </p>

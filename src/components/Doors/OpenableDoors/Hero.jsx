@@ -2,7 +2,7 @@
 import './css/Hero.css';
 
 // --- IMPORT YOUR DESIGN HIGH-RES BANNER IMAGE ---
-import upvcHeroBg from '../../../assets/upvcframe1.png';
+import upvcHeroBg from '../../../assets/upvcframe1.webp';
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container-fluid openable-upvc-hero-fluid-holder h-100 position-relative z-index-3 d-flex justify-content-center">
         <div className="row h-100 align-items-center">
           
-          {/* Main Title Content Wrapper Block matching image_0d0c24.png perfectly */}
+          {/* Main Title Content Wrapper Block matching image_0d0c24.webp perfectly */}
           <div className="col-12 openable-upvc-hero-text-engine text-center text-lg-start">
             <h1 className="openable-upvc-hero-massive-title m-0 inter-font fw-semibold select-none">
               <span className="openable-title-row-white text-white d-block">Elevate Your Space</span>

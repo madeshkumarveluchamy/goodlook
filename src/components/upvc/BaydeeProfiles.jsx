@@ -2,12 +2,12 @@ import React from 'react';
 import './css/BaydeeProfiles.css';
 
 // --- IMPORT YOUR DESIGN IMAGES ---
-import baydeeHeaderLogo from '../../assets/baydee.png'; 
-import upvcCollection1 from '../../assets/upvcCollection1.png';
-import upvcCollection2 from '../../assets/upvcCollection2.png';
-import upvcCollection3 from '../../assets/upvcCollection3.png';
-import upvcCollection4 from '../../assets/upvcCollection4.png';
-import upvcCollection5 from '../../assets/upvcCollection5.png'; 
+import baydeeHeaderLogo from '../../assets/baydee.webp'; 
+import upvcCollection1 from '../../assets/upvcCollection1.webp';
+import upvcCollection2 from '../../assets/upvcCollection2.webp';
+import upvcCollection3 from '../../assets/upvcCollection3.webp';
+import upvcCollection4 from '../../assets/upvcCollection4.webp';
+import upvcCollection5 from '../../assets/upvcCollection5.webp'; 
 
 const BaydeeProfiles = () => {
   const collectionsData = [
@@ -94,7 +94,7 @@ const BaydeeProfiles = () => {
                   <span className="variant-mini-tag text-uppercase tracking-widest d-block mb-1 manrope-font fw-bold color-yellow ssub">
                     {item.tag}
                   </span>
-                  <h5 className="variant-card-title m-0 inter-font text-capitalize fw-semibold text-dark hanken-grotesk-font sdes">
+                  <h5 className="variant-card-title m-0 inter-font text-capitalize fw-semibold text-dark font-serif sdes">
                     {item.title}
                   </h5>
                 </div>

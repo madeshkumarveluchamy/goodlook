@@ -2,7 +2,7 @@ import React from 'react';
 import './css/StoryPhilosophy.css';
 
 // --- IMPORT YOUR RENDER IMAGE ASSET ---
-import philosophyImg from '../../assets/storyframe3.png';
+import philosophyImg from '../../assets/storyframe3.webp';
 
 const StoryPhilosophy = () => {
   return (
@@ -10,7 +10,7 @@ const StoryPhilosophy = () => {
       <div className="container-fluid philosophy-canvas-holder px-3 px-sm-4 px-md-5">
         
         {/* Mobile view-la row-reverse template logic automatic-ah photo-vai mela thallidum */}
-        <div className="row align-items-center g-4 g-xl-5 flex-column-reverse flex-lg-row">
+        <div className="row align-items-center g-4 g-xl-5 flex-lg-row">
           
           {/* ================= LEFT SIDE: CORE VALUES DEFINITIONS ================= */}
           <div className="col-12 col-lg-6 philosophy-content-engine text-center text-lg-start pe-lg-4 pe-xl-5">
@@ -26,7 +26,7 @@ const StoryPhilosophy = () => {
             {/* BLOCK 01: OUR VISION */}
             <div className="philosophy-block-segment d-flex flex-column flex-sm-row align-items-center align-items-lg-start gap-3 gap-md-4 mb-4 pb-2">
               <h4 className="segment-indicator-title m-0 inter-font text-uppercase manrope-font fw-semibold ssub ">Our Vision</h4>
-              <p className="segment-desc-para m-0 hanken-grotesk-font fw-light  text-center text-lg-start hanken-grutsek-font sdes">
+              <p className="segment-desc-para m-0 hanken-grotesk-font fw-light  hanken-grutsek-font sdes">
                 We design residential and commercial interiors that balance aesthetics, function, and longevity creating spaces that feel intentional, refined, and deeply connected to how people live and work.
               </p>
             </div>
@@ -34,7 +34,7 @@ const StoryPhilosophy = () => {
             {/* BLOCK 02: OUR MISSION */}
             <div className="philosophy-block-segment d-flex flex-column flex-sm-row align-items-center align-items-lg-start gap-3 gap-md-4">
               <h4 className="segment-indicator-title inter-font text-uppercase manrope-font fw-semibold ssub">Our Mission</h4>
-              <p className="segment-desc-para hanken-grotesk-font fw-light  text-center text-lg-start hanken-grutsek-font sdes">
+              <p className="segment-desc-para hanken-grotesk-font fw-light hanken-grutsek-font sdes">
                 We design residential and commercial interiors that balance aesthetics, function, and longevity creating spaces that feel intentional, refined, and deeply connected to how people live and work.
               </p>
             </div>

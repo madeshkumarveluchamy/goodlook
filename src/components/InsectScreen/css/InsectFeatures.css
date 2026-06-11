@@ -26,8 +26,6 @@
   overflow: hidden !important;
   position: relative !important;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25) !important;
-  
-  /* 🎯 FIXED: Stripped aspect-ratio and locked exact width/height constraints */
   width: 232px !important;
   height: 345px !important;
   margin: 0 auto !important;
@@ -50,6 +48,7 @@
   grid-column: 5 / 9 !important;
 }
 
+/* 🎯 BIG SCREEN: Stays on the right side layout safely */
 .card-pos-5 {
   grid-column: 9 / 13 !important;
 }
@@ -97,6 +96,7 @@
   }
 }
 
+/* 🎯 MIDDLE SCREEN (768px - 991px): Exactly handles screenshot grid views */
 @media (max-width: 991.98px) {
   .features-unified-grid {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -104,8 +104,13 @@
     gap: 25px !important;
   }
   
-  .card-pos-1, .card-pos-2, .card-pos-3, .card-pos-4, .card-pos-5 {
+  .card-pos-1, .card-pos-2, .card-pos-3, .card-pos-4 {
     grid-column: span 1 !important;
+  }
+
+  /* 🎯 ONLY HERE: Takes full horizontal workspace span and auto centers via margin */
+  .card-pos-5 {
+    grid-column: 1 / -1 !important;
   }
 
   .feature-grid-card {
@@ -120,6 +125,10 @@
     grid-template-columns: 1fr !important;
     max-width: 400px !important;
     gap: 20px !important;
+  }
+
+  .card-pos-5 {
+    grid-column: span 1 !important;
   }
 
   .feature-grid-card {

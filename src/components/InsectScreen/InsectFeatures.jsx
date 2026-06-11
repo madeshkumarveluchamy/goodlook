@@ -1,12 +1,12 @@
 import React from 'react';
 import './css/InsectFeatures.css';
 
-import bgImg from '../../assets/insectcollectionbackground.png';
-import img1 from '../../assets/insectcollection1.png';
-import img2 from '../../assets/insectcollection2.png';
-import img3 from '../../assets/insectcollection3.png';
-import img4 from '../../assets/insectcollection4.png';
-import img5 from '../../assets/insectcollection5.png';
+import bgImg from '../../assets/insectcollectionbackground.webp';
+import img1 from '../../assets/insectcollection1.webp';
+import img2 from '../../assets/insectcollection2.webp';
+import img3 from '../../assets/insectcollection3.webp';
+import img4 from '../../assets/insectcollection4.webp';
+import img5 from '../../assets/insectcollection5.webp';
 
 const InsectFeatures = () => {
   const featuresData = [

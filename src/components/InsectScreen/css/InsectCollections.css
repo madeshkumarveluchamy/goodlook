@@ -3,6 +3,24 @@
   width: 100%;
   overflow: hidden;
 }
+.project-cta-capsule-btn {
+  border-radius: 50px !important;
+  padding: 6px 14px 6px 20px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  border: 1px solid #ffffff !important; /* Premium matching border line */
+  color: #111111 !important;
+  background-color: #ffffff !important;
+  white-space: nowrap;
+  transition: all 0.9 s cubic-bezier(0.25, 1, 0.5, 1) !important; /* Smooth hover transition animation */
+}
+
+.project-cta-capsule-btn:hover {
+  background-color: #111111 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  border:1px solid #ffffff !important;
+}
 
 .collections-main-title {
   font-family: 'Playfair Display', serif !important;
@@ -108,7 +126,7 @@
   padding: 24px 35px !important;
   display: flex !important;
   align-items: center !important;
-  opacity:0.5 !important;
+  opacity:0.6 !important;
   z-index: 5 !important;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
 }
@@ -135,19 +153,11 @@
   max-width: 90%;
   letter-spacing:0.5px;
     z-index: 7 !important;
+    text-align:justify;
 }
 
-.project-cta-capsule-btn {
-  border: none !important;
-  border-radius: 50px !important;
-  padding: 8px 14px 8px 20px !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  color: #111111 !important;
-  background-color: #ffffff !important;
-  white-space: nowrap !important;
-  height: 44px !important;
-}
+
+
 
 .yellow-arrow-circle {
   background-color: #dfa82d;
@@ -196,7 +206,7 @@
   }
   
   .showcase-glass-card-overlay {
-    width:90%;
+    width:93%;
     position: absolute !important;
     bottom: 12px !important;
     left: 12px !important;

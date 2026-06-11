@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Hero.css';
-import storyhero from "../../assets/storyhero.png"
+import storyhero from "../../assets/storyhero.webp"
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="col-12 hero-text-engine-col">
             
             {/* Split structural title template */}
-            <h1 className="story-main-title fw-bold text-white m-0 select-none inter-font">
+            <h1 className="story-main-title fw-bold text-white m-0 select-none inter-font ">
               <span className="story-title-line-1 d-block">
                 Quality You See
               </span>

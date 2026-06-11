@@ -39,7 +39,7 @@
    ========================================================================== */
 .story-large-img-wrapper {
   width: 100%;
-  aspect-ratio: 4 / 4.6; /* Exact premium tall aspect box blueprint matching reference */
+  aspect-ratio: 4 / 5; /* Exact premium tall aspect box blueprint matching reference */
   background-color: #fafafa;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
@@ -141,7 +141,7 @@
 @media (max-width: 747.98px) {
   .story-details-section { padding: 4rem 0; }
   .story-content-engine-col { padding-top: 2rem !important; }
-  .story-large-img-wrapper { aspect-ratio: 4 / 3; }
+  .story-large-img-wrapper { aspect-ratio: 4 / 5; }
   .story-title-header { font-size: 2rem !important; }
   .story-thumbnail-frame { width: 180px; height: 210px; }
   .story-description-text { font-size: 16px; }

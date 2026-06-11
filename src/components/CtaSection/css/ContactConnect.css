@@ -54,10 +54,6 @@
   margin-bottom: 10px !important;
 }
 
-.info-icon-box {
-  padding-top: 3px;
-}
-
 .sidebar-svg {
   width: 18px !important;
   height: 18px !important;
@@ -79,7 +75,7 @@
 
 .sidebar-map-wrapper {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
   border-radius: 8px !important;
   overflow: hidden !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06) !important;
@@ -117,6 +113,7 @@
   font-size: 13px !important;
   line-height: 1.5 !important;
   max-width: 460px;
+  letter-spacing:1.5px;
 }
 
 .form-input-line-group {
@@ -166,6 +163,10 @@ input[name="message"].connect-underline-input {
 .form-capsule-submit-btn:hover {
   background-color: #111111 !important;
   color: #ffffff !important;
+}
+
+img, svg {
+  vertical-align: unset !important; /* 🎯 Entire project-லேயும் bootstrap middle alignment-ஆஃப் ஆகிடும் */
 }
 
 .yellow-arrow-circle {

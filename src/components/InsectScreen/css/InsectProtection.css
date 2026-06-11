@@ -1,4 +1,4 @@
-/* ==========================================================================
+/*==========================================================================
    INSECT PROTECTION SECTION PRESENTATION SYSTEM
    ========================================================================== */
 .insect-protection-section {
@@ -29,6 +29,7 @@
   font-size: 15px !important;
   line-height: 1.65 !important;
   font-weight: 400 !important;
+  text-align:justify;
 }
 
 /* --- PREMIUM PROJECT CTA CAPSULE PILL --- */
@@ -115,8 +116,8 @@
     position: relative !important;
     bottom: 60px !important;
     left: 2px !important;
-    margin: -30px auto 0 auto !important; /* Overlaps nicely over bottom image border natively */
-    max-width: 90%;
+    margin: -50px auto 0 auto !important; /* Overlaps nicely over bottom image border natively */
+    max-width: 70%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
   }
 }

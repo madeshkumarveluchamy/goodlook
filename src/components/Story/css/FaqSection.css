@@ -44,7 +44,7 @@
               border-color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.faq-item-question {
+.faq-items-question {
   font-size: 15.5px;
   color: #222222;
   line-height: 1.4;
@@ -120,8 +120,9 @@
   pointer-events: auto;
 }
 
-.faq-answer-desc-text {
-  font-size: 14px;
+.faq-answers-desc-text {
+  text-align:justify !important;
+  font-size: 16px;
   line-height: 1.65;
   color: #555555 !important;
   max-width: 92%; /* Clean reading layout lines stretch margins limits constraints */
@@ -137,12 +138,12 @@
   .faq-list-item {
     padding: 20px 18px;
   }
-  .faq-item-question {
-    font-size: 14px;
+  .faq-items-question {
+    font-size: 15px;
     max-width: 82%;
   }
-  .faq-answer-desc-text {
-    font-size: 13.5px;
+  .faq-answers-desc-text {
+    font-size: 14px;
     max-width: 100%;
     text-align: center; /* Centers block description texts safely inside mobile phone devices views */
   }

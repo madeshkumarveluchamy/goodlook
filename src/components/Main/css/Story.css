@@ -143,7 +143,7 @@
 /* --- 5. MOBILE & SMALL SMARTPHONES (Lesser than 748px) --- */
 @media (max-width: 747.98px) {
   .story-section {
-    padding: 4rem 0;
+    padding: 1rem 0;
   }
   .story-image-wrapper {
     max-width: 100%; /* Spans full horizontal scale safely on cellphones */

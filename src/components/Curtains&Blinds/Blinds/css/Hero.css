@@ -1,10 +1,10 @@
-.curtains-hero-section {
+.blinds-hero-section {
   height: calc(100vh); 
   min-height: 500px;
   max-height: 850px;
 }
 
-.curtains-hero-fluid-holder {
+.blinds-hero-fluid-holder {
   margin: 0 auto;
 }
 
@@ -17,34 +17,34 @@
   z-index: 3;
 }
 
-.curtains-hero-bg-layer img {
+.blinds-hero-bg-layer img {
   filter: brightness(0.92) contrast(1.01);
   transform: scale(1);
 }
 
-.curtains-hero-overlay {
+.blinds-hero-overlay {
   background: rgba(0, 0, 0, 0.25); 
 }
 
-.curtains-hero-text-engine {
+.blinds-hero-text-engine {
   padding-bottom: 3rem; 
 }
 
-.curtains-hero-massive-title {
+.blinds-hero-massive-title {
   font-size: calc(3.02rem + 5.6vw) !important; 
   line-height: 1.05 !important; 
   letter-spacing: -6px !important;
   text-transform: none !important; 
 }
 
-.curtains-title-row-white {
+.blinds-title-row-white {
   color: #ffffff !important;
 }
 
-.curtains-title-row-cream {
+.blinds-title-row-cream {
   color: #dfcdb9 !important; 
   margin-top: 0.2rem;
-  padding-left: 15vw;
+  padding-left: 43vw;
 }
 
 @media (min-width: 2560px) {
@@ -54,24 +54,24 @@
 }
 
 @media (min-width: 990px) and (max-width: 1400px) {
-  .curtains-title-row-cream {
+  .blinds-title-row-cream {
     color: #dfcdb9 !important; 
     margin-top: 0.2rem;
-    padding-left: 4vw;
+    padding-left: 36vw;;
   }
 }
 
 @media (max-width: 991.98px) {
-  .curtains-hero-section {
+  .blinds-hero-section {
     height: 60vh; 
     min-height: 420px;
   }
   
-  .curtains-title-row-cream {
+  .blinds-title-row-cream {
     padding-left: 0vw;
   }
 
-  .curtains-hero-text-engine {
+  .blinds-hero-text-engine {
     text-align: center !important; 
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
     padding-bottom: 0;
   }
 
-  .curtains-hero-massive-title {
+  .blinds-hero-massive-title {
     font-size: 8.8vw !important; 
     line-height: 1.1 !important;
     text-align: center !important;
@@ -90,10 +90,10 @@
 }
 
 @media (max-width: 480px) {
-  .curtains-hero-section {
+  .blinds-hero-section {
     height: 55vh;
   }
-  .curtains-hero-massive-title {
+  .blinds-hero-massive-title {
     font-size: 10.5vw !important;
   }
 }

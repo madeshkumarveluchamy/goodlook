@@ -45,7 +45,7 @@
 }
 
 .faq-item-question {
-  font-size: 15.5px;
+  font-size: 18px;
   color: #222222;
   line-height: 1.4;
   letter-spacing: -0.005em;
@@ -121,7 +121,8 @@
 }
 
 .faq-answer-desc-text {
-  font-size: 14px;
+  text-align:justify !important;
+  font-size: 16px;
   line-height: 1.65;
   color: #555555 !important;
   max-width: 92%; /* Clean reading layout lines stretch margins limits constraints */
@@ -138,11 +139,12 @@
     padding: 20px 18px;
   }
   .faq-item-question {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 82%;
   }
   .faq-answer-desc-text {
-    font-size: 13.5px;
+    text-align:justify;
+    font-size: 15px;
     max-width: 100%;
     text-align: center; /* Centers block description texts safely inside mobile phone devices views */
   }

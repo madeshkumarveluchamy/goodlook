@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './css/InsectCollections.css';
 
-import stenteringImg from '../../assets/curtainrod.png'; 
-import swingImg from '../../assets/curtainrod.png';
-import hingedImg from '../../assets/curtainrod.png';
-import rollerImg from '../../assets/curtainrod.png';
-import pleatedImg from '../../assets/curtainrod.png';
-import slidingImg from '../../assets/curtainrod.png';
-import lightwellImg from '../../assets/curtainrod.png';
-
+import stenteringImg from '../../assets/Stentering Frames.webp'; 
+import swingImg from '../../assets/Swing Doors.webp';
+import hingedImg from '../../assets/Hinged Frames.webp';
+import rollerImg from '../../assets/Roller Screens.webp';
+import pleatedImg from '../../assets/curtainrod.webp';
+import slidingImg from '../../assets/Sliding System.webp';
+import lightwellImg from '../../assets/Pleated Screens.webp';
+import {Link} from "react-router-dom"
 const InsectCollections = () => {
   const [activeTab, setActiveTab] = useState('stentering');
 
@@ -68,7 +68,7 @@ const InsectCollections = () => {
         <h2 className="collections-main-title mb-2 stit">All Insect Screen</h2>
         <h2 className="collections-main-title mb-4 stit">Collections</h2>
         
-        <p className="collections-sub-desc hanken-grotesk-font mx-auto mb-5 sdes">
+        <p className="collections-sub-desc hanken-grotesk-font mx-auto text-center mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
           to provide the perfect fit and lasting protection for every room
         </p>
@@ -113,11 +113,13 @@ const InsectCollections = () => {
                     <h4 className="overlay-card-title text-center text-md-start">
                       <span className="bullet-diamond-small smin">❖</span> {collectionsData[activeTab].title}
                     </h4>
-                    <div className='d-flex justify-content-center justify-content-md-start'><p className="overlay-card-desc hanken-grotesk-font mb-0 text-center text-md-start ssub">
+                    <div className='d-flex justify-content-center justify-content-md-start'><p className="overlay-card-desc hanken-grotesk-font mb-0 smin">
                       {collectionsData[activeTab].description}
                     </p></div>
                   </div>
+                  
                   <div className="col-12 col-md-4 text-md-end">
+                    <Link to="/cta" className="text-decoration-none">
                     <button className="btn btn-light project-cta-capsule-btn d-inline-flex align-items-center gap-2">
                       <span className="manrope-font btn-text">Start Your Project</span>
                       <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
@@ -126,7 +128,9 @@ const InsectCollections = () => {
                         </svg>
                       </span>
                     </button>
+                    </Link>
                   </div>
+                  
                 </div>
               </div>
 

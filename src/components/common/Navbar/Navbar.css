@@ -40,8 +40,14 @@
   transition: color 0.25s ease;
   white-space: nowrap; 
 }
-.capsule-link:hover, .capsule-link.active {
+.capsule-link:hover {
   color: #ffffff !important;
+}
+
+/* 🎯 FIXED: Main active page text color updates dynamically to golden-yellow brand tone */
+.nav-active-yellow {
+  color: #dfa82d !important;
+  font-weight: 600 !important;
 }
 
 .btn-text {
@@ -74,7 +80,7 @@
     padding: 6px 16px !important;
   }
   .nav-links-group {
-    gap: 0.8rem !important; 
+    gap: 0.5rem !important; 
   }
   .capsule-link {
     font-size: 11px !important;
@@ -246,11 +252,17 @@
   font-size: 13.5px !important;
   font-weight: 600 !important;
   text-decoration: none !important;
+  letter-spacing:1.5px !important;
   white-space: nowrap !important;
   transition: color 0.2s ease !important;
 }
 
 .sub-nav-link:hover {
+  color: #dfa82d !important;
+}
+
+/* 🎯 FIXED: Selected desktop sub-menu items stay locked on yellow highlight color properties */
+.desktop-sub-active {
   color: #dfa82d !important;
 }
 
@@ -282,10 +294,17 @@
   text-decoration: none !important;
   transition: color 0.2s ease !important;
   text-transform: none !important;
+  letter-spacing:1.5px !important;
 }
 
 .mobile-sub-link:hover {
   color: #dfa82d !important;
+}
+
+/* 🎯 FIXED: Active mobile panel lists lock on yellow */
+.sub-active-yellow {
+  color: #dfa82d !important;
+  font-weight: 500 !important;
 }
 
 @media (min-width: 992px) {
@@ -309,4 +328,22 @@
   .sub-nav-link {
     font-size: 22px !important;
   }
+}
+
+.project-cta-btn {
+  border-radius: 50px !important;
+  padding: 6px 8px 6px 12px !important;
+  font-size: 13px;
+  font-weight: 500 !important;
+  border: 1px solid #ffffff !important; /* Premium matching border line */
+  color: #111111 !important;
+  background-color: #ffffff !important;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important; /* Smooth hover transition animation */
+}
+
+.project-cta-btn:hover {
+  background-color: #111111 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/OpenableDetails.css';
-import openableImg from '../../../assets/openablestoryframe.png';
+import openableImg from '../../../assets/openablestoryframe.webp';
 
 const OpenableDetails = () => {
   return (

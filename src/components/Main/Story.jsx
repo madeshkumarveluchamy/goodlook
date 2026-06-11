@@ -1,7 +1,8 @@
 import React from 'react';
 import './css/Story.css';
 // Replace this with your actual local image file path from VS Code assets
-import storyImg from '../../assets/storyframe.png'; 
+import storyImg from '../../assets/storyframe.webp'; 
+import {Link} from "react-router-dom"
 
 const OurStory = () => {
   return (
@@ -11,6 +12,7 @@ const OurStory = () => {
           
           {/* Left Column: Premium Square Framed Image */}
           <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-center p-0 order-2 order-md-1">
+            
             <div className="story-image-wrapper">
               <img 
                 src={storyImg} 
@@ -18,6 +20,7 @@ const OurStory = () => {
                 className="w-100 h-100 object-fit-cover shadow-sm"
               />
             </div>
+           
           </div>
 
           {/* Right Column: Editorial Minimalist Content Text */}
@@ -41,9 +44,9 @@ const OurStory = () => {
                 UPVC engineering with timeless aesthetic sensibilities.
               </p>
               
-              <button className="btn text-uppercase story-cta-btn fw-medium tracking-wider px-4 py-2.5 ">
+              <Link to="/story" className="text-decoration-none"><button className="btn text-uppercase story-cta-btn fw-medium tracking-wider px-4 py-2.5 ">
                 <span className="manrope-font story-bttn">Our Story</span>
-              </button>
+              </button></Link>
               
             </div>
           </div>
