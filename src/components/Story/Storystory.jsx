@@ -38,7 +38,7 @@ const Storystory = () => {
 
             {/* GOLD CIRCULAR ACCENT ACTION BUTTON */}
             <div className="story-cta-action-holder">
-              <Link to="/cta" className="text-decoration-none">
+              <Link to="/contact-us" className="text-decoration-none">
                 <button className="btn story-get-in-touch-btn d-inline-flex align-items-center gap-3 text-capitalize manrope-font fw-medium">
                 Get In Touch
                 <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">

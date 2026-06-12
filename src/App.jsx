@@ -21,15 +21,15 @@ const App = () => {
       <Navbar />
       <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/collections/openabledoors" element={<OpenableHome/>}/>
-      <Route path="/collections/slidedoors" element={<SlideHome />}/>
-      <Route path="/collections/liftslidedoors" element={<LeftSlideHome />}/>
-      <Route path = "/insect" element={<InsectHome />} />
-      <Route path="/story" element={<StoryHome/>} />
+      <Route path="/our-collections/upvc-openable-doors-windows" element={<OpenableHome/>}/>
+      <Route path="/our-collections/upvc-slide-doors-windows" element={<SlideHome />}/>
+      <Route path="/our-collections/upvc-lift-slide-doors-windows" element={<LeftSlideHome />}/>
+      <Route path = "/insect-screen" element={<InsectHome />} />
+      <Route path="/our-story" element={<StoryHome/>} />
       <Route path="/upvc" element={<UpvcHome />} />
-      <Route path ="/curtains" element = {<CurtainHome />} />
-      <Route path ="/Blinds" element = {<BlindHome />} />
-      <Route path ="/cta" element = {<CTAHome />} />
+      <Route path ="/curtains-blinds/curtains" element = {<CurtainHome />} />
+      <Route path ="/curtains-blinds/blinds" element = {<BlindHome />} />
+      <Route path ="/contact-us" element = {<CTAHome />} />
       </Routes>
       <Footer />
     </div>

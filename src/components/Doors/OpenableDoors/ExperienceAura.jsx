@@ -20,7 +20,7 @@ const ExperienceAura = () => {
             </p>
             
             {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
-           <Link to="/cta" className="text-decoration-none">
+           <Link to="/contact-us" className="text-decoration-none">
             <div className="d-flex justify-content-center">
               <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
                 <span className="manrope-font aura-btn-text">Get In Touch</span>

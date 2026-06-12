@@ -41,7 +41,7 @@ const WhyOpenable = () => {
             <p className="smalls-desc mb-2 text-center text-md-start">Our work involves many intricate<br />steps and stages.</p>
             <h2 className="why-main-title text-center text-md-start">Why Openable Windows <br />& Doors?</h2>
           </div>
-          <Link to="/cta" className="text-decoration-none">
+          <Link to="/contact-us" className="text-decoration-none">
             <div className="header-right mb-3">
               <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
                 <span className="manrope-font btn-text">Start Your Project</span>

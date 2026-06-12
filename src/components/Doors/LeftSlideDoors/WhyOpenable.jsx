@@ -53,7 +53,7 @@ const WhyOpenable = () => {
               Why uPVC Lift or Sliding <br /> Windows & Doors?
             </h2>
           </div>
-          <Link to="/cta" className="text-decoration-none">
+          <Link to="/contact-us" className="text-decoration-none">
             <div className="header-right mb-3">
               <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
                 <span className="manrope-font btn-text">Start Your Project</span>

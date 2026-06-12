@@ -38,7 +38,7 @@ const CurtainrodCollection = () => {
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
-                  <Link to="/cta" className="text-decoration-none">
+                  <Link to="/contact-us" className="text-decoration-none">
                   <button className="btn btn-light project-cta-capsule-btn d-inline-flex align-items-center gap-2">
                     <span className="manrope-font btn-text">Start Your Project</span>
                     <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">

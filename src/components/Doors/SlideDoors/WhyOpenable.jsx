@@ -51,7 +51,7 @@ const WhySliding = () => {
             </p>
             <h2 className="why-main-title text-center text-md-start">Why Sliding Windows <br />& Doors?</h2>
           </div>
-          <Link to="/cta" className="text-decoration-none">
+          <Link to="/contact-us" className="text-decoration-none">
             <div className="header-right mb-3">
               <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
                 <span className="manrope-font btn-text text-center text-md-start">Start Your Project</span>

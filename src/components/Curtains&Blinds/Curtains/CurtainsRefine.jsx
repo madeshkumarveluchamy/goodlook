@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/curtainsRefine.css';
 import refineImg from '../../../assets/curtainstory.webp';
+import { Link } from 'react-router-dom';
 
 const curtainsRefine = () => {
   return (
@@ -28,6 +29,7 @@ const curtainsRefine = () => {
               </p>
               
               <div className="d-flex justify-content-center justify-content-md-start">
+                <Link className='text-decoration-none' to="/contact-us" >
                 <button className="btn btn-light curtainss-capsule-cta-btn d-flex align-items-center gap-2">
                   <span className="manrope-font btn-text">Start Your Project</span>
                   <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
@@ -36,6 +38,7 @@ const curtainsRefine = () => {
                     </svg>
                   </span>
                 </button>
+                </Link>
               </div>
 
             </div>
