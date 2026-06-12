@@ -6,8 +6,8 @@ import { NavHashLink } from 'react-router-hash-link';
 import logoImg from '../../../assets/navlogo.webp'; 
 import { Link, useLocation } from 'react-router-dom';
 
-import { FaInstagram, FaFacebookF, FaPinterestP, FaChevronDown } from 'react-icons/fa';
-import { RiTwitterXFill } from 'react-icons/ri'; 
+// 🎯 FIXED: Removed RiTwitterXFill and added FaLinkedinIn here
+import { FaInstagram, FaFacebookF, FaPinterestP, FaChevronDown, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   const [showCollections, setShowCollections] = useState(false);
@@ -113,14 +113,30 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 3: Further Info (🎯 FIXED: Added handleScrollToTop for all Links) */}
+          {/* Column 3: Further Info */}
           <div className="col-12 col-sm-6 col-md-3 footer-grid-col border-right-split">
             <div className="footer-card-inner">
               <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes">Further Info</h5>
               <ul className="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2 fw-light text-center text-md-start">
                 <li><Link to="/our-story" className="rubik-font smin" onClick={() => handleScrollToTop('/our-story')}>Our Story</Link></li>
                 <li><Link to="/contact-us" className="rubik-font smin" onClick={() => handleScrollToTop('/contact-us')}>Contact Us</Link></li>
-                <li><NavHashLink smooth to="/#blog" className="rubik-font smin">Blog</NavHashLink></li>
+<li>
+  <Link 
+    to="/" 
+    className="rubik-font smin" 
+    onClick={(e) => {
+      handleScrollToTop('/');
+      setTimeout(() => {
+        const blogSection = document.getElementById('blog');
+        if (blogSection) {
+          blogSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }}
+  >
+    Blog
+  </Link>
+</li>
                 <li><Link to="/" className="rubik-font smin" onClick={() => handleScrollToTop('/')}>Privacy Policy</Link></li>
                 <li><Link to="/" className="rubik-font smin" onClick={() => handleScrollToTop('/')}>Terms & Conditions</Link></li>
               </ul>
@@ -132,18 +148,20 @@ const Footer = () => {
             <div className="footer-card-inner h-100 d-flex flex-column justify-content-center align-items-center text-center">
               <h5 className="footer-social-header-title mb-4 rubik-font sdes">See What We're Up To</h5>
               <div className="footer-social-icons-row d-flex align-items-center gap-4">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Instagram">
+                <a href="https://www.instagram.com/ghd_upvc_windows?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Instagram">
                   <FaInstagram />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61567207111228" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Facebook">
                   <FaFacebookF />
                 </a>
-                <a href="https://x.com" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="X (Twitter)">
-                  <RiTwitterXFill />
-                </a>
-                <a href="https://pinterest.com" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Pinterest">
+                
+                {/* 🎯 FIXED: Changed from NavHashLink to standard Link component */}
+                <Link to="/" className="social-icon-anchor" aria-label="LinkedIn" onClick={() => handleScrollToTop('/')}>
+                  <FaLinkedinIn />
+                </Link>
+                <Link to="/" className="social-icon-anchor" aria-label="Pinterest" onClick={() => handleScrollToTop('/')}>
                   <FaPinterestP />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

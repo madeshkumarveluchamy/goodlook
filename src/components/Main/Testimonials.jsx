@@ -11,7 +11,6 @@ import './css/Testimonials.css';
 import reviewUserImg from '../../assets/quality1.webp'; 
 
 const Testimonials = () => {
-  // Base array data set
   const baseTestimonials = [
     {
       id: 1,
@@ -33,8 +32,6 @@ const Testimonials = () => {
     }
   ];
 
-  // CRITICAL CYCLIC FIX: Array elements-ai multiple times multiply panni dynamic stack update panrom
-  // Ithanaala Swiper internal buffer-la eppovumae extra tracking elements loop continuous-ah irukum.
   const testimonialsData = [...baseTestimonials, ...baseTestimonials, ...baseTestimonials];
 
   return (
@@ -49,7 +46,6 @@ const Testimonials = () => {
         {/* ================= DYNAMIC INFINITE CAROUSEL FRAME ================= */}
         <div className="slider-outer-carousel-container position-relative">
           
-          {/* Custom Absolute Target Arrow Blocks */}
           <button className="custom-swiper-arrow swiper-prev-node" aria-label="Previous slide">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
@@ -67,19 +63,10 @@ const Testimonials = () => {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={'auto'}
-            
-            // ==========================================================================
-            // RE-ENGINEERED CYCLIC CONFIG MATRIX
-            // ==========================================================================
             loop={true}
-            loopedSlides={3}
-            loopAdditionalSlides={3}
-            loopPreventsSliding={false}
             observer={true}
             observeParents={true}
-            slideToClickedSlides={true} // Side cards click panna automatic-ah center lock aahi cyclic smooth movement thandhum
-            // ==========================================================================
-
+            slidetoclickedslides="true" 
             speed={600} 
             navigation={{
               prevEl: '.swiper-prev-node',
@@ -92,7 +79,7 @@ const Testimonials = () => {
             className="testimonials-swiper-instance"
           >
             {testimonialsData.map((item, index) => (
-              <SwiperSlide key={`${item.id}-${index}`} className="testimonial-swiper-slide-node">
+              <SwiperSlide key={index} className="testimonial-swiper-slide-node">
                 <div className="testimonial-core-card bg-white text-center d-flex flex-column align-items-center justify-content-center">
                   
                   <div className="client-avatar-circle-frame overflow-hidden mb-4">
@@ -116,7 +103,6 @@ const Testimonials = () => {
             ))}
           </Swiper>
 
-          {/* Dedicated Bullet Pagination Strip Container */}
           <div className="custom-dots-wrapper d-flex justify-content-center align-items-center gap-2 mt-5"></div>
 
         </div>
