@@ -131,3 +131,15 @@
   .floating-excellence-badge { max-width: 420px; padding: 30px 40px !important; border-radius: 16px !important; }
   .badge-serif-text { font-size: 28px !important; }
 }
+
+@media(max-width:380px){
+  .floating-excellence-badge {
+    position: relative !important;
+    bottom: 60px !important;
+    left: 2px !important;
+    margin: -35px auto 0 auto !important; /* Overlaps nicely over bottom image border natively */
+    max-width: 85%;
+    padding:10px!important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+  }
+}

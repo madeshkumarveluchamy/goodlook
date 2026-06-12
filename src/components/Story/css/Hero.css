@@ -101,7 +101,7 @@
    ========================================================================== */
 @media (max-width: 859.98px) {
   .story-hero-section {
-    height: 40vh !important;
+    height: 20vh !important;
   }
 
   .story-hero-fluid {

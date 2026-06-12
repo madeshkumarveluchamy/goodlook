@@ -85,7 +85,7 @@ const Navbar = () => {
                   <div className="mobile-nested-sub-nav">
                     <Link className={`mobile-sub-link manrope-font ${currentPath === '/collections/openabledoors' ? 'sub-active-yellow' : ''}`} to="/collections/openabledoors" onClick={closeAllMenus}>UPVC Openable Doors</Link>
                     <Link className={`mobile-sub-link manrope-font ${currentPath === '/collections/slidedoors' ? 'sub-active-yellow' : ''}`} to="/collections/slidedoors" onClick={closeAllMenus}>UPVC Sliding Doors</Link>
-                    <Link className={`mobile-sub-link manrope-font ${currentPath === '/collections/liftslidedoors' ? 'sub-active-yellow' : ''}`} to="/collections/leftslidedoors" onClick={closeAllMenus}>Lift or Sliding Windows & Doors</Link>
+                    <Link className={`mobile-sub-link manrope-font ${currentPath === '/collections/liftslidedoors' ? 'sub-active-yellow' : ''}`} to="/collections/liftslidedoors" onClick={closeAllMenus}>Lift or Sliding Windows & Doors</Link>
                   </div>
                 )}
               </li>
@@ -120,7 +120,7 @@ const Navbar = () => {
             </ul>
             
             <div className="d-flex justify-content-center pt-3 pt-lg-0">
-              <Link to="/cta" className='text-decoration-none'>
+              <Link to="/cta" className='text-decoration-none' onClick={closeAllMenus}>
                 <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
                   <span className="manrope-font btn-text">Start Your Project</span>
                   <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
@@ -141,7 +141,7 @@ const Navbar = () => {
           <div className="sub-navbar-pill-box">
             <Link className={`sub-nav-link manrope-font ${currentPath === '/collections/openabledoors' ? 'desktop-sub-active' : ''}`} to="/collections/openabledoors" onClick={closeAllMenus}>UPVC Openable Doors</Link>
             <Link className={`sub-nav-link manrope-font ${currentPath === '/collections/slidedoors' ? 'desktop-sub-active' : ''}`} to="/collections/slidedoors" onClick={closeAllMenus}>UPVC Sliding Doors</Link>
-            <Link className={`sub-nav-link manrope-font ${currentPath === '/collections/leftslidedoors' ? 'desktop-sub-active' : ''}`} to="/collections/leftslidedoors" onClick={closeAllMenus}>Lift or Sliding Windows & Doors</Link>
+            <Link className={`sub-nav-link manrope-font ${currentPath === '/collections/liftslidedoors' ? 'desktop-sub-active' : ''}`} to="/collections/liftslidedoors" onClick={closeAllMenus}>Lift or Sliding Windows & Doors</Link>
           </div>
         </div>
       )}

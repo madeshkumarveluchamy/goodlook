@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="footer-logo-box mb-3 text-center text-md-start">
               <img src={logoImg} alt="Good Look Home Decor Logo" className="footer-logo-graphic" />
             </div>
-            <p className="footer-brand-bio fw-light m-0 hanken-grotsek-font sdes">
+            <p className="footer-brand-bio fw-light m-0 hanken-grotsek-font smin">
               Your trusted partner for premium mosquito nets and UPVC solutions. With over 21 years of experience, we provide high-quality protection and durable products for homes and businesses.
             </p>
           </div>

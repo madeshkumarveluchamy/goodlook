@@ -28,8 +28,8 @@ const Hero = () => {
       bg: bg2, 
       frame: frame2,
       titleLine1: "Elevate",
-      titleItalic: "your ",
-      titleLine2: "Curtain designs",
+      titleItalic: "looks",
+      titleLine2: "with our Designs",
       popupHeading: "Bespoke Fabrics",
       popupDesc: "Bespoke luxury tailoring to match your architectural vision perfectly."
     },
@@ -68,9 +68,9 @@ const Hero = () => {
             <span className="hero-light-beige inter-font second-line">{slides[currentIndex].titleLine2}</span>
           </h1>
           
-          <div className="hero-floating-popup-card" key={`popup-${currentIndex}`}>
+          <div className="hero-floating-popup-card " key={`popup-${currentIndex}`}>
             <div className="hero-3d-card p-0 slide-content-fade">
-              <div className="card-img-container">
+              <div className="card-img-container rounded-2">
                 <img 
                   src={slides[currentIndex].frame}
                   alt="Premium interior decor design setup" 

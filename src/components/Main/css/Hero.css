@@ -382,7 +382,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 452px) {
   .hero-floating-popup-card {
     position: relative !important;
     left: 20vw;
@@ -394,7 +394,7 @@
     max-height: 300px;
   }
   .heroblack{
-    height:20vh !important;
+    height:350px !important;
   }
 }
 

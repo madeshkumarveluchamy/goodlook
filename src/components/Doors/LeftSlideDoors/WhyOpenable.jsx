@@ -2,9 +2,9 @@ import React from "react";
 import "./css/WhyOpenable.css";
 import interiorImg1 from "../../../assets/liftcollection1.webp";
 import interiorImg2 from "../../../assets/liftcollection2.webp";
-import interiorImg3 from "../../../assets/liftcollection3.webp"
-import bgImg from "../../../assets/backgroundpicture.webp"; // Ungaloda premium dark stripes texture image
-import {Link} from "react-router-dom"
+import interiorImg3 from "../../../assets/liftcollection3.webp";
+import bgImg from "../../../assets/backgroundpicture.webp"; 
+import { Link } from "react-router-dom";
 
 const WhyOpenable = () => {
   const cardsData = [
@@ -36,49 +36,48 @@ const WhyOpenable = () => {
 
   return (
     <section
-      className="why-openable-section py-5 "
+      className="why-openable-section py-5"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div className=" container-xxl">
-        {/* --- TOP FIXED HEADER BLOCK --- */}
+      <div className="container-xxl">
+        
         <div className="why-header-block d-flex justify-content-between align-items-center align-items-md-end mb-5">
           <div className="header-left">
             <h6 className="sub-title text-uppercase mb-2 text-center text-md-start">How We Do It</h6>
-            <p className=" small-desc mb-2 text-center text-md-start">
+            <p className="small-desc mb-2 text-center text-md-start">
               Our work involves many intricate
               <br />
               steps and stages.
             </p>
             <h2 className="why-main-title text-center text-md-start">
-             Why uPVC Lift or Sliding <br /> Windows & Doors?
+              Why uPVC Lift or Sliding <br /> Windows & Doors?
             </h2>
           </div>
-          <Link to="/cta" className="text-decoration-none" >
-          <div className="header-right mb-3">
-            <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
-              <span className="manrope-font btn-text">Start Your Project</span>
-              <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={3}
-                  stroke="currentColor"
-                  style={{ width: "9px" }}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
+          <Link to="/cta" className="text-decoration-none">
+            <div className="header-right mb-3">
+              <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
+                <span className="manrope-font btn-text">Start Your Project</span>
+                <span className="yellow-arrow-circle d-flex align-items-center justify-content-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="currentColor"
+                    style={{ width: "9px" }}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
           </Link>
         </div>
 
-        {/* --- STACKING OVERLAP CONTAINER --- */}
         <div className="why-stacking-container">
           {cardsData.map((card, index) => (
             <div
@@ -86,15 +85,13 @@ const WhyOpenable = () => {
               key={card.id}
               style={{
                 "--card-index": index,
-                backgroundImage: `url(${bgImg})` /* FIXED: Sets the exact same background image loop for the cards inner canvas */,
+                backgroundImage: `url(${bgImg})`,
               }}
             >
-              {/* FIXED: Open Row Layout with Divider Line instead of closed boxes */}
               <div
                 className={`row align-items-center g-5 card-row-divider ${card.layoutReverse ? "flex-row-reverse" : ""}`}
                 style={{ backgroundImage: `url(${bgImg})` }}
               >
-                {/* Image Area */}
                 <div className="col-12 col-md-6">
                   <div className="card-image-box">
                     <img
@@ -105,7 +102,6 @@ const WhyOpenable = () => {
                   </div>
                 </div>
 
-                {/* Text Area */}
                 <div className="col-12 col-md-6">
                   <div className="card-text-box ps-md-4 pe-md-4">
                     <span className="card-number-index d-block mb-2 text-center text-md-start">
