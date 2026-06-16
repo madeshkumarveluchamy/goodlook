@@ -6,7 +6,7 @@ const PreferredChoiceHeader = () => {
     <section className="preferred-choice-section pb-3 pt-2 pt-md-5">
       <div className="container text-center py-4">
         <div className="row justify-content-center">
-          <div className="col-12 col-md-10 col-lg-8">
+          <div className="col-12 col-md-10 col-lg-10">
 
             <h6 className="choice-gold-badge text-uppercase mb-2 ssub">
               Quality You Trust

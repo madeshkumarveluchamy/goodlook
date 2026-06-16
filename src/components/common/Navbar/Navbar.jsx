@@ -44,7 +44,6 @@ const Navbar = () => {
     setShowCurtainsNav(false);
   };
 
-  // 🎯 UNIVERSAL SAME PAGE SCROLL ENGINE: ஆல்ரெடி அதே பக்கத்துல இருந்தா ஸ்மூத்தா டாப்-க்கு கொண்டு போகும்
   const handleNavLinkClick = (targetPath) => {
     closeAllMenus();
     if (currentPath === targetPath) {
@@ -57,11 +56,12 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark custom-capsule-navbar">
         <div className="container-fluid p-0">
           
-          {/* LOGO CLICK FIXED */}
+          {/* LOGO */}
           <Link className="navbar-brand d-flex align-items-center m-0" to="/" onClick={() => handleNavLinkClick('/')}>
             <img src={logo} alt="GoodLook Logo" className="logo-img" />
           </Link>
 
+          {/* HAMBURGER TOGGLER */}
           <button 
             className="navbar-toggler border-0 shadow-none p-1" 
             type="button" 
@@ -77,18 +77,20 @@ const Navbar = () => {
 
           <div className={`collapse navbar-collapse ${isOpen ? 'show mobile-expanded' : ''}`}>
             <ul className="navbar-nav mx-auto text-center nav-links-group">
-              {/* HOME LINK FIXED */}
+              
               <li className="nav-item">
                 <Link className={`nav-link capsule-link manrope-font ${currentPath === '/' ? 'nav-active-yellow' : ''}`} to="/" onClick={() => handleNavLinkClick('/')}>Home</Link>
               </li>
               
+              {/* 🎯 FIX: Our Collections பக்கத்தில் டைனமிக் டவுன் ஆரோ சேர்க்கப்பட்டுள்ளது */}
               <li className="nav-item mobile-dropdown-wrapper">
                 <a 
                   className={`nav-link capsule-link manrope-font collection-toggle-trigger ${showSubNav ? 'active-dropdown' : ''} ${currentPath.includes('/our-collections/') ? 'nav-active-yellow' : ''}`} 
                   href="/our-collections" 
                   onClick={handleCollectionClick}
                 >
-                  Our Collections
+                  Our Collections 
+                  <span className="dropdown-arrow-icon">{showSubNav ? '▲' : '▼'}</span>
                 </a>
 
                 {showSubNav && (
@@ -100,11 +102,11 @@ const Navbar = () => {
                 )}
               </li>
 
-              {/* INSECT SCREEN FIXED */}
               <li className="nav-item">
                 <Link className={`nav-link capsule-link manrope-font ${currentPath === '/insect-screen' ? 'nav-active-yellow' : ''}`} to="/insect-screen" onClick={() => handleNavLinkClick('/insect-screen')}>Insect Screen</Link>
               </li>
 
+              {/* 🎯 FIX: Curtains & Blinds பக்கத்திலும் டைனமிக் டவுன் ஆரோ சேர்க்கப்பட்டுள்ளது */}
               <li className="nav-item mobile-dropdown-wrapper">
                 <a 
                   className={`nav-link capsule-link manrope-font collection-toggle-trigger ${showCurtainsNav ? 'active-dropdown' : ''} ${currentPath.includes('/curtains-blinds/') ? 'nav-active-yellow' : ''}`} 
@@ -112,6 +114,7 @@ const Navbar = () => {
                   onClick={handleCurtainsClick}
                 >
                   Curtains & Blinds
+                  <span className="dropdown-arrow-icon">{showCurtainsNav ? '▲' : '▼'}</span>
                 </a>
 
                 {showCurtainsNav && (
@@ -122,17 +125,16 @@ const Navbar = () => {
                 )}
               </li>
 
-              {/* UPVC FIXED */}
               <li className="nav-item">
                 <Link className={`nav-link capsule-link manrope-font ${currentPath === '/upvc' ? 'nav-active-yellow' : ''}`} to="/upvc" onClick={() => handleNavLinkClick('/upvc')}>UPVC</Link>
               </li>
               
-              {/* OUR STORY FIXED */}
               <li className="nav-item">
                 <Link className={`nav-link capsule-link manrope-font ${currentPath === '/our-story' ? 'nav-active-yellow' : ''}`} to="/our-story" onClick={() => handleNavLinkClick('/our-story')}>Our Story</Link>
               </li>
             </ul>
             
+            {/* CTA BUTTON */}
             <div className="d-flex justify-content-center pt-3 pt-lg-0">
               <Link to="/contact-us" className='text-decoration-none' onClick={() => handleNavLinkClick('/contact-us')}>
                 <button className="btn btn-light project-cta-btn d-flex align-items-center gap-2">
@@ -150,7 +152,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* DESKTOP COLLECTIONS SUB-NAV FIXED */}
+      {/* DESKTOP COLLECTIONS SUB-NAV */}
       {showSubNav && (
         <div className="sub-navbar-capsule-container desktop-only-sub-nav">
           <div className="sub-navbar-pill-box">
@@ -161,7 +163,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* DESKTOP CURTAINS SUB-NAV FIXED */}
+      {/* DESKTOP CURTAINS SUB-NAV */}
       {showCurtainsNav && (
         <div className="sub-navbar-capsule-container desktop-only-sub-nav">
           <div className="sub-navbar-pill-box justify-content-center gap-5">
