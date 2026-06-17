@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/RodCategories.css';
 
-import rodGolden from '../../../assets/curtainrodcollection1.webp';
-import rodBlack from '../../../assets/curtainrodcollection2.webp';
-import rodDesign from '../../../assets/curtainrodcollection3.webp';
+import rodGolden from '../../../assets/HomeBlinds.webp';
+import rodBlack from '../../../assets/OfficeRoomBlind.webp';
+import rodDesign from '../../../assets/StudyRoomBlind.webp';
 
 const RodCategories = () => {
   const rodData = [
@@ -39,7 +39,7 @@ const RodCategories = () => {
                 <div className="rods-image-wrapper">
                   <img 
                     src={item.image} 
-                    alt={`${item.title} Premium Architecture Showcase`} 
+                    alt={`${item.title} Blinds`} 
                     className="rods-product-img"
                   />
                 </div>

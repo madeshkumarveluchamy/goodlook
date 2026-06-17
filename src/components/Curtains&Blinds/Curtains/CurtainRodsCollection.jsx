@@ -23,7 +23,7 @@ const CurtainrodCollection = () => {
           <div className="rod-showcase-card">
             <img 
               src={rodImg} 
-              alt="Premium Curtain rod Designs" 
+              alt="Premium Curtain rod Designs collections" 
               className="rod-main-img"
             />
 

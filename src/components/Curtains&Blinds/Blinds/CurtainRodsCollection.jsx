@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/CurtainsRodsCollection.css';
-import rodsImg from '../../../assets/curtainrod.webp';
+import rodsImg from '../../../assets/blindwindow.webp';
 import {Link} from "react-router-dom"
 
 const CurtainRodsCollection = () => {
@@ -24,7 +24,7 @@ const CurtainRodsCollection = () => {
           <div className="rods-showcase-card">
             <img 
               src={rodsImg} 
-              alt="Premium Curtain Rods Designs" 
+              alt="Blind window" 
               className="rods-main-img"
             />
 

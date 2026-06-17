@@ -20,16 +20,16 @@ const Hero = () => {
       frame: frame1,
       titleLine1: "Your House",
       titleItalic: "is ",
-      titleLine2: "the Place of Mood",
+      titleLine2: "The Place of Mood",
       popupHeading: "3D visualization",
       popupDesc: "So that the client can see with his own eyes what he will ultimately receive."
     },
     { 
       bg: bg2, 
       frame: frame2,
-      titleLine1: "Elevate",
-      titleItalic: "looks",
-      titleLine2: "with our Designs",
+      titleLine1: "your House",
+      titleItalic: "Is",
+      titleLine2: " The Soul Of Space",
       popupHeading: "Bespoke Fabrics",
       popupDesc: "Bespoke luxury tailoring to match your architectural vision perfectly."
     },

@@ -10,7 +10,7 @@ const CurtainsHero = () => {
       <div className="curtains-hero-bg-layer position-absolute top-0 start-0 w-100 h-100">
         <img 
           src={curtainsHeroBg} 
-          alt="Good Look Home Decor premium minimalist layout architectural modern custom curtains collection layout showcase" 
+          alt="Good Look Home Decor premium minimalist layout architectural modern custom curtains collection layout showcase (ctabackground)" 
           className="w-100 h-100 object-fit-cover"
         />
         <div className="curtains-hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>

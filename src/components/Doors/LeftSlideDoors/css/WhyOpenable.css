@@ -1,11 +1,12 @@
 /* ==========================================================================
-   WHY OPENABLE STACKING OVERLAP GRID LAYOUT (EXACT REPLICA ENGINE)
+   WHY OPENABLE STACKING OVERLAP GRID LAYOUT (UNIVERSAL SCREEN ENGINE)
    ========================================================================== */
 .why-openable-section {
-  background-size: repeat !important; /* Perfect loop repetition for your dark stripes pattern */
+  background-size: repeat !important; 
   width: 100%;
   position: relative;
-  padding-bottom: 120px !important;
+  padding-top: 20px !important;
+  padding-bottom: 80px !important;
 }
 
 /* Header Text Styles */
@@ -23,7 +24,7 @@
 .why-main-title {
   font-family: 'Playfair Display', serif !important;
   color: #ffffff !important;
-  font-size: clamp(2.2rem, 3.8vw, 3.2rem) !important;
+  font-size: clamp(2rem, 3.5vw, 3rem) !important;
   font-weight: 500 !important;
   line-height: 1.2;
 }
@@ -34,25 +35,24 @@
   flex-direction: column !important;
   position: relative !important;
   width: 100% !important;
+  margin-top: 0 !important;
 }
 
+/* 🎯 ABOVE 1400px (Large Screens & 2000px Desktop Lock) */
 .stacking-card-item {
   position: sticky !important;
-  top: calc(180px + (var(--card-index) * 20px)) !important; 
+  top: calc(95px + (var(--card-index) * 20px)) !important; 
   width: 100% !important;
-  background-size: repeat !important; /* FIXED: Overrides background color to repeat stripes instead of plain dark blocks */
+  background-size: repeat !important; 
 }
 
-/* FIXED: Replaced card background box with a clean horizontal bottom divider line */
 .card-row-divider {
-  
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
   margin: 0 !important;
-  background-size: repeat !important; /* Forces row background texture tracking */
+  background-size: repeat !important; 
 }
 
-/* Removes the divider line from the last section to maintain pixel clean alignment */
 .why-stacking-container .stacking-card-item:last-child .card-row-divider {
   border-bottom: none !important;
 }
@@ -94,20 +94,42 @@
 }
 
 /* ==========================================================================
-   PHONE AND MOBILE RESPONSIVE OVERRIDES
+   🎯 LAPTOP & TABLET RESPONSIVE OVERRIDES (Between 768px and 1399px)
    ========================================================================== */
-@media (max-width: 767.98px) {
-  .why-header-block {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 20px;
+@media (max-width: 1399.98px) {
+  .why-openable-section {
+    padding-top: 15px !important;
+    padding-bottom: 60px !important;
   }
   .stacking-card-item {
-    top: calc(110px + (var(--card-index) * 15px)) !important;
+    top: calc(85px + (var(--card-index) * 18px)) !important; /* லேப்டாப் வியூவிற்கு ஏற்ப டாப் கேப் குறைப்பு */
   }
   .card-row-divider {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
+  }
+}
+
+/* ==========================================================================
+   🎯 PHONE & MOBILE RESPONSIVE OVERRIDES (Below 768px)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .why-openable-section {
+    padding-top: 10px !important;
+    padding-bottom: 40px !important;
+  }
+  .why-header-block {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 15px;
+    margin-bottom: 1.5rem !important; 
+  }
+  .stacking-card-item {
+    top: calc(70px + (var(--card-index) * 15px)) !important; /* மொபைல் வியூவிற்கு ஏற்ப டாப் கேப் சுருக்கம் */
+  }
+  .card-row-divider {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
   .card-title-text {
     font-size: 20px !important;

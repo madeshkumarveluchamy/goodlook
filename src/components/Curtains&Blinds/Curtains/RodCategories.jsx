@@ -39,7 +39,7 @@ const RodCategories = () => {
                 <div className="rod-image-wrapper">
                   <img 
                     src={item.image} 
-                    alt={`${item.title} Premium Architecture Showcase`} 
+                    alt={`${item.title} Premium curtains collections`} 
                     className="rod-product-img"
                   />
                 </div>

@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="left-upvc-hero-bg-layer position-absolute top-0 start-0 w-100 h-100">
         <img 
           src={upvcHeroBg} 
-          alt="Good Look Home Decor premium minimalist layout architectural structural uPVC sliding doors collection case" 
+          alt="Good Look Home Decor premium minimalist layout architectural structural uPVC sliding doors collection case (Liftslide image)" 
           className="w-100 h-100 object-fit-cover"
         />
         {/* Soft custom premium dark ambient wash layer ensures typography remains highly readable */}

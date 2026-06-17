@@ -10,7 +10,7 @@ const BlindsHero = () => {
       <div className="blinds-hero-bg-layer position-absolute top-0 start-0 w-100 h-100">
         <img 
           src={blindsHeroBg} 
-          alt="Good Look Home Decor premium minimalist window blinds architectural designs case" 
+          alt="Good Look Home Decor premium minimalist window blinds architectural designs case (blind Background)" 
           className="w-100 h-100 object-fit-cover"
         />
         <div className="blinds-hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>

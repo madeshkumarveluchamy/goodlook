@@ -48,7 +48,7 @@ const curtainsRefine = () => {
             <div className="curtainss-image-frame-holder">
               <img 
                 src={refineImg} 
-                alt="Refine Interiors with Custom curtainss and Premium Rods Setup" 
+                alt="Refine Interiors with Custom curtainss and Premium Rods Setup (curtain window)" 
                 className="img-fluid curtainss-showcase-photo" 
               />
             </div>
