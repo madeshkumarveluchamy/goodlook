@@ -1,0 +1,186 @@
+.slidingwindows-rod-collection-section {
+  background-color: #ffffff !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidingwindows-rod-main-title {
+  font-family: 'Playfair Display', serif !important;
+  color: #111111 !important;
+  font-size: clamp(2.4rem, 4.5vw, 4rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.5px;
+}
+
+.slidingwindows-rod-sub-desc {
+  color: #444444 !important;
+  font-size: clamp(14px, 1.3vw, 16px) !important;
+  line-height: 1.6 !important;
+  max-width: 720px;
+}
+
+.slidingwindows-current-rod-heading {
+  font-family: 'Playfair Display', serif !important;
+  color: #111111 !important;
+  font-size: clamp(1.8rem, 3vw, 2.6rem) !important;
+  font-weight: 500 !important;
+}
+
+.slidingwindows-bullet-diamond {
+  color: #dfa82d !important;
+  font-size: 18px !important;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.slidingwindows-rod-display-window {
+  width: 100% !important;
+  position: relative !important;
+}
+
+.slidingwindows-rod-showcase-card {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1250px !important; 
+  margin: 0 auto !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  aspect-ratio: 1250 / 454 !important; 
+  min-height: auto !important;
+  max-height: 454px !important;
+}
+
+.slidingwindows-rod-main-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; 
+  object-position: center !important;
+  display: block !important;
+}
+
+.slidingwindows-rod-glass-card-overlay {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 20px !important;
+  right: 20px !important;
+  background: rgba(0, 0, 0, 0.45) !important; 
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 24px 35px !important;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 5 !important;
+  opacity: 0.9 !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+  width: 81% !important;
+}
+
+.slidingwindows-overlay-rod-title {
+  font-family: 'Playfair Display', serif !important;
+  color: #ffffff !important;
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem) !important;
+  font-weight: 400 !important;
+}
+
+.slidingwindows-bullet-diamond-small {
+  color: #ffffff !important;
+  font-size: 11px !important;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.slidingwindows-overlay-rod-desc {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: clamp(13px, 1.2vw, 14.5px) !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  max-width: 90%;
+}
+
+.slidingwindows-project-cta-capsule-btn {
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 8px 14px 8px 20px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
+  background-color: #ffffff !important;
+  white-space: nowrap !important;
+  height: 44px !important;
+}
+
+.slidingwindows-yellow-arrow-circle {
+  background-color: #dfa82d;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* ========================================================
+   🎯 FIXED: EXACT PIGMA COMPATIBLE 3-COLUMN LAYOUT SYSTEM
+   ======================================================== */
+.slidingwindows-features-exact-wrapper {
+  width: 100% !important;
+  max-width: 1140px !important; 
+  margin: 0 auto !important;
+  padding-left: 45px !important; 
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.slidingwindows-feature-item-box {
+  display: flex !important;
+  align-items: center !important;
+  transition: transform 0.2s ease;
+}
+
+.slidingwindows-feature-item-box:hover {
+  transform: translateX(3px);
+}
+
+.slidingwindows-exact-tick-icon {
+  color: #111111 !important; 
+  font-size: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.slidingwindows-feature-text {
+  color: #2c2c2c !important; 
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.2px !important;
+  line-height: 1.2 !important;
+}
+
+/* மொபைல் மற்றும் டேப்லெட் வியூ சீரமைப்பு */
+@media (max-width: 890px) {
+  .slidingwindows-rod-showcase-card {
+    aspect-ratio: 10 / 12 !important;
+    max-height: none !important;
+  }
+  
+  .slidingwindows-rod-glass-card-overlay {
+    position: absolute !important;
+    bottom: 12px !important;
+    left: 12px !important;
+    right: 12px !important;
+    padding: 3px !important;
+    width: 93% !important;
+  }
+  
+  .slidingwindows-overlay-rod-desc {
+    max-width: 100%;
+  }
+
+  .slidingwindows-features-exact-wrapper {
+    padding-left: 15px !important; 
+  }
+  
+  .slidingwindows-feature-text {
+    font-size: 13.5px !important;
+  }
+}

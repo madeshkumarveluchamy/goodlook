@@ -8,7 +8,7 @@ import {Link} from "react-router-dom"
 
 const Storystory = () => {
   return (
-    <section className="story-details-section bg-white" id="our-story-details">
+    <section className="story-details-section bg-white" id="our-story-details" >
       <div className="container-fluid story-details-fluid px-3 px-sm-4 px-md-5">
         <div className="row align-items-center g-4 g-lg-5 d-flex flex-lg-row-reverse">
             {/* ================= RIGHT SIDE: CONTENT LAYER + THUMBNAIL ================= */}

@@ -23,16 +23,6 @@
   transition: max-width 0.2s ease;
 }
 
-.logo-box {
-  background-color: #ba1818;
-  font-size: 11px;
-  letter-spacing: 0.5px;
-  padding: 5px 7px;
-  border-radius: 3px;
-}
-.brand-main-title { font-size: 14px; letter-spacing: 0.5px; }
-.brand-sub-title { font-size: 8.5px; color: rgba(255, 255, 255, 0.55); }
-
 .capsule-link {
   color: rgba(255, 255, 255, 0.8) !important;
   font-size: 13.5px;
@@ -54,11 +44,10 @@
   font-weight: 500 !important;
 }
 
-/* 🎯 FIX: பட்டனின் ஃபான்ட் அளவு மற்றும் பேடிங் கம்மி பண்ணப்பட்டுள்ளது */
 .project-cta-btn {
   border-radius: 50px !important;
-  padding: 5px 6px 5px 14px !important; /* கச்சிதமான பேடிங் */
-  font-size: 10.5px !important; /* ஃபான்ட் சைஸ் கம்மி செய்யப்பட்டுள்ளது */
+  padding: 5px 6px 5px 14px !important; 
+  font-size: 10.5px !important; 
   font-weight: 500 !important;
   border: 1px solid #ffffff !important; 
   color: #111111 !important;
@@ -76,7 +65,7 @@
 .yellow-arrow-circle {
   background-color: #dfa82d;
   color: #ffffff;
-  width: 22px; /* பட்டன் சைஸுக்கு ஏற்ப ஆரோ சர்க்கிளும் சிறியதாக்கப்பட்டது */
+  width: 22px; 
   height: 22px;
   border-radius: 50% !important;
   display: flex !important;
@@ -86,81 +75,160 @@
 }
 .yellow-arrow-circle svg { width: 8px; }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  .custom-capsule-navbar {
-    max-width: 96%;
-    padding: 6px 16px !important;
+/* ========================================================
+   🎯 DESKTOP ONLY: WHITE PILL SUB-NAV STYLES
+   ======================================================== */
+@media (min-width: 992px) {
+  .sub-navbar-capsule-container {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 15px !important;
+    animation: slideDownFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
   }
-  .nav-links-group {
-    gap: 0.5rem !important; 
-  }
-  .capsule-link {
-    font-size: 11px !important;
-  }
-  /* 🎯 FIX: 1200px-க்கு கீழ் பட்டன் சைஸ் கச்சிதமாக்கப்பட்டது */
-  .project-cta-btn {
-    font-size: 10px !important;
-    padding: 4px 6px 4px 12px !important;
-  }
-}
 
-@media (min-width: 1201px) and (max-width: 1439.98px) {
-  .custom-capsule-navbar {
-    max-width: 95%; 
-  }
-  .nav-links-group {
-    gap: 1.6rem !important;
-  }
-  .capsule-link {
-    font-size: 12.5px !important;
-  }
-  /* 🎯 FIX: நடுத்தர திரைகளுக்கான கச்சிதமான அளவு */
-  .project-cta-btn {
-    font-size: 10px !important;
-    padding: 4px 6px 4px 12px !important;
-  }
-}
-
-@media (min-width: 1440px) and (max-width: 2559.98px) {
-  .custom-capsule-navbar {
-    max-width: 95%; 
-  }
-  .nav-links-group {
-    gap: 2.5rem !important; 
-  }
-  /* 🎯 FIX: லேப்டாப் திரைகளுக்கான குறைக்கப்பட்ட அளவு */
-  .project-cta-btn {
-    font-size: 10px !important;
-  }
-}
-
-@media (min-width: 2560px) {
-  .navbar-wrapper {
-    padding: 24px 40px; 
-  }
-  .custom-capsule-navbar {
-    max-width: 2400px; 
-    padding: 16px 36px !important;
-  }
-  .nav-links-group {
+  .sub-navbar-pill-box {
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 14px 40px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
     gap: 4rem !important;
+    max-width: 95%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
   }
-  .capsule-link {
-    font-size: 22px !important; 
+
+  .sub-nav-link {
+    color: #111111 !important;
+    font-family: "Manrope", sans-serif;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    letter-spacing: 1.5px !important;
+    white-space: nowrap !important;
+    transition: color 0.2s ease !important;
   }
-  /* 🎯 FIX: அல்ட்ரா-வைடு 4K திரைகளிலும் ஓவர் பெரிதாகாமல் சுருக்கப்பட்டுள்ளது */
-  .project-cta-btn {
-    border-radius: 50px !important;
-    padding: 6px 14px 6px 22px !important;
-    font-size: 14px !important;
-    width: auto; 
+
+  .sub-nav-link:hover {
+    color: #dfa82d !important;
   }
-  .yellow-arrow-circle {
-    width: 28px !important;
-    height: 28px !important;
+
+  .desktop-sub-active {
+    color: #dfa82d !important;
+  }
+
+  .inner-indicator-arrow {
+    font-size: 7px !important;
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+    color: #777;
+  }
+
+  .desktop-sub-active .inner-indicator-arrow {
+    color: #dfa82d !important;
+  }
+
+  .capsule-sub-nav-item {
+    position: relative;
+  }
+
+  .pill-dropdown-inner-list {
+    position: absolute !important;
+    top: calc(100% + 15px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 18px 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    min-width: 240px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    z-index: 2000 !important;
+    text-align: left !important;
+    animation: subPillFadeIn 0.2s ease-out forwards !important;
+  }
+
+  .pill-dropdown-inner-list a {
+    font-family: "Manrope", sans-serif;
+    color: #444444 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+    letter-spacing: 0.5px !important; 
+    padding-left: 14px !important; 
+    transition: color 0.25s ease, transform 0.25s ease !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  /* 🎯 FIXED CENTERED: Symbol geometric vertical center positioning alignment */
+  .pill-dropdown-inner-list a::before {
+    content: "»" !important; 
+    font-size: 18px !important;
+    position: absolute !important;
+    top: 45% !important; /* Perfect Center Grid Axis */
+    transform: translateY(-50%) !important; /* Forces pixel perfect vertical center */
+    left: -8px !important; 
+    opacity: 0 !important;
+    color: #dfa82d !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  }
+
+  .pill-dropdown-inner-list a:hover {
+    color: #dfa82d !important;
+    transform: translateX(8px) !important; 
+  }
+
+  .pill-dropdown-inner-list a:hover::before {
+    opacity: 1 !important;
+    left: 0 !important; 
   }
 }
 
+@keyframes slideDownFade {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subPillFadeIn {
+  0% { opacity: 0; transform: translate(-50%, -10px); }
+  100% { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* --- DROPDOWN MULTI-ARROWS --- */
+.collection-toggle-trigger {
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important; 
+}
+
+.dropdown-arrow-icon {
+  font-size: 8px !important;
+  display: inline-block !important;
+  transition: transform 0.25s ease !important;
+  color: rgba(255, 255, 255, 0.6);
+  vertical-align: middle;
+}
+
+.active-dropdown .dropdown-arrow-icon {
+  color: #dfa82d !important;
+}
+
+/* ========================================================
+   📱 MOBILE ACCORDION 
+   ======================================================== */
 @media (max-width: 991.98px) {
   .navbar-wrapper { padding: 12px 8px; }
   .mobile-expanded {
@@ -169,26 +237,108 @@
     -webkit-backdrop-filter: blur(20px);
     border-radius: 12px;
     margin-top: 12px;
-    padding: 20px 10px;
+    padding: 25px 15px;
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
   .nav-links-group {
-    gap: 1rem !important;
-    padding-bottom: 15px;
+    gap: 1.4rem !important; 
+    padding-bottom: 20px;
   }
-  .project-cta-btn {
-    border-radius: 50px !important;
-    padding: 4px 6px 4px 12px !important;
-    font-size: 10px !important;
-    width: auto !important; 
-    display: inline-flex !important;
+  
+  .mobile-dropdown-wrapper {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
-    justify-content: center !important;
+    width: 100%;
   }
-  .yellow-arrow-circle {
-    width: 20px !important;
-    height: 20px !important;
+
+  .mobile-nested-sub-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    padding: 15px 10px 5px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: center;
   }
+
+  .mobile-sub-link {
+    color: rgba(255, 255, 255, 0.85) !important; 
+    font-size: 15px !important; 
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+
+  .custom-capsule-navbar .capsule-link {
+    font-size: 16px !important; 
+  }
+
+  .mobile-inner-active-yellow {
+    color: #dfa82d !important;
+    font-weight: 600 !important;
+  }
+
+  .mobile-inner-arrow {
+    font-size: 9px !important;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .mobile-inner-nested-list {
+    position: relative !important; 
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 10px 0 6px 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .mobile-inner-nested-list a {
+    font-family: "Manrope", sans-serif;
+    color: rgba(255, 255, 255, 0.65) !important;
+    font-size: 13.5px !important; 
+    text-decoration: none !important;
+    display: block !important;
+    width: 100%;
+    letter-spacing: 0.5px !important; 
+    transition: color 0.2s ease;
+  }
+
+  .mobile-inner-nested-list a:hover {
+    color: #dfa82d !important;
+  }
+}
+
+/* மற்ற திரைகளுக்கான பிரேக் பாயிண்ட்ஸ் */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .custom-capsule-navbar { max-width: 96%; padding: 6px 16px !important; }
+  .nav-links-group { gap: 0.5rem !important; }
+  .capsule-link { font-size: 11px !important; }
+  .project-cta-btn { font-size: 10px !important; padding: 4px 6px 4px 12px !important; }
+}
+@media (min-width: 1201px) and (max-width: 1439.98px) {
+  .custom-capsule-navbar { max-width: 95%; }
+  .nav-links-group { gap: 1.6rem !important; }
+  .capsule-link { font-size: 12.5px !important; }
+  .project-cta-btn { font-size: 10px !important; padding: 4px 6px 4px 12px !important; }
+}
+@media (min-width: 1440px) and (max-width: 2559.98px) {
+  .custom-capsule-navbar { max-width: 95%; }
+  .nav-links-group { gap: 2.5rem !important; }
+  .project-cta-btn { font-size: 10px !important; }
 }
 
 .hamburger-lines { width: 22px; height: 16px; position: relative; display: inline-block; }
@@ -200,158 +350,9 @@
 .hamburger-lines.active span:nth-child(2) { opacity: 0; left: -40px; }
 .hamburger-lines.active span:nth-child(3) { top: 7px; transform: rotate(-135deg); }
 
-.logo-img {
-  height: 42px;         
-  width: auto;          
-  display: block;
-  object-fit: contain;
-  transition: height 0.2s ease;
-}
+.logo-img { height: 42px; width: auto; display: block; object-fit: contain; }
+@media (max-width: 747.98px) { .logo-img { height: 35px; } }
 
-@media (min-width: 748px) and (max-width: 1024px) {
-  .logo-img {
-    height: 36px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .logo-img {
-    height: 38px;
-  }
-}
-@media (min-width: 2560px) {
-  .logo-img {
-    height: 54px;
-  }
-}
-@media (max-width: 747.98px) {
-  .logo-img {
-    height: 35px;       
-  }
-}
-
-.nav-item {
-  letter-spacing: 0.1125em;
-}
-
-.collection-toggle-trigger {
-  cursor: pointer !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 8px !important; /* 🎯 ஆரோ மற்றும் டெக்ஸ்ட் இடையே உள்ள இடைவெளி */
-}
-
-/* 🎯 FIX: சப்-நேவ் டவுன் ஆரோவுக்கான பிரத்யேக பிரீமியம் ஸ்டைல்கள் */
-.dropdown-arrow-icon {
-  font-size: 8px !important;
-  display: inline-block !important;
-  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1) !important;
-  color: rgba(255, 255, 255, 0.6);
-  vertical-align: middle;
-}
-
-.active-dropdown .dropdown-arrow-icon {
-  color: #dfa82d !important;
-}
-
-.sub-navbar-capsule-container {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  padding-top: 15px !important;
-  animation: slideDownFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
-}
-
-.sub-navbar-pill-box {
-  background: #ffffff !important;
-  border-radius: 14px !important;
-  padding: 14px 40px !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 4rem !important;
-  max-width: 95%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-}
-
-.sub-nav-link {
-  color: #111111 !important;
-  font-size: 13.5px !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  letter-spacing: 1.5px !important;
-  white-space: nowrap !important;
-  transition: color 0.2s ease !important;
-}
-
-.sub-nav-link:hover {
-  color: #dfa82d !important;
-}
-
-.desktop-sub-active {
-  color: #dfa82d !important;
-}
-
-@keyframes slideDownFade {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.mobile-dropdown-wrapper {
-  position: relative !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-
-.mobile-nested-sub-nav {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 12px !important;
-  padding: 12px 0 6px 0 !important;
-  width: 100% !important;
-  animation: slideDownFade 0.2s ease-out !important;
-}
-
-.mobile-sub-link {
-  color: rgba(255, 255, 255, 0.6) !important; 
-  font-size: 11.5px !important; 
-  font-weight: 400 !important;
-  text-decoration: none !important;
-  transition: color 0.2s ease !important;
-  text-transform: none !important;
-  letter-spacing: 1.5px !important;
-}
-
-.mobile-sub-link:hover {
-  color: #dfa82d !important;
-}
-
-.sub-active-yellow {
-  color: #dfa82d !important;
-  font-weight: 500 !important;
-}
-
-@media (min-width: 992px) {
-  .mobile-nested-sub-nav {
-    display: none !important; 
-  }
-}
-
-@media (max-width: 991.98px) {
-  .desktop-only-sub-nav {
-    display: none !important; 
-  }
-}
-
-@media (min-width: 2560px) {
-  .sub-navbar-pill-box {
-    padding: 20px 60px !important;
-    gap: 6rem !important;
-    border-radius: 20px !important;
-  }
-  .sub-nav-link {
-    font-size: 22px !important;
-  }
-} 
+.nav-item { letter-spacing: 0.1125em; }
+@media (min-width: 992px) { .mobile-nested-sub-nav { display: none !important; } }
+@media (max-width: 991.98px) { .desktop-only-sub-nav { display: none !important; } }

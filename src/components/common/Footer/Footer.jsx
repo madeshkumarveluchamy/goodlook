@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import './Footer.css';
 import "../../../App.css";
-import { NavHashLink } from 'react-router-hash-link';
-
-import logoImg from '../../../assets/navlogo.webp'; 
 import { Link, useLocation } from 'react-router-dom';
 
-// 🎯 FIXED: Removed RiTwitterXFill and added FaLinkedinIn here
-import { FaInstagram, FaFacebookF, FaPinterestP, FaChevronDown, FaLinkedinIn } from 'react-icons/fa';
+import logoImg from '../../../assets/navlogo.webp'; 
+import { FaInstagram, FaFacebookF, FaPinterestP, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
-  const [showCollections, setShowCollections] = useState(false);
-  const [showCurtains, setShowCurtains] = useState(false);
+  // Nested accordion toggles for Collections
+  const [showUpvcDoors, setShowUpvcDoors] = useState(false);
+  const [showUpvcWindows, setShowUpvcWindows] = useState(false);
+
+  // Nested accordion toggles for Insect Screen
+  const [showMosWindow, setShowMosWindow] = useState(false);
+  const [showMosDoors, setShowMosDoors] = useState(false);
+  const [showMosBalcony, setShowMosBalcony] = useState(false);
 
   const location = useLocation();
   const currentPath = location.pathname;
 
-  // 🎯 GLOBAL SCROLL ENGINE: பக்கம் மாறினாலும் சரி, ஒரே பக்கத்துல பாட்டத்துல இருந்தாலும் சரி டாப்-க்கு கொண்டு போகும்
+  // 🎯 GLOBAL SCROLL ENGINE
   const handleScrollToTop = (targetPath) => {
     if (currentPath === targetPath) {
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -27,8 +30,31 @@ const Footer = () => {
     }
   };
 
+  // 🎯 Premium Smooth-Rotating Chevron Component for Footer Accordions
+  const FooterChevron = ({ isActive }) => (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      strokeWidth={3} 
+      stroke="currentColor" 
+      style={{ 
+        width: '10px', 
+        height: '10px', 
+        display: 'inline-block', 
+        marginLeft: '4px',
+        verticalAlign: 'middle',
+        transform: isActive ? 'rotate(180deg)' : 'rotate(0deg)',
+        transition: 'transform 0.2s ease',
+        color: isActive ? '#dfa82d' : 'rgba(255, 255, 255, 0.6)'
+      }}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+  );
+
   return (
-    <footer className="footer-section position-relative">
+    <footer className="footer-section position-relative pb-4">
       
       <div className="footer-watermark-text position-absolute w-100 text-center select-none unselectable">
         GOOD LOOK <br/>
@@ -40,7 +66,9 @@ const Footer = () => {
         <div className="row footer-top-branding mb-5">
           <div className="col-12 col-lg-5">
             <div className="footer-logo-box mb-3 text-center text-md-start">
-              <img src={logoImg} alt="Good Look Home Decor Logo" className="footer-logo-graphic" />
+              <Link to="/" onClick={() => handleScrollToTop('/')}>
+                <img src={logoImg} alt="Good Look Home Decor Logo" className="footer-logo-graphic" />
+              </Link>
             </div>
             <p className="footer-brand-bio fw-light m-0 hanken-grotsek-font smin">
               Your trusted partner for premium mosquito nets and UPVC solutions. With over 21 years of experience, we provide high-quality protection and durable products for homes and businesses.
@@ -48,120 +76,202 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row g-4 footer-columns-matrix pt-4 border-top-dark">
+        <div className="row g-4 footer-columns-matrix pt-4 mb-4 border-top-dark">
           
-          {/* Column 1: Contact Information */}
-          <div className="col-12 col-sm-6 col-md-3 footer-grid-col border-right-split">
+          {/* ================= COLUMN 1: CONTACT INFO ================= */}
+          <div className="col-12 col-md-3 footer-grid-col border-right-split">
             <div className="footer-card-inner">
-              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 text-center text-md-start sdes">Contact Information</h5>
-              <p className="footer-address-txt fw-light mb-3 hanken-grotesk-font text-center text-md-start smin">
-                Diir on.460, Dr Radhakrishna St,<br />
+              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 text-center text-md-start sdes text-warning">Contact Information</h5>
+              <p className="footer-address-txt fw-light mb-3 hanken-grotesk-font text-center text-md-start smin text-light">
+                Dir on.460, Dr Radhakrishna St,<br />
                 Hudco Colony, Tatabad,
                 Coimbatore,<br />
                 Tamil Nadu 641012
               </p>
-              <p className="footer-contact-link-line m-0 text-center text-md-start sdes">
-                Call us: <a href="tel:9443409613" className="text-decoration-none rubik-font smin">94434 09613</a>
+              <p className="footer-contact-link-line m-0 text-center text-md-start sdes text-light">
+                Call us: <a href="tel:9443409613" className="text-decoration-none text-white rubik-font smin">94434 09613</a>
               </p>
-              <p className="footer-contact-link-line mt-1 text-center text-md-start sdes">
-                Email: <a href="mailto:Admin@goodlookhome.com" className="text-decoration-none rubik-font smin">Admin@goodlookhome.com</a>
+              <p className="footer-contact-link-line mt-1 text-center text-md-start sdes text-light">
+                Email: <a href="mailto:Admin@goodlookhome.com" className="text-decoration-none text-white rubik-font smin">Admin@goodlookhome.com</a>
               </p>
             </div>
           </div>
 
-          {/* Column 2: Interactive Quick Links with Sub-Options */}
-          <div className="col-12 col-sm-6 col-md-3 footer-grid-col border-right-split">
+          {/* ================= COLUMN 2: OUR COLLECTIONS ================= */}
+          <div className="col-12  col-md-3 footer-grid-col border-right-split">
             <div className="footer-card-inner">
-              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes">Quick Links</h5>
+              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes text-warning">Our Collections</h5>
               <ul className="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2 fw-light text-center text-md-start">
-                <li><Link to="/" className="rubik-font smin" onClick={() => handleScrollToTop('/')}>Home</Link></li>
                 
-                {/* Our Collections Accordion */}
-                <li className="footer-interactive-item">
+                <li className="footer-link-wrapper">
+                  <Link to="/our-collections/upvc-profile" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/our-collections/upvc-profile')}>uPVC Profile</Link>
+                </li>
+                
+                {/* uPVC Doors Toggle */}
+                <li className="footer-interactive-item mt-2">
                   <span 
-                    className="footer-toggle-trigger rubik-font smin d-flex align-items-center justify-content-center justify-content-md-start gap-2"
-                    onClick={() => setShowCollections(!showCollections)}
+                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
+                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
+                    onClick={() => setShowUpvcDoors(!showUpvcDoors)}
                   >
-                    Our Collections <FaChevronDown className={`footer-chevron-icon ${showCollections ? 'rotate-180' : ''}`} />
+                    uPVC Doors <FooterChevron isActive={showUpvcDoors} />
                   </span>
-                  <div className={`footer-nested-sub-links ${showCollections ? 'drawer-open' : 'drawer-closed'}`}>
-                    <Link to="/our-collections/upvc-openable-doors-windows" className="rubik-font" onClick={() => handleScrollToTop('/our-collections/upvc-openable-doors-windows')}>UPVC Openable Doors</Link>
-                    <Link to="/our-collections/upvc-slide-doors-windows" className="rubik-font" onClick={() => handleScrollToTop('/our-collections/upvc-slide-doors-windows')}>UPVC Sliding Doors</Link>
-                    <Link to="/our-collections/upvc-lift-slide-doors-windows" className="rubik-font" onClick={() => handleScrollToTop('/our-collections/upvc-lift-slide-doors-windows')}>Lift or Sliding Windows & Doors</Link>
+                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showUpvcDoors ? 'd-block' : 'd-none'}`}>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/casement-and-designer-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/casement-and-designer-doors')}>Casement & Designer Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/sliding-doors')}>Sliding Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/arch-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/arch-doors')}>Arch Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/tilt-and-turn-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/tilt-and-turn-doors')}>Tilt & Turn Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/french-sliding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/french-sliding-doors')}>French Sliding Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-and-folding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/sliding-and-folding-doors')}>Sliding & Folding Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/french-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/french-doors')}>French Doors</Link></div>
                   </div>
                 </li>
 
-                <li><Link to="/insect-screen" className="rubik-font sdes smin" onClick={() => handleScrollToTop('/insect-screen')}>Insect Screen</Link></li>
-                
-                {/* Curtains & Blinds Accordion */}
-                <li className="footer-interactive-item">
+                {/* uPVC Windows Toggle */}
+                <li className="footer-interactive-item mt-2">
                   <span 
-                    className="footer-toggle-trigger rubik-font smin d-flex align-items-center justify-content-center justify-content-md-start  gap-2"
-                    onClick={() => setShowCurtains(!showCurtains)}
+                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
+                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
+                    onClick={() => setShowUpvcWindows(!showUpvcWindows)}
                   >
-                    Curtains & Blinds <FaChevronDown className={`footer-chevron-icon ${showCurtains ? 'rotate-180' : ''}`} />
+                    uPVC Windows <FooterChevron isActive={showUpvcWindows} />
                   </span>
-                  <div className={`footer-nested-sub-links ${showCurtains ? 'drawer-open' : 'drawer-closed'}`}>
-                    <Link to="/curtains-blinds/curtains" className="rubik-font" onClick={() => handleScrollToTop('/curtains-blinds/curtains')}>Curtains</Link>
-                    <Link to="/curtains-blinds/blinds" className="rubik-font" onClick={() => handleScrollToTop('/curtains-blinds/blinds')}>Blinds</Link>
+                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showUpvcWindows ? 'd-block' : 'd-none'}`}>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/casement-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/casement-windows')}>Casement Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/sliding-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/sliding-windows')}>Sliding Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/arch-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/arch-windows')}>Arch Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/tilt-and-turn-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/tilt-and-turn-windows')}>Tilt & Turn Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/french-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/french-windows')}>French Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/fixed-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/fixed-windows')}>Fixed Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/ventilator-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/ventilator-windows')}>Ventilator Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/combination-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/combination-windows')}>Combination Windows</Link></div>
                   </div>
                 </li>
 
-                <li><Link to="/upvc" className="rubik-font smin" onClick={() => handleScrollToTop('/upvc')}>UPVC</Link></li>
-                <li><Link to="/our-story" className="rubik-font smin" onClick={() => handleScrollToTop('/our-story')}>Our Story</Link></li>
               </ul>
             </div>
           </div>
 
-          {/* Column 3: Further Info */}
-          <div className="col-12 col-sm-6 col-md-3 footer-grid-col border-right-split">
+          {/* ================= COLUMN 3: INSECT SCREEN & CURTAINS ================= */}
+          <div className="col-12 col-md-3 footer-grid-col border-right-split">
             <div className="footer-card-inner">
-              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes">Further Info</h5>
+              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes text-warning">Insect Screens</h5>
               <ul className="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2 fw-light text-center text-md-start">
-                <li><Link to="/our-story" className="rubik-font smin" onClick={() => handleScrollToTop('/our-story')}>Our Story</Link></li>
-                <li><Link to="/contact-us" className="rubik-font smin" onClick={() => handleScrollToTop('/contact-us')}>Contact Us</Link></li>
-<li>
-  <Link 
-    to="/" 
-    className="rubik-font smin" 
-    onClick={(e) => {
-      handleScrollToTop('/');
-      setTimeout(() => {
-        const blogSection = document.getElementById('blog');
-        if (blogSection) {
-          blogSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }}
-  >
-    Blog
-  </Link>
-</li>
-                <li><Link to="/" className="rubik-font smin" onClick={() => handleScrollToTop('/')}>Privacy Policy</Link></li>
-                <li><Link to="/" className="rubik-font smin" onClick={() => handleScrollToTop('/')}>Terms & Conditions</Link></li>
+                
+                {/* Mosquito Net for Window */}
+                <li className="footer-interactive-item">
+                  <span 
+                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
+                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
+                    onClick={() => setShowMosWindow(!showMosWindow)}
+                  >
+                    Net for Window <FooterChevron isActive={showMosWindow} />
+                  </span>
+                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosWindow ? 'd-block' : 'd-none'}`}>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/all-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/all-mosquito-net-window')}>All Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window')}>Sliding Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window')}>Pleated Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/roller-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/roller-mosquito-net-window')}>Roller Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/fixed-frame-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/fixed-frame-net-window')}>Fixed Frame Net</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window')}>Magnetic Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window')}>Velcro Net Window</Link></div>
+                  </div>
+                </li>
+
+                {/* Mosquito Net for Doors */}
+                <li className="footer-interactive-item mt-2">
+                  <span 
+                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
+                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
+                    onClick={() => setShowMosDoors(!showMosDoors)}
+                  >
+                    Net for Doors <FooterChevron isActive={showMosDoors} />
+                  </span>
+                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosDoors ? 'd-block' : 'd-none'}`}>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors')}>All Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors')}>Sliding Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors')}>Pleated Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors')}>Hinged Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/roller-mosquito-screens')}>Roller Mosquito Screens</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors')}>Magnetic Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors')}>Velcro Net Doors</Link></div>
+                  </div>
+                </li>
+
+                {/* Mosquito Net for Balcony */}
+                <li className="footer-interactive-item mt-2">
+                  <span 
+                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
+                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
+                    onClick={() => setShowMosBalcony(!showMosBalcony)}
+                  >
+                    Net for Balcony <FooterChevron isActive={showMosBalcony} />
+                  </span>
+                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosBalcony ? 'd-block' : 'd-none'}`}>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony')}>All Net Balcony</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets')}>Pleated Mosquito Nets</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets')}>Sliding Mosquito Nets</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/roller-screens')}>Roller Screens</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/fixed-frame-screens')}>Fixed Frame Screens</Link></div>
+                  </div>
+                </li>
+
+                <h5 className="footer-col-title text-uppercase tracking-wider mt-4 mb-3 rubik-font text-center text-md-start sdes text-warning">Curtains & Blinds</h5>
+                <div className="footer-link-wrapper"><li><Link to="/curtains-blinds/curtains" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/curtains-blinds/curtains')}>Curtains</Link></li></div>
+                <div className="footer-link-wrapper"><li><Link to="/curtains-blinds/blinds" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/curtains-blinds/blinds')}>Blinds</Link></li></div>
+
               </ul>
             </div>
           </div>
 
-          {/* Column 4: Social Accounts */}
-          <div className="col-12 col-sm-6 col-md-3 footer-grid-col">
-            <div className="footer-card-inner h-100 d-flex flex-column justify-content-center align-items-center text-center">
-              <h5 className="footer-social-header-title mb-4 rubik-font sdes">See What We're Up To</h5>
-              <div className="footer-social-icons-row d-flex align-items-center gap-4">
-                <a href="https://www.instagram.com/ghd_upvc_windows?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Instagram">
-                  <FaInstagram />
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61567207111228" target="_blank" rel="noreferrer" className="social-icon-anchor" aria-label="Facebook">
-                  <FaFacebookF />
-                </a>
-                
-                {/* 🎯 FIXED: Changed from NavHashLink to standard Link component */}
-                <Link to="/" className="social-icon-anchor" aria-label="LinkedIn" onClick={() => handleScrollToTop('/')}>
-                  <FaLinkedinIn />
-                </Link>
-                <Link to="/" className="social-icon-anchor" aria-label="Pinterest" onClick={() => handleScrollToTop('/')}>
-                  <FaPinterestP />
-                </Link>
+          {/* ================= COLUMN 4: QUICK LINKS & SOCIAL ================= */}
+          <div className="col-12  col-md-3 footer-grid-col">
+            <div className="footer-card-inner">
+              <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes text-warning">Quick Links</h5>
+              <ul className="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2 fw-light text-center text-md-start mb-4">
+                <div className="footer-link-wrapper"><li><Link to="/" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/')}>Home</Link></li></div>
+                <div className="footer-link-wrapper"><li><Link to="/our-story" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/our-story')}>Our Story</Link></li></div>
+                <div className="footer-link-wrapper"><li><Link to="/contact-us" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/contact-us')}>Contact Us</Link></li></div>
+                <div className="footer-link-wrapper">
+                  <li>
+                    <Link 
+                      to="/" 
+                      className="rubik-font smin text-decoration-none text-light" 
+                      onClick={(e) => {
+                        handleScrollToTop('/');
+                        setTimeout(() => {
+                          const blogSection = document.getElementById('blog');
+                          if (blogSection) {
+                            blogSection.scrollIntoView({ behavior: 'smooth' });
+                          }
+                        }, 100);
+                      }}
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                </div>
+                <div className="footer-link-wrapper"><li><Link to="/" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/')}>Privacy Policy</Link></li></div>
+                <div className="footer-link-wrapper"><li><Link to="/" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/')}>Terms & Conditions</Link></li></div>
+              </ul>
+
+              {/* Social Accounts */}
+              <div className="h-100 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start mt-4">
+                <h5 className="footer-social-header-title mb-4 rubik-font sdes text-warning">Follow Us</h5>
+                <div className="footer-social-icons-row d-flex align-items-center gap-3">
+                  <a href="https://www.instagram.com/ghd_upvc_windows" target="_blank" rel="noreferrer" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="Instagram">
+                    <FaInstagram size={18} />
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61567207111228" target="_blank" rel="noreferrer" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="Facebook">
+                    <FaFacebookF size={18} />
+                  </a>
+                  <Link to="/" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="LinkedIn" onClick={() => handleScrollToTop('/')}>
+                    <FaLinkedinIn size={18} />
+                  </Link>
+                  <Link to="/" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="Pinterest" onClick={() => handleScrollToTop('/')}>
+                    <FaPinterestP size={18} />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

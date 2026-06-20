@@ -248,8 +248,67 @@
     align-items: center !important;
   }
   .footer-social-header-title { margin-top: 1rem; }
+
+  /* 🎯 FIXED MOBILE BORDER REMOVAL: Resets HTML inline bootstrap sidebar borders in accordion list wrapper */
+  .footer-interactive-item div.border-start {
+    border-left: 0 !important;
+    border-inline-start: 0 !important;
+    border: none !important;
+    padding-left: 0 !important;
+  }
 }
 
 .select-none {
   user-select: none;
+}
+
+/* ========================================================
+   🎯 FOOTER INNER LINKS DYNAMIC ACTIVE INDICATOR STYLE (»)
+   ======================================================== */
+.footer-link-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.footer-links-list li a, 
+.footer-nested-sub-links a,
+.footer-link-wrapper a {
+  position: relative !important;
+  transition: color 0.25s ease, transform 0.25s ease !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-link-wrapper a::before {
+  content: "»" !important;
+  font-size: 13px !important;
+  position: absolute !important;
+  top: 50% !important; 
+  transform: translateY(-50%) !important; 
+  left: -8px !important;
+  opacity: 0 !important;
+  color: #b59463 !important; 
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.footer-link-wrapper a:hover {
+  color: #b59463 !important;
+  transform: translateX(10px) !important; 
+}
+
+.footer-link-wrapper a:hover::before {
+  opacity: 1 !important;
+  left: -12px !important; 
+}
+
+@media (max-width: 768px) {
+  .footer-link-wrapper a:hover {
+    transform: translateX(0px) !important; 
+  }
+  .footer-link-wrapper a::before {
+    display: none !important; 
+  }
 }

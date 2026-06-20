@@ -1,0 +1,143 @@
+/* ==========================================================================
+   STORY HERO CANVAS & BACKGROUND LAYOUT
+   ========================================================================== */
+.frenchwindows-story-hero-section {
+  height: 100vh !important;
+  min-height: 600px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #111111;
+}
+
+.frenchwindows-story-hero-dark-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 45%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 1;
+}
+
+.frenchwindows-story-vertical-grid-lines {
+  z-index: 2;
+  pointer-events: none;
+  left: 0 !important;
+  transform: none !important;
+  padding-left: 60px !important;  
+  padding-right: 60px !important;
+}
+
+.frenchwindows-story-line-col {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.frenchwindows-story-line-col:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.frenchwindows-story-hero-fluid {
+  max-width: 100% !important; 
+  width: 100% !important;
+  padding-left: 10px !important;  
+  padding-right: 10px !important;
+}
+
+.frenchwindows-inter-font {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   CORE INTERACTION RULES FOR BIG SCREENS (860px AND ABOVE)
+   ========================================================================== */
+@media (min-width: 860px) {
+  .frenchwindows-hero-text-alignment-row {
+    display: flex !important;
+    align-items: center !important; 
+    height: 100% !important;
+    padding-bottom: 0 !important; 
+  }
+
+  .frenchwindows-story-main-title {
+    font-size: 8.7vw !important; 
+    line-height: 0.92 !important; 
+    letter-spacing: -0.04em !important;
+    text-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  .frenchwindows-story-title-line-1 {
+    text-align: left !important;
+  }
+
+  .frenchwindows-story-title-line-2 {
+    padding-left: 33.33% !important; 
+    text-align: left !important;
+  }
+}
+
+.frenchwindows-story-light-beige {
+  color: #e3d3c3 !important; 
+}
+
+/* 4K Screen Layout Constraints */
+@media (min-width: 2560px) {
+  .frenchwindows-story-hero-fluid, .frenchwindows-story-vertical-grid-lines { padding-left: 100px !important; padding-right: 100px !important; }
+  .frenchwindows-story-main-title { font-size: 8.2vw !important; }
+}
+
+@media (max-width: 1440px) and (min-width: 860px) {
+  .frenchwindows-story-hero-fluid, .frenchwindows-story-vertical-grid-lines { padding-left: 1px !important; padding-right: 1px !important; }
+}
+
+/* ==========================================================================
+   CRITICAL SYSTEM OVERRIDES (BELOW 860px - VERTICAL & HORIZONTAL CENTER)
+   ========================================================================== */
+@media (max-width: 859.98px) {
+  .frenchwindows-story-hero-section {
+    height: 20vh !important;
+  }
+
+  .frenchwindows-story-hero-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .frenchwindows-hero-text-alignment-row {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;     
+    justify-content: center !important;   
+    padding-bottom: 0 !important;
+  }
+
+  .frenchwindows-hero-text-engine-col {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .frenchwindows-story-main-title {
+    font-size: clamp(44px, 11vw, 74px) !important; 
+    line-height: 1.1 !important;
+    text-align: center !important; 
+    width: 100% !important;
+  }
+
+  .frenchwindows-story-title-line-1 {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .frenchwindows-story-title-line-2 {
+    padding-left: 0 !important; 
+    text-align: center !important;
+    width: 100% !important;
+  }
+}

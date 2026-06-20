@@ -1,0 +1,132 @@
+/* Section & General Spacing */
+.mos-balcony-gallery-section {
+  padding: 60px 0;
+  background-color: #f8f8f8; /* Background color (image-la irukkura mathiri light gray) */
+  width: 100%;
+}
+
+.mos-balcony-header {
+  margin-bottom: 40px;
+}
+
+.mos-balcony-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.mos-balcony-subtitle {
+  color: #555555;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* =========================================
+   Responsive Grid System (Mobile to Desktop)
+   ========================================= */
+.mos-balcony-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop: 3 Columns */
+  gap: 24px;
+}
+
+/* Hover Card Styling */
+.mos-balcony-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5; /* Image size ratio perfect-a irukka */
+  cursor: pointer;
+  background-color: #e5e5e5;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.mos-balcony-img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mos-balcony-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Card Hover aagum pothu image light-a zoom aagam */
+.mos-balcony-card:hover .mos-balcony-img {
+  transform: scale(1.05);
+}
+
+/* =========================================
+   Hover Overlay Box (Hidden by Default)
+   ========================================= */
+.mos-balcony-overlay-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px); /* Kela irunthu mela vara effect */
+  background-color: #ffffff;
+  padding: 15px 20px;
+  width: 85%;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+  /* Hiding the overlay by default */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Hover panna overlay veliya varum */
+.mos-balcony-card:hover .mos-balcony-overlay-box {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Overlay Text Styling */
+.mos-balcony-badge {
+  display: block;
+  color: #dfa82d; /* Gold color */
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.mos-balcony-card-title {
+  font-family: 'Playfair Display', serif;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* =========================================
+   Mobile View (Responsive CSS)
+   ========================================= */
+@media (max-width: 991px) {
+  .mos-balcony-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 Columns */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mos-balcony-grid {
+    grid-template-columns: 1fr; /* Mobile: 1 Column */
+    gap: 20px;
+  }
+
+  .mos-balcony-overlay-box {
+    width: 90%;
+    padding: 12px 15px;
+  }
+}
