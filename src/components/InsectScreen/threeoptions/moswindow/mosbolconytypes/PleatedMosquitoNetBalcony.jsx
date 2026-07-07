@@ -1,16 +1,16 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
 import { FaCheckCircle } from 'react-icons/fa';
-import storyhero from "../../../../../assets/casementback.png"
-import img1 from '../../../../../assets/sliding1.png'; 
-import img2 from '../../../../../assets/sliding2.png';
-import img3 from '../../../../../assets/sliding3.png';
-import img4 from '../../../../../assets/sliding4.png';
+import storyhero from "../../../../../assets/Pleated Mosquito Nets for balcony Banners (1).webp"
+import img1 from '../../../../../assets/Pleated Mosquito Nets for balcony Images (6).webp'; 
+import img2 from '../../../../../assets/Pleated Mosquito Nets for balcony Images (1).webp';
+import img3 from '../../../../../assets/Pleated Mosquito Nets for balcony Images (2).webp';
+import img4 from '../../../../../assets/Pleated Mosquito Nets for balcony Images (5).webp';
 
 // Ningalude images ingane import cheyyuka
-import stickyImg from '../../../../../assets/sliding5.png'; // Left Sticky Image
-import rightImgTop from '../../../../../assets/sliding6.png'; // Right Scrollable Image 1
-import rightImgCenter from '../../../../../assets/sliding7.png'; // Right Scrollable Image 2
+import stickyImg from '../../../../../assets/Pleated Mosquito Nets for balcony Images (7).webp'; // Left Sticky Image
+import rightImgTop from '../../../../../assets/Pleated Mosquito Nets for balcony Images (3).webp'; // Right Scrollable Image 1
+import rightImgCenter from '../../../../../assets/Pleated Mosquito Nets for balcony Banners (3).webp'; // Right Scrollable Image 2
 import ExperienceAura from '../../../../Doors/SlideDoors/ExperienceAura';
 
 const PleatedMosquitoNetsBalcony = () => {
@@ -19,7 +19,7 @@ const PleatedMosquitoNetsBalcony = () => {
       {/* ================= HERO SECTION ================= */}
       <section 
         className="musquitotypes-story-hero-section position-relative overflow-hidden w-100"
-        style={{ backgroundImage: `url(${storyhero})` }}
+        style={{ backgroundImage: `url("${storyhero}")` }}
       >
         <div className="musquitotypes-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 

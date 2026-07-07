@@ -1,15 +1,23 @@
 import React, { useRef, useEffect } from 'react';
 import './css/FixedWindowsShow.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
 
-import rodGolden from '../../../assets/curtainrodcollection1.webp';
-import rodBlack from '../../../assets/curtainrodcollection2.webp';
-import rodDesign from '../../../assets/curtainrodcollection3.webp';
+import uPVC_Fixed_Window_Images1 from '../../../assets/uPVC_Fixed_Window_Images (1).webp';
+import uPVC_Fixed_Window_Images2 from '../../../assets/uPVC_Fixed_Window_Images (2).webp';
+import uPVC_Fixed_Window_Images3 from '../../../assets/uPVC_Fixed_Window_Images (3).webp';
+import uPVC_Fixed_Window_Images4 from '../../../assets/uPVC_Fixed_Window_Images (4).webp';
+import uPVC_Fixed_Window_Images5 from '../../../assets/uPVC_Fixed_Window_Images (5).webp';
+import uPVC_Fixed_Window_Images6 from '../../../assets/uPVC_Fixed_Window_Images (6).webp';
+import uPVC_Fixed_Window_Images7 from '../../../assets/uPVC_Fixed_Window_Images (7).webp';
 
 const FixedWindowsShow = () => {
   const baseData = [
-    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: rodGolden },
-    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: rodBlack },
-    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: rodDesign }
+    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: uPVC_Fixed_Window_Images1 },
+    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod",  image: uPVC_Fixed_Window_Images2 },
+    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images3 },
+    { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images4 },
+    { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images5 },
+    { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images6 },
+    { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images7 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

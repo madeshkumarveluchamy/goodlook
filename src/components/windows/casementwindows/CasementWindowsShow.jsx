@@ -1,15 +1,31 @@
 import React, { useRef, useEffect } from 'react';
 import './css/CasementWindowsShow.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
 
-import rodGolden from '../../../assets/curtainrodcollection1.webp';
-import rodBlack from '../../../assets/curtainrodcollection2.webp';
-import rodDesign from '../../../assets/curtainrodcollection3.webp';
+import uPVC_Casement_Windows_Image1 from '../../../assets/uPVC_Casement_Windows_Image (1).webp';
+import uPVC_Casement_Windows_Image2 from '../../../assets/uPVC_Casement_Windows_Image (2).webp';
+import uPVC_Casement_Windows_Image3 from '../../../assets/uPVC_Casement_Windows_Image (3).webp';
+import uPVC_Casement_Windows_Image4 from '../../../assets/uPVC_Casement_Windows_Image (4).webp';
+import uPVC_Casement_Windows_Image5 from '../../../assets/uPVC_Casement_Windows_Image (5).webp';
+import uPVC_Casement_Windows_Image6 from '../../../assets/uPVC_Casement_Windows_Image (6).webp';
+import uPVC_Casement_Windows_Image7 from '../../../assets/uPVC_Casement_Windows_Image (7).webp';
+import uPVC_Casement_Windows_Image8 from '../../../assets/uPVC_Casement_Windows_Image (8).webp';
+import uPVC_Casement_Windows_Image9 from '../../../assets/uPVC_Casement_Windows_Image (9).webp';
+import uPVC_Casement_Windows_Image10 from '../../../assets/uPVC_Casement_Windows_Image (10).webp';
+import uPVC_Casement_Windows_Image11 from '../../../assets/uPVC_Casement_Windows_Image (11).webp';
 
 const CasementWindowsShow = () => {
   const baseData = [
-    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: rodGolden },
-    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: rodBlack },
-    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: rodDesign }
+    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image:  uPVC_Casement_Windows_Image1},
+    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: uPVC_Casement_Windows_Image2 },
+    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image3 },
+    { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image4 },
+    { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image5 },
+    { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image6 },
+    { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image7 },
+    { id: 8, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image8 },
+    { id: 9, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image9 },
+    { id: 10, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image10 },
+    { id: 11, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image11 },
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

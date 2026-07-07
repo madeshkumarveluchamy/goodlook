@@ -1,6 +1,6 @@
-/* ==========================================================================
+/* ==========================================================
    1. STORY HERO CANVAS & BACKGROUND LAYOUT
-   ========================================================================== */
+   ========================================================== */
 .musquitotypes-story-hero-section {
   height: 100vh !important;
   min-height: 600px;
@@ -126,12 +126,12 @@
   }
 } 
 
-/* ==========================================================================
+/* ==========================================================
    2. GALLERY SECTION
-   ========================================================================== */
+   ========================================================== */
 .musquitotypes-gallery-section {
   padding: 60px 0;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   background-color: #fcfcfc;
   width: 100%;
 }
@@ -156,23 +156,34 @@
   max-width: 800px;
 }
 
-/* --- Image Containers & Grid --- */
 .musquitotypes-grid-row {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Base Mobile Image Container */
 .musquitotypes-img-container {
   width: 100%;
-  height: 100%;
-  min-height: 350px;
+  height: 260px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   position: relative;
+  background-color: #ffffff;
 }
 
-/* 🎯 Dark Gradient Background at TOP (Shows ONLY on hover for images with text) */
+/* LARGE DESKTOP SCREEN HEIGHT FOR GALLERY */
+@media (min-width: 992px) {
+  .musquitotypes-img-container {
+    height: 460px !important; 
+  }
+  
+  .col-lg-8 .musquitotypes-img-container {
+    height: 460px !important; 
+  }
+}
+
+/* --- Overlays & Hover Animations --- */
 .musquitotypes-img-container.has-overlay-text::before {
   content: '';
   position: absolute;
@@ -188,7 +199,6 @@
   opacity: 1;
 }
 
-/* 🎯 Dark Gradient Background at BOTTOM on Hover */
 .musquitotypes-img-container::after,
 .musquitotypes-sticky-image-card::after,
 .musquitotypes-right-img-card::after {
@@ -208,30 +218,19 @@
   opacity: 1;
 }
 
-.col-lg-8 .musquitotypes-img-container {
-  min-height: 450px; 
-}
-
-/* Image Zoom Animation */
-.musquitotypes-grid-img,
-.musquitotypes-sticky-img,
-.musquitotypes-right-img {
+/* 🎯 INTERCHANGED TO FILL EFFECT */
+.musquitotypes-grid-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill !important; 
   display: block;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.musquitotypes-img-container:hover .musquitotypes-grid-img,
-.musquitotypes-sticky-image-card:hover .musquitotypes-sticky-img,
-.musquitotypes-right-img-card:hover .musquitotypes-right-img {
-  transform: scale(1.08);
+.musquitotypes-img-container:hover .musquitotypes-grid-img {
+  transform: scale(1.04);
 }
 
-/* ==========================================================
-   🎯 TOP TEXT & BUTTON (VISIBLE ONLY ON HOVER)
-   ========================================================== */
 .musquitotypes-overlay-content {
   position: absolute;
   top: 40px;
@@ -289,21 +288,18 @@
   width: 12px;
 }
 
-/* ==========================================================
-   🎯 HOVER OVERLAY WHITE BOX (REDUCED SIZE)
-   ========================================================== */
 .musquitotypes-gallery-overlay-box {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, 15px); 
   background-color: #ffffff;
-  padding: 12px 18px; /* Padding kammi panniyachu */
+  padding: 12px 18px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  width: 70%; /* Width kammi panniyachu */
-  max-width: 280px; /* Max-width kammi panniyachu */
+  width: 70%;
+  max-width: 280px;
   z-index: 3;
   opacity: 0;
   pointer-events: none; 
@@ -321,26 +317,23 @@
 .musquitotypes-hover-title {
   font-family: 'Playfair Display', serif;
   color: #111111;
-  font-size: clamp(14px, 1.4vw, 18px); /* Text size kammi panniyachu */
+  font-size: clamp(14px, 1.4vw, 18px);
   font-weight: 600;
   margin: 0;
-  margin-top: 4px; /* Gap kammi panniyachu */
+  margin-top: 4px;
 }
 
-/* Specific Badge Styling inside the White Box */
 .musquitotypes-gallery-overlay-box .musquitotypes-gold-badge {
-  font-size: 10px; /* Size reduced */
-  margin-bottom: 2px; /* Gap reduced */
+  font-size: 10px;
+  margin-bottom: 2px;
   letter-spacing: 1px;
 }
 
-/* --- Gallery Section: Mobile Responsiveness --- */
+/* --- Mobile Breakpoints for Gallery --- */
 @media (max-width: 991.98px) {
-  .musquitotypes-img-container {
-    min-height: 250px;
-  }
+  .musquitotypes-img-container,
   .col-lg-8 .musquitotypes-img-container {
-    min-height: 300px;
+    height: 260px !important;
   }
   .musquitotypes-overlay-content {
     left: 20px;
@@ -351,14 +344,14 @@
     font-size: 1.3rem;
   }
   .musquitotypes-gallery-overlay-box {
-    width: 85%; /* Mobile-la correct-a fit aagurathuku */
+    width: 85%;
   }
 }
 
 @media (max-width: 575.98px) {
   .musquitotypes-img-container,
   .col-lg-8 .musquitotypes-img-container {
-    min-height: 250px;
+    height: 240px !important;
   }
   .musquitotypes-overlay-title {
     font-size: 1.1rem;
@@ -367,7 +360,7 @@
 }
 
 /* ========================================
-   3. MUSQUITO WRAPPER (STICKY & SCROLL)
+   3. MUSQUITO WRAPPER (STICKY & SCROLL WITH HEIGHT SYNC)
    ======================================== */
 .musquitotypes-sticky-wrapper-section {
   padding: 0px 0;
@@ -381,14 +374,12 @@
   align-items: flex-start;
 }
 
-/* =========================================
-   LEFT STICKY COLUMN
-   ========================================= */
+/* --- LEFT COLUMN STICKY --- */
 .musquitotypes-image-sticky-col {
   position: sticky !important;
   top: 100px; 
   height: calc(100vh - 120px);
-  max-height: 650px;
+  max-height: 650px; 
   padding-right: 20px; 
 }
 
@@ -399,24 +390,45 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
-/* =========================================
-   RIGHT SCROLLING COLUMN
-   ========================================= */
+/* --- RIGHT COLUMN SCROLL --- */
 .musquitotypes-content-scroll-col {
   padding-left: 20px;
 }
 
 .musquitotypes-right-img-card {
   width: 100%;
-  height: 450px;
+  height: 350px; 
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
 }
 
-/* Typography & Text Blocks */
+@media (min-width: 992px) {
+  .musquitotypes-right-img-card {
+    height: 650px !important;
+  }
+}
+
+/* 🎯 INTERCHANGED TO FILL EFFECT FOR STICKY SECTIONS */
+.musquitotypes-sticky-img,
+.musquitotypes-right-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill !important; /* Image layout frame pixel size-ku stretch panni full dynamic fit aagum */
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.musquitotypes-sticky-image-card:hover .musquitotypes-sticky-img,
+.musquitotypes-right-img-card:hover .musquitotypes-right-img {
+  transform: scale(1.04);
+}
+
+/* --- Typography & Badges --- */
 .musquitotypes-gold-badge {
   display: inline-block;
   color: #dfa82d;
@@ -461,7 +473,7 @@
 }
 
 /* =========================================
-   MOBILE RESPONSIVENESS
+   MOBILE RESPONSIVENESS FOR STICKY WRAPPER
    ========================================= */
 @media (max-width: 991.98px) {
   .musquitotypes-sticky-row {

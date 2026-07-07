@@ -1,15 +1,21 @@
 import React, { useRef, useEffect } from 'react';
 import './css/ArchWindowsShow.css';
 
-import rodGolden from '../../../assets/curtainrodcollection1.webp';
-import rodBlack from '../../../assets/curtainrodcollection2.webp';
-import rodDesign from '../../../assets/curtainrodcollection3.webp';
+import uPVC_Arch_Windows_Image1 from '../../../assets/uPVC_Arch_Windows_Image (1).webp';
+import uPVC_Arch_Windows_Image2 from '../../../assets/uPVC_Arch_Windows_Image (2).webp';
+import uPVC_Arch_Windows_Image3 from '../../../assets/uPVC_Arch_Windows_Image (3).webp';
+import uPVC_Arch_Windows_Image4 from '../../../assets/uPVC_Arch_Windows_Image (4).webp';
+import uPVC_Arch_Windows_Image5 from '../../../assets/uPVC_Arch_Windows_Image (5).webp';
+import uPVC_Arch_Windows_Image6 from '../../../assets/uPVC_Arch_Windows_Image (6).webp';
 
 const ArchWindowsShow = () => {
   const baseData = [
-    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: rodGolden },
-    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: rodBlack },
-    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: rodDesign }
+     { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: uPVC_Arch_Windows_Image1 },
+     { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod",  image: uPVC_Arch_Windows_Image2 },
+     { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image3 },
+     { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image4 },
+     { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image5 },
+     { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image6 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

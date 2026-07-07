@@ -1,7 +1,7 @@
 import React from 'react'
-import CasementDoorsHero from "./SlidingDoorsHero"
-import CasementRodCollection from './SlidingRodCollection'
-import CasementShow from './SlidingShow'
+import SlidingDoorsHero from "./SlidingDoorsHero"
+import SlidingRodCollection from './SlidingRodCollection'
+import SlidingShow from './SlidingShow'
 import Features from '../../Main/Features'
 import CTASection from '../../Main/CTASection'
 

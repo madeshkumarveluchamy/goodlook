@@ -1,16 +1,16 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
 import { FaCheckCircle } from 'react-icons/fa';
-import storyhero from "../../../../../assets/casementback.png"
-import img1 from '../../../../../assets/sliding1.png'; 
-import img2 from '../../../../../assets/sliding2.png';
-import img3 from '../../../../../assets/sliding3.png';
-import img4 from '../../../../../assets/sliding4.png';
+import storyhero from "../../../../../assets/Magnetic Mosquito Net Window Banner.webp"
+import img1 from '../../../../../assets/Magnetic Mosquito Net Window Images (1).webp'; 
+import img2 from '../../../../../assets/Magnetic Mosquito Net Window Images (5).webp';
+import img3 from '../../../../../assets/Magnetic Mosquito Net Window Images (8).webp';
+import img4 from '../../../../../assets/Magnetic Mosquito Net Window Images (4).webp';
 
 // Ningalude images ingane import cheyyuka
-import stickyImg from '../../../../../assets/sliding5.png'; // Left Sticky Image
-import rightImgTop from '../../../../../assets/sliding6.png'; // Right Scrollable Image 1
-import rightImgCenter from '../../../../../assets/sliding7.png'; // Right Scrollable Image 2
+import stickyImg from '../../../../../assets/Magnetic Mosquito Net Window Images (5).webp'; // Left Sticky Image
+import rightImgTop from '../../../../../assets/Magnetic Mosquito Net Window Images (6).webp'; // Right Scrollable Image 1
+import rightImgCenter from '../../../../../assets/Magnetic Mosquito Net Window Images (1).webp'; // Right Scrollable Image 2
 import ExperienceAura from '../../../../Doors/SlideDoors/ExperienceAura';
 
 const MagneticMosquitoNetWindow = () => {
@@ -19,7 +19,7 @@ const MagneticMosquitoNetWindow = () => {
       {/* ================= HERO SECTION ================= */}
       <section 
         className="musquitotypes-story-hero-section position-relative overflow-hidden w-100"
-        style={{ backgroundImage: `url(${storyhero})` }}
+        style={{ backgroundImage: `url("${storyhero}")` }}
       >
         <div className="musquitotypes-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 

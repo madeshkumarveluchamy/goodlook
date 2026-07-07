@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/CasementRodCollection.css';
-import rodImg from '../../../assets/curtainrod.webp';
+import rodImg from '../../../assets/uPVC_Casement_ Door_Banner (2).webp';
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from 'react-icons/fa'; // 🎯 பிக்ஸ்: எக்ஸாக்ட் சாலிட் சர்க்கிள் டிக் ஐகான்
 

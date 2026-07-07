@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/FrenchRodCollection.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import rodImg from '../../../assets/curtainrod.webp';
+import rodImg from '../../../assets/uPVC_Frinch_Door_Banner (2).webp';
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from 'react-icons/fa'; 
 

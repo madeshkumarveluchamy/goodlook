@@ -1,22 +1,18 @@
 import React from 'react';
 import './css/SlidingDoorsHero.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import storyhero from "../../../assets/casementback.png"
+import storyhero from "../../../assets/uPVC_Sliding_Door_Banner (1).webp"
 
-const Hero = () => {
+const SlidingDoorsHero = () => {
   return (
     <section 
       className="slidingdoors-story-hero-section position-relative overflow-hidden w-100"
-      style={{ backgroundImage: `url(${storyhero})` }}
+      /* 🎯 பிக்ஸ்: ஃபைல் பெயரில் உள்ள பிராக்கெட் மற்றும் ஸ்பேஸை CSS சரியாகப் படிக்க இங்கேயும் "${storyhero}" என Quotes சேர்க்கப்பட்டுள்ளது */
+      style={{ backgroundImage: `url("${storyhero}")` }}
     >
       {/* Ambient dark gradient overlay */}
       <div className="slidingdoors-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
-      {/* Vertical grid lines block */}
-      <div className="slidingdoors-story-vertical-grid-lines d-none d-md-flex w-100 h-100 position-absolute top-0 start-0">
-        <div className="slidingdoors-story-line-col"></div>
-        <div className="slidingdoors-story-line-col"></div>
-        <div className="slidingdoors-story-line-col"></div>
-      </div>
+     
 
       {/* Core Canvas Typography Content Container */}
       <div className="container-fluid slidingdoors-story-hero-fluid h-100 position-relative z-3">
@@ -43,4 +39,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default SlidingDoorsHero;

@@ -1,12 +1,12 @@
 import React from 'react';
-import './css/CombinationWindowsHero.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import storyhero from "../../../assets/casementback.png"
+import './css/FrenchSlidingWindowsHero.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
+import storyhero from "../../../assets/uPVC_Frinch_Sliding_Window_Banner (1).webp"
 
 const Hero = () => {
   return (
     <section 
       className="combinationwindows-story-hero-section position-relative overflow-hidden w-100"
-      style={{ backgroundImage: `url(${storyhero})` }}
+      style={{ backgroundImage: `url("${storyhero}")` }}
     >
       {/* Ambient dark gradient overlay */}
       <div className="combinationwindows-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>

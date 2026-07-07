@@ -1,22 +1,17 @@
 import React from 'react';
-import './css/ArchDoorsHero.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import storyhero from "../../../assets/casementback.png"
+import './css/ArchDoorsHero.css'; 
+import storyhero from "../../../assets/uPVC_Arc_ Door_Banner (3).webp"
 
 const Hero = () => {
   return (
     <section 
       className="archdoors-story-hero-section position-relative overflow-hidden w-100"
-      style={{ backgroundImage: `url(${storyhero})` }}
+      /* 🎯 பிக்ஸ்: url-க்குள் "${storyhero}" என Quotes சேர்க்கப்பட்டுள்ளது. இது ஸ்பேஸ் உள்ள ஃபைல் பெயர்களை லோட் செய்ய உதவும் */
+      style={{ backgroundImage: `url("${storyhero}")` }} 
     >
       {/* Ambient dark gradient overlay */}
       <div className="archdoors-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
-      {/* Vertical grid lines block */}
-      <div className="archdoors-story-vertical-grid-lines d-none d-md-flex w-100 h-100 position-absolute top-0 start-0">
-        <div className="archdoors-story-line-col"></div>
-        <div className="archdoors-story-line-col"></div>
-        <div className="archdoors-story-line-col"></div>
-      </div>
 
       {/* Core Canvas Typography Content Container */}
       <div className="container-fluid archdoors-story-hero-fluid h-100 position-relative z-3">

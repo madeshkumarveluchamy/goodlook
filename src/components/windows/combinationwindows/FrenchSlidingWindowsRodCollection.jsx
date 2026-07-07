@@ -1,10 +1,10 @@
 import React from 'react';
-import './css/CombinationWindowsRodCollection.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import rodImg from '../../../assets/curtainrod.webp';
+import './css/FrenchSlidingWindowsRodCollection.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
+import rodImg from '../../../assets/uPVC_Frinch_Sliding_Window_Banner (2).webp';
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from 'react-icons/fa'; 
 
-const CombinationWindowsRodCollection = () => {
+const FrenchSlidingWindowsRodCollection = () => {
   return (
     <section className="combinationwindows-rod-collection-section">
       <div className="container py-4 text-center">
@@ -110,4 +110,4 @@ const CombinationWindowsRodCollection = () => {
   );
 };
 
-export default CombinationWindowsRodCollection;
+export default FrenchSlidingWindowsRodCollection;

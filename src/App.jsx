@@ -22,7 +22,6 @@
   import SlidingFoldingDoorsHome from './components/Doors/sliding&foldingdoors/SlidingFoldingDoorsHome';
   import ArchWindowsHome from "./components/windows/archwindows/ArchWindowsHome"
   import CasementWindowsHome from "./components/windows/casementwindows/CasementWindowsHome"
-  import CombinationWindowsHome from "./components/windows/combinationwindows/CombinationWindowsHome"
   import FixedWindowsHome from "./components/windows/fixedwindows/FixedWindowsHome"
   import FrenchWindowsHome from "./components/windows/frenchwindows/FrenchWindowsHome"
   import SlidingWindowsHome from "./components/windows/slidingwindows/SlidingWindowsHome"
@@ -52,6 +51,7 @@
   import PleatedMosquitoNetBalcony from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/PleatedMosquitoNetBalcony';
   import RollerbalconyScreens from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/RollerbalconyScreens';
   import SlidingMosquitoNetsBalcony from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/SlidingMosquitoNetsBalcony';
+import FrenchSlidingWindowsHome from './components/windows/combinationwindows/FrenchSlidingWindowsHome';
 
   const App = () => {
     return (
@@ -74,7 +74,7 @@
         <Route path="/our-collections/upvc-windows/french-windows" element={<FrenchWindowsHome />}/>
         <Route path="/our-collections/upvc-windows/fixed-windows" element={<FixedWindowsHome />}/>
         <Route path="/our-collections/upvc-windows/ventilator-windows" element={<VentilatorWindowsHome />}/>
-        <Route path="/our-collections/upvc-windows/combination-windows" element={<CombinationWindowsHome />}/>
+        <Route path="/our-collections/upvc-windows/combination-windows" element={<FrenchSlidingWindowsHome />}/>
 
         
 

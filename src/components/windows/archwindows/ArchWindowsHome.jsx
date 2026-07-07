@@ -8,9 +8,9 @@ import CTASection from '../../Main/CTASection'
 const ArchWindowsHome = () => {
   return (
     <div>
-      <ArchWindowHero />
-      <ArchWindowRodCollection />
-      <ArchWindowShow />
+      <ArchWindowsHero />
+      <ArchWindowsRodCollection />
+      <ArchWindowsShow />
       <Features />
       <CTASection />
     </div>
