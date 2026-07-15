@@ -2,74 +2,105 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/Collection.css';
 
-import upvc1 from '../../assets/upvcCollection1.webp';
-import upvc2 from '../../assets/upvcCollection2.webp';
-import upvc3 from '../../assets/upvcCollection3.webp';
-import upvc4 from '../../assets/upvcCollection4.webp';
-import upvc5 from '../../assets/upvcdoor1.webp';
-import upvc6 from '../../assets/upvcdoor2.webp';
-import upvc7 from '../../assets/upvcdoor3.webp';
-import upvc8 from '../../assets/upvcdoor4.webp';
+import upvcdoor1 from '../../assets/uPVC_Casement_ Door_Images (7).webp';
+import upvcdoor2 from '../../assets/uPVC_Sliding_Door_Images (3).webp';
+import upvcdoor3 from '../../assets/uPVC_Sliding_Folding_Door_Images (2).webp';
+import upvcdoor4 from '../../assets/uPVC_Arc_ Door_Images (9).webp';
 
-import alum1 from '../../assets/BlackRod.webp';
-import alum2 from '../../assets/CustomCurtains.webp';
-import alum3 from '../../assets/GoldenRod.webp';
-import alum4 from '../../assets/image19.webp';
-import alum5 from '../../assets/studyroomwindow.webp';
-import alum6 from '../../assets/OfficeWindowBlinds.webp';
-import alum7 from '../../assets/HomeWindowBlinds.webp';
 
-import insect1 from '../../assets/slidedoor1.webp';
-import insect2 from '../../assets/openabledoor2.webp';
-import insect3 from '../../assets/Lift-SlideWindows&Doors.webp';
+import upvcwindow1 from '../../assets/uPVC_Casement_Windows_Image (5).webp';
+import upvcwindow2 from '../../assets/uPVC_Sliding_Windows_Images (2).webp';
+import upvcwindow3 from '../../assets/uPVC_Fixed_Window_Images (4).webp';
+import upvcwindow4 from '../../assets/uPVC_Ventilator_Windows_Images (1).webp';
+import upvcwindow5 from '../../assets/uPVC_Arch_Windows_Image (2).webp';
+
+import MosquitoNetWindows1 from '../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (10).webp';
+import MosquitoNetWindows2 from '../../assets/hinged_mosquito_net_doors/hinged_mosquito_net_doors (6).webp';
+import MosquitoNetWindows3 from '../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (4).webp';
+import MosquitoNetWindows4 from '../../assets/sliding4.webp';
+
+
+import MosquitoNetDoor1 from '../../assets/sliding_mosquito_net_window(1).webp';
+import MosquitoNetDoor2 from '../../assets/pleaded10.webp';
+import MosquitoNetDoor3 from '../../assets/hinged_mosquito_net_window/hinged_mosquito_net_window (4).webp';
+import MosquitoNetDoor4 from '../../assets/folding_security_mesh_windows/folding_security_mesh_windows (9).webp';
+
+import curtain1 from '../../assets/curtainrodcollection1.webp';
+import curtain2 from '../../assets/curtainrodcollection2.webp';
+import curtain3 from '../../assets/curtainrodcollection3.webp';
+
+import blind1 from '../../assets/HomeBlinds.webp';
+import blind2 from '../../assets/OfficeRoomBlind.webp';
+import blind3 from '../../assets/StudyRoomBlind.webp';
+
+
 
 const Collection = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState('ALL');
+  const [activeTab, setActiveTab] = useState('UPVCdoor');
   const [visibleCount, setVisibleCount] = useState(8);
 
   const productsData = [
-    { id: 1, category: 'UPVC', tag: 'uPVC BAYDEE', title: '65 Series uPVC profile', img: upvc1, path: '/upvc' },
-    { id: 2, category: 'UPVC', tag: 'uPVC BAYDEE', title: '112 Series uPVC profile', img: upvc2, path: '/upvc' },
-    { id: 3, category: 'UPVC', tag: 'uPVC BAYDEE', title: '92 Series uPVC profile', img: upvc3, path: '/upvc' },
-    { id: 4, category: 'UPVC', tag: 'uPVC BAYDEE', title: '88 Series uPVC profile', img: upvc4, path: '/upvc' },
-    { id: 5, category: 'UPVC', tag: 'uPVC BAYDEE', title: 'Sun Room lighting roof curtain wall', img: upvc5, path: '/upvc' },
-    { id: 6, category: 'UPVC', tag: 'uPVC BAYDEE', title: 'Lifting sliding door', img: upvc6, path: '/upvc' },
-    { id: 7, category: 'UPVC', tag: 'uPVC BAYDEE', title: 'Dimming comfort window', img: upvc7, path: '/upvc' },
-    { id: 8, category: 'UPVC', tag: 'uPVC BAYDEE', title: 'Barrier-free mute door', img: upvc8, path: '/upvc' },
+    { id: 1, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Casement Doors', img: upvcdoor1, path: 'our-collections/upvc-doors/casement-doors' },
+    { id: 2, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Sliding Doors', img: upvcdoor2, path: 'our-collections/upvc-doors/sliding-doors' },
+    { id: 3, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Folding Doors', img: upvcdoor3, path: 'our-collections/upvc-doors/folding-doors' },
+    { id: 4, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Arch Doors', img: upvcdoor4, path: 'our-collections/upvc-doors/arch-doors' },
 
-    { id: 9, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'Black Rod', img: alum1, path: '/curtains' },
-    { id: 10, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'Custom Curtains', img: alum2, path: '/curtains' },
-    { id: 11, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'Golden Rod', img: alum3, path: '/curtains' },
-    { id: 12, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'slide curtain', img: alum4, path: '/curtains' },
-    { id: 13, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'Study Room Blinds', img: alum5, path: '/blinds' },
-    { id: 14, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'Office Window Blinds', img: alum6, path: '/blinds' },
-    { id: 15, category: 'ALUMINIUM', tag: 'GoodLookHome', title: 'Home Window Blinds', img: alum7, path: '/blinds' },
 
-    { id: 16, category: 'INSECT', tag: 'GoodLookHomes', title: 'Slide Doors', img: insect1, path: '/collections/slidedoors' },
-    { id: 17, category: 'INSECT', tag: 'GoodLookHomes', title: 'Openable Doors', img: insect2, path: '/collections/openabledoors' },
-    { id: 18, category: 'INSECT', tag: 'GoodLookHomes', title: 'lift-slide windows', img: insect3, path: '/collections/liftslidedoors' }
+    { id: 5, category:  'UPVCwindow', tag:'uPVC Windows', title: 'Casement Windows', img: upvcwindow1, path: 'our-collections/upvc-windows/casement-windows' },
+    { id: 6, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Sliding Windows', img: upvcwindow2, path: 'our-collections/upvc-windows/sliding-windows' },
+    { id: 7, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Fixed Windows', img: upvcwindow3, path: 'our-collections/upvc-windows/fixed-windows' },
+    { id: 8, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Ventilator Windows', img: upvcwindow4, path: 'our-collections/upvc-windows/ventilator-windows' },
+    { id: 9, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Arch Windows', img: upvcwindow5, path: 'our-collections/upvc-windows/arch-windows' },
+
+
+    { id: 9, category:  'MosqutioDoor', tag: 'Mosquito Net For Doors', title: 'Foldable Security Mesh Doors', img: MosquitoNetWindows1, path: '/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors' },
+    { id: 10, category: 'MosqutioDoor', tag: 'Mosquito Net For Doors', title: 'Hinged Frame Mosquito Doors', img: MosquitoNetWindows2, path: '/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors' },
+    { id: 11, category: 'MosqutioDoor', tag: 'Mosquito Net For Doors', title: 'Pleated Mosquito Net Doors', img: MosquitoNetWindows3, path: 'insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors' },
+    { id: 12, category: 'MosqutioDoor', tag: 'Mosquito Net For Doors', title: 'Sliding Mosquito Net Doors', img: MosquitoNetWindows4, path: 'insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors' },
+    
+    { id: 16, category: 'MosqutioWindows', tag: 'Mosquito Net For Windows', title: 'Foldable Security Mesh Windows', img: MosquitoNetDoor4, path: 'insect-screen/mosquito-net-for-window/foldable-security-mesh-window' },
+    { id: 15, category: 'MosqutioWindows', tag: 'Mosquito Net For Windows', title: 'Hinged Frame Mosquito Windows', img: MosquitoNetDoor3, path: 'insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window' },
+    { id: 14, category: 'MosqutioWindows', tag: 'Mosquito Net For Windows', title: 'Pleated Mosquito Net Windows', img: MosquitoNetDoor2, path: 'insect-screen/mosquito-net-for-window/pleated-mosquito-net-window' },
+    { id: 13, category: 'MosqutioWindows', tag: 'Mosquito Net For Windows', title: 'Sliding Mosquito Net Windows', img: MosquitoNetDoor1, path: 'insect-screen/mosquito-net-for-window/sliding-mosquito-net-window' },
+
+    { id: 17, category: 'curtainsBlinds', tag: 'curtain', title: 'Golden Rod', img: curtain1, path: 'curtains-blinds/curtains' },
+    { id: 18, category: 'curtainsBlinds', tag: 'curtain', title: 'Black Rod', img: curtain2, path: 'curtains-blinds/curtains' },
+    { id: 19, category: 'curtainsBlinds', tag: 'curtain', title: 'Design Rod', img: curtain3, path: 'curtains-blinds/curtains' },
+    { id: 20, category: 'curtainsBlinds', tag: 'blind', title: 'Home', img: blind1, path: 'curtains-blinds/blinds' },
+    { id: 21, category: 'curtainsBlinds', tag: 'blind', title: 'Office Room', img: blind2, path: 'curtains-blinds/blinds' },
+    { id: 22, category: 'curtainsBlinds', tag: 'blind', title: 'Study Room', img: blind3, path: 'curtains-blinds/blinds' },
   ];
 
   const bannerContent = {
     ALL: {
       title: <>Architectural <br /> Integrity</>,
-      image: upvc1,
+      image: upvcdoor1,
       desc: "At Good Look Home, we believe your sanctuary is defined by the quality of light and the clarity of your view. Our uPVC and Aluminium solutions are engineered for more than just durability—they are designed to disappear, allowing the beauty of the outdoors to become your home's living art."
     },
-    UPVC: {
+    UPVCdoor: {
       title: <>Unmatched <br /> uPVC Insulation</>,
-      image: upvc2,
+      image: upvcdoor2,
       desc: "Our premium uPVC Profiles deliver exceptional thermal efficiency and complete acoustic dampening. Engineered expertly to withstand weather extremes, these frames offer twenty-one-plus years of structural stability with absolute zero maintenance requirement."
     },
-    INSECT: {
+    UPVCwindow: {
       title: <>Flawless <br /> Insect Protection</>,
-      image: insect1,
+      image: upvcwindow1,
       desc: "Experience refreshing airflow with zero entry constraints for pests. Our integrated Plisse and Roller Insect Screens combine ultra-fine mesh resilience with precision architectural tracks, fitting seamlessly into your current luxury window profiles."
     },
-    ALUMINIUM: {
+    MosqutioDoor: {
       title: <>Sleek <br /> Aluminium Precision</>,
-      image: alum1,
+      image: MosquitoNetWindows1,
+      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
+    },
+     MosqutioWindows: {
+      title: <>Sleek <br /> Aluminium Precision</>,
+      image: MosquitoNetDoor4,
+      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
+    },
+    curtainsBlinds: {
+      title: <>Sleek <br /> Aluminium Precision</>,
+      image: curtain2,
       desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
     }
   };
@@ -99,26 +130,32 @@ const Collection = () => {
 
         <div className="filter-navigation-row d-flex flex-wrap justify-content-center border-bottom pb-2 mb-5">
           <button 
-            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'ALL' ? 'active' : ''}`}
-            onClick={() => handleTabChange('ALL')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'UPVCdoor' ? 'active' : ''}`}
+            onClick={() => handleTabChange('UPVCdoor')}
           >
-            All Products
+            uPVC doors
           </button>
           <button 
-            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'UPVC' ? 'active' : ''}`}
-            onClick={() => handleTabChange('UPVC')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'UPVCwindow' ? 'active' : ''}`}
+            onClick={() => handleTabChange('UPVCwindow')}
           >
-            uPVC Products
+            uPVC windows
           </button>
           <button 
-            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'INSECT' ? 'active' : ''}`}
-            onClick={() => handleTabChange('INSECT')}
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'MosqutioDoor' ? 'active' : ''}`}
+            onClick={() => handleTabChange('MosqutioDoor')}
           >
-            uPVC Doors & windows
+            Mosquito Net For Doors
           </button>
-          <button 
-            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'ALUMINIUM' ? 'active' : ''}`}
-            onClick={() => handleTabChange('ALUMINIUM')}
+           <button 
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'MosqutioWindows' ? 'active' : ''}`}
+            onClick={() => handleTabChange('MosqutioWindows')}
+          >
+            Mosquito Net For Windows
+          </button>
+           <button 
+            className={`filter-tab-btn tracking-widest manrope-font text-uppercase ssub ${activeTab === 'curtainsBlinds' ? 'active' : ''}`}
+            onClick={() => handleTabChange('curtainsBlinds')}
           >
             Curtains & Blinds
           </button>

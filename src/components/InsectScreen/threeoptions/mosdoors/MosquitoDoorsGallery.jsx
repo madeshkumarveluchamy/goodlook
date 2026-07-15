@@ -2,12 +2,11 @@ import React from 'react';
 import './css/MosquitoDoorsGallery.css';
 
 // Ungaloda static images-a inga import pannikonga
-import img1 from '../../../../assets/curtainrodcollection2.webp'; 
-import img2 from '../../../../assets/curtainrodcollection2.webp';
-import img3 from '../../../../assets/curtainrodcollection3.webp';
-import img4 from '../../../../assets/curtainrodcollection1.webp';
-import img5 from '../../../../assets/curtainrodcollection2.webp';
-import img6 from '../../../../assets/curtainrodcollection3.webp';
+import img1 from '../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (4).webp'; 
+import img2 from '../../../../assets/hinged_mosquito_net_doors/hinged_mosquito_net_doors (8).webp';
+import img3 from '../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (4).webp';
+
+import img6 from '../../../../assets/sliding4.webp';
 
 const MosquitoDoorsGallery = () => {
   // Image card-kana data
@@ -15,9 +14,7 @@ const MosquitoDoorsGallery = () => {
     { id: 1, image: img1, badge: "MOSQUITO NET FOR DOORS", title: "Sliding Mosquito Net Doors" },
     { id: 2, image: img2, badge: "MOSQUITO NET FOR DOORS", title: "Pleated Mosquito Net Doors" },
     { id: 3, image: img3, badge: "MOSQUITO NET FOR DOORS", title: "Roller Mosquito Net Doors" },
-    { id: 4, image: img1, badge: "MOSQUITO NET FOR DOORS", title: "Fixed Frame Net Doors" },
-    { id: 5, image: img2, badge: "MOSQUITO NET FOR DOORS", title: "Magnetic Mosquito Net Doors" },
-    { id: 6, image: img3, badge: "MOSQUITO NET FOR DOORS", title: "Velcro Mosquito Net Doors" },
+    { id: 6, image: img6, badge: "MOSQUITO NET FOR DOORS", title: "Velcro Mosquito Net Doors" },
   ];
 
   return (

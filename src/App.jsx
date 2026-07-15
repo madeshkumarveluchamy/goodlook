@@ -29,7 +29,7 @@
   import  VentilatorWindowsHome from "./components/windows/ventilatorwindows/VentilatorWindowsHome"
   import MosWindowHome from './components/InsectScreen/threeoptions/moswindow/MosWindowHome';
   import MosDoorsHome from './components/InsectScreen/threeoptions/mosdoors/MosDoorsHome';
-  import MosBalconyHome from './components/InsectScreen/threeoptions/mosbalcony/MosBalconyHome';
+
   import AllMusquitoNetWindows from './components/InsectScreen/threeoptions/moswindow/moswindowtypes/AllMusquitoNetWindow';
   import FixedFrameNetWindow from './components/InsectScreen/threeoptions/moswindow/moswindowtypes/FixedFrameNetWindow';
   import MagneticMosquitoNetWindow from './components/InsectScreen/threeoptions/moswindow/moswindowtypes/MagneticMosquitoNetWindow';
@@ -46,12 +46,7 @@
   import SlidingMosquitoNetDoors from './components/InsectScreen/threeoptions/moswindow/mosdoortypes/SlidingMosquitoNetDoors';
   import VelcroMosquitoNetDoors from './components/InsectScreen/threeoptions/moswindow/mosdoortypes/VelcroMosquitoNetDoors';
 
-  import AllMosquitoNetBalcony from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/AllMosquitoNetBalcony';
-  import FixedFrameScreensBalcony from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/FixedFrameScreensBalcony';
-  import PleatedMosquitoNetBalcony from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/PleatedMosquitoNetBalcony';
-  import RollerbalconyScreens from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/RollerbalconyScreens';
-  import SlidingMosquitoNetsBalcony from './components/InsectScreen/threeoptions/moswindow/mosbolconytypes/SlidingMosquitoNetsBalcony';
-import FrenchSlidingWindowsHome from './components/windows/combinationwindows/FrenchSlidingWindowsHome';
+import FoldableWindowsHome from './components/windows/combinationwindows/FoldableWindowsHome';
 
   const App = () => {
     return (
@@ -60,13 +55,13 @@ import FrenchSlidingWindowsHome from './components/windows/combinationwindows/Fr
         <Navbar />
         <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/our-collections/upvc-doors/casement-and-designer-doors" element={<CasementDoorsHome />}/>
+        <Route path="/our-collections/upvc-doors/casement-doors" element={<CasementDoorsHome />}/>
         <Route path="/our-collections/upvc-doors/sliding-doors" element={<SlidingDoorsHome />}/>
         <Route path="/our-collections/upvc-doors/arch-doors" element={<ArchDoorsHome />}/>
         <Route path="/our-collections/upvc-doors/tilt-and-turn-doors" element={<TiltTurnWindowsHome />}/>
         <Route path="/our-collections/upvc-doors/french-doors" element={<FrenchDoorsHome />}/>
         <Route path="/our-collections/upvc-doors/french-sliding-doors" element={<FrenchSlidingDoorsHome />}/>
-        <Route path="/our-collections/upvc-doors/sliding-and-folding-doors" element={<SlidingFoldingDoorsHome />}/>
+        <Route path="/our-collections/upvc-doors/folding-doors" element={<SlidingFoldingDoorsHome />}/>
         <Route path="/our-collections/upvc-windows/casement-windows" element={<CasementWindowsHome />}/>
         <Route path="/our-collections/upvc-windows/sliding-windows" element={<SlidingWindowsHome />}/>
         <Route path="/our-collections/upvc-windows/arch-windows" element={<ArchWindowsHome />}/>
@@ -74,39 +69,26 @@ import FrenchSlidingWindowsHome from './components/windows/combinationwindows/Fr
         <Route path="/our-collections/upvc-windows/french-windows" element={<FrenchWindowsHome />}/>
         <Route path="/our-collections/upvc-windows/fixed-windows" element={<FixedWindowsHome />}/>
         <Route path="/our-collections/upvc-windows/ventilator-windows" element={<VentilatorWindowsHome />}/>
-        <Route path="/our-collections/upvc-windows/combination-windows" element={<FrenchSlidingWindowsHome />}/>
-
-        
-
-
-
+        <Route path="/our-collections/upvc-windows/foldable-windows" element={<FoldableWindowsHome />}/>
         <Route path = "/insect-screen" element={<InsectHome />} />
         <Route path = "/insect-screen/mosquito-net-for-window" element ={<MosWindowHome />} />
         <Route path = "/insect-screen/mosquito-net-for-doors" element ={<MosDoorsHome />} />
-        <Route path = "/insect-screen/mosquito-net-for-balcony" element ={<MosBalconyHome />} />
+
         
         /////////////////////////all musqiuto net for windows ////////////////////////////////////////////////////////
         <Route path="/insect-screen/mosquito-net-for-window/all-mosquito-net-window" element={<AllMusquitoNetWindows />}/>
         <Route path="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" element={<SlidingMosquitoNetWindow />}/>
         <Route path="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" element={<PleatedMosquitoNetWindow />}/>
-        <Route path="/insect-screen/mosquito-net-for-window/roller-mosquito-net-window" element={<RollerMosquitoNetWindow />}/>
-        <Route path="/insect-screen/mosquito-net-for-window/fixed-frame-net-window" element={<FixedFrameNetWindow />}/>
-        <Route path="/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window" element={<MagneticMosquitoNetWindow />}/>
-        <Route path="/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window" element={<VelcroMosquitoNetWindow />}/>
+        <Route path="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" element={<RollerMosquitoNetWindow />}/>
+        <Route path="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" element={<FixedFrameNetWindow />}/>
+
         ///
         <Route path="/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors" element={<AllMosquitoNetDoors />}/>
         <Route path="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" element={<SlidingMosquitoNetDoors />}/>
         <Route path="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" element={<PleatedMosquitoNetDoors />}/>
-        <Route path="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" element={<HingedMosquitoNetDoors />}/>
-        <Route path="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" element={<RollerMosquitoScreensDoors />}/>
-        <Route path="/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors" element={<MagneticMosquitoNetDoors />}/>
-        <Route path="/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors" element={<VelcroMosquitoNetDoors />}/>
-        ///
-        <Route path="/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony" element={<AllMosquitoNetBalcony />}/>
-        <Route path="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" element={<PleatedMosquitoNetBalcony />}/>
-        <Route path="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" element={<SlidingMosquitoNetsBalcony />}/>
-        <Route path="/insect-screen/mosquito-net-for-balcony/roller-screens" element={<RollerbalconyScreens />}/>
-        <Route path="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" element={<FixedFrameScreensBalcony />}/>
+        <Route path="/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors" element={<HingedMosquitoNetDoors />}/>
+        <Route path="/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors" element={<RollerMosquitoScreensDoors />}/>
+    
         ///
         <Route path="/our-story" element={<StoryHome/>} />
         <Route path="/our-collections/upvc-profile" element={<UpvcHome />} />

@@ -103,7 +103,7 @@ const Testimonials = () => {
             ))}
           </Swiper>
 
-          <div className="custom-dots-wrapper d-flex justify-content-center align-items-center gap-2 mt-5"></div>
+          
 
         </div>
 

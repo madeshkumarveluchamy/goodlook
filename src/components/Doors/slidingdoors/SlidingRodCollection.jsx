@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/SlidingRodCollection.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import rodImg from '../../../assets/uPVC_Sliding_Door_Banner (2).webp';
+import rodImg from '../../../assets/uPVC_Sliding_Door_Images (7).webp';
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from 'react-icons/fa'; 
 
@@ -9,7 +9,7 @@ const SlidingrodCollection = () => {
     <section className="sliding-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="sliding-rod-main-title mb-2 stit">uPVC Sliding & Designer</h2>
+        <h2 className="sliding-rod-main-title mb-2 stit">uPVC Sliding Doors</h2>
     
         <p className="sliding-rod-sub-desc manrope-font mx-auto mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
@@ -55,7 +55,7 @@ const SlidingrodCollection = () => {
           <div className="row g-4 manrope-font">
             
             {/* Column 1 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4  padding-manual">
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
                 <span className="sliding-feature-text">Flexible opening design</span>
@@ -71,7 +71,7 @@ const SlidingrodCollection = () => {
             </div>
 
             {/* Column 2 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4 padding-manual">
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
                 <span className="sliding-feature-text">Supports large glass panels</span>
@@ -87,7 +87,7 @@ const SlidingrodCollection = () => {
             </div>
 
             {/* Column 3 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4 padding-manual">
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
                 <span className="sliding-feature-text">Supports large glass panels</span>

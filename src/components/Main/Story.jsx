@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Story.css';
 // Replace this with your actual local image file path from VS Code assets
-import storyImg from '../../assets/storyframe.webp'; 
+import storyImg from '../../assets/profilepicture.webp'; 
 import {Link} from "react-router-dom"
 
 const OurStory = () => {

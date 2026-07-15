@@ -1,8 +1,12 @@
 .casement-rod-collection-section {
   background-color: #ffffff !important;
   width: 100%;
+    padding-top :100px !important;
   overflow: hidden;
 }
+
+
+
 
 .casement-rod-main-title {
   font-family: 'Playfair Display', serif !important;
@@ -156,6 +160,9 @@
   letter-spacing: 0.2px !important;
   line-height: 1.2 !important;
 }
+.padding-manual{
+  padding-left:0vw !important;
+}
 
 /* மொபைல் மற்றும் டேப்லெட் வியூ சீரமைப்பு */
 @media (max-width: 890px) {
@@ -184,4 +191,24 @@
   .casement-feature-text {
     font-size: 13.5px !important;
   }
+
+ 
+}
+
+@media(max-width:767px){
+   .padding-manual{
+  padding-left:20vw !important;
+}
+}
+
+@media(max-width:425px){
+   .padding-manual{
+  padding-left:18vw !important;
+}
+}
+
+@media(max-width:320px){
+   .padding-manual{
+  padding-left:10vw !important;
+}
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/TiltTurnDoorsHero.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import storyhero from "../../../assets/casementback.png"
+import storyhero from "../../../assets/casementback.webp"
 
 const Hero = () => {
   return (

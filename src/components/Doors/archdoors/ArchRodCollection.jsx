@@ -9,7 +9,7 @@ const ArchRodCollection = () => {
     <section className="arch-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="arch-rod-main-title mb-2 stit">uPVC Arch & Designer</h2>
+        <h2 className="arch-rod-main-title mb-2 stit">uPVC Arch Doors</h2>
     
         <p className="arch-rod-sub-desc manrope-font mx-auto mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
@@ -28,7 +28,7 @@ const ArchRodCollection = () => {
               <div className="row align-items-center text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
                   <h4 className="arch-overlay-rod-title mb-2 text-center text-md-start sdes">
-                    <span className="arch-bullet-diamond-small">❖</span> uPVC Arch & Designer
+                    <span className="arch-bullet-diamond-small">❖</span> uPVC Arch Doors
                   </h4>
                   <p className="arch-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
                     Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
@@ -55,7 +55,7 @@ const ArchRodCollection = () => {
           <div className="row g-4 manrope-font">
             
             {/* Column 1 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="arch-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="arch-exact-tick-icon" />
                 <span className="arch-feature-text">Flexible opening design</span>
@@ -71,7 +71,7 @@ const ArchRodCollection = () => {
             </div>
 
             {/* Column 2 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="arch-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="arch-exact-tick-icon" />
                 <span className="arch-feature-text">Supports large glass panels</span>
@@ -87,7 +87,7 @@ const ArchRodCollection = () => {
             </div>
 
             {/* Column 3 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="arch-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="arch-exact-tick-icon" />
                 <span className="arch-feature-text">Supports large glass panels</span>

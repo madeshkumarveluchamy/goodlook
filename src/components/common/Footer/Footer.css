@@ -10,7 +10,19 @@
 .footer-fluid-holder {
   width: 100%;
 }
+/* Add this to Footer.css */
+.footer-accordion-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out, opacity 0.5s ease-in-out, margin-top 0.6s ease-in-out;
+}
 
+.footer-accordion-content.open {
+  max-height: 400px; /* Adjust this value if your content is taller */
+  opacity: 1;
+  margin-top: 0.25rem; /* Equivalent to Bootstrap's mt-1 */
+}
 .footer-watermark-text {
   font-size: calc(3.5rem + 5.5vw);
   font-weight: 900;

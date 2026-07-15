@@ -1,49 +1,22 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
 import { FaCheckCircle } from 'react-icons/fa';
-import storyhero from "../../../../../assets/casementback.png"
-import img1 from '../../../../../assets/sliding1.png'; 
-import img2 from '../../../../../assets/sliding2.png';
-import img3 from '../../../../../assets/sliding3.png';
-import img4 from '../../../../../assets/sliding4.png';
+import storyhero from "../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors_banner (3).webp"
+import img1 from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (4).webp'; 
+import img2 from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors_banner (1).webp';
+import img3 from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosquito_net_door.webp';
+import img4 from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (2).webp';
 
 // Ningalude images ingane import cheyyuka
-import stickyImg from '../../../../../assets/sliding5.png'; // Left Sticky Image
-import rightImgTop from '../../../../../assets/sliding6.png'; // Right Scrollable Image 1
-import rightImgCenter from '../../../../../assets/sliding7.png'; // Right Scrollable Image 2
+import stickyImg from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (5).webp'; // Left Sticky Image
+import rightImgTop from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (7).webp'; // Right Scrollable Image 1
+import rightImgCenter from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (8).webp'; // Right Scrollable Image 2
 import ExperienceAura from '../../../../Doors/SlideDoors/ExperienceAura';
 
 const PleatedMosquitoNetDoors = () => {
   return (
     <>
-      {/* ================= HERO SECTION ================= */}
-      <section 
-        className="musquitotypes-story-hero-section position-relative overflow-hidden w-100"
-        style={{ backgroundImage: `url(${storyhero})` }}
-      >
-        <div className="musquitotypes-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
-        <div className="musquitotypes-story-vertical-grid-lines d-none d-md-flex w-100 h-100 position-absolute top-0 start-0">
-          <div className="musquitotypes-story-line-col"></div>
-          <div className="musquitotypes-story-line-col"></div>
-          <div className="musquitotypes-story-line-col"></div>
-        </div>
-
-        <div className="container-fluid musquitotypes-story-hero-fluid h-100 position-relative z-3">
-          <div className="row h-100 musquitotypes-hero-text-alignment-row">
-            <div className="col-12 musquitotypes-hero-text-engine-col font-inter">
-              <h1 className="musquitotypes-story-main-title fw-bold text-white m-0 select-none musquitotypes-inter-font">
-                <span className="musquitotypes-story-title-line-1 d-block">
-                  Quality You See
-                </span>
-                <span className="musquitotypes-story-light-beige musquitotypes-story-title-line-2 d-block">
-                  unbeatable view
-                </span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ================= GALLERY SECTION ================= */}
       <section className="musquitotypes-gallery-section">

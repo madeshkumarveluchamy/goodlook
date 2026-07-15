@@ -17,7 +17,7 @@ const curtainsRefine = () => {
               </h6>
               
               <h2 className="curtainss-main-title mb-4 font-serief stit">
-                Refine Interiors With <br /> Custom curtainss
+                Refine Interiors With <br /> Custom curtains
               </h2>
               
               <p className="curtainss-desc-paragraph manrope-font mb-4 d-flex justify-content-evenly hanken-grotesk-font sdes">

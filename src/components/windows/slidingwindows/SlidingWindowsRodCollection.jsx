@@ -9,7 +9,7 @@ const SlidingWindowsRodCollection = () => {
     <section className="slidingwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="slidingwindows-rod-main-title mb-2 stit">uPVC Sliding Windows & Designer</h2>
+        <h2 className="slidingwindows-rod-main-title mb-2 stit">uPVC Sliding Windows</h2>
     
         <p className="slidingwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
@@ -28,7 +28,7 @@ const SlidingWindowsRodCollection = () => {
               <div className="row align-items-center text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
                   <h4 className="slidingwindows-overlay-rod-title mb-2 text-center text-md-start sdes">
-                    <span className="slidingwindows-bullet-diamond-small">❖</span> uPVC Sliding Windows & Designer
+                    <span className="slidingwindows-bullet-diamond-small">❖</span> uPVC Sliding Windows
                   </h4>
                   <p className="slidingwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
                     Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
@@ -55,7 +55,7 @@ const SlidingWindowsRodCollection = () => {
           <div className="row g-4 manrope-font">
             
             {/* Column 1 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
                 <span className="slidingwindows-feature-text">Flexible opening design</span>
@@ -71,7 +71,7 @@ const SlidingWindowsRodCollection = () => {
             </div>
 
             {/* Column 2 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
                 <span className="slidingwindows-feature-text">Supports large glass panels</span>
@@ -87,7 +87,7 @@ const SlidingWindowsRodCollection = () => {
             </div>
 
             {/* Column 3 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
                 <span className="slidingwindows-feature-text">Supports large glass panels</span>

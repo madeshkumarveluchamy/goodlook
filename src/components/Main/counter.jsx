@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./css/Counter.css";
 
-import counterImg1 from "../../assets/counter1.webp"; 
-import counterImg2 from "../../assets/counter2.webp"; 
-import counterImg3 from "../../assets/counter3.webp"; 
-import counterImg4 from "../../assets/counter4.webp"; 
+import counterImg1 from "../../assets/Teamimage.webp"; 
+import counterImg2 from "../../assets/productimage1.webp"; 
+import counterImg3 from "../../assets/Teamimage2.webp"; 
+import counterImg4 from "../../assets/productimage2.webp"; 
 
 // --- Slot Rolling Logic Block ---
 const SlotCounter = ({ value, baseDirection = "up" }) => {
@@ -61,7 +61,7 @@ const AboutCounter = () => {
           <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box d-flex">
               <h2 className="metric-display-number ">
-                <SlotCounter value={2006} baseDirection="up" />
+                <SlotCounter value={2002} baseDirection="up" />
               </h2>
               <div className="metric-text-meta">
                 <h5 className="metric-label-title m-0 inter-font text-center text-md-start ">Year of establishment</h5>
@@ -77,7 +77,7 @@ const AboutCounter = () => {
           <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
-                <SlotCounter value={154} baseDirection="up" />
+                <SlotCounter value={150} baseDirection="up" />
                 <span className="metric-suffix ">+</span>
               </h2>
               <div className="metric-text-meta">
@@ -94,7 +94,7 @@ const AboutCounter = () => {
           <div className="col-6 col-md-6 col-lg-3 counter-metric-col d-flex justify-content-center">
             <div className="metric-card-box">
               <h2 className="metric-display-number">
-                <SlotCounter value={1.5} baseDirection="up" />
+                <SlotCounter value={50} baseDirection="up" />
                 <span className="metric-suffix "> K</span>
               </h2>
               <div className="metric-text-meta">

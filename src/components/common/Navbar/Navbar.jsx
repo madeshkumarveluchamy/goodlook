@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 import logo from '../../../assets/navlogo.webp';
 import { Link, useLocation } from 'react-router-dom';
@@ -19,6 +19,47 @@ const Navbar = () => {
   
   const location = useLocation();
   const currentPath = location.pathname;
+
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Click ஆன இடம் navbarRef-க்கு வெளியே இருந்தால்...
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setShowSubNav(false);
+        setShowInsectNav(false);
+        setShowCurtainsNav(false);
+        resetAllSubSections();
+        
+        // Mobile menu-வும் வெளியே click செய்தால் close ஆக வேண்டுமென்றால் கீழேயுள்ள வரியை un-comment செய்து கொள்ளவும்
+        // setIsOpen(false); 
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    
+    // Cleanup function
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Scroll நடக்கும்போது எல்லா Menu-வும் Close ஆகிவிடும்
+      setShowSubNav(false);
+      setShowInsectNav(false);
+      setShowCurtainsNav(false);
+      resetAllSubSections();
+    };
+
+    // Window-ல் scroll event-ஐ listen செய்கிறோம்
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -127,7 +168,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar-wrapper fixed-top">
+    <div className="navbar-wrapper fixed-top" ref={navbarRef}>
       <nav className="navbar navbar-expand-lg navbar-dark custom-capsule-navbar">
         <div className="container-fluid p-0">
           
@@ -180,13 +221,10 @@ const Navbar = () => {
                     </span>
                     {openUpvcDoors && (
                       <div className="mobile-inner-nested-list">
-                        <Link to="/our-collections/upvc-doors/casement-and-designer-doors" onClick={closeAllMenus}>Casement & Designer Doors</Link>
+                        <Link to="/our-collections/upvc-doors/casement-doors" onClick={closeAllMenus}>Casement Doors</Link>
                         <Link to="/our-collections/upvc-doors/sliding-doors" onClick={closeAllMenus}>Sliding Doors</Link>
+                        <Link to="/our-collections/upvc-doors/folding-doors" onClick={closeAllMenus}>Folding Doors</Link>
                         <Link to="/our-collections/upvc-doors/arch-doors" onClick={closeAllMenus}>Arch Doors</Link>
-                        <Link to="/our-collections/upvc-doors/tilt-and-turn-doors" onClick={closeAllMenus}>Tilt & Turn Doors</Link>
-                        <Link to="/our-collections/upvc-doors/french-sliding-doors" onClick={closeAllMenus}>French Sliding Doors</Link>
-                        <Link to="/our-collections/upvc-doors/sliding-and-folding-doors" onClick={closeAllMenus}>Sliding & Folding Doors</Link>
-                        <Link to="/our-collections/upvc-doors/french-doors" onClick={closeAllMenus}>French Doors</Link>
                       </div>
                     )}
 
@@ -197,12 +235,9 @@ const Navbar = () => {
                       <div className="mobile-inner-nested-list">
                         <Link to="/our-collections/upvc-windows/casement-windows" onClick={closeAllMenus}>Casement Windows</Link>
                         <Link to="/our-collections/upvc-windows/sliding-windows" onClick={closeAllMenus}>Sliding Windows</Link>
-                        <Link to="/our-collections/upvc-windows/arch-windows" onClick={closeAllMenus}>Arch Windows</Link>
-                        <Link to="/our-collections/upvc-windows/tilt-and-turn-windows" onClick={closeAllMenus}>Tilt & Turn Windows</Link>
-                        <Link to="/our-collections/upvc-windows/french-windows" onClick={closeAllMenus}>French Windows</Link>
                         <Link to="/our-collections/upvc-windows/fixed-windows" onClick={closeAllMenus}>Fixed Windows</Link>
                         <Link to="/our-collections/upvc-windows/ventilator-windows" onClick={closeAllMenus}>Ventilator Windows</Link>
-                        <Link to="/our-collections/upvc-windows/combination-windows" onClick={closeAllMenus}>Combination Windows</Link>
+                        <Link to="/our-collections/upvc-windows/arch-windows" onClick={closeAllMenus}>Arch Windows</Link>
                       </div>
                     )}
                   </div>
@@ -230,12 +265,10 @@ const Navbar = () => {
                     {openInsectWindow && (
                       <div className="mobile-inner-nested-list">
                         <Link to="/insect-screen/mosquito-net-for-window" onClick={closeAllMenus}>All Mosquito Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" onClick={closeAllMenus}>Foldable Security Mesh Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" onClick={closeAllMenus}>Hinged Frame Mosquito Window</Link>
                         <Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" onClick={closeAllMenus}>Pleated Mosquito Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/roller-mosquito-net-window" onClick={closeAllMenus}>Roller Mosquito Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/fixed-frame-net-window" onClick={closeAllMenus}>Fixed Frame Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window" onClick={closeAllMenus}>Magnetic Mosquito Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window" onClick={closeAllMenus}>Velcro Mosquito Net Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
                       </div>
                     )}
 
@@ -245,27 +278,14 @@ const Navbar = () => {
                     {openInsectDoors && (
                       <div className="mobile-inner-nested-list">
                         <Link to="/insect-screen/mosquito-net-for-doors" onClick={closeAllMenus}>All Mosquito Net Doors</Link>
-                        <Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" onClick={closeAllMenus}>Sliding Mosquito Net Doors</Link>
+                        <Link to="/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors" onClick={closeAllMenus}>Foldable Security Mesh Doors</Link>
+                        <Link to="/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors" onClick={closeAllMenus}>Hinged Frame Mosquito Doors</Link>
                         <Link to="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" onClick={closeAllMenus}>Pleated Mosquito Net Doors</Link>
-                        <Link to="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" onClick={closeAllMenus}>Hinged Mosquito Net Doors</Link>
-                        <Link to="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" onClick={closeAllMenus}>Roller Mosquito Screens</Link>
-                        <Link to="/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors" onClick={closeAllMenus}>Magnetic Mosquito Net Doors</Link>
-                        <Link to="/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors" onClick={closeAllMenus}>Velcro Mosquito Net Doors</Link>
+                        <Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" onClick={closeAllMenus}>Sliding Mosquito Net Doors</Link>
                       </div>
                     )}
 
-                    <span className={`mobile-sub-link manrope-font cursor-pointer ${openInsectBalcony ? 'mobile-inner-active-yellow' : ''}`} onClick={() => setOpenInsectBalcony(!openInsectBalcony)}>
-                        Mosquito Net for Balcony<span className="mobile-inner-arrow"><PremiumChevron isActive={openInsectBalcony} /></span>
-                    </span>
-                    {openInsectBalcony && (
-                      <div className="mobile-inner-nested-list">
-                        <Link to="/insect-screen/mosquito-net-for-balcony" onClick={closeAllMenus}>All Mosquito Net Balcony</Link>
-                        <Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" onClick={closeAllMenus}>Pleated Mosquito Nets</Link>
-                        <Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" onClick={closeAllMenus}>Sliding Mosquito Nets</Link>
-                        <Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" onClick={closeAllMenus}>Roller Screens</Link>
-                        <Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" onClick={closeAllMenus}>Fixed Frame Screens</Link>
-                      </div>
-                    )}
+                    
 
                   </div>
                 )}
@@ -331,13 +351,10 @@ const Navbar = () => {
                 <div className="pill-dropdown-inner-list">
                   {/* Note: If your previous arrow was coming from CSS pseudo-elements (:before), you can safely clean/keep it. 
                       Added inline structural icon component layout for ultimate structural fit. */}
-                  <Link to="/our-collections/upvc-doors/casement-and-designer-doors" onClick={closeAllMenus}>Casement & Designer Doors</Link>
+                  <Link to="/our-collections/upvc-doors/casement-doors" onClick={closeAllMenus}>Casement Doors</Link>
                   <Link to="/our-collections/upvc-doors/sliding-doors" onClick={closeAllMenus}>Sliding Doors</Link>
+                  <Link to="/our-collections/upvc-doors/folding-doors" onClick={closeAllMenus}>Folding Doors</Link>
                   <Link to="/our-collections/upvc-doors/arch-doors" onClick={closeAllMenus}>Arch Doors</Link>
-                  <Link to="/our-collections/upvc-doors/tilt-and-turn-doors" onClick={closeAllMenus}>Tilt & Turn Doors</Link>
-                  <Link to="/our-collections/upvc-doors/french-sliding-doors" onClick={closeAllMenus}>French Sliding Doors</Link>
-                  <Link to="/our-collections/upvc-doors/sliding-and-folding-doors" onClick={closeAllMenus}>Sliding & Folding Doors</Link>
-                  <Link to="/our-collections/upvc-doors/french-doors" onClick={closeAllMenus}>French Doors</Link>
                 </div>
               )}
             </div>
@@ -351,12 +368,9 @@ const Navbar = () => {
                 <div className="pill-dropdown-inner-list">
                   <Link to="/our-collections/upvc-windows/casement-windows" onClick={closeAllMenus}>Casement Windows</Link>
                   <Link to="/our-collections/upvc-windows/sliding-windows" onClick={closeAllMenus}>Sliding Windows</Link>
-                  <Link to="/our-collections/upvc-windows/arch-windows" onClick={closeAllMenus}>Arch Windows</Link>
-                  <Link to="/our-collections/upvc-windows/tilt-and-turn-windows" onClick={closeAllMenus}>Tilt & Turn Windows</Link>
-                  <Link to="/our-collections/upvc-windows/french-windows" onClick={closeAllMenus}>French Windows</Link>
                   <Link to="/our-collections/upvc-windows/fixed-windows" onClick={closeAllMenus}>Fixed Windows</Link>
                   <Link to="/our-collections/upvc-windows/ventilator-windows" onClick={closeAllMenus}>Ventilator Windows</Link>
-                  <Link to="/our-collections/upvc-windows/combination-windows" onClick={closeAllMenus}>Combination Windows</Link>
+                  <Link to="/our-collections/upvc-windows/arch-windows" onClick={closeAllMenus}>Arch Windows</Link>
                 </div>
               )}
             </div>
@@ -388,12 +402,10 @@ const Navbar = () => {
                 <>
                   <div style={{ position: 'absolute', top: '100%', left: '-50%', width: '200%', height: '25px', background: 'transparent', zIndex: 1999 }}></div>
                   <div className="pill-dropdown-inner-list">
-                    <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
+                    <Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" onClick={closeAllMenus}>Foldable Security Mesh Window</Link>
+                    <Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" onClick={closeAllMenus}>Hinged Frame Mosquito Window</Link>
                     <Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" onClick={closeAllMenus}>Pleated Mosquito Net Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/roller-mosquito-net-window" onClick={closeAllMenus}>Roller Mosquito Net Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/fixed-frame-net-window" onClick={closeAllMenus}>Fixed Frame Net Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window" onClick={closeAllMenus}>Magnetic Mosquito Net Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window" onClick={closeAllMenus}>Velcro Mosquito Net Window</Link>
+                    <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
                   </div>
                 </>
               )}
@@ -416,42 +428,16 @@ const Navbar = () => {
                 <>
                   <div style={{ position: 'absolute', top: '100%', left: '-50%', width: '200%', height: '25px', background: 'transparent', zIndex: 1999 }}></div>
                   <div className="pill-dropdown-inner-list">
-                    <Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" onClick={closeAllMenus}>Sliding Mosquito Net Doors</Link>
+                    <Link to="/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors" onClick={closeAllMenus}>Foldable Security Mesh Doors</Link>
+                    <Link to="/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors" onClick={closeAllMenus}>Hinged Frame Mosquito Doors</Link>
                     <Link to="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" onClick={closeAllMenus}>Pleated Mosquito Net Doors</Link>
-                    <Link to="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" onClick={closeAllMenus}>Hinged Mosquito Net Doors</Link>
-                    <Link to="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" onClick={closeAllMenus}>Roller Mosquito Screens</Link>
-                    <Link to="/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors" onClick={closeAllMenus}>Magnetic Mosquito Net Doors</Link>
-                    <Link to="/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors" onClick={closeAllMenus}>Velcro Mosquito Net Doors</Link>
+                    <Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" onClick={closeAllMenus}>Sliding Mosquito Net Doors</Link>
                   </div>
                 </>
               )}
             </div>
 
-            {/* Balcony Dropdown */}
-            <div 
-              className="capsule-sub-nav-item position-relative"
-              onMouseEnter={() => setOpenInsectBalcony(true)}
-              onMouseLeave={() => setOpenInsectBalcony(false)}
-            >
-              <Link 
-                to="/insect-screen/mosquito-net-for-balcony" 
-                className={`sub-nav-link manrope-font text-decoration-none ${openInsectBalcony ? 'desktop-sub-active' : ''}`}
-                onClick={closeAllMenus}
-              >
-                Mosquito Net for Balcony <span className="inner-indicator-arrow"><PremiumChevron isActive={openInsectBalcony} /></span>
-              </Link>
-              {openInsectBalcony && (
-                <>
-                  <div style={{ position: 'absolute', top: '100%', left: '-50%', width: '200%', height: '25px', background: 'transparent', zIndex: 1999 }}></div>
-                  <div className="pill-dropdown-inner-list">
-                    <Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" onClick={closeAllMenus}>Pleated Mosquito Nets</Link>
-                    <Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" onClick={closeAllMenus}>Sliding Mosquito Nets</Link>
-                    <Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" onClick={closeAllMenus}>Roller Screens</Link>
-                    <Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" onClick={closeAllMenus}>Fixed Frame Screens</Link>
-                  </div>
-                </>
-              )}
-            </div>
+          
 
           </div>
         </div>

@@ -11,7 +11,7 @@ import uPVC_Casement_Windows_Image7 from '../../../assets/uPVC_Casement_Windows_
 import uPVC_Casement_Windows_Image8 from '../../../assets/uPVC_Casement_Windows_Image (8).webp';
 import uPVC_Casement_Windows_Image9 from '../../../assets/uPVC_Casement_Windows_Image (9).webp';
 import uPVC_Casement_Windows_Image10 from '../../../assets/uPVC_Casement_Windows_Image (10).webp';
-import uPVC_Casement_Windows_Image11 from '../../../assets/uPVC_Casement_Windows_Image (11).webp';
+
 
 const CasementWindowsShow = () => {
   const baseData = [
@@ -24,8 +24,7 @@ const CasementWindowsShow = () => {
     { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image7 },
     { id: 8, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image8 },
     { id: 9, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image9 },
-    { id: 10, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image10 },
-    { id: 11, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image11 },
+    { id: 10, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image10 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

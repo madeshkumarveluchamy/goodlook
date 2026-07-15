@@ -1,56 +1,28 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
 import { FaCheckCircle } from 'react-icons/fa';
-import storyhero from "../../../../../assets/casementback.png"
-import img1 from '../../../../../assets/sliding1.png'; 
-import img2 from '../../../../../assets/sliding2.png';
-import img3 from '../../../../../assets/sliding3.png';
-import img4 from '../../../../../assets/sliding4.png';
+import storyhero from "../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (10).webp"
+import img1 from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (4).webp'; 
+import img2 from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (9).webp';
+import img3 from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (12).webp';
+import img4 from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (6).webp';
 
 // Ningalude images ingane import cheyyuka
-import stickyImg from '../../../../../assets/sliding5.png'; // Left Sticky Image
-import rightImgTop from '../../../../../assets/sliding6.png'; // Right Scrollable Image 1
-import rightImgCenter from '../../../../../assets/sliding7.png'; // Right Scrollable Image 2
+import stickyImg from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (8).webp'; // Left Sticky Image
+import rightImgTop from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (3).webp'; // Right Scrollable Image 1
+import rightImgCenter from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (2).webp'; // Right Scrollable Image 2
 import ExperienceAura from '../../../../Doors/SlideDoors/ExperienceAura';
 
 const RollerMosquitoScreensDoors = () => {
   return (
     <>
-      {/* ================= HERO SECTION ================= */}
-      <section 
-        className="musquitotypes-story-hero-section position-relative overflow-hidden w-100"
-        style={{ backgroundImage: `url(${storyhero})` }}
-      >
-        <div className="musquitotypes-story-hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"></div>
-
-        <div className="musquitotypes-story-vertical-grid-lines d-none d-md-flex w-100 h-100 position-absolute top-0 start-0">
-          <div className="musquitotypes-story-line-col"></div>
-          <div className="musquitotypes-story-line-col"></div>
-          <div className="musquitotypes-story-line-col"></div>
-        </div>
-
-        <div className="container-fluid musquitotypes-story-hero-fluid h-100 position-relative z-3">
-          <div className="row h-100 musquitotypes-hero-text-alignment-row">
-            <div className="col-12 musquitotypes-hero-text-engine-col font-inter">
-              <h1 className="musquitotypes-story-main-title fw-bold text-white m-0 select-none musquitotypes-inter-font">
-                <span className="musquitotypes-story-title-line-1 d-block">
-                  Quality You See
-                </span>
-                <span className="musquitotypes-story-light-beige musquitotypes-story-title-line-2 d-block">
-                  unbeatable view
-                </span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ================= GALLERY SECTION ================= */}
       <section className="musquitotypes-gallery-section">
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Roller Mosquito Screens for Doors</h2>
+            <h2 className="musquitotypes-gallery-title font-serif stit">Foldable Security Mesh Doors</h2>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
               Explore our complete range of premium Roller Mosquito Net Doors, specifically<br className="d-none d-md-block" /> 
               engineered to provide the perfect fit and lasting protection for every room
@@ -65,7 +37,7 @@ const RollerMosquitoScreensDoors = () => {
                 <img src={img1} alt="Door Model 1" className="musquitotypes-grid-img" />
                 <div className="musquitotypes-gallery-overlay-box">
                   <span className="musquitotypes-gold-badge fw-bolder manrope-font">MOSQUITO NET FOR DOORS</span>
-                  <h4 className="musquitotypes-hover-title font-serif">Roller Mosquito Screen Door</h4>
+                  <h4 className="musquitotypes-hover-title font-serif">Foldable Security Mesh Window</h4>
                 </div>
               </div>
             </div>
@@ -112,7 +84,7 @@ const RollerMosquitoScreensDoors = () => {
                 <img src={img4} alt="Door Model 4" className="musquitotypes-grid-img" />
                 <div className="musquitotypes-gallery-overlay-box">
                   <span className="musquitotypes-gold-badge fw-bolder manrope-font">MOSQUITO NET FOR DOORS</span>
-                  <h4 className="musquitotypes-hover-title font-serif">Roller Mosquito Screen Door</h4>
+                  <h4 className="musquitotypes-hover-title font-serif">Foldable Security Mesh Window</h4>
                 </div>
               </div>
             </div>
@@ -138,7 +110,7 @@ const RollerMosquitoScreensDoors = () => {
               {/* Overlay Box with hover effect */}
               <div className="musquitotypes-gallery-overlay-box">
                 <span className="musquitotypes-gold-badge fw-bolder manrope-font ">MOSQUITO NET FOR DOORS</span>
-                <h4 className="musquitotypes-hover-title font-serif">Roller Mosquito Screen Door</h4>
+                <h4 className="musquitotypes-hover-title font-serif">Foldable Security Mesh Window</h4>
               </div>
             </div>
           </div>
@@ -151,7 +123,7 @@ const RollerMosquitoScreensDoors = () => {
               <img src={rightImgTop} alt="Roller Net View 2" className="musquitotypes-right-img" />
               <div className="musquitotypes-gallery-overlay-box">
                 <span className="musquitotypes-gold-badge fw-bolder manrope-font">MOSQUITO NET FOR DOORS</span>
-                <h4 className="musquitotypes-hover-title font-serif">Modern Roller Screens</h4>
+                <h4 className="musquitotypes-hover-title font-serif">Foldable Security Mesh Window</h4>
               </div>
             </div>
 
@@ -159,7 +131,7 @@ const RollerMosquitoScreensDoors = () => {
             <div className="musquitotypes-text-block mb-5">
               <span className="musquitotypes-gold-badge manrope-font fw-bolder ssub">MOSQUITO NET FOR DOORS</span>
               <h2 className="musquitotypes-main-heading mb-4 font-geist stit">
-                Modern Roller <br className="d-none d-md-block" />Door Screens
+                Foldable Security<br className="d-none d-md-block" />Mesh Window 
               </h2>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
                 Whether you're looking to enjoy a breeze, gain clarity through unobstructed views, or simply find a few moments of calm in your busy day, these precision-engineered roller screens will inspire and motivate.

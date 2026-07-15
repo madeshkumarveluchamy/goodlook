@@ -1,16 +1,16 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
 import { FaCheckCircle } from 'react-icons/fa';
-import storyhero from "../../../../../assets/casementback.png"
-import img1 from '../../../../../assets/sliding1.png'; 
-import img2 from '../../../../../assets/sliding2.png';
-import img3 from '../../../../../assets/sliding3.png';
-import img4 from '../../../../../assets/sliding4.png';
+import storyhero from "../../../../../assets/casementback.webp"
+import img1 from '../../../../../assets/sliding1.webp'; 
+import img2 from '../../../../../assets/sliding2.webp';
+import img3 from '../../../../../assets/sliding3.webp';
+import img4 from '../../../../../assets/sliding4.webp';
 
 // Ningalude images ingane import cheyyuka
-import stickyImg from '../../../../../assets/sliding5.png'; // Left Sticky Image
-import rightImgTop from '../../../../../assets/sliding6.png'; // Right Scrollable Image 1
-import rightImgCenter from '../../../../../assets/sliding7.png'; // Right Scrollable Image 2
+import stickyImg from '../../../../../assets/sliding5.webp'; // Left Sticky Image
+import rightImgTop from '../../../../../assets/sliding6.webp'; // Right Scrollable Image 1
+import rightImgCenter from '../../../../../assets/sliding7.webp'; // Right Scrollable Image 2
 import ExperienceAura from '../../../../Doors/SlideDoors/ExperienceAura';
 
 const VelcroMosquitoNetDoors = () => {

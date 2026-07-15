@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/FixedWindowsRodCollection.css'; // 🎯 பிக்ஸ்: சிஎஸ்எஸ் ஃபைல் பெயர் மாற்றப்பட்டுள்ளது
-import rodImg from '../../../assets/uPVC_Fixed_Window_Banners (1).webp';
+import rodImg from '../../../assets/upvc_fixed_window.webp';
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from 'react-icons/fa'; 
 
@@ -9,7 +9,7 @@ const FixedWindowsRodCollection = () => {
     <section className="fixedwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="fixedwindows-rod-main-title mb-2 stit">uPVC Fixed Windows & Designer</h2>
+        <h2 className="fixedwindows-rod-main-title mb-2 stit">uPVC Fixed Windows</h2>
     
         <p className="fixedwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
           Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
@@ -28,7 +28,7 @@ const FixedWindowsRodCollection = () => {
               <div className="row align-items-center text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
                   <h4 className="fixedwindows-overlay-rod-title mb-2 text-center text-md-start sdes">
-                    <span className="fixedwindows-bullet-diamond-small">❖</span> uPVC Fixed Windows & Designer
+                    <span className="fixedwindows-bullet-diamond-small">❖</span> uPVC Fixed Windows
                   </h4>
                   <p className="fixedwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
                     Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
@@ -55,7 +55,7 @@ const FixedWindowsRodCollection = () => {
           <div className="row g-4 manrope-font">
             
             {/* Column 1 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
                 <span className="fixedwindows-feature-text">Flexible opening design</span>
@@ -71,7 +71,7 @@ const FixedWindowsRodCollection = () => {
             </div>
 
             {/* Column 2 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
                 <span className="fixedwindows-feature-text">Supports large glass panels</span>
@@ -87,7 +87,7 @@ const FixedWindowsRodCollection = () => {
             </div>
 
             {/* Column 3 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
                 <span className="fixedwindows-feature-text">Supports large glass panels</span>

@@ -1,12 +1,14 @@
 .arch-rod-collection-section {
   background-color: #ffffff !important;
   width: 100%;
+  padding-top :100px !important;
   overflow: hidden;
 }
 
 .arch-rod-main-title {
   font-family: 'Playfair Display', serif !important;
   color: #111111 !important;
+  
   font-size: clamp(2.4rem, 4.5vw, 4rem) !important;
   font-weight: 500 !important;
   line-height: 1.1 !important;

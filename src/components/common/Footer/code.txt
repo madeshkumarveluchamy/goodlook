@@ -1,0 +1,17 @@
+                {/* Mosquito Net for Balcony */}
+                <li className="footer-interactive-item mt-2">
+                  <span 
+                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
+                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
+                    onClick={() => setShowMosBalcony(!showMosBalcony)}
+                  >
+                    Net for Balcony <FooterChevron isActive={showMosBalcony} />
+                  </span>
+                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosBalcony ? 'd-block' : 'd-none'}`}>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony')}>All Net Balcony</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets')}>Pleated Mosquito Nets</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets')}>Sliding Mosquito Nets</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/roller-screens')}>Roller Screens</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/fixed-frame-screens')}>Fixed Frame Screens</Link></div>
+                  </div>
+                </li>

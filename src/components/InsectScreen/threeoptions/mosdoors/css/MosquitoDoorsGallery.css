@@ -29,7 +29,7 @@
    ========================================= */
 .mos-doors-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Desktop: 3 Columns */
+  grid-template-columns: repeat(4, 1fr); /* Desktop: 3 Columns */
   gap: 24px;
 }
 

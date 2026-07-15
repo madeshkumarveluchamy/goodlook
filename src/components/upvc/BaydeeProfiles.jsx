@@ -23,7 +23,25 @@ const BaydeeProfiles = () => {
         
         {/* ================= TOP COMPONENT SHOWCASE BLOCK ================= */}
         <div className="row align-items-center g-4 g-lg-5 mb-5 pb-4 upper-baydee-flex-row">
-          
+           <div className="col-12 col-lg-6 baydee-top-right">
+            <div className="baydee-main-feature-box rounded-3 position-relative pb-4 ps-4">
+              
+              {/* PLAIN MINIMALIST TOP WORDING LABEL LINK (NO BOX/BACKGROUND SURFACE) */}
+              <div >
+              <p className="w-100 baydee-clean-top-label m-0 fw-semibold font-serief fw-normal pb-2 text-center text-md-start">
+                Begin Your Design Journey
+              </p>
+              </div>
+              <div className="baydee-image-container rounded-3 overflow-hidden shadow-sm ">
+                <img 
+                  src={upvcCollection1} 
+                  alt="Baydee precision engineered uPVC profile closeup showcase" 
+                  className="w-100 h-100 object-fit-cover"
+                />
+              </div>
+
+            </div>
+          </div> 
           {/* TOP LEFT PANEL: COMBINED LOGO IMAGE + HEADLINE */}
           <div className="col-12 col-lg-6 baydee-top-left text-center text-lg-start">
             <span className="baydee-auth-badge text-uppercase tracking-wider d-block mb-3 manrope-font fw-bold color-yellow ssub">
@@ -44,25 +62,7 @@ const BaydeeProfiles = () => {
           </div>
 
           {/* TOP RIGHT PANEL: PROFILE CLOSEUP FRAME */}
-          <div className="col-12 col-lg-6 baydee-top-right">
-            <div className="baydee-main-feature-box rounded-3 position-relative pb-4 ps-4">
-              
-              {/* PLAIN MINIMALIST TOP WORDING LABEL LINK (NO BOX/BACKGROUND SURFACE) */}
-              <div >
-              <p className="w-100 baydee-clean-top-label m-0 fw-semibold font-serief fw-normal pb-2 text-center text-md-start">
-                Begin Your Design Journey
-              </p>
-              </div>
-              <div className="baydee-image-container rounded-3 overflow-hidden shadow-sm ">
-                <img 
-                  src={upvcCollection1} 
-                  alt="Baydee precision engineered uPVC profile closeup showcase" 
-                  className="w-100 h-100 object-fit-cover"
-                />
-              </div>
-
-            </div>
-          </div>
+        
 
         </div>
 

@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import './css/StoryCategories.css';
 
 // --- IMPORT YOUR MAIN INTERIOR IMAGE SETS ---
-import defaultImg from '../../assets/storyframe4.webp';
+import defaultImg from '../../assets/uPVC_Casement_ Door_Images (7).webp';
+import defaultImg1 from '../../assets/uPVC_Casement_Windows_Image (5).webp';
+import defaultImg2 from '../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (10).webp';
+import defaultImg3 from '../../assets/sliding_mosquito_net_window(1).webp';
+import defaultImg4 from '../../assets/curtainrodcollection3.webp';
 
 const StoryCategories = () => {
   // START STATE: -1 கொடுத்தா ஆரம்பத்துல எல்லா கன்டென்ட் டிராயரும் மூடியே இருக்கும்
@@ -10,29 +14,29 @@ const StoryCategories = () => {
 
   const categoriesData = [
     { 
-      title: "Openable & Sliding Doors and Windows", 
+      title: "UPVC Doors", 
       desc: "Our premium openable and structural sliding frameworks offer maximized panoramic viewing angles combined with high-durability thermal layers insulation profiles.",
       image: defaultImg 
     },
     { 
-      title: "Insect Protection & Stentering Frames", 
+      title: "UPVC Windows", 
       desc: "Architectural mesh engineering integration designed to allow continuous natural ambient airflow while maintaining pristine pest protection boundaries flawlessly.",
-      image: defaultImg 
+      image: defaultImg1 
     },
     { 
-      title: "Hinged Frames for Doors & Windows", 
+      title: "Mosquito Net For Doors", 
       desc: "Heavy-duty engineered hardware pivot points ensuring silent transitions, robust locking security matrix, and absolute weatherproof framing joints seal seals.",
-      image: defaultImg 
+      image: defaultImg2 
     },
     { 
-      title: "Roller Screens & Pleated Screens & Sliding System", 
+      title: "Mosquito Net For Windows", 
       desc: "Sleek low-profile track mechanisms that retract completely from sightlines to merge your modern interior lounge effortlessly with the outdoors garden layout space.",
-      image: defaultImg 
+      image: defaultImg3 
     },
     { 
-      title: "Curtain Rods & Window Blinds", 
+      title: "Curtain & Blinds", 
       desc: "Premium custom customized tracking controls and luxury anodized accents components to govern incoming daylight profiles with total minimalist aesthetic precision.",
-      image: defaultImg 
+      image: defaultImg4
     }
   ];
 

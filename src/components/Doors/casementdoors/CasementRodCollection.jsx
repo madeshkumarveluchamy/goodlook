@@ -9,7 +9,7 @@ const CasementRodCollection = () => {
     <section className="casement-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="casement-rod-main-title mb-2 stit">uPVC Casement & Designer</h2>
+        <h2 className="casement-rod-main-title mb-2 stit">uPVC Casement Doors</h2>
     
         
         <p className="casement-rod-sub-desc manrope-font mx-auto mb-5 sdes">
@@ -61,28 +61,28 @@ const CasementRodCollection = () => {
           <div className="row g-4 manrope-font">
             
             {/* Column 1 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4">
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Flexible opening design</span>
               </div>
-              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
+              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Excellent soundproofing</span>
               </div>
-              <div className="casement-feature-item-box d-flex align-items-center gap-3">
+              <div className="casement-feature-item-box d-flex align-items-center gap-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">High thermal insulation</span>
               </div>
             </div>
 
             {/* Column 2 */}
-            <div className="col-12 col-md-4">
-              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
+            <div className="col-12 padding-manual col-md-4">
+              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Supports large glass panels</span>
               </div>
-              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
+              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Tamper-resistant hardware</span>
               </div>
@@ -93,16 +93,16 @@ const CasementRodCollection = () => {
             </div>
 
             {/* Column 3 */}
-            <div className="col-12 col-md-4">
+            <div className="col-12 padding-manual col-md-4 ">
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Supports large glass panels</span>
               </div>
-              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
+              <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Tamper-resistant hardware</span>
               </div>
-              <div className="casement-feature-item-box d-flex align-items-center gap-3">
+              <div className="casement-feature-item-box d-flex align-items-center gap-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
                 <span className="casement-feature-text">Effective weather protection</span>
               </div>

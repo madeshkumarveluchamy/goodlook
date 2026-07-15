@@ -45,7 +45,7 @@ const Footer = () => {
         marginLeft: '4px',
         verticalAlign: 'middle',
         transform: isActive ? 'rotate(180deg)' : 'rotate(0deg)',
-        transition: 'transform 0.2s ease',
+        transition: 'transform 0.3s ease',
         color: isActive ? '#dfa82d' : 'rgba(255, 255, 255, 0.6)'
       }}
     >
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
 
           {/* ================= COLUMN 2: OUR COLLECTIONS ================= */}
-          <div className="col-12  col-md-3 footer-grid-col border-right-split">
+          <div className="col-12 col-md-3 footer-grid-col border-right-split">
             <div className="footer-card-inner">
               <h5 className="footer-col-title text-uppercase tracking-wider mb-3 rubik-font text-center text-md-start sdes text-warning">Our Collections</h5>
               <ul className="footer-links-list list-unstyled m-0 p-0 d-flex flex-column gap-2 fw-light text-center text-md-start">
@@ -116,14 +116,11 @@ const Footer = () => {
                   >
                     uPVC Doors <FooterChevron isActive={showUpvcDoors} />
                   </span>
-                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showUpvcDoors ? 'd-block' : 'd-none'}`}>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/casement-and-designer-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/casement-and-designer-doors')}>Casement & Designer Doors</Link></div>
+                  <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showUpvcDoors ? 'open' : ''}`}>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/casement-and-designer-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/casement-doors')}>Casement Doors</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/sliding-doors')}>Sliding Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-and-folding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/folding-doors')}>Folding Doors</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/arch-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/arch-doors')}>Arch Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/tilt-and-turn-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/tilt-and-turn-doors')}>Tilt & Turn Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/french-sliding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/french-sliding-doors')}>French Sliding Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-and-folding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/sliding-and-folding-doors')}>Sliding & Folding Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/french-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/french-doors')}>French Doors</Link></div>
                   </div>
                 </li>
 
@@ -136,15 +133,12 @@ const Footer = () => {
                   >
                     uPVC Windows <FooterChevron isActive={showUpvcWindows} />
                   </span>
-                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showUpvcWindows ? 'd-block' : 'd-none'}`}>
+                  <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showUpvcWindows ? 'open' : ''}`}>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/casement-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/casement-windows')}>Casement Windows</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/sliding-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/sliding-windows')}>Sliding Windows</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/arch-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/arch-windows')}>Arch Windows</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/tilt-and-turn-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/tilt-and-turn-windows')}>Tilt & Turn Windows</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/french-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/french-windows')}>French Windows</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/fixed-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/fixed-windows')}>Fixed Windows</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/ventilator-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/ventilator-windows')}>Ventilator Windows</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/combination-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/combination-windows')}>Combination Windows</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-windows/arch-windows" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-windows/arch-windows')}>Arch Windows</Link></div>
                   </div>
                 </li>
 
@@ -167,14 +161,12 @@ const Footer = () => {
                   >
                     Net for Window <FooterChevron isActive={showMosWindow} />
                   </span>
-                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosWindow ? 'd-block' : 'd-none'}`}>
+                  <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showMosWindow ? 'open' : ''}`}>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/all-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/all-mosquito-net-window')}>All Net Window</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window')}>Sliding Net Window</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window')}>Pleated Net Window</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/roller-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/roller-mosquito-net-window')}>Roller Net Window</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/fixed-frame-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/fixed-frame-net-window')}>Fixed Frame Net</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/magnetic-mosquito-net-window')}>Magnetic Net Window</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/velcro-mosquito-net-window')}>Velcro Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/foldable-security-mesh-window')}>Foldable Security Mesh Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window')}>Hinged Frame Mosquito Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window')}>Pleated Mosquito Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window')}>Sliding Mosquito Net Window</Link></div>
                   </div>
                 </li>
 
@@ -187,34 +179,15 @@ const Footer = () => {
                   >
                     Net for Doors <FooterChevron isActive={showMosDoors} />
                   </span>
-                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosDoors ? 'd-block' : 'd-none'}`}>
+                  <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showMosDoors ? 'open' : ''}`}>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors')}>All Net Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors')}>Sliding Net Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors')}>Pleated Net Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors')}>Hinged Net Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/roller-mosquito-screens')}>Roller Mosquito Screens</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/magnetic-mosquito-net-doors')}>Magnetic Net Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/velcro-mosquito-net-doors')}>Velcro Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors')}>Foldable Security Mesh Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors')}>Hinged Frame Mosquito Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors')}>Pleated Mosquito Net Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors')}>Sliding Mosquito Net Doors</Link></div>
                   </div>
                 </li>
 
-                {/* Mosquito Net for Balcony */}
-                <li className="footer-interactive-item mt-2">
-                  <span 
-                    className="rubik-font d-flex align-items-center justify-content-center justify-content-md-start gap-2 text-white" 
-                    style={{ fontSize: '0.95em', cursor: 'pointer' }} 
-                    onClick={() => setShowMosBalcony(!showMosBalcony)}
-                  >
-                    Net for Balcony <FooterChevron isActive={showMosBalcony} />
-                  </span>
-                  <div className={`ps-md-3 d-flex flex-column gap-1 mt-1   ${showMosBalcony ? 'd-block' : 'd-none'}`}>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/all-mosquito-net-balcony')}>All Net Balcony</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets')}>Pleated Mosquito Nets</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets')}>Sliding Mosquito Nets</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/roller-screens')}>Roller Screens</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-balcony/fixed-frame-screens')}>Fixed Frame Screens</Link></div>
-                  </div>
-                </li>
 
                 <h5 className="footer-col-title text-uppercase tracking-wider mt-4 mb-3 rubik-font text-center text-md-start sdes text-warning">Curtains & Blinds</h5>
                 <div className="footer-link-wrapper"><li><Link to="/curtains-blinds/curtains" className="rubik-font smin text-decoration-none text-light" onClick={() => handleScrollToTop('/curtains-blinds/curtains')}>Curtains</Link></li></div>

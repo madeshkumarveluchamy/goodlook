@@ -8,11 +8,11 @@ import BaydeeProfiles from './BaydeeProfiles'
 const UpvcHome = () => {
   return (
     <div>
-      <UpvcHero />
+      {/* <UpvcHero /> */}
       <UpvcAesthetics />
-      <UpvcFeatures />
       <BaydeeProfiles />
       <UpvcDoorsGallery/>
+      <UpvcFeatures />
     </div>
   )
 }

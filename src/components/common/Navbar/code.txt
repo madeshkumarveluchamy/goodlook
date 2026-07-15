@@ -1,0 +1,58 @@
+<span className={`mobile-sub-link manrope-font cursor-pointer ${openInsectBalcony ? 'mobile-inner-active-yellow' : ''}`} onClick={() => setOpenInsectBalcony(!openInsectBalcony)}>
+                        Mosquito Net for Balcony<span className="mobile-inner-arrow"><PremiumChevron isActive={openInsectBalcony} /></span>
+                    </span>
+                    {openInsectBalcony && (
+                      <div className="mobile-inner-nested-list">
+                        <Link to="/insect-screen/mosquito-net-for-balcony" onClick={closeAllMenus}>All Mosquito Net Balcony</Link>
+                        <Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" onClick={closeAllMenus}>Pleated Mosquito Nets</Link>
+                        <Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" onClick={closeAllMenus}>Sliding Mosquito Nets</Link>
+                        <Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" onClick={closeAllMenus}>Roller Screens</Link>
+                        <Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" onClick={closeAllMenus}>Fixed Frame Screens</Link>
+                      </div>
+                    )}
+
+
+
+
+
+                    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      {/* Balcony Dropdown */}
+            <div 
+              className="capsule-sub-nav-item position-relative"
+              onMouseEnter={() => setOpenInsectBalcony(true)}
+              onMouseLeave={() => setOpenInsectBalcony(false)}
+            >
+              <Link 
+                to="/insect-screen/mosquito-net-for-balcony" 
+                className={`sub-nav-link manrope-font text-decoration-none ${openInsectBalcony ? 'desktop-sub-active' : ''}`}
+                onClick={closeAllMenus}
+              >
+                Mosquito Net for Balcony <span className="inner-indicator-arrow"><PremiumChevron isActive={openInsectBalcony} /></span>
+              </Link>
+              {openInsectBalcony && (
+                <>
+                  <div style={{ position: 'absolute', top: '100%', left: '-50%', width: '200%', height: '25px', background: 'transparent', zIndex: 1999 }}></div>
+                  <div className="pill-dropdown-inner-list">
+                    <Link to="/insect-screen/mosquito-net-for-balcony/pleated-mosquito-nets" onClick={closeAllMenus}>Pleated Mosquito Nets</Link>
+                    <Link to="/insect-screen/mosquito-net-for-balcony/sliding-mosquito-nets" onClick={closeAllMenus}>Sliding Mosquito Nets</Link>
+                    <Link to="/insect-screen/mosquito-net-for-balcony/roller-screens" onClick={closeAllMenus}>Roller Screens</Link>
+                    <Link to="/insect-screen/mosquito-net-for-balcony/fixed-frame-screens" onClick={closeAllMenus}>Fixed Frame Screens</Link>
+                  </div>
+                </>
+              )}
+            </div>

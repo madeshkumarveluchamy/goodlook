@@ -2,7 +2,7 @@ import React from 'react';
 import './css/UpvcAesthetics.css';
 
 // --- IMPORT YOUR DESIGN RENDER IMAGE ---
-import aestheticsImg from '../../assets/upvcframe2.webp';
+import aestheticsImg from '../../assets/upvcprofile.webp';
 
 const UpvcAesthetics = () => {
   return (
@@ -35,11 +35,11 @@ const UpvcAesthetics = () => {
 
             <div className="aesthetics-paragraphs-stack d-flex flex-column gap-3 mt-4 hanken-grotesk-font fw-light text-muted">
               <p className="aesthetics-body-text m-0  sdes">
-                UPVC openable windows and doors are a popular choice for homeowners and businesses seeking functional, durable, and energy-efficient solutions. UPVC openable windows and doors offer long-term benefits in terms of energy efficiency, durability, security, and aesthetics, making them a wise investment for any property.
+                Baydee UPVC profiles company is a large- scale comprehensive enterprise integrating UPVC profile research and development, product, and deals services, high- end window and door system product and installation, and window and door value chain service system affair.
               </p>
               
-              <p className="aesthetics-body-text m-0 sdes">
-                Energy Efficiency: UPVC openable windows and doors are known for their superior thermal insulation properties. The multi-chambered profiles and tight sealing mechanisms of UPVC systems help prevent heat transfer, keeping your space insulated and reducing energy consumption. This results in energy savings and lower utility bills.
+            <p className="aesthetics-body-text m-0 sdes">
+                The company has a registered capital of 150 million Yuan, covers an area of 700,000 square measures, and has a plant of 200,000 square measures. It has further than 1,200 employees, and owns BAYDEE profiles, CROWN window and door system, TICHON window and door value chain service system and other well- known brands in the industry
               </p>
             </div>
 
