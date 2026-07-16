@@ -65,7 +65,7 @@ const AboutCounter = () => {
               </h2>
               <div className="metric-text-meta">
                 <h5 className="metric-label-title m-0 inter-font text-center text-md-start ">Year of establishment</h5>
-                <p className="metric-label-desc m-0 mt-1 inter-font text-center text-md-start">More than 21 years in the field</p>
+                <p className="metric-label-desc m-0 mt-1 inter-font text-center text-md-start">More than 24 years in the field</p>
               </div>
               <div className="metric-visual-footer d-flex justify-content-center justify-content-md-start ">
                 <img src={counterImg1} alt="Establishment Group" className="metric-custom-img" />

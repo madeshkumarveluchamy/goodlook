@@ -258,19 +258,6 @@ const Navbar = () => {
                 {/* Mobile Sub Nav */}
                 {showInsectNav && (
                   <div className="mobile-nested-sub-nav">
-                    
-                    <span className={`mobile-sub-link manrope-font cursor-pointer ${openInsectWindow ? 'mobile-inner-active-yellow' : ''}`} onClick={() => setOpenInsectWindow(!openInsectWindow)}>
-                      Mosquito Net for Window<span className="mobile-inner-arrow"><PremiumChevron isActive={openInsectWindow} /></span>
-                    </span>
-                    {openInsectWindow && (
-                      <div className="mobile-inner-nested-list">
-                        <Link to="/insect-screen/mosquito-net-for-window" onClick={closeAllMenus}>All Mosquito Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" onClick={closeAllMenus}>Foldable Security Mesh Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" onClick={closeAllMenus}>Hinged Frame Mosquito Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" onClick={closeAllMenus}>Pleated Mosquito Net Window</Link>
-                        <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
-                      </div>
-                    )}
 
                     <span className={`mobile-sub-link manrope-font cursor-pointer ${openInsectDoors ? 'mobile-inner-active-yellow' : ''}`} onClick={() => setOpenInsectDoors(!openInsectDoors)}>
                      Mosquito Net for Doors <span className="mobile-inner-arrow"><PremiumChevron isActive={openInsectDoors} /></span>
@@ -285,7 +272,18 @@ const Navbar = () => {
                       </div>
                     )}
 
-                    
+                    <span className={`mobile-sub-link manrope-font cursor-pointer ${openInsectWindow ? 'mobile-inner-active-yellow' : ''}`} onClick={() => setOpenInsectWindow(!openInsectWindow)}>
+                      Mosquito Net for Window<span className="mobile-inner-arrow"><PremiumChevron isActive={openInsectWindow} /></span>
+                    </span>
+                    {openInsectWindow && (
+                      <div className="mobile-inner-nested-list">
+                        <Link to="/insect-screen/mosquito-net-for-window" onClick={closeAllMenus}>All Mosquito Net Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" onClick={closeAllMenus}>Foldable Security Mesh Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" onClick={closeAllMenus}>Hinged Frame Mosquito Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" onClick={closeAllMenus}>Pleated Mosquito Net Window</Link>
+                        <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
+                      </div>
+                    )}
 
                   </div>
                 )}
@@ -385,31 +383,7 @@ const Navbar = () => {
         <div className="sub-navbar-capsule-container desktop-only-sub-nav">
           <div className="sub-navbar-pill-box interactive-mega-dropdown">
             
-            {/* Window Dropdown */}
-            <div 
-              className="capsule-sub-nav-item position-relative"
-              onMouseEnter={() => setOpenInsectWindow(true)}
-              onMouseLeave={() => setOpenInsectWindow(false)}
-            >
-              <Link 
-                to="/insect-screen/mosquito-net-for-window" 
-                className={`sub-nav-link manrope-font text-decoration-none ${openInsectWindow ? 'desktop-sub-active' : ''}`}
-                onClick={closeAllMenus}
-              >
-                Mosquito Net for Window <span className="inner-indicator-arrow"><PremiumChevron isActive={openInsectWindow} /></span>
-              </Link>
-              {openInsectWindow && (
-                <>
-                  <div style={{ position: 'absolute', top: '100%', left: '-50%', width: '200%', height: '25px', background: 'transparent', zIndex: 1999 }}></div>
-                  <div className="pill-dropdown-inner-list">
-                    <Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" onClick={closeAllMenus}>Foldable Security Mesh Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" onClick={closeAllMenus}>Hinged Frame Mosquito Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" onClick={closeAllMenus}>Pleated Mosquito Net Window</Link>
-                    <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
-                  </div>
-                </>
-              )}
-            </div>
+
 
             {/* Doors Dropdown */}
             <div 
@@ -436,6 +410,35 @@ const Navbar = () => {
                 </>
               )}
             </div>
+
+            
+            {/* Window Dropdown */}
+            <div 
+              className="capsule-sub-nav-item position-relative"
+              onMouseEnter={() => setOpenInsectWindow(true)}
+              onMouseLeave={() => setOpenInsectWindow(false)}
+            >
+              <Link 
+                to="/insect-screen/mosquito-net-for-window" 
+                className={`sub-nav-link manrope-font text-decoration-none ${openInsectWindow ? 'desktop-sub-active' : ''}`}
+                onClick={closeAllMenus}
+              >
+                Mosquito Net for Window <span className="inner-indicator-arrow"><PremiumChevron isActive={openInsectWindow} /></span>
+              </Link>
+              {openInsectWindow && (
+                <>
+                  <div style={{ position: 'absolute', top: '100%', left: '-50%', width: '200%', height: '25px', background: 'transparent', zIndex: 1999 }}></div>
+                  <div className="pill-dropdown-inner-list">
+                    <Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" onClick={closeAllMenus}>Foldable Security Mesh Window</Link>
+                    <Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" onClick={closeAllMenus}>Hinged Frame Mosquito Window</Link>
+                    <Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" onClick={closeAllMenus}>Pleated Mosquito Net Window</Link>
+                    <Link to="/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window" onClick={closeAllMenus}>Sliding Mosquito Net Window</Link>
+                  </div>
+                </>
+              )}
+            </div>
+
+            
 
           
 

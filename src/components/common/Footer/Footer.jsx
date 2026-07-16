@@ -71,7 +71,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="footer-brand-bio fw-light m-0 hanken-grotsek-font smin">
-              Your trusted partner for premium mosquito nets and UPVC solutions. With over 21 years of experience, we provide high-quality protection and durable products for homes and businesses.
+              Your trusted partner for premium mosquito nets and UPVC solutions. With over 24 years of experience, we provide high-quality protection and durable products for homes and businesses.
             </p>
           </div>
         </div>

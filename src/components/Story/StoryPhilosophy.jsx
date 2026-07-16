@@ -40,7 +40,7 @@ cooler, and cleaner for years to come.
               <h4 className="segment-indicator-title inter-font text-uppercase manrope-font fw-semibold ssub">Our Mission</h4>
               <p className="segment-desc-para hanken-grotesk-font fw-light hanken-grutsek-font sdes">
                 We engineer UPVC windows, doors, and precision-fitted mosquito screens that bring together
-German-grade technology, uncompromising craftsmanship, and 21+ years of hands-on
+German-grade technology, uncompromising craftsmanship, and 24+ years of hands-on
 expertise, so every installation feels less like a product and more like a promise: comfort,
 protection, and peace of mind that lasts.
 

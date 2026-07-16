@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/Collection.css';
+import { Link } from 'react-router-dom';
 
 import upvcdoor1 from '../../assets/uPVC_Casement_ Door_Images (7).webp';
 import upvcdoor2 from '../../assets/uPVC_Sliding_Door_Images (3).webp';
@@ -41,17 +42,17 @@ const Collection = () => {
   const [visibleCount, setVisibleCount] = useState(8);
 
   const productsData = [
-    { id: 1, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Casement Doors', img: upvcdoor1, path: 'our-collections/upvc-doors/casement-doors' },
-    { id: 2, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Sliding Doors', img: upvcdoor2, path: 'our-collections/upvc-doors/sliding-doors' },
-    { id: 3, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Folding Doors', img: upvcdoor3, path: 'our-collections/upvc-doors/folding-doors' },
-    { id: 4, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'Arch Doors', img: upvcdoor4, path: 'our-collections/upvc-doors/arch-doors' },
+    { id: 1, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'uPVC Casement Doors', img: upvcdoor1, path: 'our-collections/upvc-doors/casement-doors' },
+    { id: 2, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'uPVC Sliding Doors', img: upvcdoor2, path: 'our-collections/upvc-doors/sliding-doors' },
+    { id: 3, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'uPVC Folding Doors', img: upvcdoor3, path: 'our-collections/upvc-doors/folding-doors' },
+    { id: 4, category: 'UPVCdoor', tag: 'uPVC Doors', title: 'uPVC Arch Doors', img: upvcdoor4, path: 'our-collections/upvc-doors/arch-doors' },
 
 
-    { id: 5, category:  'UPVCwindow', tag:'uPVC Windows', title: 'Casement Windows', img: upvcwindow1, path: 'our-collections/upvc-windows/casement-windows' },
-    { id: 6, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Sliding Windows', img: upvcwindow2, path: 'our-collections/upvc-windows/sliding-windows' },
-    { id: 7, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Fixed Windows', img: upvcwindow3, path: 'our-collections/upvc-windows/fixed-windows' },
-    { id: 8, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Ventilator Windows', img: upvcwindow4, path: 'our-collections/upvc-windows/ventilator-windows' },
-    { id: 9, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'Arch Windows', img: upvcwindow5, path: 'our-collections/upvc-windows/arch-windows' },
+    { id: 5, category:  'UPVCwindow', tag:'uPVC Windows', title: 'uPVC Casement Windows', img: upvcwindow1, path: 'our-collections/upvc-windows/casement-windows' },
+    { id: 6, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'uPVC Sliding Windows', img: upvcwindow2, path: 'our-collections/upvc-windows/sliding-windows' },
+    { id: 7, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'uPVC Fixed Windows', img: upvcwindow3, path: 'our-collections/upvc-windows/fixed-windows' },
+    { id: 8, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'uPVC Ventilator Windows', img: upvcwindow4, path: 'our-collections/upvc-windows/ventilator-windows' },
+    { id: 9, category: 'UPVCwindow', tag: 'uPVC Windows', title: 'uPVC Arch Windows', img: upvcwindow5, path: 'our-collections/upvc-windows/arch-windows' },
 
 
     { id: 9, category:  'MosqutioDoor', tag: 'Mosquito Net For Doors', title: 'Foldable Security Mesh Doors', img: MosquitoNetWindows1, path: '/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors' },
@@ -76,32 +77,38 @@ const Collection = () => {
     ALL: {
       title: <>Architectural <br /> Integrity</>,
       image: upvcdoor1,
-      desc: "At Good Look Home, we believe your sanctuary is defined by the quality of light and the clarity of your view. Our uPVC and Aluminium solutions are engineered for more than just durability—they are designed to disappear, allowing the beauty of the outdoors to become your home's living art."
+      desc: "At Good Look Home, we believe your sanctuary is defined by the quality of light and the clarity of your view. Our uPVC and Aluminium solutions are engineered for more than just durability—they are designed to disappear, allowing the beauty of the outdoors to become your home's living art.",
+      link:"/"
     },
     UPVCdoor: {
       title: <>Insulation <br/>That Just Works </>,
       image: upvcdoor2,
-      desc: "Our uPVC profiles lock out heat, noise, and weather all at once. Built to perform for 21+ years without a single repair, they're engineered for homes that don't have time for maintenance drama. "
+      desc: "Our uPVC profiles lock out heat, noise, and weather all at once. Built to perform for 24+ years without a single repair, they're engineered for homes that don't have time for maintenance drama. ",
+      link:"/our-collections/upvc-doors/casement-doors"
     },
     UPVCwindow: {
       title: <>Invisible Protection.<br/> Uninterrupted Views.</>,
       image: upvcwindow1,
-      desc: "Engineered with ultra fine, tear resistant mesh and smooth gliding architectural tracks, our insect screens fit flush into your existing UPVC frames no bulk, no compromise, just clean airflow. "
+      desc: "Engineered with ultra fine, tear resistant mesh and smooth gliding architectural tracks, our insect screens fit flush into your existing UPVC frames no bulk, no compromise, just clean airflow. ",
+      link:"/our-collections/upvc-windows/casement-windows"
     },
     MosqutioDoor: {
       title: <>Precision Protection,<br/> Effortless Style</>,
       image: MosquitoNetWindows1,
-      desc: "Every door net is custom-fitted with slimline aluminium frames and durable mesh, built to handle daily use for years, so your entryways stay elegant, breathable, and bite-free."
+      desc: "Every door net is custom-fitted with slimline aluminium frames and durable mesh, built to handle daily use for years, so your entryways stay elegant, breathable, and bite-free.",
+      link:"/insect-screen/mosquito-net-for-doors"
     },
      MosqutioWindows: {
       title: <>Sleek <br /> Aluminium Precision</>,
       image: MosquitoNetDoor4,
-      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
+      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures.",
+      link:"/insect-screen/mosquito-net-for-window"
     },
     curtainsBlinds: {
       title: <>Minimal. Modern.<br/> Made to Fit. </>,
       image: curtain2,
-      desc: "Discover premium curtains and blinds with clean sightlines and smooth-glide tracks, designed to frame your view, control your light, and complete your interiors with effortless style. "
+      desc: "Discover premium curtains and blinds with clean sightlines and smooth-glide tracks, designed to frame your view, control your light, and complete your interiors with effortless style. ",
+      link:"/curtains-blinds/curtains"
     }
   };
 
@@ -219,12 +226,14 @@ const Collection = () => {
                 {activeBanner.desc}
               </p>
               <div className="text-center text-md-start">
+                <Link to={activeBanner.link}>
                 <button 
                   className="btn explore-process-btn text-uppercase tracking-wider px-4 py-2.5 fw-medium manrope-font"
                   onClick={() => navigate(activeTab === 'ALL' ? '/collections/openabledoors' : activeBanner.path || '/')}
                 >
                   Explore Our Process
                 </button>
+                </Link>
               </div>
             </div>
           </div>

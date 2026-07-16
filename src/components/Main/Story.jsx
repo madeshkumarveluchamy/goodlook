@@ -44,7 +44,7 @@ engineered UPVC frames and GHD certified insect screens that disappear into your
 architecture, so all you notice is the calm they create.
               </p>
               
-              <Link to="/story" className="text-decoration-none"><button className="btn text-uppercase story-cta-btn fw-medium tracking-wider px-4 py-2.5 ">
+              <Link to="/our-story" className="text-decoration-none"><button className="btn text-uppercase story-cta-btn fw-medium tracking-wider px-4 py-2.5 ">
                 <span className="manrope-font story-bttn">Our Story</span>
               </button></Link>
               

@@ -52,14 +52,14 @@ room, every season.
                 <img src={img2} alt="Door Model 2" className="musquitotypes-grid-img" />
                 <div className="musquitotypes-overlay-content">
                   <h3 className="musquitotypes-overlay-title text-white manrope-font smin">Seamless Design, Superior Defense.</h3>
-                  <button className="btn btn-light musquitotypes-project-btn d-inline-flex align-items-center gap-2">
+                 <Link to="/contact-us"> <button className="btn btn-light musquitotypes-project-btn d-inline-flex align-items-center gap-2">
                     <span className="manrope-font btn-text ">Start Your Project</span>
                     <span className="musquitotypes-yellow-arrow d-flex align-items-center justify-content-center">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                       </svg>
                     </span>
-                  </button>
+                  </button></Link>
                 </div>
                 <div className="musquitotypes-gallery-overlay-box">
                   <span className="musquitotypes-gold-badge fw-bolder manrope-font">MOSQUITO NET FOR DOORS</span>
