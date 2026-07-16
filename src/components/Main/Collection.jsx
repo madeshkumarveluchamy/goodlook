@@ -79,19 +79,19 @@ const Collection = () => {
       desc: "At Good Look Home, we believe your sanctuary is defined by the quality of light and the clarity of your view. Our uPVC and Aluminium solutions are engineered for more than just durability—they are designed to disappear, allowing the beauty of the outdoors to become your home's living art."
     },
     UPVCdoor: {
-      title: <>Unmatched <br /> uPVC Insulation</>,
+      title: <>Insulation <br/>That Just Works </>,
       image: upvcdoor2,
-      desc: "Our premium uPVC Profiles deliver exceptional thermal efficiency and complete acoustic dampening. Engineered expertly to withstand weather extremes, these frames offer twenty-one-plus years of structural stability with absolute zero maintenance requirement."
+      desc: "Our uPVC profiles lock out heat, noise, and weather all at once. Built to perform for 21+ years without a single repair, they're engineered for homes that don't have time for maintenance drama. "
     },
     UPVCwindow: {
-      title: <>Flawless <br /> Insect Protection</>,
+      title: <>Invisible Protection.<br/> Uninterrupted Views.</>,
       image: upvcwindow1,
-      desc: "Experience refreshing airflow with zero entry constraints for pests. Our integrated Plisse and Roller Insect Screens combine ultra-fine mesh resilience with precision architectural tracks, fitting seamlessly into your current luxury window profiles."
+      desc: "Engineered with ultra fine, tear resistant mesh and smooth gliding architectural tracks, our insect screens fit flush into your existing UPVC frames no bulk, no compromise, just clean airflow. "
     },
     MosqutioDoor: {
-      title: <>Sleek <br /> Aluminium Precision</>,
+      title: <>Precision Protection,<br/> Effortless Style</>,
       image: MosquitoNetWindows1,
-      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
+      desc: "Every door net is custom-fitted with slimline aluminium frames and durable mesh, built to handle daily use for years, so your entryways stay elegant, breathable, and bite-free."
     },
      MosqutioWindows: {
       title: <>Sleek <br /> Aluminium Precision</>,
@@ -99,9 +99,9 @@ const Collection = () => {
       desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
     },
     curtainsBlinds: {
-      title: <>Sleek <br /> Aluminium Precision</>,
+      title: <>Minimal. Modern.<br/> Made to Fit. </>,
       image: curtain2,
-      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures."
+      desc: "Discover premium curtains and blinds with clean sightlines and smooth-glide tracks, designed to frame your view, control your light, and complete your interiors with effortless style. "
     }
   };
 

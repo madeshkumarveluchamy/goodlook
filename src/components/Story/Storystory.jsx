@@ -32,8 +32,10 @@ const Storystory = () => {
             </div>
 
             <p className="story-description-text  fw-light mb-4 font-bricolage mx-auto sdes">
-              We bring two decades of expertise to every installation, ensuring your home's mood is 
-              defined by quality, comfort, and precision-engineered uPVC solutions.
+              Two decades of craftsmanship, one simple promise, homes that feel as good as they look. From
+precision uPVC windows to seamless insect protection, every installation is built around your
+comfort, your light, and your peace of mind.
+
             </p>
 
             {/* GOLD CIRCULAR ACCENT ACTION BUTTON */}

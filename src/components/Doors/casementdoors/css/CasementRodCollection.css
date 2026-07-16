@@ -196,14 +196,14 @@
 }
 
 @media(max-width:767px){
-   .padding-manual{
-  padding-left:20vw !important;
+  .padding-manual{
+  padding-left:14vw !important;
 }
 }
 
 @media(max-width:425px){
    .padding-manual{
-  padding-left:18vw !important;
+  padding-left:12vw !important;
 }
 }
 

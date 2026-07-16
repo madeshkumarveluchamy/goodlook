@@ -12,8 +12,7 @@ const SlidingWindowsRodCollection = () => {
         <h2 className="slidingwindows-rod-main-title mb-2 stit">uPVC Sliding Windows</h2>
     
         <p className="slidingwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Engineered for the perfect glide, built for a lifetime<br className="d-none d-md-block" />  of protection explore windows designed to fit every room, every time.
         </p>
 
         <div className="slidingwindows-rod-display-window">
@@ -31,7 +30,7 @@ const SlidingWindowsRodCollection = () => {
                     <span className="slidingwindows-bullet-diamond-small">❖</span> uPVC Sliding Windows
                   </h4>
                   <p className="slidingwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    Smooth to operate, simple to install no drilling, no hassle. Built tough enough for any space, yet quiet enough to disappear into your décor. 
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -58,15 +57,15 @@ const SlidingWindowsRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Flexible opening design</span>
+                <span className="slidingwindows-feature-text">Effortless glide, every open and close </span>
               </div>
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Excellent soundproofing</span>
+                <span className="slidingwindows-feature-text">Whisper-quiet soundproofing</span>
               </div>
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">High thermal insulation</span>
+                <span className="slidingwindows-feature-text">Superior thermal insulation, all seasons</span>
               </div>
             </div>
 
@@ -74,15 +73,15 @@ const SlidingWindowsRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Supports large glass panels</span>
+                <span className="slidingwindows-feature-text">Engineered for large glass panels</span>
               </div>
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="slidingwindows-feature-text">amper-resistant, security-grade hardware</span>
               </div>
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Effective weather protection</span>
+                <span className="slidingwindows-feature-text">Weatherproof sealing against rain and dust</span>
               </div>
             </div>
 
@@ -90,15 +89,15 @@ const SlidingWindowsRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Supports large glass panels</span>
+                <span className="slidingwindows-feature-text">UV-resistant frames that never fade or warp</span>
               </div>
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="slidingwindows-feature-text">UV-resistant frames that never fade or warp</span>
               </div>
               <div className="slidingwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="slidingwindows-exact-tick-icon" />
-                <span className="slidingwindows-feature-text">Effective weather protection</span>
+                <span className="slidingwindows-feature-text">Custom sizing for every window opening</span>
               </div>
             </div>
 

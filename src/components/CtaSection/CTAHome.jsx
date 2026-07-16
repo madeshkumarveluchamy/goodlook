@@ -6,7 +6,7 @@ import FaqSection from './FaqSection'
 const CTAHome = () => {
   return (
     <div>
-      <HomeHero />
+      {/* <HomeHero /> */}
       <ContactConnect />
       <FaqSection />
     </div>

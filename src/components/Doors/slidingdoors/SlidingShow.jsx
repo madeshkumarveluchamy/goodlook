@@ -11,13 +11,13 @@ import uPVC_Sliding_Door_Images7 from '../../../assets/uPVC_Sliding_Door_Images 
 
 const SlidingShow = () => {
   const baseData = [
-     { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image:  uPVC_Sliding_Door_Images1},
-          { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: uPVC_Sliding_Door_Images2 },
-          { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Door_Images3 },
-          { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Door_Images4 },
-          { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Door_Images5 },
-          { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Door_Images6 },
-          { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Door_Images7 }
+          { id: 1, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image:  uPVC_Sliding_Door_Images1},
+          { id: 2, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image: uPVC_Sliding_Door_Images2 },
+          { id: 3, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image: uPVC_Sliding_Door_Images3 },
+          { id: 4, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image: uPVC_Sliding_Door_Images4 },
+          { id: 5, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image: uPVC_Sliding_Door_Images5 },
+          { id: 6, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image: uPVC_Sliding_Door_Images6 },
+          { id: 7, badge: "uPVC DOORS", title: "uPVC Sliding Doors", image: uPVC_Sliding_Door_Images7 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

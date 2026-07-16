@@ -22,10 +22,10 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Every sliding door we install is a system, not just a panel, <br/>precision-engineered in stages, from profile selection to the final glide test.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Sliding <br /> Doors?
               </h2>
             </div>
 
@@ -35,9 +35,10 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg1} alt="Energy Saving Technologies" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Smooth Multi-Track Glide Technology</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Effortless Everyday Motion
+ Precision-engineered rollers and multi-chambered profiles let your door slide open with a single finger's touch no jamming, no sagging, no noise, even after years of daily use.
               </p>
             </div>
           </div>
@@ -50,9 +51,10 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg2} alt="Excellent Sound Insulation" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Whisper-Quiet Living</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                 Peace, Sealed In
+ Reinforced gasket seals and tight-fit tracks lock out street noise and draughts, so your balcony or patio door keeps the outside world exactly where it belongs outside.
               </p>
             </div>
 
@@ -62,9 +64,10 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg3} alt="High Light Transmittance" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Floor-to-Ceiling Natural Light</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Bring the Outdoors In
+ Slim, high-strength profiles mean more glass and less frame flooding your living room or balcony with light while keeping the same thermal and weather performance intact.
               </p>
             </div>
 
@@ -74,9 +77,10 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg4} alt="Durability 25 years warranty" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Built for 25 Years, Guaranteed</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                A Door That Outlasts the Weather
+ Coimbatore's sun, dust, and monsoons don't stand a chance. Our sliding doors carry a 25-year structural warranty install once, live worry-free for decades.
               </p>
             </div>
           </div>
@@ -90,9 +94,10 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg6} alt="Eco-friendly materials" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-Engineered Profiles</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Sustainable by Design
+ Non-toxic, lead-free uPVC profiles that are fully recyclable, a sliding door that's as kind to your home as it is to the planet.
               </p>
             </div>
 
@@ -103,9 +108,10 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg7} alt="Aesthetic Versatility" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Every Space, Every Style</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                Designed to Disappear or Define
+ From slim-frame minimalist balconies to grand multi-panel living room openings, our sliding doors adapt to your architecture, sleek when you want subtlety, striking when you want a statement.
               </p>
             </div>
           </div>

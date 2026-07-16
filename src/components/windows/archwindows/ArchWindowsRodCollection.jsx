@@ -12,8 +12,9 @@ const ArchWindowsRodCollection = () => {
         <h2 className="archwindows-rod-main-title mb-2 stit">uPVC Arch Windows</h2>
     
         <p className="archwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+         Curves that complement your walls, strength that outlasts <br className="d-none d-md-block" /> the years. Explore uPVC arch
+windows engineered for a flawless fit and lasting protection in every room.
+
         </p>
 
         <div className="archwindows-rod-display-window">
@@ -31,7 +32,7 @@ const ArchWindowsRodCollection = () => {
                     <span className="archwindows-bullet-diamond-small">❖</span> uPVC Arch Windows
                   </h4>
                   <p className="archwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    No drilling, no hassle just smooth, secure installation. Rugged enough for any space, refined enough to disappear into the design.
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -58,15 +59,15 @@ const ArchWindowsRodCollection = () => {
             <div className="col-12  padding-manual col-md-4">
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Flexible opening design</span>
+                <span className="archwindows-feature-text">Graceful arch profiles that follow your window's natural curve</span>
               </div>
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Excellent soundproofing</span>
+                <span className="archwindows-feature-text">Whisper-quiet soundproofing for calmer, quieter rooms</span>
               </div>
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">High thermal insulation</span>
+                <span className="archwindows-feature-text">Superior thermal insulation that holds comfort in, all year round</span>
               </div>
             </div>
 
@@ -74,15 +75,15 @@ const ArchWindowsRodCollection = () => {
             <div className="col-12  padding-manual col-md-4">
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Supports large glass panels</span>
+                <span className="archwindows-feature-text">Built to support large, uninterrupted glass panels</span>
               </div>
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="archwindows-feature-text">Tamper-resistant hardware for extra peace of mind</span>
               </div>
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Effective weather protection</span>
+                <span className="archwindows-feature-text">All-weather sealing that locks out rain, dust, and wind</span>
               </div>
             </div>
 
@@ -90,15 +91,15 @@ const ArchWindowsRodCollection = () => {
             <div className="col-12  padding-manual col-md-4">
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Supports large glass panels</span>
+                <span className="archwindows-feature-text">Effortless no-drill installation, done in a fraction of the time</span>
               </div>
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="archwindows-feature-text">Low-maintenance frames — no painting, no upkeep, ever</span>
               </div>
               <div className="archwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="archwindows-exact-tick-icon" />
-                <span className="archwindows-feature-text">Effective weather protection</span>
+                <span className="archwindows-feature-text">Engineered for durability that holds strong season after season</span>
               </div>
             </div>
 

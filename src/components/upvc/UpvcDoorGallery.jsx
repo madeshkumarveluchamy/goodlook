@@ -25,7 +25,7 @@ const UpvcDoorsGallery = () => {
             UPVC Windows & Doors
           </h2>
           <p className="doors-subdesc hanken-grotesk-font fw-light text-muted mx-auto sdes">
-            Baydee uPVC profiles company is a large-scale comprehensive enterprise integrating uPVC profile research and development, production and sales services, high-end window and door system production and installation, and window and door value chain service system output.
+            Engineered for Coimbatore's climate and built to last decades, our uPVC windows and doors combine German-inspired profile technology with precision manufacturing. As a trusted Baydee partner, we bring you weatherproof, energy-efficient, and low-maintenance window systems that keep your home cooler, quieter, and more secure, without ever needing a repaint. 
           </p>
         </div>
 

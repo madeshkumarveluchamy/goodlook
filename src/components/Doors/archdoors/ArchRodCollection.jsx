@@ -12,8 +12,7 @@ const ArchRodCollection = () => {
         <h2 className="arch-rod-main-title mb-2 stit">uPVC Arch Doors</h2>
     
         <p className="arch-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Curves that catch the eye, strength that holds the line explore<br className="d-none d-md-block" /> arch doors engineered for the perfect fit and lasting protection, room after room.
         </p>
 
         <div className="arch-rod-display-window">
@@ -31,7 +30,7 @@ const ArchRodCollection = () => {
                     <span className="arch-bullet-diamond-small">❖</span> uPVC Arch Doors
                   </h4>
                   <p className="arch-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    No drilling, no fuss just a door that fits in anywhere and holds its own everywhere. Sturdy where it counts, quiet on the eye.  
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -90,15 +89,15 @@ const ArchRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="arch-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="arch-exact-tick-icon" />
-                <span className="arch-feature-text">Supports large glass panels</span>
+                <span className="arch-feature-text">Drill-free installation</span>
               </div>
               <div className="arch-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="arch-exact-tick-icon" />
-                <span className="arch-feature-text">Tamper-resistant hardware</span>
+                <span className="arch-feature-text">Fits virtually anywhere</span>
               </div>
               <div className="arch-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="arch-exact-tick-icon" />
-                <span className="arch-feature-text">Effective weather protection</span>
+                <span className="arch-feature-text">Robust yet unobtrusive</span>
               </div>
             </div>
 

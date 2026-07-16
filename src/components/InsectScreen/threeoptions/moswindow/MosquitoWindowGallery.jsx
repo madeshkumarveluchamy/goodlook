@@ -27,8 +27,7 @@ const MosquitoWindowGallery = () => {
         <div className="mos-window-header text-center">
           <h2 className="mos-window-title stit">Mosquito Net for Window</h2>
           <p className="mos-window-subtitle hanken-grotesk-font mx-auto sdes">
-            Explore our complete range of premium window, specifically engineered <br className="d-none d-md-block" /> 
-            to provide the perfect fit and lasting protection for every room
+           Engineered with precision-fit aluminium frames and fine gauge mesh, our window nets keep every mosquito and insect out, without ever standing between you and the view. Slimline profiles, silent glide tracks, and a finish built to disappear into your window, not distract from it.
           </p>
         </div>
 

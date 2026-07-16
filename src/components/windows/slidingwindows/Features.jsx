@@ -22,10 +22,10 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Every sliding window we install goes through<br/> precision engineering, from profile selection to final glide-test.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Sliding <br />Windows?
               </h2>
             </div>
 
@@ -37,7 +37,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Multi-chambered uPVC profiles form a built-in thermal barrier, keeping interiors cool in summer and warm in winter, while your energy bills stay low all year.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Dense uPVC profiles combined with sealed sliding tracks cut outside noise dramatically, enjoy peaceful interiors even on the busiest Coimbatore streets.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Slim sightlines and large glass panels let natural light flood in, brightening your home without compromising on thermal performance.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                Smooth-gliding, corrosion-free tracks built to perform for decades. Backed by a 25-year structural warranty, so your windows outlast the trends.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Our uPVC profiles are lead-free, recyclable, and non-toxic, a healthier choice for your home and a lighter footprint on the planet.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                Sleek 2-track, 3-track, and multi-panel sliding configurations available in a range of finishes fits seamlessly whether your home is modern minimal or classic.
               </p>
             </div>
           </div>

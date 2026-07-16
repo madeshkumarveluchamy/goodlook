@@ -27,7 +27,11 @@ const StoryPhilosophy = () => {
             <div className="philosophy-block-segment d-flex flex-column flex-sm-row align-items-center align-items-lg-start gap-3 gap-md-4 mb-4 pb-2">
               <h4 className="segment-indicator-title m-0 inter-font text-uppercase manrope-font fw-semibold ssub ">Our Vision</h4>
               <p className="segment-desc-para m-0 hanken-grotesk-font fw-light  hanken-grutsek-font sdes">
-                We design residential and commercial interiors that balance aesthetics, function, and longevity creating spaces that feel intentional, refined, and deeply connected to how people live and work.
+                We envision every home and workplace as a space that breathes easy bright, secure, and free
+from the everyday intrusions that compromise comfort. Our UPVC and insect-protection
+solutions are built to disappear into your space while quietly doing the work of keeping it safer,
+cooler, and cleaner for years to come.
+
               </p>
             </div>
 
@@ -35,7 +39,11 @@ const StoryPhilosophy = () => {
             <div className="philosophy-block-segment d-flex flex-column flex-sm-row align-items-center align-items-lg-start gap-3 gap-md-4">
               <h4 className="segment-indicator-title inter-font text-uppercase manrope-font fw-semibold ssub">Our Mission</h4>
               <p className="segment-desc-para hanken-grotesk-font fw-light hanken-grutsek-font sdes">
-                We design residential and commercial interiors that balance aesthetics, function, and longevity creating spaces that feel intentional, refined, and deeply connected to how people live and work.
+                We engineer UPVC windows, doors, and precision-fitted mosquito screens that bring together
+German-grade technology, uncompromising craftsmanship, and 21+ years of hands-on
+expertise, so every installation feels less like a product and more like a promise: comfort,
+protection, and peace of mind that lasts.
+
               </p>
             </div>
 

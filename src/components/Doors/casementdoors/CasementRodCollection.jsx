@@ -13,8 +13,7 @@ const CasementRodCollection = () => {
     
         
         <p className="casement-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Discover a door range built for how you actually live, engineered for<br className="d-none d-md-block" />  a flawless fit, everyday ease, and protection that holds up room after room. 
         </p>
 
       
@@ -31,10 +30,10 @@ const CasementRodCollection = () => {
               <div className="row align-items-center text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
                   <h4 className="casement-overlay-rod-title mb-2 text-center text-md-start sdes">
-                    <span className="casement-bullet-diamond-small">❖</span> uPVC Casement & Designer
+                    <span className="casement-bullet-diamond-small">❖</span> uPVC Casement Doors
                   </h4>
                   <p className="casement-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    Effortless to operate, simple to install, often without any drilling and versatile enough to suit any space. Sturdy in build, seamless in look. 
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -64,15 +63,15 @@ const CasementRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Flexible opening design</span>
+                <span className="casement-feature-text">Smooth, flexible opening mechanism </span>
               </div>
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Excellent soundproofing</span>
+                <span className="casement-feature-text">Whisper-quiet soundproofing</span>
               </div>
               <div className="casement-feature-item-box d-flex align-items-center gap-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">High thermal insulation</span>
+                <span className="casement-feature-text">Superior thermal insulation </span>
               </div>
             </div>
 
@@ -80,15 +79,15 @@ const CasementRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Supports large glass panels</span>
+                <span className="casement-feature-text">Engineered for oversized glass panels </span>
               </div>
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Tamper-resistant hardware</span>
+                <span className="casement-feature-text">Tamper-resistant, secure hardware</span>
               </div>
               <div className="casement-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Effective weather protection</span>
+                <span className="casement-feature-text">All-season weather resistance </span>
               </div>
             </div>
 
@@ -96,15 +95,15 @@ const CasementRodCollection = () => {
             <div className="col-12 padding-manual col-md-4 ">
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Supports large glass panels</span>
+                <span className="casement-feature-text">Sleek, low-maintenance finish</span>
               </div>
               <div className="casement-feature-item-box d-flex align-items-center gap-3 mb-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Tamper-resistant hardware</span>
+                <span className="casement-feature-text">Built to resist warping & discolouration</span>
               </div>
               <div className="casement-feature-item-box d-flex align-items-center gap-3 ">
                 <FaCheckCircle className="casement-exact-tick-icon" />
-                <span className="casement-feature-text">Effective weather protection</span>
+                <span className="casement-feature-text">Long-lasting, corrosion-free performance</span>
               </div>
             </div>
 

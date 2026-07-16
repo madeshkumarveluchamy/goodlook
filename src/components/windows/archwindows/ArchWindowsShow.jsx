@@ -10,12 +10,12 @@ import uPVC_Arch_Windows_Image6 from '../../../assets/uPVC_Arch_Windows_Image (6
 
 const ArchWindowsShow = () => {
   const baseData = [
-     { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: uPVC_Arch_Windows_Image1 },
-     { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod",  image: uPVC_Arch_Windows_Image2 },
-     { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image3 },
-     { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image4 },
-     { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image5 },
-     { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Arch_Windows_Image6 }
+     { id: 1, badge: "uPVC Windows", title: "uPVC Arch Windows", image: uPVC_Arch_Windows_Image1 },
+     { id: 2, badge: "uPVC Windows", title: "uPVC Arch Windows",  image: uPVC_Arch_Windows_Image2 },
+     { id: 3, badge: "uPVC Windows", title: "uPVC Arch Windows", image: uPVC_Arch_Windows_Image3 },
+     { id: 4, badge: "uPVC Windows", title: "uPVC Arch Windows", image: uPVC_Arch_Windows_Image4 },
+     { id: 5, badge: "uPVC Windows", title: "uPVC Arch Windows", image: uPVC_Arch_Windows_Image5 },
+     { id: 6, badge: "uPVC Windows", title: "uPVC Arch Windows", image: uPVC_Arch_Windows_Image6 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

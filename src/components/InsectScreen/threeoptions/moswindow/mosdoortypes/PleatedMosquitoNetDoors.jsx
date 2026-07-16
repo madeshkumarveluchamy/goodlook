@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
 import { FaCheckCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import storyhero from "../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors_banner (3).webp"
 import img1 from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (4).webp'; 
 import img2 from '../../../../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors_banner (1).webp';
@@ -25,8 +26,9 @@ const PleatedMosquitoNetDoors = () => {
           <div className="musquitotypes-gallery-header text-center">
             <h2 className="musquitotypes-gallery-title font-serif stit">Pleated Mosquito Net Doors</h2>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Explore our complete range of premium Pleated Mosquito Net Doors, specifically<br className="d-none d-md-block" /> 
-              engineered to provide the perfect fit and lasting protection for every room
+              Engineered for a flawless fit, built to outlast the everyday, explore our full range of premium
+pleated mosquito net doors, designed to protect every doorway without ever getting in your way.
+
             </p>
           </div>
 
@@ -135,7 +137,9 @@ const PleatedMosquitoNetDoors = () => {
                 Modern Pleated <br className="d-none d-md-block" />Door Screens
               </h2>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Whether you're looking to enjoy a breeze, gain clarity through unobstructed views, or simply find a few moments of calm in your busy day, these precision-engineered pleated screens will inspire and motivate.
+               No bulky frames, no compromise just a clean fold-away screen that disappears when you don't
+need it and glides shut in seconds when you do. Let in the breeze, keep out the bugs, and enjoy
+an unobstructed view of the world outside, exactly as it should be.
               </p>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
                 Let our pleated mosquito nets be the companion that helps you navigate life's daily rhythms with grace and comfort.
@@ -161,19 +165,19 @@ const PleatedMosquitoNetDoors = () => {
               <ul className="musquitotypes-features-list list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Skilled in working with UPVC door frames</span>
+                  <span className="hanken-grotesk-font sdes">Specialists in fitting pleated and casement screens to UPVC door frames</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Experts in solutions for Casement, Pleated doors</span>
+                  <span className="hanken-grotesk-font sdes"> Certified installers trained on-site, not on guesswork</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">On-site replacement of pleated mesh</span>
+                  <span className="hanken-grotesk-font sdes">Quick mesh replacement without replacing the whole unit</span>
                 </li>
                 <li className="d-flex align-items-start gap-3">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Repair or replacement of cords damaged due to misuse</span>
+                  <span className="hanken-grotesk-font sdes">Cord and track repairs for wear-and-tear, handled fast</span>
                 </li>
               </ul>
             </div>
@@ -184,7 +188,41 @@ const PleatedMosquitoNetDoors = () => {
       </div>
     </section>
 
-    <ExperienceAura />
+   <section className="experience-aura-section py-5">
+         <div className="container py-5 text-center">
+           <div className="row justify-content-center">
+             <div className="col-12 col-md-10 col-lg-8">
+               
+               {/* --- MAIN DISPLAY HEADING --- */}
+               <h2 className="aura-main-heading mb-3">
+                 Experience the Aura in person.
+               </h2>
+               
+               {/* --- MUTED SUBTEXT --- */}
+               <p className="aura-subtext manrope-font mb-4 pb-2">
+                 Step into a GLHD showroom and feel what 21 years of precision engineering brings to your
+doorway.
+
+   
+               </p>
+               
+               {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
+               <Link to="/contact-us" className='text-decoration-none'></Link>
+               <div className="d-flex justify-content-center">
+                 <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
+                   <span className="manrope-font aura-btn-text">Get In Touch</span>
+                   <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                     </svg>
+                   </span>
+                 </button>
+               </div>
+   
+             </div>
+           </div>
+         </div>
+       </section>
     </>
   );
 };

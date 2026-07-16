@@ -37,7 +37,7 @@ const UpvcFeatures = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start manrope-font sdes">Energy Saving Technologies</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start hanken-grotesk-font smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                 Multi-chambered profiles create an airtight thermal barrier that locks in comfort through every season, keeping interiors cool in summer, warm in winter, and your energy bills consistently lower.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const UpvcFeatures = () => {
               </div> 
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start manrope-font sdes">Excellent Sound Insulation</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start hanken-grotesk-font smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                 Precision sealed multi-chamber design and reinforced glazing cut outside noise dramatically, turning even the busiest street-facing rooms into calm, quiet spaces.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const UpvcFeatures = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start manrope-font smin">High Light Transmittance</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start hanken-grotesk-font sdes">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                High clarity glazing lets natural daylight flood in while filtering out excess heat and harmful UV bright, airy interiors without compromising on thermal performance.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ const UpvcFeatures = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start manrope-font sdes">Durability 25 years warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start hanken-grotesk-font smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                 Engineered to resist warping, fading, and weathering, our uPVC systems come backed by a 25 year structural warranty built for decades, not just seasons.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ const UpvcFeatures = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start manrope-font sdes">Eco-friendly materials</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start hanken-grotesk-font  smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Crafted from non-toxic, fully recyclable uPVC profiles, our systems reduce environmental impact without ever compromising on strength or finish better for your home, better for the planet.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ const UpvcFeatures = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start manrope-font sdes">Aesthetic Versatility</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start hanken-grotesk-font smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                 From sleek modern minimalism to timeless classic luxury, our wide range of finishes, colours, and configurations adapts effortlessly to any architectural vision.
               </p>
             </div>
           </div>

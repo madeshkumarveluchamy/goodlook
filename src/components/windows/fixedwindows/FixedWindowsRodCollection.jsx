@@ -12,8 +12,7 @@ const FixedWindowsRodCollection = () => {
         <h2 className="fixedwindows-rod-main-title mb-2 stit">uPVC Fixed Windows</h2>
     
         <p className="fixedwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Precision-engineered glass panels that seal in comfort and<br className="d-none d-md-block" />  seal out the noise, heat, and dust, built to hold their shape and finish for years.
         </p>
 
         <div className="fixedwindows-rod-display-window">
@@ -31,7 +30,7 @@ const FixedWindowsRodCollection = () => {
                     <span className="fixedwindows-bullet-diamond-small">❖</span> uPVC Fixed Windows
                   </h4>
                   <p className="fixedwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    No moving parts, no maintenance headaches just a clean, solid pane that locks in comfort from day one. 
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -58,15 +57,15 @@ const FixedWindowsRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Flexible opening design</span>
+                <span className="fixedwindows-feature-text">Zero-maintenance, dust and weather-sealed design</span>
               </div>
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Excellent soundproofing</span>
+                <span className="fixedwindows-feature-text">EInstalls cleanly with minimal drilling or structural disruption</span>
               </div>
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">High thermal insulation</span>
+                <span className="fixedwindows-feature-text">Installs cleanly with minimal drilling or structural disruption</span>
               </div>
             </div>
 
@@ -74,15 +73,15 @@ const FixedWindowsRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Supports large glass panels</span>
+                <span className="fixedwindows-feature-text">Superior soundproofing for peaceful, quiet interiors </span>
               </div>
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="fixedwindows-feature-text">Advanced thermal insulation to keep rooms cool in summer, warm in winter</span>
               </div>
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Effective weather protection</span>
+                <span className="fixedwindows-feature-text">Engineered to hold large, heavy glass panels without warping</span>
               </div>
             </div>
 
@@ -90,15 +89,15 @@ const FixedWindowsRodCollection = () => {
             <div className="col-12 padding-manual col-md-4">
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Supports large glass panels</span>
+                <span className="fixedwindows-feature-text">Tamper-resistant locking hardware for added home security</span>
               </div>
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="fixedwindows-feature-text">100% weatherproof sealing against rain, dust, and wind </span>
               </div>
               <div className="fixedwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="fixedwindows-exact-tick-icon" />
-                <span className="fixedwindows-feature-text">Effective weather protection</span>
+                <span className="fixedwindows-feature-text">UV-resistant, fade-proof finish that lasts for decades</span>
               </div>
             </div>
 

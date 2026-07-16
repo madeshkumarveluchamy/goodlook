@@ -22,10 +22,10 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Every door we craft goes through precision engineering, careful fitting, and rigorous quality checks,<br/> because a door isn't just an entry point, it's your home's first line of defence.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Casement <br /> Doors?
               </h2>
             </div>
 
@@ -37,7 +37,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Our multi-chambered profile design locks in a powerful thermal seal at every hinge and edge. Keep interiors cool in summer and warm in winter, while your energy bills stay refreshingly low.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Layered glazing and airtight seals turn your doorway into a sound barrier, not a sound leak. Shut out traffic, construction, and street noise, and let your home stay peaceful.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Slim profiles and expansive glass panels mean your casement door doesn't just open your home, it opens up the view. Enjoy natural daylight streaming in without compromising on insulation.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                Engineered to outlast extreme heat, heavy rain, and daily wear. Our casement doors carry a 25-year structural warranty, so what you install today still stands strong decades from now.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Crafted from non-toxic, fully recyclable uPVC profiles — no harmful emissions, no compromise on strength. A door that protects your home and respects the planet in equal measure.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                From sleek modern frames to classic elegant finishes, our casement doors adapt to any architectural style, matching your home's character, not the other way around.
               </p>
             </div>
           </div>

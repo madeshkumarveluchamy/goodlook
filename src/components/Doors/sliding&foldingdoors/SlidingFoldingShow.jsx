@@ -13,15 +13,15 @@ import uPVC_Sliding_Folding_Door_Images9 from '../../../assets/uPVC_Sliding_Fold
 
 const SlidingFoldingShow = () => {
   const baseData = [
-        { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image:  uPVC_Sliding_Folding_Door_Images1},
-        { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: uPVC_Sliding_Folding_Door_Images2 },
-        { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images3 },
-        { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images4 },
-        { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images5 },
-        { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images6 },
-        { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images7 },
-        { id: 8, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images8 },
-        { id: 9, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Folding_Door_Images9 },
+        { id: 1, badge: "uPVC Doors", title: "uPVC Folding Doors", image:  uPVC_Sliding_Folding_Door_Images1},
+        { id: 2, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images2 },
+        { id: 3, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images3 },
+        { id: 4, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images4 },
+        { id: 5, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images5 },
+        { id: 6, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images6 },
+        { id: 7, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images7 },
+        { id: 8, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images8 },
+        { id: 9, badge: "uPVC Doors", title: "uPVC Folding Doors", image: uPVC_Sliding_Folding_Door_Images9 },
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

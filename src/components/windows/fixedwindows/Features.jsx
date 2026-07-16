@@ -22,10 +22,10 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Every fixed window we install is engineered for <br/>one purpose, an uninterrupted view with zero compromise on protection.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Fixed<br />Windows?
               </h2>
             </div>
 
@@ -35,9 +35,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg1} alt="Energy Saving Technologies" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Uninterrupted Views</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                No frames, no tracks, no obstructions just a clean sheet of glass that turns any wall into a view. Perfect for spaces where the outside is the whole point.
               </p>
             </div>
           </div>
@@ -50,9 +50,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg2} alt="Excellent Sound Insulation" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Maximum Light, Zero Draft</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Because there's nothing to open, the seal is airtight from day one. Enjoy sun-filled interiors without the heat gain, dust, or noise that comes through moving parts.
               </p>
             </div>
 
@@ -62,9 +62,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg3} alt="High Light Transmittance" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Silence, Sealed In</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                With no gaps or moving joints, fixed windows offer the tightest seal in our range, blocking outside noise more effectively than any window designed to open.
               </p>
             </div>
 
@@ -74,9 +74,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg4} alt="Durability 25 years warranty" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Built to Outlast — 25-Year Warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                Fewer moving parts mean fewer points of failure. Our fixed uPVC frames come with a 25-year structural warranty, built for decades of maintenance-free performance.
               </p>
             </div>
           </div>
@@ -90,9 +90,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg6} alt="Eco-friendly materials" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">. Eco-Friendly by Design</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Crafted from non-toxic, recyclable uPVC profiles, a smarter, greener choice for facades, feature walls, and statement openings.
               </p>
             </div>
 
@@ -103,9 +103,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg7} alt="Aesthetic Versatility" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Designed to Disappear</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                Slim sightlines and a clean finish let the window vanish into your architecture, ideal for modern facades, double-height walls, and picture-window features where the frame should never compete with the view.
               </p>
             </div>
           </div>

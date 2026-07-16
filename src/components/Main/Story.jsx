@@ -34,14 +34,14 @@ const OurStory = () => {
               <div className="story-divider mb-4"></div>
               
               <h2 className="story-title font-serif mb-4 text-center text-md-start stit">
-                Twenty-one years of <br className="d-none d-lg-block" /> architectural excellence.
+               Twenty-one years of<br className="d-none d-lg-block" /> keeping the outside beautiful and the inside undisturbed. 
               </h2>
               
               <p className="story-description fw-normal mb-4 hanken-grotesk-font text-center text-md-start sdes">
-                At Good Look Home, we believe a window is more than a boundary; 
-                it's a lens through which the world enters your private sanctuary. For 
-                over two decades, we've pioneered the fusion of high-performance 
-                UPVC engineering with timeless aesthetic sensibilities.
+                A home should let in the monsoon breeze, not the mosquitoes. The morning light, not the noise.
+Since 2003 (adjust year), Good Look Home has built its name on that exact balance of precision
+engineered UPVC frames and GHD certified insect screens that disappear into your
+architecture, so all you notice is the calm they create.
               </p>
               
               <Link to="/story" className="text-decoration-none"><button className="btn text-uppercase story-cta-btn fw-medium tracking-wider px-4 py-2.5 ">

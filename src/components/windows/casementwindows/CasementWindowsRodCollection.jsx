@@ -12,8 +12,8 @@ const CasementWindowsRodCollection = () => {
         <h2 className="casementwindows-rod-main-title mb-2 stit">uPVC Casement Windows</h2>
     
         <p className="casementwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Discover our premium range of uPVC casement windows precision-engineered<br className="d-none d-md-block" />  for a flawless fit, everyday durability, and lasting protection in every room of your home.
+
         </p>
 
         <div className="casementwindows-rod-display-window">
@@ -31,7 +31,7 @@ const CasementWindowsRodCollection = () => {
                     <span className="casementwindows-bullet-diamond-small">❖</span> uPVC Casement Windows
                   </h4>
                   <p className="casementwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    Effortless to install, built to last. No drilling required, no fuss on upkeep just a robust, unobtrusive window that works quietly wherever you place it.
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">

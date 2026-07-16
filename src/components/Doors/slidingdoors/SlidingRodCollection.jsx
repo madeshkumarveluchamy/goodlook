@@ -12,8 +12,8 @@ const SlidingrodCollection = () => {
         <h2 className="sliding-rod-main-title mb-2 stit">uPVC Sliding Doors</h2>
     
         <p className="sliding-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+         Discover our full range of premium sliding doors, <br className="d-none d-md-block" /> precision-engineered for a flawless fit and enduring protection in every space.
+
         </p>
 
         <div className="sliding-rod-display-window">
@@ -28,10 +28,10 @@ const SlidingrodCollection = () => {
               <div className="row align-items-center text-center text-md-start g-4 m-0">
                 <div className="col-12 col-md-8 text-center text-md-start p-0">
                   <h4 className="sliding-overlay-rod-title mb-2 text-center text-md-start sdes">
-                    <span className="sliding-bullet-diamond-small">❖</span> uPVC Sliding & Designer
+                    <span className="sliding-bullet-diamond-small">❖</span> uPVC Sliding Doors
                   </h4>
                   <p className="sliding-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    Effortless to handle and install no drilling required in most cases. Built tough yet unobtrusive, so it fits seamlessly into almost any space.
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -58,15 +58,15 @@ const SlidingrodCollection = () => {
             <div className="col-12 col-md-4  padding-manual">
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Flexible opening design</span>
+                <span className="sliding-feature-text">Smooth, flexible opening for everyday ease</span>
               </div>
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Excellent soundproofing</span>
+                <span className="sliding-feature-text">Superior soundproofing for quieter interiors</span>
               </div>
               <div className="sliding-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">High thermal insulation</span>
+                <span className="sliding-feature-text">Advanced thermal insulation, all year round</span>
               </div>
             </div>
 
@@ -74,15 +74,15 @@ const SlidingrodCollection = () => {
             <div className="col-12 col-md-4 padding-manual">
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Supports large glass panels</span>
+                <span className="sliding-feature-text">Engineered to support expansive glass panels</span>
               </div>
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Tamper-resistant hardware</span>
+                <span className="sliding-feature-text">Tamper-proof hardware for added security</span>
               </div>
               <div className="sliding-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Effective weather protection</span>
+                <span className="sliding-feature-text">Reliable protection against wind and rain</span>
               </div>
             </div>
 
@@ -90,15 +90,15 @@ const SlidingrodCollection = () => {
             <div className="col-12 col-md-4 padding-manual">
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Supports large glass panels</span>
+                <span className="sliding-feature-text">Built to handle oversized glass installations</span>
               </div>
               <div className="sliding-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Tamper-resistant hardware</span>
+                <span className="sliding-feature-text">Sturdy, tamper-resistant locking systems</span>
               </div>
               <div className="sliding-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="sliding-exact-tick-icon" />
-                <span className="sliding-feature-text">Effective weather protection</span>
+                <span className="sliding-feature-text">All-weather sealing that keeps the elements out </span>
               </div>
             </div>
 

@@ -12,8 +12,7 @@ const VentilatorWindowsRodCollection = () => {
         <h2 className="ventilatorwindows-rod-main-title mb-2 stit">uPVC Ventilator Windows</h2>
     
         <p className="ventilatorwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Compact spaces deserve serious engineering. Our ventilator window screens are precision-built <br className="d-none d-md-block" />to seal in comfort and seal out mosquitoes, dust, and noise without ever blocking the breeze.
         </p>
 
         <div className="ventilatorwindows-rod-display-window">
@@ -31,7 +30,7 @@ const VentilatorWindowsRodCollection = () => {
                     <span className="ventilatorwindows-bullet-diamond-small">❖</span> uPVC Ventilator Windows
                   </h4>
                   <p className="ventilatorwindows-overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    Experience superior airflow without compromising on security. Our robust, unobtrusive design features a drill-free installation that is quick, clean, and perfect for any room.
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">
@@ -58,15 +57,15 @@ const VentilatorWindowsRodCollection = () => {
             <div className="col-12  padding-manual col-md-4">
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Flexible opening design</span>
+                <span className="ventilatorwindows-feature-text">Drill-free installation for a clean, hassle-free fit</span>
               </div>
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Excellent soundproofing</span>
+                <span className="ventilatorwindows-feature-text"> Compact design that works in even the tightest openings</span>
               </div>
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">High thermal insulation</span>
+                <span className="ventilatorwindows-feature-text">Multi-directional opening for total airflow control</span>
               </div>
             </div>
 
@@ -74,15 +73,15 @@ const VentilatorWindowsRodCollection = () => {
             <div className="col-12  padding-manual col-md-4">
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Supports large glass panels</span>
+                <span className="ventilatorwindows-feature-text">Noise-dampening build for quieter, calmer interiors</span>
               </div>
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="ventilatorwindows-feature-text">High thermal insulation to keep rooms cool in summer, warm in winter</span>
               </div>
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Effective weather protection</span>
+                <span className="ventilatorwindows-feature-text"> Engineered to support large glass panels without sagging</span>
               </div>
             </div>
 
@@ -90,15 +89,15 @@ const VentilatorWindowsRodCollection = () => {
             <div className="col-12  padding-manual col-md-4">
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Supports large glass panels</span>
+                <span className="ventilatorwindows-feature-text">Tamper-resistant hardware for added home security</span>
               </div>
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3 mb-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Tamper-resistant hardware</span>
+                <span className="ventilatorwindows-feature-text">All-weather sealing against rain, dust, and wind</span>
               </div>
               <div className="ventilatorwindows-feature-item-box d-flex align-items-center gap-3">
                 <FaCheckCircle className="ventilatorwindows-exact-tick-icon" />
-                <span className="ventilatorwindows-feature-text">Effective weather protection</span>
+                <span className="ventilatorwindows-feature-text">Low-maintenance build made to outlast the years</span>
               </div>
             </div>
 

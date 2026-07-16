@@ -30,16 +30,16 @@ const UpvcAesthetics = () => {
             </span>
             
             <h2 className="aesthetics-main-title font-serif mb-4 text-center text-lg-start  hanken-grotesk-font stit">
-              Shaping Your World:<br/> High-Quality uPVC for an Elevated Lifestyle
+              Where Precision<br/> Meets Design 
             </h2>
 
             <div className="aesthetics-paragraphs-stack d-flex flex-column gap-3 mt-4 hanken-grotesk-font fw-light text-muted">
               <p className="aesthetics-body-text m-0  sdes">
-                Baydee UPVC profiles company is a large- scale comprehensive enterprise integrating UPVC profile research and development, product, and deals services, high- end window and door system product and installation, and window and door value chain service system affair.
+                Every window tells a story of strength, style, and smart engineering, powered by Baydee UPVC. Baydee isn't just a UPVC profile, it's the backbone of some of the finest windows and doors being built today. As a large scale, fully integrated enterprise, Baydee spans everything from profile research and development to manufacturing, installation, and complete window-and-door value chain solutions.
               </p>
               
             <p className="aesthetics-body-text m-0 sdes">
-                The company has a registered capital of 150 million Yuan, covers an area of 700,000 square measures, and has a plant of 200,000 square measures. It has further than 1,200 employees, and owns BAYDEE profiles, CROWN window and door system, TICHON window and door value chain service system and other well- known brands in the industry
+                Behind that scale sits real infrastructure: a registered capital of ₹1,650+ crore (150 million Yuan), a 700,000 sq. m. campus, and a 200,000 sq. m. manufacturing facility powered by a team of over 1,200 professionals. This is the strength that stands behind three of the industry's most trusted names: BAYDEE profiles, the CROWN window and door system, and the TICHON window and door value chain service.
               </p>
             </div>
 

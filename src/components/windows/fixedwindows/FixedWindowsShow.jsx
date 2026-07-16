@@ -11,13 +11,13 @@ import uPVC_Fixed_Window_Images7 from '../../../assets/uPVC_Fixed_Window_Images 
 
 const FixedWindowsShow = () => {
   const baseData = [
-    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: uPVC_Fixed_Window_Images1 },
-    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod",  image: uPVC_Fixed_Window_Images2 },
-    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images3 },
-    { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images4 },
-    { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images5 },
-    { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images6 },
-    { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Fixed_Window_Images7 }
+    { id: 1, badge: "uPVC Windows", title: "uPVC Fixed Windows", image: uPVC_Fixed_Window_Images1 },
+    { id: 2, badge: "uPVC Windows", title: "uPVC Fixed Windows",  image: uPVC_Fixed_Window_Images2 },
+    { id: 3, badge: "uPVC Windows", title: "uPVC Fixed Windows", image: uPVC_Fixed_Window_Images3 },
+    { id: 4, badge: "uPVC Windows", title: "uPVC Fixed Windows", image: uPVC_Fixed_Window_Images4 },
+    { id: 5, badge: "uPVC Windows", title: "uPVC Fixed Windows", image: uPVC_Fixed_Window_Images5 },
+    { id: 6, badge: "uPVC Windows", title: "uPVC Fixed Windows", image: uPVC_Fixed_Window_Images6 },
+    { id: 7, badge: "uPVC Windows", title: "uPVC Fixed Windows", image: uPVC_Fixed_Window_Images7 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

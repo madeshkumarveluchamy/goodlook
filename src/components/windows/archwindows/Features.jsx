@@ -22,10 +22,11 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Every curve is engineered before it's beautiful.
+ From profile bending to<br/> final glazing, our arch windows go through precise multi-stage fabrication to hold their shape and strength for decades.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Arch <br />Windows?
               </h2>
             </div>
 
@@ -35,9 +36,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg1} alt="Energy Saving Technologies" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Thermal Precision, Curved to Perfection</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Multi-chambered profiles wrap seamlessly around every curve, forming an unbroken thermal barrier. Enjoy consistent indoor comfort and lower energy bills without compromising the arch's clean silhouette.
               </p>
             </div>
           </div>
@@ -50,9 +51,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg2} alt="Excellent Sound Insulation" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Silence, Shaped Like Art</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                The same acoustic engineering behind our straight-line windows holds true through every curve. Street noise stays outside; the calm of your home stays exactly where it belongs.
               </p>
             </div>
 
@@ -62,9 +63,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg3} alt="High Light Transmittance" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Light That Follows the Curve</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Arch windows are born to bring in light and ours are built to maximise it. High-transmittance glazing floods interiors with natural brightness while filtering harsh heat, so every room feels open, warm, and alive.
               </p>
             </div>
 
@@ -74,9 +75,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg4} alt="Durability 25 years warranty" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">25 Years, Without Losing Its Shape</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                Arches are notoriously hard to get right and even harder to keep right. Our reinforced uPVC profiles are backed by a 25-year structural warranty, so the curve you install today looks just as sharp two decades from now.
               </p>
             </div>
           </div>
@@ -90,9 +91,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg6} alt="Eco-friendly materials" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Beautiful Inside and Out, Responsibly</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Crafted from non-toxic, sustainable uPVC, because a design statement shouldn't cost the planet. Elegant architecture and eco-conscious engineering, in one frame.
               </p>
             </div>
 
@@ -103,9 +104,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg7} alt="Aesthetic Versatility" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes"> A Signature Feature, Fully Customizable</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                From soft Roman curves to full semi-circular arches, in a range of finishes and tones, our arch windows adapt to any facade, whether it's a heritage bungalow or a modern villa entrance.
               </p>
             </div>
           </div>

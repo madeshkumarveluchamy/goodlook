@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/MusquitoTypes.css'; 
+import '../css/MusquitoTypes.css';
+import { Link } from 'react-router-dom'; 
 import { FaCheckCircle } from 'react-icons/fa';
 import storyhero from "../../../../../assets/folding_security_mesh_windows/folding_security_mesh_windows_banner(4).webp"
 import img1 from '../../../../../assets/folding_security_mesh_windows/folding_security_mesh_windows (3).webp'; 
@@ -25,8 +26,10 @@ const FixedFrameNetWindow = () => {
           <div className="musquitotypes-gallery-header text-center">
             <h2 className="musquitotypes-gallery-title font-serif stit">Foldable Security Mesh Window</h2>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Explore our complete range of premium Fixed Frame Net Window, specifically<br className="d-none d-md-block" /> 
-              engineered to provide the perfect fit and lasting protection for every room
+              Engineered for a perfect fit on every window, our foldable mesh screens fold flat and open<br className="d-none d-md-block" /> 
+smooth built to keep insects out and fresh air flowing, without ever getting in the way of your
+view.
+
             </p>
           </div>
 
@@ -135,10 +138,11 @@ const FixedFrameNetWindow = () => {
                 Foldable Security  <br className="d-none d-md-block" />Mesh Window
               </h2>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Whether you're looking to enjoy a breeze, gain clarity through unobstructed views, or simply find a few moments of calm in your busy day, these precision-engineered sliding screens will inspire and motivate
+       Fresh air, uninterrupted views, zero mosquitoes. Our precision-folding mesh screens glide open
+in seconds and tuck away just as easily quiet, durable, and made to handle daily use for years
               </p>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Let our sliding mosquito nets be the companion that helps you navigate life's daily rhythms with grace and comfort
+                Twenty-one years of hands-on expertise, right at your door from first measurement to final fit.
               </p>
             </div>
 
@@ -147,7 +151,7 @@ const FixedFrameNetWindow = () => {
               <img src={rightImgCenter} alt="Center Sliding Mosquito Net" className="musquitotypes-right-img" />
               <div className="musquitotypes-gallery-overlay-box">
                 <span className="musquitotypes-gold-badge fw-bolder manrope-font">MOSQUITO NET FOR WINDOW</span>
-                <h4 className="musquitotypes-hover-title font-serif">Experienced Service Team</h4>
+                <h4 className="musquitotypes-hover-title font-serif">Foldable Security Mesh Window</h4>
               </div>
             </div>
 
@@ -161,19 +165,19 @@ const FixedFrameNetWindow = () => {
               <ul className="musquitotypes-features-list list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Skilled in working with UPVC door frames</span>
+                  <span className="hanken-grotesk-font sdes">Specialists in UPVC frame integration</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Experts in solutions for Casement, Sliding doors</span>
+                  <span className="hanken-grotesk-font sdes">Trained on Casement and Sliding door systems</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">On-site replacement of pleated mesh</span>
+                  <span className="hanken-grotesk-font sdes">On-site pleated mesh replacement</span>
                 </li>
                 <li className="d-flex align-items-start gap-3">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Repair or replacement of cords damaged due to misuse</span>
+                  <span className="hanken-grotesk-font sdes">Cord repair for wear-and-tear or misuse</span>
                 </li>
               </ul>
             </div>
@@ -184,7 +188,42 @@ const FixedFrameNetWindow = () => {
       </div>
     </section>
 
-    <ExperienceAura />
+
+  {/*----------Experience aura----------------------*/}
+     <section className="experience-aura-section py-5">
+      <div className="container py-5 text-center">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10 col-lg-8">
+            
+            {/* --- MAIN DISPLAY HEADING --- */}
+            <h2 className="aura-main-heading mb-3">
+              Experience the Aura in person.
+            </h2>
+            
+            {/* --- MUTED SUBTEXT --- */}
+            <p className="aura-subtext manrope-font mb-4 pb-2">
+              Two decades of craftsmanship, one visit away. See why Coimbatore homes trust GLHD for
+lasting comfort and protection.
+
+            </p>
+            
+            {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
+            <Link to="/contact-us" className='text-decoration-none'></Link>
+            <div className="d-flex justify-content-center">
+              <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
+                <span className="manrope-font aura-btn-text">Get In Touch</span>
+                <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 };

@@ -12,14 +12,14 @@ import uPVC_Sliding_Windows_Images8 from '../../../assets/uPVC_Sliding_Windows_I
 
 const SlidingWindowsShow = () => {
   const baseData = [
-    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image: uPVC_Sliding_Windows_Images1 },
-    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod",  image: uPVC_Sliding_Windows_Images2 },
-    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Windows_Images3 },
-    { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Windows_Images4 },
-    { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Windows_Images5 },
-    { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Windows_Images6 },
-    { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Windows_Images7 },
-    { id: 8, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Sliding_Windows_Images8 },
+    { id: 1, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images1 },
+    { id: 2, badge: "uPVC Windows", title: "uPVC Sliding Windows",  image: uPVC_Sliding_Windows_Images2 },
+    { id: 3, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images3 },
+    { id: 4, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images4 },
+    { id: 5, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images5 },
+    { id: 6, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images6 },
+    { id: 7, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images7 },
+    { id: 8, badge: "uPVC Windows", title: "uPVC Sliding Windows", image: uPVC_Sliding_Windows_Images8 },
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

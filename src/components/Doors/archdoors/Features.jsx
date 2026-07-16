@@ -22,10 +22,11 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Precision curves, seamless strength.
+ Every arch door is shaped, reinforced, and fitted <br/> with the same care we bring to every uPVC system, engineered in stages, perfected in detail.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Arch<br />Doors?
               </h2>
             </div>
 
@@ -37,7 +38,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Multi-chambered profiles trace the curve without losing thermal performance, so the elegant shape never compromises the seal. Stay comfortable indoors while cutting energy costs, arch and all.
               </p>
             </div>
           </div>
@@ -52,7 +53,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Curved doesn't mean compromised. Our arch frames hold the same dense, multi-layered structure as our straight-line systems, keeping outside noise exactly that outside.
               </p>
             </div>
 
@@ -64,7 +65,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                The arch shape is built to frame light, not block it. High-transmittance glazing lets the curve draw in natural brightness, turning your entryway into a feature, not just a function.
               </p>
             </div>
 
@@ -76,7 +77,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                Curved profiles demand tighter engineering, and ours are built for it. A 25-year structural warranty means the arch that welcomes you today still holds its shape decades from now.
               </p>
             </div>
           </div>
@@ -92,7 +93,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Non-toxic, sustainable uPVC shaped into an arch without losing an ounce of its eco-conscious engineering. Beauty and responsibility, in the same curve.
               </p>
             </div>
 
@@ -105,7 +106,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                From grand colonial arches to soft modern curves, our systems adapt to the architectural language of your home, a single design element that instantly elevates the entrance.
               </p>
             </div>
           </div>

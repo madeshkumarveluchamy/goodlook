@@ -11,26 +11,26 @@ const UncompromisingQuality = () => {
     {
       id: 1,
       image: quality1,
-      title: 'Master The Art Of Brightening Your Interiors',
+      title: 'Light Without Compromise ',
       author: 'by Team Kriya',
       date: 'on Jul 18, 2026',
-      desc: 'Discover how strategic window placement & high transmittance glass can transform your living space. We explore design tips to maximize natural sunlight.'
+      desc: 'Our UPVC windows are engineered with high-transmittance glazing that floods your home with natural light without letting in heat, noise, or a single mosquito.'
     },
     {
       id: 2,
       image: quality2,
-      title: 'Efficient Elegance For The Future Of Comfort',
+      title: "Protection That Doesn't Show,",
       author: 'by Team Kriya',
       date: 'on Jul 18, 2026',
-      desc: 'Discover how strategic window placement & high transmittance glass can transform your living space. We explore design tips to maximize natural sunlight.'
+      desc: "GHD engineered insect screens fit so precisely you'll forget they're there until you notice the bug free evenings and the breeze coming through anyway."
     },
     {
       id: 3,
       image: quality3,
-      title: 'Investing In Quality For A Lasting Home',
+      title: 'Built For The Next 20 Years',
       author: 'by Team Kriya',
       date: 'on Jul 18, 2026',
-      desc: 'Discover how strategic window placement & high transmittance glass can transform your living space. We explore design tips to maximize natural sunlight.'
+      desc: "With Baydee UPVC profiles and two decades of installation expertise, every window and door we fit is made to outlast Coimbatore's heat, dust, and monsoons alike."
     }
   ];
 

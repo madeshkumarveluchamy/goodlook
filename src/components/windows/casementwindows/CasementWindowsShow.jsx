@@ -15,16 +15,16 @@ import uPVC_Casement_Windows_Image10 from '../../../assets/uPVC_Casement_Windows
 
 const CasementWindowsShow = () => {
   const baseData = [
-    { id: 1, badge: "GOOD LOOK HOME DECORS", title: "Golden Rod", image:  uPVC_Casement_Windows_Image1},
-    { id: 2, badge: "GOOD LOOK HOME DECORS", title: "Black Rod", image: uPVC_Casement_Windows_Image2 },
-    { id: 3, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image3 },
-    { id: 4, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image4 },
-    { id: 5, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image5 },
-    { id: 6, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image6 },
-    { id: 7, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image7 },
-    { id: 8, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image8 },
-    { id: 9, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image9 },
-    { id: 10, badge: "GOOD LOOK HOME DECORS", title: "Design Rod", image: uPVC_Casement_Windows_Image10 }
+    { id: 1, badge: "uPVC Windows", title: "uPVC Casement Windows", image:  uPVC_Casement_Windows_Image1},
+    { id: 2, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image2 },
+    { id: 3, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image3 },
+    { id: 4, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image4 },
+    { id: 5, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image5 },
+    { id: 6, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image6 },
+    { id: 7, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image7 },
+    { id: 8, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image8 },
+    { id: 9, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image9 },
+   { id: 10, badge: "uPVC Windows", title: "uPVC Casement Windows", image: uPVC_Casement_Windows_Image10 }
   ];
 
   const rodData = [...baseData, ...baseData, ...baseData, ...baseData, ...baseData];

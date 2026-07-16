@@ -22,10 +22,10 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Precision at <br/>every turn, from profile to final fit.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Casement <br />Windows?
               </h2>
             </div>
 
@@ -37,7 +37,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                A multi-chambered profile design that locks in comfort. Casement windows seal edge-to-edge when closed, cutting heat transfer and keeping your energy bills in check through every season.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Turn down the noise, not the view. Our casement systems use tight compression seals and multi-point locking to shut out street sound, so your home stays calm no matter what's happening outside.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Slim sightlines, maximum glass. Casement windows are built to open fully and let in uninterrupted daylight, giving every room a brighter, more open feel without compromising on insulation.
               </p>
             </div>
 
@@ -76,7 +76,9 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                
+Engineered to outlast the weather. Backed by a 25-year structural warranty, our casement windows are built for decades of smooth opening, sealing, and standing strong against sun, rain, and time.
+
               </p>
             </div>
           </div>
@@ -92,7 +94,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Fresh air, guilt-free. Our non-toxic, sustainable uPVC profiles are crafted for long-term ecological responsibility, better for your home, and for what's outside it.
               </p>
             </div>
 
@@ -105,7 +107,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                One window, endless possibilities. Available in a range of finishes and configurations, our casement windows adapt to any architectural style, from clean modern facades to timeless classic homes.
               </p>
             </div>
           </div>

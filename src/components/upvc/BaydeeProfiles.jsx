@@ -3,18 +3,23 @@ import './css/BaydeeProfiles.css';
 
 // --- IMPORT YOUR DESIGN IMAGES ---
 import baydeeHeaderLogo from '../../assets/baydee.webp'; 
-import upvcCollection1 from '../../assets/upvcCollection1.webp';
-import upvcCollection2 from '../../assets/upvcCollection2.webp';
-import upvcCollection3 from '../../assets/upvcCollection3.webp';
-import upvcCollection4 from '../../assets/upvcCollection4.webp';
-import upvcCollection5 from '../../assets/upvcCollection5.webp'; 
+import upvcCollection1 from '../../assets/upvcCollection (1).webp';
+import upvcCollection2 from '../../assets/upvcCollection (2).webp';
+import upvcCollection3 from '../../assets/upvcCollection (3).webp';
+import upvcCollection4 from '../../assets/upvcCollection (4).webp';
+import upvcCollection5 from '../../assets/upvcCollection (5).webp'; 
+import upvcCollection6 from '../../assets/upvcCollection (6).webp'; 
+import upvcCollection7 from '../../assets/upvcCollection (7).webp'; 
 
 const BaydeeProfiles = () => {
   const collectionsData = [
-    { title: "65 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection1 },
-    { title: "112 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection2 },
-    { title: "92 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection3 },
-    { title: "88 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection4 }
+    { title: "65 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection2 },
+    { title: "112 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection3 },
+    { title: "92 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection1 },
+    { title: "88 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection4 },
+    { title: "80 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection5 },
+    { title: "70 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection7 },
+    { title: "60 Series uPVC profile", tag: "uPVC BAYDEE", image: upvcCollection6 },
   ];
 
   return (
@@ -29,7 +34,7 @@ const BaydeeProfiles = () => {
               {/* PLAIN MINIMALIST TOP WORDING LABEL LINK (NO BOX/BACKGROUND SURFACE) */}
               <div >
               <p className="w-100 baydee-clean-top-label m-0 fw-semibold font-serief fw-normal pb-2 text-center text-md-start">
-                Begin Your Design Journey
+                Windows & Doors Built to Outlast the Weather 
               </p>
               </div>
               <div className="baydee-image-container rounded-3 overflow-hidden shadow-sm ">
@@ -45,7 +50,7 @@ const BaydeeProfiles = () => {
           {/* TOP LEFT PANEL: COMBINED LOGO IMAGE + HEADLINE */}
           <div className="col-12 col-lg-6 baydee-top-left text-center text-lg-start">
             <span className="baydee-auth-badge text-uppercase tracking-wider d-block mb-3 manrope-font fw-bold color-yellow ssub">
-              AUTHORISED DEALER FOR
+              AUTHORISED BAYDEE DEALER 
             </span>
             
             <div className="baydee-logo-graphics-holder mx-auto mx-lg-0 mb-4">
@@ -57,7 +62,7 @@ const BaydeeProfiles = () => {
             </div>
 
             <h2 className="baydee-branding-headline font-serif mb-0 text-center text-lg-start stit">
-              Quality You Can Trust: Bringing BAYDEE's Precision Engineering to Your Home
+              Genuine Baydee UPVC systems, expertly fitted, because your home deserves more than a quick fix.
             </h2>
           </div>
 
@@ -72,7 +77,7 @@ const BaydeeProfiles = () => {
             Baydee uPVC Profiles
           </h2>
           <p className="baydee-grid-subdesc hanken-grotesk-font fw-light text-muted mx-auto hanken-grotesk-font sdes">
-            Baydee uPVC profiles company is a large-scale comprehensive enterprise integrating uPVC profile research and development, production and sales services, high-end window and door system production and installation, and window and door value chain service system output.
+            Engineered for strength, built to last. Baydee brings world-class uPVC profile technology to every window and door we install, combining precision manufacturing with a complete design-to-installation experience, so your home gets performance and style that stands the test of time.
           </p>
         </div>
 

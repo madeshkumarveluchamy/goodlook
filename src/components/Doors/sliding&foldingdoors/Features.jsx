@@ -19,13 +19,14 @@ const Features = () => {
           <div className="features-layout-row row-type-top mb-5">
             <div className="feature-main-header-block text-center text-md-start">
               <span className="features-mini-badge text-uppercase tracking-widest d-block mb-2 inter-font text-center text-md-start manrope-font fw-bold ssub">
-                How We Do It
+             How We Craft It  
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                Every folding door we install is the result of precise engineering,<br/>
+ from panel alignment to weatherproof sealing, each stage is built for a flawless fold.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Folding <br />Doors?
               </h2>
             </div>
 
@@ -35,9 +36,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg1} alt="Energy Saving Technologies" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy-Efficient by Design</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Multi-chambered profiles form a continuous thermal seal across every panel, so even a fully foldable door keeps your interiors cool in summer and warm in winter, with the energy bills to prove it.
               </p>
             </div>
           </div>
@@ -50,9 +51,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg2} alt="Excellent Sound Insulation" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Whisper-Quiet Living</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Overlapping panel seals block outside noise without blocking the view. Fold it open for fresh air, close it for a quiet, insulated space, the choice is yours, instantly.
               </p>
             </div>
 
@@ -62,9 +63,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg3} alt="High Light Transmittance" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Walls of Natural Light</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Slim uPVC frames and expansive glass panels turn your folding door into a wall of light. Open it fully, and your living room becomes the patio; close it, and the view stays uninterrupted.
               </p>
             </div>
 
@@ -74,9 +75,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg4} alt="Durability 25 years warranty" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Built to Fold for 25 Years</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                 Reinforced hinges, heavy-duty rollers, and a 25-year structural warranty mean your door folds as smoothly on year twenty as it did on day one.
               </p>
             </div>
           </div>
@@ -90,9 +91,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg6} alt="Eco-friendly materials" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-Conscious Engineering</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Non-toxic, fully recyclable uPVC profiles mean a folding door that opens up your space without costing the planet.
               </p>
             </div>
 
@@ -103,9 +104,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg7} alt="Aesthetic Versatility" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Space That Bends to Your Style</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                From wide balcony openings to full-width patio walls, our folding systems adapt to any layout and finish modern, minimal, or classic, while giving you complete control over how open your space feels.
               </p>
             </div>
           </div>

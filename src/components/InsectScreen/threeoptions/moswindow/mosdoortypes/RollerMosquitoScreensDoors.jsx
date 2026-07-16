@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/MusquitoTypes.css'; 
+import '../css/MusquitoTypes.css';
+import { Link } from 'react-router-dom'; 
 import { FaCheckCircle } from 'react-icons/fa';
 import storyhero from "../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (10).webp"
 import img1 from '../../../../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors (4).webp'; 
@@ -24,8 +25,11 @@ const RollerMosquitoScreensDoors = () => {
           <div className="musquitotypes-gallery-header text-center">
             <h2 className="musquitotypes-gallery-title font-serif stit">Foldable Security Mesh Doors</h2>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Explore our complete range of premium Roller Mosquito Net Doors, specifically<br className="d-none d-md-block" /> 
-              engineered to provide the perfect fit and lasting protection for every room
+              Built to fold flat when not in use and lock firmly into place when you need protection, our roller
+mesh doors give you the best of both, an open doorway when you want it, and a mosquito-proof
+barrier in seconds when you don't. Engineered for a precise fit on every frame type, so there are
+no gaps for insects to sneak through.
+
             </p>
           </div>
 
@@ -134,10 +138,13 @@ const RollerMosquitoScreensDoors = () => {
                 Foldable Security<br className="d-none d-md-block" />Mesh Window 
               </h2>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Whether you're looking to enjoy a breeze, gain clarity through unobstructed views, or simply find a few moments of calm in your busy day, these precision-engineered roller screens will inspire and motivate.
+                No more choosing between fresh air and a bug-free home. Our roller mesh windows glide open
+and shut with a single hand, staying out of sight until you need them, so you get the breeze, the
+view, and the quiet, insect-free evenings, all without compromise.
+
               </p>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Let our roller mosquito nets be the companion that helps you navigate life's daily rhythms with grace and comfort.
+                Let our Foldable mosquito nets be the companion that helps you navigate life's daily rhythms with grace and comfort.
               </p>
             </div>
 
@@ -160,19 +167,19 @@ const RollerMosquitoScreensDoors = () => {
               <ul className="musquitotypes-features-list list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Skilled in working with UPVC door frames</span>
+                  <span className="hanken-grotesk-font sdes">Specialists in fitting UPVC door frames without compromising the seal</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Experts in solutions for Casement, Roller doors</span>
+                  <span className="hanken-grotesk-font sdes">Trusted for both casement and roller door installations</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">On-site replacement of pleated mesh</span>
+                  <span className="hanken-grotesk-font sdes">On-site mesh replacement, no need to remove or ship your doors</span>
                 </li>
                 <li className="d-flex align-items-start gap-3">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Repair or replacement of cords damaged due to misuse</span>
+                  <span className="hanken-grotesk-font sdes">Quick repair of worn or damaged rollers and cords</span>
                 </li>
               </ul>
             </div>
@@ -183,7 +190,41 @@ const RollerMosquitoScreensDoors = () => {
       </div>
     </section>
 
-    <ExperienceAura />
+     <section className="experience-aura-section py-5">
+      <div className="container py-5 text-center">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10 col-lg-8">
+            
+            {/* --- MAIN DISPLAY HEADING --- */}
+            <h2 className="aura-main-heading mb-3">
+              Experience the Aura in person.
+            </h2>
+            
+            {/* --- MUTED SUBTEXT --- */}
+            <p className="aura-subtext manrope-font mb-4 pb-2">
+              Two decades of precision engineering, one simple promise a door that opens to fresh air and
+closes on every mosquito. Visit us and see twenty-one years of craftsmanship at work in your
+own home.
+
+            </p>
+            
+            {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
+            <Link to="/contact-us" className='text-decoration-none'></Link>
+            <div className="d-flex justify-content-center">
+              <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
+                <span className="manrope-font aura-btn-text">Get In Touch</span>
+                <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 };

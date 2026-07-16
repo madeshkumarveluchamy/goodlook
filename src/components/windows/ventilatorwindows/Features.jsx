@@ -22,10 +22,10 @@ const Features = () => {
                 How We Do It
               </span>
               <p className="features-sub-header-text mb-4 text-center text-md-start hanken-grutsek-font sdes">
-                Our work involves many intricate <br /> steps and stages.
+                From airflow calculation to sealed installation, each<br/> step is built to bring in fresh air, without letting anything unwanted in.
               </p>
               <h2 className="features-main-title m-0 inter-font text-center text-md-start font-serif stit">
-                Why uPVC Windows <br /> & Doors?
+                Why uPVC Ventilation <br />Windows?
               </h2>
             </div>
 
@@ -35,9 +35,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg1} alt="Energy Saving Technologies" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Energy Saving Technologies</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Smart Airflow Control</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Advanced multi-chambered technology that creates a powerful thermal barrier. Keep your home comfortable year-round while significantly lowering your energy bills.
+                Louvred and top-hung designs let you regulate airflow precisely — pull in fresh air, push out moisture and odours, without ever fully opening the window.
               </p>
             </div>
           </div>
@@ -50,9 +50,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg2} alt="Excellent Sound Insulation" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Excellent Sound Insulation</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Built-In Mosquito Mesh Protection</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Maximize natural light with our high-transmittance uPVC designs. Bring the outdoors in while maintaining superior thermal performance.
+                Ventilate without inviting insects in. Every unit is fitted with our precision mosquito mesh, so airflow stays open and your home stays sealed against mosquitoes.
               </p>
             </div>
 
@@ -62,9 +62,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg3} alt="High Light Transmittance" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">High Light Transmittance</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes"> Moisture & Odour Resistance</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Details on color schemes, furniture, lighting placement, and technical layouts.
+                Purpose-built for bathrooms, kitchens, and utility spaces, designed to release trapped humidity and cooking odours before they settle into your walls.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Durability 25 years warranty</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Built to last with a 25-year structural warranty. Invest in long-term resilience that defies the elements and stands the test of time.
+                Small window, serious engineering. Backed by a 25-year structural warranty that holds up against moisture, heat, and daily use.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ const Features = () => {
               </div>
               <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Eco-friendly materials</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Eco-conscious engineering for a healthier home and a cleaner planet. Our non-toxic, sustainable uPVC profiles are designed for long-term ecological responsibility.
+                Non-toxic, sustainable uPVC profiles that keep indoor air genuinely fresh, not just moving, but clean.
               </p>
             </div>
 
@@ -103,9 +103,9 @@ const Features = () => {
               <div className="feature-card-img-wrapper horizontal-narrow-frame mx-auto mx-md-0">
                 <img src={featImg7} alt="Aesthetic Versatility" className="w-100 h-100 object-fit-cover" />
               </div>
-              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Aesthetic Versatility</h4>
+              <h4 className="feature-card-title mt-3 mb-2 inter-font text-center text-md-start sdes">Space-Smart Design</h4>
               <p className="feature-card-desc m-0 hanken-grotesk-font text-center text-md-start smin">
-                Available in a wide range of styles, finishes, and configurations, our systems seamlessly integrate into any architectural design, from modern minimalist to classic luxury.
+                Compact by nature, versatile by design, fits seamlessly above doors, in bathrooms, or tight wall spaces without compromising on style.
               </p>
             </div>
           </div>

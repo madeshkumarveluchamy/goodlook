@@ -11,8 +11,9 @@ const CurtainrodCollection = () => {
         <h2 className="rod-main-title mb-4 stit">Collections</h2>
         
         <p className="rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Explore our complete range of premium screens, specifically engineered <br className="d-none d-md-block" /> 
-          to provide the perfect fit and lasting protection for every room
+          Explore our handpicked curtain rod collection, designed to blend <br className="d-none d-md-block" />  smooth functionality with a
+refined finish that elevates every window.
+
         </p>
 
         <div className="current-rod-heading text-center text-md-start mb-4 stit">
@@ -34,7 +35,8 @@ const CurtainrodCollection = () => {
                     <span className="bullet-diamond-small ">❖</span> Curtain rod Designs
                   </h4>
                   <p className="overlay-rod-desc d-flex justify-content-even manrope-font mb-0 smin">
-                    Safe and easy to handle, and can usually be installed without drilling Can be used almost anywhere, robust and unobtrusive.
+                    Simple to install, strong enough for everyday use, and versatile enough for any room, curtain
+rods that just work, beautifully.
                   </p>
                 </div>
                 <div className="col-12 col-md-4 text-md-end p-0 pb-3 pt-md-0">

@@ -6,7 +6,7 @@ import defaultImg from '../../assets/uPVC_Casement_ Door_Images (7).webp';
 import defaultImg1 from '../../assets/uPVC_Casement_Windows_Image (5).webp';
 import defaultImg2 from '../../assets/folding_mosquito_net_doors/folding_mosqutio_net_doors_banner (10).webp';
 import defaultImg3 from '../../assets/sliding_mosquito_net_window(1).webp';
-import defaultImg4 from '../../assets/curtainrodcollection3.webp';
+import defaultImg4 from '../../assets/curtainrodcollection1.webp';
 
 const StoryCategories = () => {
   // START STATE: -1 கொடுத்தா ஆரம்பத்துல எல்லா கன்டென்ட் டிராயரும் மூடியே இருக்கும்
@@ -58,7 +58,8 @@ const StoryCategories = () => {
             Innovation That Protects <br />Your Home
           </h2>
           <p className="cat-section-subdesc hanken-grotesk-font fw-light mx-auto sdes">
-            We bring two decades of expertise to every installation, ensuring your home's mood is defined by quality, comfort, and precision-engineered uPVC solutions.
+            From the first measurement to the final fitting, we design every window and door to feel like it
+was always meant to be there, secure, silent, and mosquito-free.
           </p>
         </div>
 

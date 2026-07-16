@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/MusquitoTypes.css'; 
+import { Link } from 'react-router-dom';
 import { FaCheckCircle } from 'react-icons/fa';
 import storyhero from "../../../../../assets/casementback.webp"
 import img1 from '../../../../../assets/sliding1.webp'; 
@@ -25,8 +26,10 @@ const SlidingMosquitoNetDoors = () => {
           <div className="musquitotypes-gallery-header text-center">
             <h2 className="musquitotypes-gallery-title font-serif stit">Sliding Mosquito Net Doors</h2>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Explore our complete range of premium Sliding Mosquito Net Doors, specifically<br className="d-none d-md-block" /> 
-              engineered to provide the perfect fit and lasting protection for every room
+              Engineered for a flawless glide and a flawless fit, our Sliding Mosquito Net Doors are
+custom-built for every doorway, so you get uninterrupted airflow and zero mosquitoes, in every
+room, every season.
+
             </p>
           </div>
 
@@ -135,10 +138,12 @@ const SlidingMosquitoNetDoors = () => {
                 Modern Sliding <br className="d-none d-md-block" />Door Screens
               </h2>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Whether you're looking to enjoy a breeze, gain clarity through unobstructed views, or simply find a few moments of calm in your busy day, these precision-engineered sliding screens will inspire and motivate
+                A door that opens to the breeze, not to the bugs. Our precision-engineered sliding screens
+disappear into the frame, keep your view clear, and turn every entryway into a moment of calm
+in an otherwise busy day.
               </p>
               <p className=" musquitotypes-desc-text hanken-grotesk-font sdes">
-                Let our sliding mosquito nets be the companion that helps you navigate life's daily rhythms with grace and comfort
+                Effortless to slide, easy to live with, because comfort should never come with a compromise.
               </p>
             </div>
 
@@ -161,19 +166,19 @@ const SlidingMosquitoNetDoors = () => {
               <ul className="musquitotypes-features-list list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Skilled in working with UPVC door frames</span>
+                  <span className="hanken-grotesk-font sdes">Specialists in UPVC door frame installation</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Experts in solutions for Casement, Sliding doors</span>
+                  <span className="hanken-grotesk-font sdes">Trusted experts across Casement and Sliding door systems</span>
                 </li>
                 <li className="d-flex align-items-start gap-3 mb-4">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">On-site replacement of pleated mesh</span>
+                  <span className="hanken-grotesk-font sdes">On-site pleated mesh replacement, no hassle</span>
                 </li>
                 <li className="d-flex align-items-start gap-3">
                   <FaCheckCircle className="musquitotypes-tick-icon mt-1" />
-                  <span className="hanken-grotesk-font sdes">Repair or replacement of cords damaged due to misuse</span>
+                  <span className="hanken-grotesk-font sdes">Quick repair of cords worn from daily use</span>
                 </li>
               </ul>
             </div>
@@ -184,7 +189,40 @@ const SlidingMosquitoNetDoors = () => {
       </div>
     </section>
 
-    <ExperienceAura />
+    <section className="experience-aura-section py-5">
+          <div className="container py-5 text-center">
+            <div className="row justify-content-center">
+              <div className="col-12 col-md-10 col-lg-8">
+                
+                {/* --- MAIN DISPLAY HEADING --- */}
+                <h2 className="aura-main-heading mb-3">
+                  Experience the Aura in person.
+                </h2>
+                
+                {/* --- MUTED SUBTEXT --- */}
+                <p className="aura-subtext manrope-font mb-4 pb-2">
+                  Two decades of craftsmanship, one seamless door. See how 21 years of engineering
+excellence can quietly transform the way you live.
+    
+                </p>
+                
+                {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
+                <Link to="/contact-us" className='text-decoration-none'></Link>
+                <div className="d-flex justify-content-center">
+                  <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
+                    <span className="manrope-font aura-btn-text">Get In Touch</span>
+                    <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </section>
     </>
   );
 };
