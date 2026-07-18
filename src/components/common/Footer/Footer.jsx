@@ -92,7 +92,7 @@ const Footer = () => {
                 Call us: <a href="tel:9443409613" className="text-decoration-none text-white rubik-font smin">94434 09613</a>
               </p>
               <p className="footer-contact-link-line mt-1 text-center text-md-start sdes text-light">
-                Email: <a href="mailto:Admin@goodlookhome.com" className="text-decoration-none text-white rubik-font smin">Admin@goodlookhome.com</a>
+                Email: <a href="mailto:Admin@goodlookhome.com" className="text-decoration-none text-white rubik-font smin">goodlookhdcbe@gmail.com</a>
               </p>
             </div>
           </div>
@@ -117,9 +117,9 @@ const Footer = () => {
                     uPVC Doors <FooterChevron isActive={showUpvcDoors} />
                   </span>
                   <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showUpvcDoors ? 'open' : ''}`}>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/casement-and-designer-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/casement-doors')}>Casement Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/casement-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/casement-doors')}>Casement Doors</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/sliding-doors')}>Sliding Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/sliding-and-folding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/folding-doors')}>Folding Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/folding-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/folding-doors')}>Folding Doors</Link></div>
                     <div className="footer-link-wrapper"><Link to="/our-collections/upvc-doors/arch-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/our-collections/upvc-doors/arch-doors')}>Arch Doors</Link></div>
                   </div>
                 </li>
@@ -162,7 +162,7 @@ const Footer = () => {
                     Net for Window <FooterChevron isActive={showMosWindow} />
                   </span>
                   <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showMosWindow ? 'open' : ''}`}>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/all-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/all-mosquito-net-window')}>All Net Window</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/all-mosquito-net-window')}>All Net For Window</Link></div>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/foldable-security-mesh-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/foldable-security-mesh-window')}>Foldable Security Mesh Window</Link></div>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window')}>Hinged Frame Mosquito Window</Link></div>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window')}>Pleated Mosquito Net Window</Link></div>
@@ -180,9 +180,9 @@ const Footer = () => {
                     Net for Doors <FooterChevron isActive={showMosDoors} />
                   </span>
                   <div className={`footer-accordion-content ps-md-3 d-flex flex-column gap-1 ${showMosDoors ? 'open' : ''}`}>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors')}>All Net Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/roller-mosquito-screens" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors')}>Foldable Security Mesh Doors</Link></div>
-                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/hinged-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors')}>Hinged Frame Mosquito Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/all-mosquito-net-doors')}>All Net For Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors')}>Foldable Security Mesh Doors</Link></div>
+                    <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors')}>Hinged Frame Mosquito Doors</Link></div>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors')}>Pleated Mosquito Net Doors</Link></div>
                     <div className="footer-link-wrapper"><Link to="/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors" className="rubik-font small text-decoration-none text-secondary" onClick={() => handleScrollToTop('/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors')}>Sliding Mosquito Net Doors</Link></div>
                   </div>
@@ -232,7 +232,7 @@ const Footer = () => {
               <div className="h-100 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start mt-4">
                 <h5 className="footer-social-header-title mb-4 rubik-font sdes text-warning">Follow Us</h5>
                 <div className="footer-social-icons-row d-flex align-items-center gap-3">
-                  <a href="https://www.instagram.com/ghd_upvc_windows" target="_blank" rel="noreferrer" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="Instagram">
+                  <a href="https://www.instagram.com/ghd_upvc_windows/?fbclid=IwY2xjawTFrLdleHRuA2FlbQIxMQBicmlkETFZTEE1MDdQV213OHVVUlhHc3J0YwZhcHBfaWQBMAABHgGRe2uNdJOJpu9gX4bJDwzcCjlw_qpixxPYel40eY03a0ByaEW5f_Cj5RSR_aem_4kg6ZU5Ms30R77cNcvKIHg" target="_blank" rel="noreferrer" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="Instagram">
                     <FaInstagram size={18} />
                   </a>
                   <a href="https://www.facebook.com/profile.php?id=61567207111228" target="_blank" rel="noreferrer" className="social-icon-anchor text-white border border-light rounded-circle p-2 d-flex align-items-center justify-content-center" aria-label="Facebook">

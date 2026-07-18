@@ -48,9 +48,14 @@
   text-align: left;
 }
 
+.philosophy-image-engine{
+  display:flex !important;
+  align-items:end !important;
+}
+
 .segment-desc-para {
   text-align:justify;
-  font-size: 18px;
+  font-size: 16px;
   color: #2B2B2B;
   line-height: 1.65;
   max-width: 480px;

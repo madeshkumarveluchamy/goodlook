@@ -2,8 +2,8 @@ import React from 'react';
 import './css/Storystory.css';
 
 // --- IMPORT IMAGES ---
-import viewLarge from '../../assets/storyframe1.webp';
-import lightsThumb from '../../assets/storyframe2.webp';
+import viewLarge from '../../assets/Good Home - Our Story - Image (1).webp';
+import lightsThumb from '../../assets/Good Home - Our Story - Image (2).webp';
 import {Link} from "react-router-dom"
 
 const Storystory = () => {

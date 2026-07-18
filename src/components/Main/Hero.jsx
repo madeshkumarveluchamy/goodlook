@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './css/Hero.css';
 import {FaChevronDown } from 'react-icons/fa';
-import bg1 from "../../assets/herobackgroundshade2.webp";
-import frame1 from "../../assets/CurtainBackground.webp";
+import bg1 from "../../assets/herobanners.webp";
+import frame1 from "../../assets/herobanners.webp";
 import heroback from "../../assets/herobackrectangle.webp";
 
-import bg2 from "../../assets/insectcollectionbackground.webp";
-import frame2 from "../../assets/insectcollectionbackground.webp";
+import bg2 from "../../assets/herobanners2.webp";
+import frame2 from "../../assets/herobanners2.webp";
 
 import bg3 from "../../assets/leftbackground.webp";
 import frame3 from "../../assets/leftbackground.webp";

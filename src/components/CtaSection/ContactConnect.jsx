@@ -17,7 +17,7 @@ const ContactConnect = () => {
     e.preventDefault();
 
     // 🎯 REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
-    const googleSheetScriptUrl = "https://script.google.com/macros/s/AKfycbyq3HiBJf03Rdn4PgIXaDMC3MoRF0weAfJyuLGY7nPbPUtfh7mLFqtdVoP_Un9ZHw/exec";
+    const googleSheetScriptUrl = "https://www.google.com/maps/place/11%C2%B002'26.8%22N+76%C2%B057'28.3%22E/@11.0407658,76.955288,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.0407658!4d76.9578629?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D";
 
     try {
       const response = await fetch(googleSheetScriptUrl, {
@@ -92,23 +92,23 @@ const ContactConnect = () => {
               <div>
                 <h5 className="info-block-label mb-2 inter-font sdes">Main office</h5>
                 <p className="info-block-value hanken-grotesk-font mb-3 smin">
-                  13A Poombuhar nagar, Civil aerodrome post
-                  <br />
-                  Coimbatore - 641014.
+                 Dir on.460, Dr Radhakrishna St,
+Hudco Colony, <br/>Tatabad, Coimbatore,
+Tamil Nadu 641012
                 </p>
 
-                <div className="sidebar-map-wrapper">
-                  <iframe
-                    title="Good Look Home Decors Office Location"
-                    src="https://maps.google.com/maps?q=13A%20Poompuhar%20nagar,%20Civil%20aerodrome%20post,%20Coimbatore%20-%20641014&t=&z=15&ie=UTF-8&iwloc=&output=embed"
-                    width="100%"
-                    height="180"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
+               <div className="sidebar-map-wrapper">
+  <iframe
+    title="Good Look Home Decors Office Location"
+    src="https://maps.google.com/maps?q=11.0407658,76.9578629&t=&z=15&ie=UTF-8&iwloc=&output=embed"
+    width="100%"
+    height="180"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ const ContactConnect = () => {
               <div>
                 <h5 className="info-block-label mb-2 inter-font sdes">Phone no.</h5>
                 <p className="info-block-value hanken-grotesk-font mb-0 smin">
-                  91+ 975 143 70 20
+                  91+ 94434 09613
                 </p>
               </div>
             </div>
@@ -157,7 +157,7 @@ const ContactConnect = () => {
               <div>
                 <h5 className="info-block-label mb-2 inter-font sdes">Email id</h5>
                 <p className="info-block-value hanken-grotesk-font mb-0 smin">
-                  Unimaxxarchitects@gmail.com
+                  goodlookhdcbe@gmail.com
                 </p>
               </div>
             </div>

@@ -20,22 +20,22 @@ const StoryCategories = () => {
     },
     { 
       title: "UPVC Windows", 
-      desc: "Architectural mesh engineering integration designed to allow continuous natural ambient airflow while maintaining pristine pest protection boundaries flawlessly.",
+      desc: "Elegant slimline casement systems provide exceptional natural light transmission paired with advanced acoustic noise reduction technology for superior indoor comfort.",
       image: defaultImg1 
     },
     { 
       title: "Mosquito Net For Doors", 
-      desc: "Heavy-duty engineered hardware pivot points ensuring silent transitions, robust locking security matrix, and absolute weatherproof framing joints seal seals.",
+      desc: "Innovative retractable mesh barrier engineering allows continuous fresh natural airflow while maintaining pristine pest protection boundaries for your home living spaces.",
       image: defaultImg2 
     },
     { 
       title: "Mosquito Net For Windows", 
-      desc: "Sleek low-profile track mechanisms that retract completely from sightlines to merge your modern interior lounge effortlessly with the outdoors garden layout space.",
+      desc: "Seamless high-visibility screen integration ensures unobstructed clear outdoor views whilst keeping your interior environment completely secure from unwanted insect intrusion.",
       image: defaultImg3 
     },
     { 
       title: "Curtain & Blinds", 
-      desc: "Premium custom customized tracking controls and luxury anodized accents components to govern incoming daylight profiles with total minimalist aesthetic precision.",
+      desc: "Sophisticated light control fabric solutions offer stylish customizable privacy settings combined with easy-to-use modern motorized operation mechanisms for refined luxury.",
       image: defaultImg4
     }
   ];

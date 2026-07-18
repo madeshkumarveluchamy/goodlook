@@ -208,8 +208,8 @@ difference in person.
             </p>
             
             {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
-            <Link to="/contact-us" className='text-decoration-none'></Link>
             <div className="d-flex justify-content-center">
+            <Link to="/contact-us" className='text-decoration-none'>
               <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
                 <span className="manrope-font aura-btn-text">Get In Touch</span>
                 <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
@@ -218,6 +218,7 @@ difference in person.
                   </svg>
                 </span>
               </button>
+              </Link>
             </div>
 
           </div>

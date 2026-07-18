@@ -12,11 +12,11 @@ import img6 from '../../../../assets/pleaded3.webp';
 const MosquitoWindowGallery = () => {
   // Image card-kana data
   const galleryData = [
-    { id: 1, image: img1, badge: "MOSQUITO NET FOR WINDOW", title: "Sliding Mosquito Net Window" },
+    { id: 5, image: img5, badge: "MOSQUITO NET FOR WINDOW", title: "Foldable Security Mesh Window" },
+    { id: 3, image: img3, badge: "MOSQUITO NET FOR WINDOW", title: "Hinged Frame Mosquito Window" },
     { id: 2, image: img2, badge: "MOSQUITO NET FOR WINDOW", title: "Pleated Mosquito Net Window" },
-    { id: 3, image: img3, badge: "MOSQUITO NET FOR WINDOW", title: "Roller Mosquito Net Window" },
+    { id: 1, image: img1, badge: "MOSQUITO NET FOR WINDOW", title: "Sliding Mosquito Net Window" },
 
-    { id: 5, image: img5, badge: "MOSQUITO NET FOR WINDOW", title: "Magnetic Mosquito Net Window" },
   ];
 
   return (

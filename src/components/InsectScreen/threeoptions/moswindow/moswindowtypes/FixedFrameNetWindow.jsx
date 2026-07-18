@@ -147,7 +147,7 @@ in seconds and tuck away just as easily quiet, durable, and made to handle daily
             </div>
 
             {/* Right Center Image with Hover Box */}
-            <div className="musquitotypes-right-img-card position-relative mb-5">
+            <div className="musquitotypes-right-img-card position-relative mb-5 ">
               <img src={rightImgCenter} alt="Center Sliding Mosquito Net" className="musquitotypes-right-img" />
               <div className="musquitotypes-gallery-overlay-box">
                 <span className="musquitotypes-gold-badge fw-bolder manrope-font">MOSQUITO NET FOR WINDOW</span>
@@ -208,8 +208,8 @@ lasting comfort and protection.
             </p>
             
             {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
-            <Link to="/contact-us" className='text-decoration-none'></Link>
             <div className="d-flex justify-content-center">
+            <Link to="/contact-us" className='text-decoration-none'>
               <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
                 <span className="manrope-font aura-btn-text">Get In Touch</span>
                 <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
@@ -218,6 +218,7 @@ lasting comfort and protection.
                   </svg>
                 </span>
               </button>
+              </Link>
             </div>
 
           </div>

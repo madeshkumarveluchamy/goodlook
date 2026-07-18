@@ -24,10 +24,10 @@ const BaydeeProfiles = () => {
 
   return (
     <section className="baydee-profiles-section bg-white text-dark" id="baydee-showcase">
-      <div className="container-fluid baydee-canvas-holder px-3 px-sm-4 px-md-5">
+      <div className="container-fluid baydee-canvas-holder   px-3 px-sm-4 px-md-5">
         
         {/* ================= TOP COMPONENT SHOWCASE BLOCK ================= */}
-        <div className="row align-items-center g-4 g-lg-5 mb-5 pb-4 upper-baydee-flex-row">
+        <div className="row align-items-center g-4 g-lg-5 mb-5 pb-4 upper-baydee-flex-row d-flex flex-column flex-column-reverse flex-md-row">
            <div className="col-12 col-lg-6 baydee-top-right">
             <div className="baydee-main-feature-box rounded-3 position-relative pb-4 ps-4">
               

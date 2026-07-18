@@ -8,27 +8,43 @@ import 'swiper/css/pagination';
 
 import './css/Testimonials.css';
 
-import reviewUserImg from '../../assets/quality1.webp'; 
+import reviewUserImg1 from '../../assets/hinged_mosquito_net_doors/hinged_mosquito_net_doors (7).webp'; 
+import reviewUserImg2 from '../../assets/Pleaded_mosqutio_net_doors/pleaded_mosqito_net_doors (4).webp'; 
+import reviewUserImg3 from '../../assets/hinged_mosquito_net_doors/hinged_mosquito_net_doors_banner (2).webp'; 
+import reviewUserImg4 from '../../assets/uPVC_Sliding_Folding_Door_Images (3).webp'; 
+import reviewUserImg5 from '../../assets/uPVC_Arc_ Door_Images (11).webp'; 
 
 const Testimonials = () => {
   const baseTestimonials = [
-    {
+   {
       id: 1,
-      image: reviewUserImg,
-      text: "Stunning designs and impeccable attention to detail. Truly premium decor that turns any house into a beautiful home. I couldn’t be happier with how these pieces transformed my space.",
-      author: "Team Kriya - Coimbatore"
+      image: reviewUserImg1, // Hinged Mosquito Net Doors
+      text: "The hinged mosquito net doors are fantastic! They are very sturdy, easy to use, and completely keep the bugs out without blocking the natural breeze. Highly recommended for main doors.",
+      author: "Shakthishwaran - Coimbatore"
     },
     {
       id: 2,
-      image: reviewUserImg,
-      text: "The uPVC windows have completely soundproofed our living room. The engineering quality is exceptional, and the minimalist borders look incredibly clean and luxury.",
-      author: "Dheena - Chennai"
+      image: reviewUserImg2, // Pleated Mosquito Net Doors
+      text: "We absolutely love the pleated mosquito nets. They fold away so neatly when not in use, saving a lot of space, and look very modern and elegant on our balcony doors.",
+      author: "Dheena - Peelamedu"
     },
     {
       id: 3,
-      image: reviewUserImg,
-      text: "Exceptional service from design mapping to final structural assembly. Their architectural focus ensures form perfectly aligns with long-term weather durability.",
-      author: "Anand - Bangalore"
+      image: reviewUserImg3, // Hinged Mosquito Net Doors (Banner)
+      text: "Excellent installation of the hinged mosquito nets. They fit perfectly, and the mesh quality is highly durable to withstand daily use. Great service by the team!",
+      author: "Anand - Vadavalli"
+    },
+    {
+      id: 4,
+      image: reviewUserImg4, // uPVC Sliding Folding Doors
+      text: "The uPVC sliding folding doors totally transformed our living space. They glide effortlessly, provide amazing soundproofing, and bring so much natural light into the room.",
+      author: "Karthik - Ramanathapuram"
+    },
+    {
+      id: 5,
+      image: reviewUserImg5, // uPVC Arc Doors (Updated to use Img5)
+      text: "The uPVC arch doors gave our home a premium and classic architectural look. The finish is flawless, and the structural weatherproofing is exceptional. Truly a masterpiece.",
+      author: "Sanjay - Saravanampatti"
     }
   ];
 

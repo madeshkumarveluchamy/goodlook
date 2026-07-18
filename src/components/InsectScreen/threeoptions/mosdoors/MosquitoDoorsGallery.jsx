@@ -11,10 +11,10 @@ import img6 from '../../../../assets/sliding4.webp';
 const MosquitoDoorsGallery = () => {
   // Image card-kana data
   const galleryData = [
-    { id: 1, image: img1, badge: "MOSQUITO NET FOR DOORS", title: "Sliding Mosquito Net Doors" },
-    { id: 2, image: img2, badge: "MOSQUITO NET FOR DOORS", title: "Pleated Mosquito Net Doors" },
-    { id: 3, image: img3, badge: "MOSQUITO NET FOR DOORS", title: "Roller Mosquito Net Doors" },
-    { id: 6, image: img6, badge: "MOSQUITO NET FOR DOORS", title: "Velcro Mosquito Net Doors" },
+    { id: 1, image: img1, badge: "MOSQUITO NET FOR DOORS", title: "Foldable Security Mesh Doors" },
+    { id: 2, image: img2, badge: "MOSQUITO NET FOR DOORS", title: "Hinged Frame Mosquito Doors" },
+    { id: 3, image: img3, badge: "MOSQUITO NET FOR DOORS", title: "Pleated Mosquito Net Doors" },
+    { id: 6, image: img6, badge: "MOSQUITO NET FOR DOORS", title: "Sliding Mosquito Net Doors" },
   ];
 
   return (

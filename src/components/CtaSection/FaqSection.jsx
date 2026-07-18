@@ -8,23 +8,31 @@ const FaqSection = () => {
   const faqData = [
     {
       question: "How long has Good Look Home Decor been in the industry?",
-      answer: "We bring two decades of precision manufacturing expertise to the interior solutions landscape. Over the last 20 years, our team has pioneered durable architectures, delivering quality installation frameworks engineered for commercial complexes and residential layouts across the country."
+      answer: "Over 24 years. We've spent two decades perfecting mosquito net and UPVC solutions for homes and businesses across Coimbatore long enough to have seen every kind of window, door, and pest problem this city can throw at us."
     },
     {
-      question: "Do you provide customized solutions for different space requirements?",
-      answer: "Absolutely. We specialize in designing and engineering custom truck bodies, structural uPVC casings, and modular component integrations tailored to match your specific dimensions. Our engineering setup ensures functional optimization regardless of complex landscape constraints."
+      question: "Can mosquito nets be fitted on my existing UPVC or aluminium windows?",
+      answer: "Yes. Whether you already have UPVC, aluminium, or wooden frames, we custom-fit our nets to match no need to replace what's already installed. As a GHD partner, we use precision, made-to-measure frames so the fit is exact, not approximate."
     },
     {
-      question: "How do your products contribute to the \"mood\" of my home?",
-      answer: "Our installations perfectly balance aesthetic clarity with structural utility. By optimizing natural ambient light entry points and introducing sound isolation glass joints, we ensure your living space retains a quiet, secure comfort that elevates your home's interior ecosystem cleanly."
+      question: "What's the difference between your UPVC windows and ordinary ones?",
+      answer: "Ordinary frames warp, discolour, and weather down over time. Our UPVC profiles, sourced through Baydee's manufacturing standards, don't rot, rust, or swell and they hold up their shape and seal for years with zero repainting or resealing."
     },
     {
-      question: "What sets your uPVC solutions apart from traditional windows and doors?",
-      answer: "Unlike traditional materials that wrap or decay over time under environmental stress, our precision uPVC compositions boast uncompromising durability. They are structurally reinforced with heavy-duty structural profiles, requiring zero scaling maintenance while offering top-tier thermal insulation bounds."
+      question: "Do you offer custom sizing for non-standard windows and doors?",
+      answer: "Every home is different, and our measurements reflect that. From narrow balcony openings to oversized commercial glazing, we design and fit each net and frame to your exact dimensions nothing off-the-shelf."
     },
     {
-      question: "What kind of maintenance is required for your uPVC systems?",
-      answer: "Our engineered uPVC profiles are completely built to last without demanding rigorous cleaning pipelines. A simple wipe down with a damp cloth keeps the layout surface pristine, eliminating the recurring costs of protective painting, structural sealing, or dynamic alignment tunings."
+      question: "How much maintenance do UPVC windows and mosquito nets actually need?",
+      answer: "Almost none. A damp cloth wipe-down is usually enough. No annual painting, no rust treatment, no sagging frames to adjust just clean, functioning windows and nets year after year."
+    },
+     {
+      question: "Will UPVC windows help keep my home cooler and quieter?",
+      answer: "Yes. UPVC's insulating properties reduce heat transfer and dampen outside noise better than standard aluminium or wood, which is a big part of why it's become the preferred choice for both homes and offices in Coimbatore."
+    },
+     {
+      question: "Do you serve areas outside Coimbatore city?",
+      answer: "We cover Coimbatore and surrounding areas reach out with your location, and we'll confirm serviceability and timelines."
     }
   ];
 

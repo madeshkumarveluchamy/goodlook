@@ -99,9 +99,9 @@ const Collection = () => {
       link:"/insect-screen/mosquito-net-for-doors"
     },
      MosqutioWindows: {
-      title: <>Sleek <br /> Aluminium Precision</>,
+      title: <>Effortless <br /> Pure Air, Pure Comfort</>,
       image: MosquitoNetDoor4,
-      desc: "Discover premium structural load bearing with minimalist sightlines. Our advanced slimline Aluminium tracks and break casement doors offer ultimate structural durability, expanding panoramic viewing horizons across modern architectural architectures.",
+      desc: "Discover premium mosquito protection engineered for silence and ease. Our precision-glide mesh panels deliver uninterrupted airflow and light, keeping every room open, breathable, and bite-free.",
       link:"/insect-screen/mosquito-net-for-window"
     },
     curtainsBlinds: {

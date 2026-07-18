@@ -200,15 +200,15 @@ an unobstructed view of the world outside, exactly as it should be.
                
                {/* --- MUTED SUBTEXT --- */}
                <p className="aura-subtext manrope-font mb-4 pb-2">
-                 Step into a GLHD showroom and feel what 21 years of precision engineering brings to your
+                 Step into a GLHD showroom and feel what 24 years of precision engineering brings to your
 doorway.
 
    
                </p>
                
                {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
-               <Link to="/contact-us" className='text-decoration-none'></Link>
                <div className="d-flex justify-content-center">
+               <Link to="/contact-us" className='text-decoration-none'>
                  <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
                    <span className="manrope-font aura-btn-text">Get In Touch</span>
                    <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
@@ -217,6 +217,7 @@ doorway.
                      </svg>
                    </span>
                  </button>
+                 </Link>
                </div>
    
              </div>

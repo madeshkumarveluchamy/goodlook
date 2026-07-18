@@ -6,8 +6,8 @@ import aestheticsImg from '../../assets/upvcprofile.webp';
 
 const UpvcAesthetics = () => {
   return (
-    <section className="upvc-aesthetics-section bg-white text-dark" id="engineering-aesthetics">
-      <div className="container-fluid aesthetics-canvas-holder px-3 px-sm-4 px-md-5">
+    <section className="upvc-aesthetics-section bg-white text-dark pt-5 mt-5" id="engineering-aesthetics ">
+      <div className="container-fluid aesthetics-canvas-holder px-3 px-sm-4 px-md-5 ">
         
         {/* Responsive flex alignment rule automatic-ah mobile screen views-la image-ai top-ku push pannidum */}
         <div className="row align-items-center g-4 g-xl-5 d-flex flex-column-reverse flex-lg-row-reverse">

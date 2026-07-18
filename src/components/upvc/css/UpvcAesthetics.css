@@ -103,6 +103,12 @@
     margin-right: auto !important;
   }
 
+  .aesthetics-img-wrapper {
+
+  aspect-ratio: 4 / 4 !important;  /* Exact rectangular aspect mapping structure ratio */
+
+}
+
   .aesthetics-main-title {
     font-size: 1.85rem !important;
     line-height: 1.25 !important;

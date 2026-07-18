@@ -488,6 +488,7 @@
     padding-right: 0;
   }
   .musquitotypes-content-scroll-col {
+    text-align:center;
     padding-left: 0;
   }
   .musquitotypes-right-img-card {
@@ -513,21 +514,23 @@
     text-align: center !important;
   }
   .musquitotypes-text-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+   
+    text-align: center !important;
   }
   .musquitotypes-main-heading,
   .musquitotypes-sticky-heading,
   .musquitotypes-gold-badge {
     text-align: center !important;
+    
   }
   .musquitotypes-desc-text{
     text-align: justify !important;
   }
   .musquitotypes-features-list li {
-    justify-content: center !important;
+    justify-content: start !important;
     text-align: center !important;
   }
   .musquitotypes-features-list span {

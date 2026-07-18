@@ -20,7 +20,9 @@ const ExperienceAura = () => {
             
             {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
             <div className="d-flex justify-content-center">
+              <Link to="/contact-us">
               <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
+                
                 <span className="manrope-font aura-btn-text">Get In Touch</span>
                 <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
@@ -28,6 +30,7 @@ const ExperienceAura = () => {
                   </svg>
                 </span>
               </button>
+              </Link>
             </div>
 
           </div>

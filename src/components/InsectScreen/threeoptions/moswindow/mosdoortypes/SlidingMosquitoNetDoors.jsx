@@ -201,14 +201,14 @@ in an otherwise busy day.
                 
                 {/* --- MUTED SUBTEXT --- */}
                 <p className="aura-subtext manrope-font mb-4 pb-2">
-                  Two decades of craftsmanship, one seamless door. See how 21 years of engineering
+                  Two decades of craftsmanship, one seamless door. See how 24 years of engineering
 excellence can quietly transform the way you live.
     
                 </p>
                 
                 {/* --- GET IN TOUCH CTA CAPSULE BUTTON --- */}
-                <Link to="/contact-us" className='text-decoration-none'></Link>
                 <div className="d-flex justify-content-center">
+                <Link to="/contact-us" className='text-decoration-none'>
                   <button className="btn btn-outline-dark aura-cta-btn d-flex align-items-center gap-3">
                     <span className="manrope-font aura-btn-text">Get In Touch</span>
                     <span className="aura-yellow-circle d-flex align-items-center justify-content-center">
@@ -217,6 +217,7 @@ excellence can quietly transform the way you live.
                       </svg>
                     </span>
                   </button>
+                  </Link>
                 </div>
     
               </div>

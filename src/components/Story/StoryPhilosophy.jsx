@@ -2,7 +2,7 @@ import React from 'react';
 import './css/StoryPhilosophy.css';
 
 // --- IMPORT YOUR RENDER IMAGE ASSET ---
-import philosophyImg from '../../assets/storyframe3.webp';
+import philosophyImg from '../../assets/Good Home - Our Story - Image (4).webp';
 
 const StoryPhilosophy = () => {
   return (
@@ -36,7 +36,7 @@ cooler, and cleaner for years to come.
             </div>
 
             {/* BLOCK 02: OUR MISSION */}
-            <div className="philosophy-block-segment d-flex flex-column flex-sm-row align-items-center align-items-lg-start gap-3 gap-md-4">
+            <div className="philosophy-block-segment d-flex flex-column flex-sm-row align-items-center align-items-md-start gap-3 gap-md-4">
               <h4 className="segment-indicator-title inter-font text-uppercase manrope-font fw-semibold ssub">Our Mission</h4>
               <p className="segment-desc-para hanken-grotesk-font fw-light hanken-grutsek-font sdes">
                 We engineer UPVC windows, doors, and precision-fitted mosquito screens that bring together
@@ -50,7 +50,7 @@ protection, and peace of mind that lasts.
           </div>
 
           {/* ================= RIGHT SIDE: LUXURY INTERIOR ROOM PICTURE ================= */}
-          <div className="col-12 col-lg-6 philosophy-image-engine shadow-sm-mobile mb-4 mb-lg-0">
+          <div className="col-12 col-lg-6 philosophy-image-engine  shadow-sm-mobile mb-4 mb-lg-0">
             <div className="philosophy-img-wrapper rounded-1 overflow-hidden">
               <img 
                 src={philosophyImg} 

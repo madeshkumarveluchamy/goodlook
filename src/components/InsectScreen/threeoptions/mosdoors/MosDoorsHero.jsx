@@ -24,10 +24,10 @@ const MosDoorsHero = () => {
             {/* Split structural title template */}
             <h1 className="mosdoors-story-main-title fw-bold text-white m-0 select-none mosdoors-inter-font">
               <span className="mosdoors-story-title-line-1 d-block">
-                Quality You See
+                Craft You Trust
               </span>
               <span className="mosdoors-story-light-beige mosdoors-story-title-line-2 d-block">
-                Comfort You Feel
+                Space You Enjoy
               </span>
             </h1>
 
