@@ -39,7 +39,7 @@ const UpvcAesthetics = () => {
               </p>
               
             <p className="aesthetics-body-text m-0 sdes">
-                Behind that scale sits real infrastructure: a registered capital of ₹1,650+ crore (150 million Yuan), a 700,000 sq. m. campus, and a 200,000 sq. m. manufacturing facility powered by a team of over 1,200 professionals. This is the strength that stands behind three of the industry's most trusted names: BAYDEE profiles, the CROWN window and door system, and the TICHON window and door value chain service.
+                Behind that scale sits real infrastructure: a registered capital of ₹1,650+ crore (150 million Yuan), a 700,000 sq. m. campus, and a 200,000 sq. m. manufacturing facility powered by a team of over 1,200 professionals. When you choose Baydee powered UPVC, you're not just choosing a window you're choosing precision engineering, durability, and design excellence, built at a scale few can match.
               </p>
             </div>
 

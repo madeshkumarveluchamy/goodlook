@@ -92,15 +92,13 @@ const ContactConnect = () => {
               <div>
                 <h5 className="info-block-label mb-2 inter-font sdes">Main office</h5>
                 <p className="info-block-value hanken-grotesk-font mb-3 smin">
-                 Dir on.460, Dr Radhakrishna St,
-Hudco Colony, <br/>Tatabad, Coimbatore,
-Tamil Nadu 641012
+                Good Look Home Decors, 98/1,<br/>sivalapuri Nagar Sengammal Colony<br/> Sanganoor Village Coimbatore-641027
                 </p>
 
                <div className="sidebar-map-wrapper">
   <iframe
     title="Good Look Home Decors Office Location"
-    src="https://maps.google.com/maps?q=11.0407658,76.9578629&t=&z=15&ie=UTF-8&iwloc=&output=embed"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9719763786957!2d76.95524877504567!3d11.040727889124586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859369dde3491%3A0x3331e4ba7fc9f7ae!2sWINNER%20insect%20screen%20%2C%20manufacture%20mosquito%20screen%20all%20kind%20of%20PVC%20commands%20aluminium%20channels%20we%20are%20wholesaler!5e0!3m2!1sen!2snl!4v1784372925459!5m2!1sen!2snl"
     width="100%"
     height="180"
     style={{ border: 0 }}

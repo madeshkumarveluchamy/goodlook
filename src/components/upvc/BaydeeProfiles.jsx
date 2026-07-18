@@ -7,7 +7,7 @@ import upvcCollection1 from '../../assets/upvcCollection (1).webp';
 import upvcCollection2 from '../../assets/upvcCollection (2).webp';
 import upvcCollection3 from '../../assets/upvcCollection (3).webp';
 import upvcCollection4 from '../../assets/upvcCollection (4).webp';
-import upvcCollection5 from '../../assets/upvcCollection (5).webp'; 
+import upvcCollection5 from '../../assets/upvcCollection (5-1).webp'; 
 import upvcCollection6 from '../../assets/upvcCollection (6).webp'; 
 import upvcCollection7 from '../../assets/upvcCollection (7).webp'; 
 
