@@ -39,7 +39,7 @@ const OurStory = () => {
               
               <p className="story-description fw-normal mb-4 hanken-grotesk-font text-center text-md-start sdes">
                 A home should let in the monsoon breeze, not the mosquitoes. The morning light, not the noise.
-Since 2003 (adjust year), Good Look Home has built its name on that exact balance of precision
+Since 2002, Good Look Home has built its name on that exact balance of precision
 engineered UPVC frames and GHD certified insect screens that disappear into your
 architecture, so all you notice is the calm they create.
               </p>
