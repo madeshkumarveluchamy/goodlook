@@ -208,6 +208,32 @@ const SEO = () => {
     }
     canonicalLink.setAttribute("href", window.location.origin + currentPath);
 
+    // 8. Manage Google Analytics (gtag.js) for listed pages only
+    if (metaConfig[currentPath]) {
+      if (!window.dataLayer) {
+        const gtagScript = document.createElement("script");
+        gtagScript.async = true;
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-YQWNQ2EFR8";
+        document.head.appendChild(gtagScript);
+
+        const inlineScript = document.createElement("script");
+        inlineScript.innerHTML = `
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function(){window.dataLayer.push(arguments);}
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-YQWNQ2EFR8', { send_page_view: false });
+        `;
+        document.head.appendChild(inlineScript);
+      }
+
+      if (window.gtag) {
+        window.gtag('config', 'G-YQWNQ2EFR8', {
+          page_path: currentPath,
+          page_title: currentMeta.title
+        });
+      }
+    }
+
   }, [location]);
 
   return null;
