@@ -23,10 +23,11 @@ const MosquitoDoorsGallery = () => {
         
         {/* Title & Subtitle */}
         <div className="mos-doors-header text-center">
-          <h2 className="mos-doors-title stit">Mosquito Net for Doors</h2>
+          <h1 className="mos-doors-title stit">Mosquito Net for Doors in Coimbatore</h1>
           <p className="mos-doors-subtitle mx-auto hanken-grotesk-font sdes">
-            Explore our complete range of premium window, specifically engineered <br className="d-none d-md-block" /> 
-            to provide the perfect fit and lasting protection for every room
+            Choose mosquito net for doors in Coimbatore, designed for precise fitting, <br className="d-none d-md-block" /> 
+            effective
+insect protection, ventilation, durability and comfortable everyday living.
           </p>
         </div>
 

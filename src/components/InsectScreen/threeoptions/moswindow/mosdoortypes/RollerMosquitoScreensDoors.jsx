@@ -23,12 +23,10 @@ const RollerMosquitoScreensDoors = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Foldable Security Mesh Doors</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit"> Foldable Security Mesh Doors in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Built to fold flat when not in use and lock firmly into place when you need protection, our roller
-mesh doors give you the best of both, an open doorway when you want it, and a mosquito-proof
-barrier in seconds when you don't. Engineered for a precise fit on every frame type, so there are
-no gaps for insects to sneak through.
+              Choose foldable security mesh doors in Coimbatore, designed for flexible opening,
+precise fitting, insect protection, durability and everyday convenience.
 
             </p>
           </div>

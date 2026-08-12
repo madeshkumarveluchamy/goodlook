@@ -16,9 +16,9 @@ const CurtainsRefine = () => {
                 Good Look Home Decors
               </h6>
               
-              <h2 className="curtains-main-title mb-4 font-serief stit">
-                Elevate Your Home <br /> with Window Blinds
-              </h2>
+              <h1 className="curtains-main-title mb-4 font-serief stit">
+                Window Blinds <br /> in Coimbatore
+              </h1>
               
               <p className="curtains-desc-paragraph hanken-grotesk-font mb-4 sdes">
                 Revitalize your home or office with the exquisite charm of window blinds. These versatile window treatments not only enhance the aesthetic appeal of any room but also provide practical benefits to suit your needs.

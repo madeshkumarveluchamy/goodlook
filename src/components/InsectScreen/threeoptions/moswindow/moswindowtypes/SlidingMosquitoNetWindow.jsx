@@ -23,10 +23,10 @@ const SlidingMosquitoNetWindow = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Sliding Mosquito Net Window</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit"> Sliding Mosquito Net Windows in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-             Discover our full range of precision-crafted Sliding Mosquito Net Windows — engineered for a
-flawless fit, built to protect every room without ever getting in the way of your view.
+             Choose sliding mosquito net windows in Coimbatore, designed for smooth movement,
+precise fitting, effective insect protection, ventilation and lasting performance.
 
             </p>
           </div>

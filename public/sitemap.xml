@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core pages -->
+  <url>
+    <loc>https://goodlookhomedecor.com/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-story</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/contact-us</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Curtains & Blinds -->
+  <url>
+    <loc>https://goodlookhomedecor.com/curtains-blinds/curtains</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/curtains-blinds/blinds</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- uPVC Profiles -->
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-profile</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- uPVC Doors -->
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-doors/casement-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-doors/sliding-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-doors/arch-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-doors/folding-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- uPVC Windows -->
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-windows/casement-windows</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-windows/sliding-windows</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-windows/arch-windows</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-windows/fixed-windows</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/our-collections/upvc-windows/ventilator-windows</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Insect Screen -->
+
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-window</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Insect Screen Window Sub-pages -->
+
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-window/foldable-security-mesh-window</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Insect Screen Door Sub-pages -->
+
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goodlookhomedecor.com/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

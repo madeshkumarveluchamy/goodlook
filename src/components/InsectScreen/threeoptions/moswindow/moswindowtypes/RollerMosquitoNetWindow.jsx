@@ -25,11 +25,10 @@ const RollerMosquitoNetWindow = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Hinged Frame Mosquito Window</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit"> Hinged Frame Mosquito Windows in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Built to swing open as easily as your window does. Our hinged frame mosquito nets combine a
-snug,<br className="d-none d-md-block" />  gap-free fit with effortless everyday use so every room stays open to fresh air, natural
-light, and nothing else.
+              Enhance your home with hinged frame mosquito windows in Coimbatore,<br className="d-none d-md-block" />  providing
+easy operation, effective insect protection, ventilation and lasting durability.
             </p>
           </div>
 

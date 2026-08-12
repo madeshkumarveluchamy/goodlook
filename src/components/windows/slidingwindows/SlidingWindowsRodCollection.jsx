@@ -9,10 +9,12 @@ const SlidingWindowsRodCollection = () => {
     <section className="slidingwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="slidingwindows-rod-main-title mb-2 stit">uPVC Sliding Windows</h2>
+        <h1 className="slidingwindows-rod-main-title mb-2 stit">Sliding uPVC Windows in Coimbatore</h1>
     
         <p className="slidingwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Engineered for the perfect glide, built for a lifetime<br className="d-none d-md-block" />  of protection explore windows designed to fit every room, every time.
+          Choose sliding uPVC windows in Coimbatore, engineered for smooth gliding,<br className="d-none d-md-block" />  space
+efficiency, durability, ventilation and reliable protection in modern homes.
+
         </p>
 
         <div className="slidingwindows-rod-display-window">

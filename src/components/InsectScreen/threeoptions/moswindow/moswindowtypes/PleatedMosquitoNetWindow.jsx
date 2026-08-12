@@ -25,11 +25,10 @@ const PleatedMosquitoNetWindow = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Pleated Mosquito Net Window</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit"> Pleated Mosquito Net Windows in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Precision-engineered pleated screens built for a perfect fit, room after room, window after
-window. Zero gaps, zero compromise, uninterrupted airflow and unobstructed views, backed by
-durable frames that hold their shape for years.
+              Add pleated mosquito net windows in Coimbatore for space efficient protection,
+smooth operation, improved ventilation, precise fitting and comfortable everyday living.
             </p>
           </div>
 

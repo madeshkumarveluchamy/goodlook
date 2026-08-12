@@ -9,11 +9,11 @@ const ArchWindowsRodCollection = () => {
     <section className="archwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="archwindows-rod-main-title mb-2 stit">uPVC Arch Windows</h2>
+        <h1 className="archwindows-rod-main-title mb-2 stit">Arch uPVC Windows in Coimbatore</h1>
     
         <p className="archwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-         Curves that complement your walls, strength that outlasts <br className="d-none d-md-block" /> the years. Explore uPVC arch
-windows engineered for a flawless fit and lasting protection in every room.
+         Enhance modern homes with arch uPVC windows in Coimbatore, combining elegant <br className="d-none d-md-block" /> 
+curves, durability, natural light, security and lasting performance.
 
         </p>
 

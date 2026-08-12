@@ -9,10 +9,12 @@ const FixedWindowsRodCollection = () => {
     <section className="fixedwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="fixedwindows-rod-main-title mb-2 stit">uPVC Fixed Windows</h2>
+        <h1 className="fixedwindows-rod-main-title mb-2 stit"> Fixed uPVC Windows in Coimbatore</h1>
     
         <p className="fixedwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Precision-engineered glass panels that seal in comfort and<br className="d-none d-md-block" />  seal out the noise, heat, and dust, built to hold their shape and finish for years.
+          Explore fixed uPVC windows in Coimbatore, designed with durable glass panels<br className="d-none d-md-block" />  for
+natural light, noise reduction, thermal comfort and lasting performance.
+
         </p>
 
         <div className="fixedwindows-rod-display-window">

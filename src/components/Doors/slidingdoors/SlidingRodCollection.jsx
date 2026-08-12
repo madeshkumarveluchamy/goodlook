@@ -9,10 +9,10 @@ const SlidingrodCollection = () => {
     <section className="sliding-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="sliding-rod-main-title mb-2 stit">uPVC Sliding Doors</h2>
+        <h1 className="sliding-rod-main-title mb-2 stit">Sliding uPVC Doors in Coimbatore</h1>
     
         <p className="sliding-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-         Discover our full range of premium sliding doors, <br className="d-none d-md-block" /> precision-engineered for a flawless fit and enduring protection in every space.
+         Choose sliding uPVC doors in Coimbatore, precision engineered for smooth operation, <br className="d-none d-md-block" /> durability, space efficiency, security and lasting comfort in modern homes.
 
         </p>
 

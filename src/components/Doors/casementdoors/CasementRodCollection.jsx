@@ -2,18 +2,19 @@ import React from 'react';
 import './css/CasementRodCollection.css';
 import rodImg from '../../../assets/uPVC_Casement_ Door_Banner (2).webp';
 import { Link } from "react-router-dom";
-import { FaCheckCircle } from 'react-icons/fa'; // 🎯 பிக்ஸ்: எக்ஸாக்ட் சாலிட் சர்க்கிள் டிக் ஐகான்
+import { FaCheckCircle } from 'react-icons/fa'; 
 
 const CasementRodCollection = () => {
   return (
     <section className="casement-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="casement-rod-main-title mb-2 stit">uPVC Casement Doors</h2>
+        <h1 className="casement-rod-main-title mb-2 stit">Casement uPVC Doors in Coimbatore</h1>
     
         
         <p className="casement-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Discover a door range built for how you actually live, engineered for<br className="d-none d-md-block" />  a flawless fit, everyday ease, and protection that holds up room after room. 
+          Explore casement uPVC doors in Coimbatore, designed for modern homes<br className="d-none d-md-block" />  with
+durability, security, ventilation, smooth operation and lasting everyday comfort. 
         </p>
 
       

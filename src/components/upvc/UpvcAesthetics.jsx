@@ -29,13 +29,13 @@ const UpvcAesthetics = () => {
               Engineering Aesthetics
             </span>
             
-            <h2 className="aesthetics-main-title font-serif mb-4 text-center text-lg-start  hanken-grotesk-font stit">
-              Where Precision<br/> Meets Design 
-            </h2>
+            <h1 className="aesthetics-main-title font-serif mb-4 text-center text-lg-start  hanken-grotesk-font stit">
+              Best uPVC Door & Window Manufacturer in Coimbatore
+            </h1>
 
             <div className="aesthetics-paragraphs-stack d-flex flex-column gap-3 mt-4 hanken-grotesk-font fw-light text-muted">
               <p className="aesthetics-body-text m-0  sdes">
-                Every window tells a story of strength, style, and smart engineering, powered by Baydee UPVC. Baydee isn't just a UPVC profile, it's the backbone of some of the finest windows and doors being built today. As a large scale, fully integrated enterprise, Baydee spans everything from profile research and development to manufacturing, installation, and complete window-and-door value chain solutions.
+                Every window tells a story of strength, style, and smart engineering, powered by Baydee UPVC. Baydee isn't just a UPVC profile, it's the backbone of some of the finest windows and doors being built today. As a large scale, fully integrated enterprise, Baydee spans everything from profile research and development to manufacturing, installation, and complete window and door value chain solutions.
               </p>
               
             <p className="aesthetics-body-text m-0 sdes">

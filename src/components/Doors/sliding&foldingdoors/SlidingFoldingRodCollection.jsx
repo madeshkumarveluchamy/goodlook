@@ -9,10 +9,10 @@ const SlidingFoldingRodCollection = () => {
     <section className="slidingfolding-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="slidingfolding-rod-main-title mb-2 stit">uPVC Folding Doors</h2>
+        <h1 className="slidingfolding-rod-main-title mb-2 stit"> Folding uPVC Doors in Coimbatore</h1>
     
         <p className="slidingfolding-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Engineered for effortless movement and built to last,<br className="d-none d-md-block" />  our folding door screens fold flat, seal tight, and stand up to daily use in every room of the home.
+          Experience folding uPVC doors in Coimbatore, engineered for effortless movement,<br className="d-none d-md-block" />  space efficiency, durability, security and smooth everyday operation in modern homes.
         </p>
 
         <div className="slidingfolding-rod-display-window">

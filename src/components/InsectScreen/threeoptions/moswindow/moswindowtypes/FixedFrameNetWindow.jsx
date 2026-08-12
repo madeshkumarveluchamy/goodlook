@@ -24,11 +24,10 @@ const FixedFrameNetWindow = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Foldable Security Mesh Window</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit"> Foldable Security Mesh Windows in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Engineered for a perfect fit on every window, our foldable mesh screens fold flat and open<br className="d-none d-md-block" /> 
-smooth built to keep insects out and fresh air flowing, without ever getting in the way of your
-view.
+              Choose foldable security mesh windows in Coimbatore, combining flexible operation,<br className="d-none d-md-block" /> 
+precise fitting, insect protection, ventilation and durable everyday performance.
 
             </p>
           </div>

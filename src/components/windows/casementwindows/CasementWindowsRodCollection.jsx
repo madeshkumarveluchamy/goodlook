@@ -9,10 +9,11 @@ const CasementWindowsRodCollection = () => {
     <section className="casementwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="casementwindows-rod-main-title mb-2 stit">uPVC Casement Windows</h2>
+        <h1 className="casementwindows-rod-main-title mb-2 stit">Casement uPVC Windows in Coimbatore</h1>
     
         <p className="casementwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Discover our premium range of uPVC casement windows precision-engineered<br className="d-none d-md-block" />  for a flawless fit, everyday durability, and lasting protection in every room of your home.
+          Explore casement uPVC windows in Coimbatore, designed for modern homes<br className="d-none d-md-block" />  with
+durability, ventilation, security, smooth operation and lasting everyday comfort.
 
         </p>
 

@@ -24,11 +24,10 @@ const HingedMosquitoNetDoors = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Hinged Frame Mosquito Doors</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit">Hinged Frame Mosquito Doors in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Built for the doors you use every day. Our hinged mosquito net doors open and close like a
-regular door, no sliding tracks, no fuss. While keeping every mosquito, fly, and creepy-crawly
-firmly on the other side.
+              Choose hinged frame mosquito doors in Coimbatore, designed for easy access, precise
+fitting, effective insect protection, ventilation and lasting durability.
 
             </p>
           </div>

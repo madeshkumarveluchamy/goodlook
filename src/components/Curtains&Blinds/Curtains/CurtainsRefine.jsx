@@ -17,14 +17,13 @@ const curtainsRefine = () => {
               </h6>
               
               <h2 className="curtainss-main-title mb-4 font-serief stit">
-               Curtains That <br/>Complete the Room
+               Premium Curtains <br/> in Coimbatore
 
               </h2>
               
               <p className="curtainss-desc-paragraph manrope-font mb-4 d-flex justify-content-evenly hanken-grotesk-font sdes">
-                Your curtains set the mood, the right rod makes it unforgettable. Explore our range of premium
-curtain rods, designed to blend seamlessly with your space while adding that extra layer of
-style.
+                Transform your interiors with premium curtains in Coimbatore, offering elegant designs,
+privacy, light control, quality fabrics and lasting style.
 
               </p>
               

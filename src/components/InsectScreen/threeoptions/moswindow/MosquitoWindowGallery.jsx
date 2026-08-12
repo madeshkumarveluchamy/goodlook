@@ -25,9 +25,10 @@ const MosquitoWindowGallery = () => {
         
         {/* Title & Subtitle */}
         <div className="mos-window-header text-center">
-          <h2 className="mos-window-title stit">Mosquito Net for Window</h2>
+          <h1 className="mos-window-title stit">Mosquito Net for Windows in Coimbatore</h1>
           <p className="mos-window-subtitle hanken-grotesk-font mx-auto sdes">
-           Engineered with precision-fit aluminium frames and fine gauge mesh, our window nets keep every mosquito and insect out, without ever standing between you and the view. Slimline profiles, silent glide tracks, and a finish built to disappear into your window, not distract from it.
+           Protect your home with mosquito net for windows in Coimbatore, designed for
+ventilation, precise fitting, insect control and lasting comfort.
           </p>
         </div>
 

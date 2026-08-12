@@ -19,19 +19,19 @@ const Hero = () => {
     { 
       bg: bg1, 
       frame: frame1,
-      titleLine1: "Your House",
-      titleItalic: "is ",
-      titleLine2: "The Place of Mood",
+      titleLine1: "uPVC Windows",
+      titleItalic: "",
+      titleLine2: "for Modern Homes",
       popupHeading: "3D visualization",
       popupDesc: "So that the client can see with his own eyes what he will ultimately receive."
     },
     { 
       bg: bg2, 
       frame: frame2,
-      titleLine1: "Your House",
-      titleItalic: "Is",
-      titleLine2: " The Soul Of Space",
-      popupHeading: "Bespoke Fabrics",
+      titleLine1: "uPVC Doors",
+      titleItalic: "",
+      titleLine2: "for Modern Homes",
+      popupHeading: "Bespoke UPVC Doors",
       popupDesc: "Bespoke luxury tailoring to match your architectural vision perfectly."
     },
     { 

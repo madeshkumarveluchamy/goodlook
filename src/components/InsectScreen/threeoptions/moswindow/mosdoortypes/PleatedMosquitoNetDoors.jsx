@@ -24,10 +24,10 @@ const PleatedMosquitoNetDoors = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Pleated Mosquito Net Doors</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit">Pleated Mosquito Net Doors in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Engineered for a flawless fit, built to outlast the everyday, explore our full range of premium
-pleated mosquito net doors, designed to protect every doorway without ever getting in your way.
+              Experience pleated mosquito net doors in Coimbatore, offering space saving operation,
+flexible movement, effective insect protection, ventilation and everyday convenience.
 
             </p>
           </div>

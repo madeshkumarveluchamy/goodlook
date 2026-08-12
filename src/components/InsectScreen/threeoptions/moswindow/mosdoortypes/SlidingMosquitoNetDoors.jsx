@@ -24,11 +24,10 @@ const SlidingMosquitoNetDoors = () => {
         <div className="container">
           
           <div className="musquitotypes-gallery-header text-center">
-            <h2 className="musquitotypes-gallery-title font-serif stit">Sliding Mosquito Net Doors</h2>
+            <h1 className="musquitotypes-gallery-title font-serif stit"> Sliding Mosquito Net Doors in Coimbatore</h1>
             <p className="musquitotypes-gallery-subtitle mx-auto hanken-grotesk-font sdes">
-              Engineered for a flawless glide and a flawless fit, our Sliding Mosquito Net Doors are
-custom-built for every doorway, so you get uninterrupted airflow and zero mosquitoes, in every
-room, every season.
+              Select sliding mosquito net doors in Coimbatore, engineered for smooth movement,
+precise fitting, insect protection, ventilation and convenient everyday use.
 
             </p>
           </div>

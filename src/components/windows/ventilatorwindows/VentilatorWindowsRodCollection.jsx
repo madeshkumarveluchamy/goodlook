@@ -9,10 +9,10 @@ const VentilatorWindowsRodCollection = () => {
     <section className="ventilatorwindows-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="ventilatorwindows-rod-main-title mb-2 stit">uPVC Ventilator Windows</h2>
+        <h1 className="ventilatorwindows-rod-main-title mb-2 stit"> uPVC Ventilator Windows in Coimbatore</h1>
     
         <p className="ventilatorwindows-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Compact spaces deserve serious engineering. Our ventilator window screens are precision-built <br className="d-none d-md-block" />to seal in comfort and seal out mosquitoes, dust, and noise without ever blocking the breeze.
+          Choose uPVC ventilator windows in Coimbatore, designed for compact spaces with <br className="d-none d-md-block" />ventilation, durability, security, dust protection and lasting everyday comfort.
         </p>
 
         <div className="ventilatorwindows-rod-display-window">

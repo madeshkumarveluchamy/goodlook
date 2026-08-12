@@ -9,10 +9,11 @@ const ArchRodCollection = () => {
     <section className="arch-rod-collection-section">
       <div className="container py-4 text-center">
         
-        <h2 className="arch-rod-main-title mb-2 stit">uPVC Arch Doors</h2>
+        <h1 className="arch-rod-main-title mb-2 stit">Arch uPVC Doors in Coimbatore</h1>
     
         <p className="arch-rod-sub-desc manrope-font mx-auto mb-5 sdes">
-          Curves that catch the eye, strength that holds the line explore<br className="d-none d-md-block" /> arch doors engineered for the perfect fit and lasting protection, room after room.
+          Enhance modern homes with arch uPVC doors in Coimbatore, combining elegant
+curves,<br className="d-none d-md-block" /> precise fitting, durability, security and lasting performance for homes.
         </p>
 
         <div className="arch-rod-display-window">

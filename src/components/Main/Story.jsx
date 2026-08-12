@@ -34,14 +34,15 @@ const OurStory = () => {
               <div className="story-divider mb-4"></div>
               
               <h2 className="story-title font-serif mb-4 text-center text-md-start stit">
-               Twenty-one years of<br className="d-none d-lg-block" /> keeping the outside beautiful and the inside undisturbed. 
+               Twenty-one years of<br className="d-none d-lg-block" /> Manufacturing Better Windows, Doors And Comfort. 
               </h2>
               
               <p className="story-description fw-normal mb-4 hanken-grotesk-font text-center text-md-start sdes">
-                A home should let in the monsoon breeze, not the mosquitoes. The morning light, not the noise.
-Since 2002, Good Look Home has built its name on that exact balance of precision
-engineered UPVC frames and GHD certified insect screens that disappear into your
-architecture, so all you notice is the calm they create.
+                A home should welcome the monsoon breeze, morning light and fresh air while keeping
+mosquitoes, dust and unwanted noise outside. Since 2002, Good Look Home has built
+its name on precision engineered uPVC windows and doors in Coimbatore, along with
+GHD certified insect screens that blend seamlessly with your architecture, creating
+comfortable, secure and stylish spaces for modern homes.
               </p>
               
               <Link to="/our-story" className="text-decoration-none"><button className="btn text-uppercase story-cta-btn fw-medium tracking-wider px-4 py-2.5 ">
