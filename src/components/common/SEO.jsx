@@ -4,122 +4,113 @@ import { useLocation } from "react-router-dom";
 // Metadata configuration for all 34 routes
 const metaConfig = {
   "/": {
-    title: "Good Look Home Decor | Premium uPVC Windows & Doors in Coimbatore",
-    description: "Elevate your space with Good Look Home Decor, Coimbatore's leading provider of premium uPVC doors, windows, insect screens, and luxury curtains & blinds. Custom designs for homes and offices.",
-    keywords: "uPVC doors Coimbatore, uPVC windows, mosquito net Coimbatore, custom blinds, luxury curtains, home decor, Good Look Home Decor"
+    title: "Upvc doors and windows in coimbatore | Good Look Home",
+    description: "Explore quality uPVC doors, windows & custom mosquito nets in Coimbatore from Good Look Home. Backed by 24+ years of experience. Get a free quote today!",
+    keywords: "uPVC doors Coimbatore, uPVC windows, mosquito net Coimbatore, custom blinds, luxury curtains, home decor, Good Look Home"
   },
   // UPVC Doors
   "/our-collections/upvc-doors/casement-doors": {
-    title: "Premium uPVC Casement Doors | Good Look Home Decor",
-    description: "Experience style and security with our durable uPVC casement doors. Featuring excellent soundproofing, thermal insulation, and weatherproofing for Coimbatore homes.",
+    title: "Upvc casement doors in coimbatore | Good Look Home",
+    description: "Choose uPVC casement doors in Coimbatore designed for security, durability, weather resistance & sound insulation. Get a free estimate from Good Look Home!",
     keywords: "uPVC casement doors, soundproof doors, secure uPVC doors, custom casement doors, Coimbatore"
   },
   "/our-collections/upvc-doors/sliding-doors": {
-    title: "Space Saving uPVC Sliding Doors | Good Look Home Decor",
-    description: "Maximize your living space and natural light with our elegant, smooth-gliding uPVC sliding doors. Perfect for balconies, patios, and modern interiors.",
+    title: "Upvc sliding doors in coimbatore | Good Look Home",
+    description: "Discover space-saving uPVC sliding doors in Coimbatore with smooth operation. Ideal for balconies, patios & modern interiors. Contact us for custom pricing!",
     keywords: "uPVC sliding doors, balcony sliding doors, patio doors, space saving doors, Coimbatore"
   },
   "/our-collections/upvc-doors/arch-doors": {
-    title: "Elegant uPVC Arch Doors | Good Look Home Decor",
-    description: "Add a touch of classic architectural elegance to your home with custom-shaped uPVC arch doors. Combining traditional beauty with modern durability.",
+    title: "Upvc arch doors in coimbatore | Good Look Home",
+    description: "Enhance your home with custom uPVC arch doors in Coimbatore. Elegant curved designs combine distinctive style with durable frames. Explore custom options!",
     keywords: "uPVC arch doors, curved uPVC doors, custom shaped doors, arched entrance doors, Coimbatore"
   },
- 
   "/our-collections/upvc-doors/folding-doors": {
-    title: "uPVC Folding Doors | Good Look Home Decor",
-    description: "Create seamless transitions between indoors and outdoors with multi-fold uPVC sliding folding doors. Ideal for wide openings and panoramic views.",
+    title: "Upvc sliding folding doors in coimbatore | Good Look Home",
+    description: "Transform your home with custom uPVC folding doors in Coimbatore. Enjoy wider openings, natural light & seamless views. Request your quote today!",
     keywords: "uPVC folding doors, bi-fold doors, multi-fold doors, patio folding doors, Coimbatore"
   },
   // UPVC Windows
   "/our-collections/upvc-windows/casement-windows": {
-    title: "Premium uPVC Casement Windows | Good Look Home Decor",
-    description: "Keep your home peaceful and secure with uPVC casement windows. Engineered for maximum ventilation, sound insulation, and superior energy efficiency.",
+    title: "Upvc casement windows in coimbatore | Good Look Home",
+    description: "Upgrade your home with uPVC casement windows in Coimbatore featuring airtight seals, sound insulation & energy efficiency. Enquire with Good Look Home today!",
     keywords: "uPVC casement windows, soundproof windows, energy efficient windows, secure windows, Coimbatore"
   },
   "/our-collections/upvc-windows/sliding-windows": {
-    title: "Modern uPVC Sliding Windows | Good Look Home Decor",
-    description: "Upgrade your home with smooth-operating uPVC sliding windows. A sleek, space-saving design featuring multi-point locking and weatherproofing.",
+    title: "Upvc sliding windows in coimbatore | Good Look Home",
+    description: "Choose 2-track and 3-track uPVC sliding windows in Coimbatore with smooth operation and optional mosquito mesh. Contact us today for custom measurements!",
     keywords: "uPVC sliding windows, horizontal sliding windows, track windows, modern uPVC windows, Coimbatore"
   },
   "/our-collections/upvc-windows/arch-windows": {
-    title: "Custom uPVC Arch Windows | Good Look Home Decor",
-    description: "Beautiful, custom-designed uPVC arch windows that add structural character. Built to custom sizes with outstanding thermal and acoustic performance.",
+    title: "Upvc arch windows in coimbatore | Good Look Home",
+    description: "Add timeless character to your home with custom uPVC arch windows in Coimbatore. Curved frames combine design with durability. Consult our experts today!",
     keywords: "uPVC arch windows, curved windows, custom shaped windows, architectural windows, Coimbatore"
   },
-  
   "/our-collections/upvc-windows/fixed-windows": {
-    title: "Energy Efficient uPVC Fixed Windows | Good Look Home Decor",
-    description: "Enjoy expansive views and maximum energy efficiency. Perfect for combining with active windows to build beautiful glass facade features.",
+    title: "Upvc fixed windows in coimbatore | Good Look Home",
+    description: "Brighten your home with energy-efficient fixed uPVC windows in Coimbatore. Enjoy large glass areas, durable frames & low maintenance. Get a price quote now!",
     keywords: "uPVC fixed windows, picture windows, stationary windows, glass facade, Coimbatore"
   },
   "/our-collections/upvc-windows/ventilator-windows": {
-    title: "uPVC Ventilator Windows | Good Look Home Decor",
-    description: "Specially designed uPVC ventilator windows for bathrooms, kitchens, and utility spaces. Ensures privacy while providing optimal airflow.",
+    title: "Upvc ventilator windows in coimbatore | Good Look Home",
+    description: "Improve ventilation with custom uPVC ventilator windows in Coimbatore. Ideal for kitchens & bathrooms with optional exhaust slots. Call for a quick estimate!",
     keywords: "uPVC ventilator windows, exhaust windows, bathroom ventilators, louvered windows, Coimbatore"
   },
- 
+  // Insect Screens / Mosquito Nets for Windows
   "/insect-screen/mosquito-net-for-window": {
-    title: "Custom Mosquito Net for Windows | Good Look Home Decor",
-    description: "Choose from sliding, pleated, magnetic, and roller mosquito nets for windows. Custom-fit screens designed to blend beautifully with your windows.",
+    title: "Mosquito net for windows in coimbatore | Good Look Home",
+    description: "Keep mosquitoes out with custom mosquito nets for windows in Coimbatore. Choose hinged, pleated, sliding & security mesh options. Get a free quote today!",
     keywords: "window mosquito nets, custom insect screens, window mesh, magnetic net, pleated net, Coimbatore"
   },
-  "/insect-screen/mosquito-net-for-doors": {
-    title: "Durable Mosquito Net for Doors | Good Look Home Decor",
-    description: "Heavy-duty hinged, sliding, and pleated mosquito door nets. Keep pests out while letting fresh air in with premium mesh screens.",
-    keywords: "door mosquito net, heavy duty door screen, sliding screen door, pleated door net, Coimbatore"
-  },
-
-  // Mosquito Net for Windows Subtypes
-
-
   "/insect-screen/mosquito-net-for-window/sliding-mosquito-net-window": {
-    title: "Sliding Mosquito Net Windows | Good Look Home Decor",
-    description: "Seamlessly integrated sliding mosquito nets for track windows. Highly durable, easy to slide, and simple to clean.",
+    title: "Sliding mosquito net for windows in coimbatore | Good Look Home",
+    description: "Install custom sliding mosquito nets for windows in Coimbatore with smooth horizontal movement and durable mesh. Request your free estimate today!",
     keywords: "sliding mosquito net, sliding window screen, track mesh screen, Coimbatore"
   },
   "/insect-screen/mosquito-net-for-window/pleated-mosquito-net-window": {
-    title: "Pleated Mosquito Net Windows | Good Look Home Decor",
-    description: "Elegant pleated folding mosquito screens for space-saving protection. Fold them away neatly when not in use.",
+    title: "Pleated mosquito net for windows in coimbatore | Good Look Home",
+    description: "Save space with pleated mosquito nets for windows in Coimbatore. Smooth folding screens provide insect protection while keeping windows accessible. Order now!",
     keywords: "pleated mosquito net, folding window screens, retractable insect mesh, Coimbatore"
   },
   "/insect-screen/mosquito-net-for-window/hinged-frame-mosquito-window": {
-    title: "Hinged Frame Mosquito Windows | Good Look Home Decor",
-    description: "Classic swing open mosquito nets for easy access. Perfect for single and double sash windows, offering complete seal protection.",
+    title: "Hinged mosquito net for windows in coimbatore | Good Look Home",
+    description: "Choose hinged mosquito nets for windows in Coimbatore with durable frames & quality insect mesh. Easy to open, clean & maintain. Call for custom fitting!",
     keywords: "hinged frame mosquito net, swing open window screen, openable mosquito net, Coimbatore"
   },
   "/insect-screen/mosquito-net-for-window/foldable-security-mesh-window": {
-    title: "Foldable Security Mesh Windows | Good Look Home Decor",
-    description: "Combine home security with insect protection. Strong steel mesh window systems that prevent break-ins and keep bugs out.",
+    title: "Security mesh windows in coimbatore | Good Look Home",
+    description: "Protect your home with foldable security mesh windows in Coimbatore. Stainless steel mesh provides insect protection & security. Contact us for pricing!",
     keywords: "security mesh windows, steel screen windows, anti-theft window nets, Coimbatore"
   },
-
-  // Mosquito Net for Doors Subtypes
-
- 
+  // Insect Screens / Mosquito Nets for Doors
+  "/insect-screen/mosquito-net-for-doors": {
+    title: "Mosquito net for doors in coimbatore | Good Look Home",
+    description: "Keep insects out with custom mosquito nets for doors in Coimbatore. Choose hinged, sliding, pleated & security mesh options. Call now for a site visit!",
+    keywords: "door mosquito net, heavy duty door screen, sliding screen door, pleated door net, Coimbatore"
+  },
   "/insect-screen/mosquito-net-for-doors/sliding-mosquito-net-doors": {
-    title: "Sliding Mosquito Net Doors | Good Look Home Decor",
-    description: "Smooth rolling sliding mosquito screens for patio doors and balconies. Designed to endure daily high-traffic usage.",
+    title: "Sliding mosquito net doors in coimbatore | Good Look Home",
+    description: "Choose sliding mosquito net doors in Coimbatore for balconies, patios & large glass openings. Smooth operation & durable mesh. Enquire with us today!",
     keywords: "sliding mosquito door net, balcony screen doors, patio sliding mesh, Coimbatore"
   },
   "/insect-screen/mosquito-net-for-doors/pleated-mosquito-net-doors": {
-    title: "Pleated Mosquito Net Doors | Good Look Home Decor",
-    description: "Sophisticated pleated barrier systems for doors. Folds away elegantly without taking up space, ideal for large glass doors.",
+    title: "Pleated mosquito net for doors in coimbatore | Good Look Home",
+    description: "Choose space-saving pleated mosquito net doors in Coimbatore for balconies & patios. Retractable screens fold away neatly. Book your measurement now!",
     keywords: "pleated door mosquito net, folding screen doors, retractable door mesh, Coimbatore"
   },
   "/insect-screen/mosquito-net-for-doors/hinged-frame-mosquito-doors": {
-    title: "Hinged Frame Mosquito Doors | Good Look Home Decor",
-    description: "Durable swinging frame mosquito net doors with heavy-duty mesh. Classic security and bug defense for main doors.",
+    title: "Hinged mosquito net doors in coimbatore | Good Look Home",
+    description: "Choose custom hinged mosquito net doors in Coimbatore for main entrances, balconies & back exits. Durable frames offer protection. Contact us today!",
     keywords: "hinged mosquito door net, swing screen doors, openable door net, Coimbatore"
   },
   "/insect-screen/mosquito-net-for-doors/foldable-security-mesh-doors": {
-    title: "Foldable Security Mesh Doors | Good Look Home Decor",
-    description: "Premium stainless steel security mesh doors. Protects against intruders and insects without compromising on ventilation.",
+    title: "Security mesh doors in coimbatore | Good Look Home",
+    description: "Improve home protection with foldable security mesh doors in Coimbatore. Durable designs provide pest control & security for entryways. Get a quote today!",
     keywords: "security mesh doors, stainless steel door screen, strong mosquito door net, Coimbatore"
   },
-  // Story, Profile, Curtains, Blinds, Contact
+  // Story, Profile, Curtains, Blinds, Contact, Blog, Privacy Policy
   "/our-story": {
-    title: "Our Story | Good Look Home Decor | Expertly Crafted Interiors",
-    description: "Learn about Good Look Home Decor's journey of delivering exceptional quality uPVC doors, windows, blinds, and curtains in Coimbatore since inception.",
+    title: "Upvc manufacturers in coimbatore | Good Look Home",
+    description: "Discover Good Look Home’s 24+ years of experience in providing quality uPVC doors, windows & durable insect screens in Coimbatore. Learn about our legacy!",
     keywords: "about us, Good Look Home Decor story, interior decor history, Coimbatore decor company"
   },
   "/our-collections/upvc-profile": {
@@ -128,19 +119,34 @@ const metaConfig = {
     keywords: "uPVC profiles, multi-chambered profiles, window profile technology, durable uPVC material, Coimbatore"
   },
   "/curtains-blinds/curtains": {
-    title: "Premium Custom Curtains & Drapes | Good Look Home Decor",
-    description: "Beautify your windows with our custom luxury curtains. Choose from blackouts, sheers, motorizations, and a wide array of premium designer fabrics.",
+    title: "Window curtains in coimbatore | Good Look Home",
+    description: "Discover custom window curtains in Coimbatore, from elegant sheer fabrics to full blackout styles. Get tailored designs & fitting. Contact us today!",
     keywords: "luxury curtains Coimbatore, custom drapes, blackout curtains, sheer curtains, motorized curtains"
   },
   "/curtains-blinds/blinds": {
-    title: "Modern Window Blinds & Shades | Good Look Home Decor",
-    description: "Clean and contemporary window blinds. Explore roller, zebra, vertical, wooden, and Roman blinds custom-sized for your space.",
+    title: "Window blinds in coimbatore | Good Look Home",
+    description: "Choose stylish window blinds in Coimbatore for homes & offices. Explore roller, zebra & Venetian blinds for flexible light control. Get a quote now!",
     keywords: "window blinds Coimbatore, zebra blinds, roller blinds, wooden blinds, Roman blinds, vertical blinds"
   },
   "/contact-us": {
-    title: "Contact Us | Good Look Home Decor | Coimbatore",
-    description: "Get a free quote today! Reach Good Look Home Decor in Sengammal Colony, Sanganoor, Coimbatore. Call +91 94434 09613 or email goodlookhdcbe@gmail.com.",
+    title: "Upvc window dealers in coimbatore | Good Look Home",
+    description: "Contact Good Look Home in Sanganoor, Coimbatore for custom uPVC windows, doors & mosquito net solutions. Call 94434 09613 for a free site visit today!",
     keywords: "contact Good Look Home Decor, Coimbatore office, call decor company, address, email"
+  },
+  "/blog": {
+    title: "Home decor and upvc guide in coimbatore | Good Look Home",
+    description: "Read expert tips on uPVC windows, doors, mosquito nets & home decor to make informed choices for your home. Explore insights from Good Look Home today!",
+    keywords: "home decor blog, uPVC guide Coimbatore, expert tips uPVC, home improvement tips"
+  },
+  "/privacy-policy": {
+    title: "Privacy policy and terms | Good Look Home",
+    description: "Read Good Look Home’s privacy policy and terms to understand how we handle customer information and deliver our products & services securely.",
+    keywords: "privacy policy, terms and conditions, Good Look Home"
+  },
+  "/terms": {
+    title: "Privacy policy and terms | Good Look Home",
+    description: "Read Good Look Home’s privacy policy and terms to understand how we handle customer information and deliver our products & services securely.",
+    keywords: "privacy policy, terms and conditions, Good Look Home"
   }
 };
 
