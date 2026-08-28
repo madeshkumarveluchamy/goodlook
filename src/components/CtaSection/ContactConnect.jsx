@@ -98,7 +98,7 @@ const ContactConnect = () => {
                <div className="sidebar-map-wrapper">
   <iframe
     title="Good Look Home Decors Office Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9719763786957!2d76.95524877504567!3d11.040727889124586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859369dde3491%3A0x3331e4ba7fc9f7ae!2sWINNER%20insect%20screen%20%2C%20manufacture%20mosquito%20screen%20all%20kind%20of%20PVC%20commands%20aluminium%20channels%20we%20are%20wholesaler!5e0!3m2!1sen!2snl!4v1784372925459!5m2!1sen!2snl"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.215218610926!2d76.96144799999999!3d11.022473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85857e25ce28f%3A0xb21351fd09216054!2sGood%20Look%20Home%20Decors!5e0!3m2!1sen!2sin!4v1787894386684!5m2!1sen!2sin"
     width="100%"
     height="180"
     style={{ border: 0 }}
