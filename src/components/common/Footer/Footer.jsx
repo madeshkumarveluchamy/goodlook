@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="footer-card-inner">
               <h5 className="footer-col-title text-uppercase tracking-wider mb-3 text-center text-md-start sdes text-warning">Contact Information</h5>
               <p className="footer-address-txt fw-light mb-3 hanken-grotesk-font text-center text-md-start smin text-light">
-               Good Look Home Decors, 98/1,<br/>sivalapuri Nagar Sengammal Colony<br/> Sanganoor Village Coimbatore-641027
+               Good Look Home Decors, 460,<br/>Dr Radhakrishna St, Hudco Colony<br/> Tatabad, Coimbatore, Tamil Nadu 641012
               </p>
               <p className="footer-contact-link-line m-0 text-center text-md-start sdes text-light">
                 Call us: <a href="tel:9443409613" className="text-decoration-none text-white rubik-font smin">94434 09613</a>
