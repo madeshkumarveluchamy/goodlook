@@ -92,20 +92,20 @@ const ContactConnect = () => {
               <div>
                 <h5 className="info-block-label mb-2 inter-font sdes">Main office</h5>
                 <p className="info-block-value hanken-grotesk-font mb-3 smin">
-                Good Look Home Decors, 98/1,<br/>sivalapuri Nagar Sengammal Colony<br/> Sanganoor Village Coimbatore-641027
+                Good Look Home Decors, 460,<br/> Dr Radhakrishna St, Hudco Colony<br/> Tatabad, Coimbatore, Tamil Nadu 641012
                 </p>
 
                <div className="sidebar-map-wrapper">
-  <iframe
-    title="Good Look Home Decors Office Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.215218610926!2d76.96144799999999!3d11.022473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85857e25ce28f%3A0xb21351fd09216054!2sGood%20Look%20Home%20Decors!5e0!3m2!1sen!2sin!4v1787894386684!5m2!1sen!2sin"
-    width="100%"
-    height="180"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+              <iframe
+                title="Good Look Home Decors Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.215218610926!2d76.96144799999999!3d11.022473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85857e25ce28f%3A0xb21351fd09216054!2sGood%20Look%20Home%20Decors!5e0!3m2!1sen!2sin!4v1787894386684!5m2!1sen!2sin"
+                width="100%"
+                height="180"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
 </div>
               </div>
             </div>

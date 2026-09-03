@@ -34,7 +34,7 @@ const OurStory = () => {
               <div className="story-divider mb-4"></div>
               
               <h2 className="story-title font-serif mb-4 text-center text-md-start stit">
-               Twenty-one years of<br className="d-none d-lg-block" /> Manufacturing Better Windows, Doors And Comfort. 
+               Twenty Four years of<br className="d-none d-lg-block" /> Manufacturing Better Windows, Doors And Comfort. 
               </h2>
               
               <p className="story-description fw-normal mb-4 hanken-grotesk-font text-center text-md-start sdes">
